@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Create more cue</title>
+		<title>Csináljunk több képet</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="quick start guide - create cues" />
@@ -9,83 +9,83 @@
 	<body>
 		
 		
-		<h1>Create more cue</h1>
+		<h1>Csináljunk több képet</h1>
 		
-		<p>Now we are going to make more cues.</p>
+		<p>Most pedig további képeket adunk hozzá.</p>
 
-<h2>Making more cues.</h2>
+<h2>Több kép hozzáadása.</h2>
 
-<p>Let us make some more cues. Press:&nbsp;<span class="hardkey">&nbsp;2</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">+</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">8</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">8</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Cue</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">1</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Please</span>. That created cue 2 with a fade time of 15 seconds. Let us continue with cue 3. Now we are going to use the groups and the command line.</p>
+<p>Csináljunk még pár képet. Nyomd meg a :&nbsp;<span class="hardkey">&nbsp;2</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">+</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">8</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">8</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Cue</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">1</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Please</span>gombokat. Ez létrehozza a 2. képet 15 sec-es úszási id&otilde;vel. Folytassuk a 3. képpel. Most pedig csoportokat fogunk használni és a parancssort.</p>
 
-<p>You need to locate the Command Line. It looks like this:</p>
+<p>Keresd meg a parancssort. Így néz ki:</p>
 
 <div class="cl_input">[Channel]&gt;</div>
 
-<p>This is the Command Line. It can be a fast way to get around the console and the commands. But sometime the keys are fastest.</p>
+<p>Ez a parancssor. Itt lehet gyorsan beírni a parancsokat. Néha egyébként a gombokkal a leggyorsabb.</p>
 
-<p>In the Command Line type this:</p>
+<p>A paranacssorba írd be ezt:</p>
 
 <div class="cl_input">[Channel]&gt; g 1 + 2 at 75</div>
 
-<p>followed by&nbsp;<span class="hardkey">Please</span>.</p>
+<p>ezután&nbsp;<span class="hardkey">Please</span>.</p>
 
-<p>Then type:</p>
+<p>Utána írd be:</p>
 
 <div class="cl_input">[Channel]&gt;&nbsp;g 3 t 5 at 60</div>
 
-<p>followed by&nbsp;<span class="hardkey">Please</span>.</p>
+<p>Utána &nbsp;<span class="hardkey">Please</span>.</p>
 
-<p>Now let us have a look at the Command Line&nbsp;Feedback and how the console has responded (please do not press any buttons).</p>
+<p>Most nézzük meg a parancssor el&otilde;zményeket, hogyan látta a pult a dolgokat (még ne nyomj meg semmit).</p>
 
-<p>What does all this mean?</p>
+<p>Mit jelent mindez?</p>
 
-<p>"g" is the shortcut for "Group". That means the respond to the first line is:</p>
+<p>"g" a Group -nak a rövidítése. Az els&otilde; sor válasza ez lett:</p>
 
 <div class="cl_response">[Time] : Executing : Group&nbsp;1 + 2&nbsp;At&nbsp;75</div>
 
-<p>The "t" in the second line as a short for "Thru". The console respond to the second line is:</p>
+<p>A "t" a második sorban a "Thru" rövidítése. A második sorban ez van:</p>
 
 <div class="cl_response">[Time] : Executing :&nbsp;Group&nbsp;3 Thru&nbsp;5 At&nbsp;60</div>
 
-<p>We are going to store the cue using the keys:&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Please</span>. This is the response from the console:</p>
+<p>Most eltároljuk a képet a következ&otilde; gombokkal:&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Please</span>. Itt a pult reakciója:</p>
 
 <div class="cl_response">[Time] : Executing :&nbsp;​Store Fade&nbsp;20&nbsp;OutFade&nbsp;25</div>
 
-<p>Now why is this?&nbsp;We typed "Time 20 Time 25". The desk interprets this as 20 seconds Fade and 25 seconds OutFade. Pretty clever, huh?</p>
+<p>Most miért?&nbsp;Ezt írtuk "Time 20 Time 25". A pult úgy értelmezte, hogy ez 20 sec. Beúszási és 25 sec. kiúszási id&otilde;. Okos, mi??</p>
 
-<p>Notice that after the second cue we do not need to specify the cue number. The desk automatically uses the next available number.</p>
-
-<p>&nbsp;</p>
-
-<p>In cue 4 we need to take 30% of everything that is on. We do this in a fast and easy way:&nbsp;<span class="hardkey">If</span>&nbsp;<span class="hardkey">Please</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">-</span>&nbsp;<span class="hardkey">3</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">1</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Please</span>.</p>
-
-<p>That was fast!</p>
-
-<p>By using "If Please" you run the command "IfOutput". This selects everything that currently have output.</p>
-
-<p>Then by using "At - 30" you subtract 30% from whatever value the channels had before (of course nothing less than 0%).</p>
+<p>Megjegyzend&otilde;, hogy a második kép után nem kell megadni a kép számát. A pult automatikusan a következ&otilde; elérhet&otilde; számot fogja használni.</p>
 
 <p>&nbsp;</p>
 
-<p>Now we are going to make a lot of changes:&nbsp;</p>
+<p>A negyedik képben, minden ami be van adva, 30%-ra akarjuk állítani. Ennek a gyors és könny&ucirc; módja:&nbsp;<span class="hardkey">If</span>&nbsp;<span class="hardkey">Please</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">-</span>&nbsp;<span class="hardkey">3</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">1</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Please</span>.</p>
+
+<p>Ez gyors volt!</p>
+
+<p>Ha ezt használjuk "If Please" akkor az "IfOutput"parancsot használjuk. Ez kiválaszt minden lámpát aminek van kimenete.</p>
+
+<p>Utána az "At - 30" parancssal kivontunk 30%-ot az összes értékéb&otilde;l (természetesen ha nem kevesebb mint 0%).</p>
+
+<p>&nbsp;</p>
+
+<p>Most pedig sok változást fogunk csinálni:&nbsp;</p>
 
 <p><span class="hardkey">Group</span>&nbsp;<span class="hardkey">6</span>&nbsp;<span class="hardkey">.</span>&nbsp;<span class="hardkey">.</span>&nbsp;<span class="hardkey">Group</span>&nbsp;<span class="hardkey">9</span>&nbsp;<span class="hardkey">Thru</span>&nbsp;<span class="hardkey">1</span>&nbsp;<span class="hardkey">1</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">6</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Please</span>&nbsp;</p>
 
 <p><span class="hardkey">Group</span>&nbsp;<span class="hardkey">7</span>&nbsp;<span class="hardkey">+</span>&nbsp;<span class="hardkey">8</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">7</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">1</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Please</span>.</p>
 
-<p>What is: "Time 15 Time Time 5"? If you have a look at your&nbsp;Command Line Feedback it reads: "Fade 15 Delay 5". This means that you told the desk to delay the trigger of the cue with 5 seconds after you press the "Go" key (and then fade using 15 seconds - but you probably guessed that).</p>
+<p>Hogy mit jelent a: "Time 15 Time Time 5"? Ha megnézed a parancsori visszajelzést akkor ezt látod: "Fade 15 Delay 5". Ez azt jelenti hogy a pult késlelteti a kép indítását (trigger-t) 5 sec.-el, miután megnyomtad a "Go" gombot, (és átúszik 15 sec. alattand - de ezt már biztos kitaláltad).</p>
 
-<p>With the "Time" command we can assign many different times. A command like: "Time 20 Time 15 Time 10 Time 5" is translated by the desk to: "Fade 20 DownFade 15 Delay 10 DownDelay 5".&nbsp;</p>
+<p>A "Time" parancssal különböz&otilde;képpen tudunk id&otilde;ket hozzárendelni. Egy olyan parancs mint: "Time 20 Time 15 Time 10 Time 5" a pult számára így néz ki: "Fade 20 DownFade 15 Delay 10 DownDelay 5".&nbsp;</p>
 
-<p>The last cue we are going to make is a blackout. And we do that with only six button presses:&nbsp;<span class="hardkey">If</span>&nbsp;<span class="hardkey">Please</span>&nbsp;<span class="hardkey">.</span>&nbsp;<span class="hardkey">.</span>&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Please</span>. That was 6 cues.</p>
+<p>Az utolsó kép amit csinálunk egy sima sötét lesz. És ezt megoldjuk csak hat gombnyomással:&nbsp;<span class="hardkey">If</span>&nbsp;<span class="hardkey">Please</span>&nbsp;<span class="hardkey">.</span>&nbsp;<span class="hardkey">.</span>&nbsp;<span class="hardkey">Store</span>&nbsp;<span class="hardkey">Please</span>. Ez volt a 6 kép.</p>
 
-<p>Clear your programmer.</p>
+<p>Töröld ki a programozót.</p>
 
-<p>It was hopefully fast and painless.</p>
+<p>Ez remélem gyors, és fájdalommentes volt.</p>
 
 <p>&nbsp;</p>
 
-<p>The <a href="key_08_edit_a_sequence.html">next page</a> we are going to make some changes to the sequence.</p>
+<p>A <a href="key_08_edit_a_sequence.html">következ&otilde; oldalon</a> néhány változást eszközölünk a szekvenciánkon.</p>
 
 		
 	</body>
