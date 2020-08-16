@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Editing a sequence</title>
+		<title>Szekvencia szerkesztése</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="quick start guide - edit sequence" />
@@ -9,84 +9,91 @@
 	<body>
 		
 		
-		<h1>Editing a sequence</h1>
+		<h1>Szekvencia szerkesztése</h1>
 		
-		<p>Now we are going to make some changes to the sequence.</p>
+		<p>Mst pedig némi változtatást eszközölünk a szekvenciánkon.</p>
 
-<h2>Make a "Follow"</h2>
+<h2>Csinálj egy "Follow(követést)"</h2>
 
-<p>We would like to change cue 3 to automatically run when cue 2 is done.</p>
+<p>Most pedig megváltoztatjuk a szekvenciát, hogy a 3. kép automatikusan következzen a 2. kép után.</p>
 
-<p>Look at the Sequence Executor Sheet. Each cue have its own row in the sheet. The columns are the different properties a cue can have. It is not the <strong>content</strong> in the cue, but the <strong>cue</strong> properties.</p>
+<p>Nézd meg a szekvencia végrehajtó táblázatot. Minden képnek megvan a saját sora. Az sozlopok különböz&otilde; tuljadonságait takarják a képeknek. Ez nem a <strong>content(tartalom)</strong> a képben, hanem a <strong>cue(kép)</strong> tulajdonságait.</p>
 
-<p>The trig column is the one that governs how the cues are triggered. We need to change the setting for cue number 3.&nbsp;You do this by right-clicking with the mouse (or pressing Edit and then tap) on the screen where it says "Go" in the "Trig" column in the row for cue 3.</p>
+<p>A trig oszlop írányítja, azt hogy a képet mi indítja el. Meg kellene változtatni a 3. kép beállítását.&nbsp;Ezt lehet jobb-klikkel az egérrel (vagy az 'Edit' és ráböksz) a képerny&otilde;n oda ahol a "Go" felirat van a "Trig" oszlopban, abban a sorban ahol a 3. kép van.</p>
 
-<p>This gives you a small pop-up with the following choices: Go, Time, Follow, Sound, BPM, Timecode. Select <span class="softkey">Follow</span> by clicking or tapping it.</p>
+<p>Ekkor egy kis ablakocska jön el&otilde;, a következ&otilde; választási lehet&otilde;ségekkel: Go(menj), Time(id&otilde;), Follow(követ), Sound(hang), BPM, Timecode(id&otilde;kód). Válaszd a <span class="softkey">Follow</span>-t kattintással, vagy bökéssel.</p>
 
-<p>Now when cue 2 is done, the desk automatically activates the fade to cue 3.</p>
+<p>Most ha a 2. kép "készen" van, akkor a pult automatikusan elindítja a 3. képváltást.</p>
 
-<h2>Changing the cue names</h2>
+<h2>Képek nevének megváltoztatása</h2>
 
-<p>Let us change the cue names. You know how to do this, so here is a table with the new names:</p>
+<p>Változtassuk meg a képek nevét. Mostmár tudod hogyan lehetséges, ezért itt egy táblázat az új nevekr&otilde;l:</p>
 
 <table>
 	<tbody>
 		<tr>
-			<th>Cue Number:</th>
-			<th>Name:</th>
+			<th>Kép Száma:</th>
+			<th>Név:</th>
+			<th>Magyarul:</th>
 		</tr>
 		<tr>
 			<td>1</td>
 			<td>Behind Curtain</td>
+			<td>Fügöny mögött</td>
 		</tr>
 		<tr>
 			<td>2</td>
 			<td>With Curtain Up</td>
+			<td>Függöny nyitásra</td>
 		</tr>
 		<tr>
 			<td>3</td>
 			<td>Build</td>
+			<td>Épül</td>
 		</tr>
 		<tr>
 			<td>4</td>
 			<td>Darker</td>
+			<td>Sötétebb</td>
 		</tr>
 		<tr>
 			<td>5</td>
 			<td>Cold</td>
+			<td>Hideg</td>
 		</tr>
 		<tr>
 			<td>6</td>
 			<td>B.O.</td>
+			<td>Sötét</td>
 		</tr>
 	</tbody>
 </table>
 
-<p>If you need to, then expand the "name" column in your&nbsp;Sequence Executor Sheet, so you can see the entire names.</p>
+<p>Ha jobban akarod látni a "name" mez&otilde;t, akkor az egérrel az oszlopok közti vonalat mozgatva megteheted.</p>
 
-<h2>Updating a cue</h2>
+<h2>Kép frissítése</h2>
 
-<p>Let us imagine that we got a lighting designer who has changed his mind. He wants 5% more on the group called "LX 1 Warm" in cue 3. Go to cue 3:&nbsp;<span class="hardkey">Goto</span>&nbsp;<span class="hardkey">3</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Please</span>.</p>
+<p>Képzeld el, hogy van egy világítástervez&otilde;, akinek az a nagyszer&ucirc; ötlete támad, hogy mi lenne, ha 5% -al többet kér a csoportból aminek a neve "LX 1 Warm", a harmadik képben. Menj a harmadik képre:&nbsp;<span class="hardkey">Goto</span>&nbsp;<span class="hardkey">3</span>&nbsp;<span class="hardkey">Time</span>&nbsp;<span class="hardkey">0</span>&nbsp;<span class="hardkey">Please</span>.</p>
 
-<p>What happened? We went to a cue and activated the executor. And now there is a yellow frame around cue 3 in the Sequence Executor Sheet. To go to cue 3 you only need to write "Goto 3 Please". We added "Time 0". This ignores the fade times stored in the cue and we do not have to wait for the cue to fade in. It does not change the stored fade time.</p>
+<p>Mi történt? Odaugrottunk a képre és aktiváltuk az executort. És most egy sárga keret van a 3. kép körül a  Sequence Executor Táblázatban. A 3. képre ugráshoz csak annyit kellett beírni, hogy "Goto 3 Please". Hozzáadtuk még a "Time 0"-t. Ez átugorja a képben tárolt id&otilde;ket, így nem kell várni arra, hogy bejöjjön a kép. Ez nem változtatja meg az eltárolt beúszási id&otilde;t.</p>
 
-<p>Let us continue:&nbsp;<span class="hardkey">Group</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">+</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Please</span>.</p>
+<p>Folytassuk:&nbsp;<span class="hardkey">Group</span>&nbsp;<span class="hardkey">2</span>&nbsp;<span class="hardkey">At</span>&nbsp;<span class="hardkey">+</span>&nbsp;<span class="hardkey">5</span>&nbsp;<span class="hardkey">Please</span>.</p>
 
-<p>Now the 'Update' button lights up. This means you can update the active cue. Press&nbsp;<span class="hardkey">Update</span>&nbsp;and without worrying about anything press the <span class="hardkey">U3</span> key (or where it says: <span class="softkey">Tracking Update</span>) so the button changes to "Update Cue Only". Now press the&nbsp;<span class="hardkey">X6</span>&nbsp;key (or where it says <span class="softkey">Update Cue</span>) to update the cue.</p>
+<p>Most az 'Update'(frissítés) gomb világítani kezd. Ez jelent azt, hogy frissítheted az aktív képet. Nyomd meg az&nbsp;<span class="hardkey">Update</span>&nbsp;gombot és semivel sem tör&otilde;dve nyomd meg az <span class="hardkey">U3</span> gombot (vagy ahol ez van írva: <span class="softkey">Tracking Update</span>) akkor a gomb átvált "Update Cue Only". Most nyomd meg az&nbsp;<span class="hardkey">X6</span>&nbsp;gombot (vagy ahol azt írja <span class="softkey">Update Cue</span>), hogy frissítsd a képet.</p>
 
-<p>To exit the cue and deactivate the sequence you need to press the top button above executor fader 1 - in the onPC you could open the Executor view and tap where it says "Off" above executor 1.</p>
+<p>Hogy kilépjünk a képb&otilde;l és kikapcsoljuk a szekvenciát, ahhoz nyomd meg a legfels&otilde; gombot az 1. executor húzónál - az onPC változatban megnyithatod az executor nézetet és bökj oda ahol az "Off" felirat van az els&otilde; executor felett.</p>
 
-<h2>Editing the times</h2>
+<h2>Szerkesszük az id&otilde;ket</h2>
 
-<p>Let us change some of the times in the cue list. This is how your times should end up:</p>
+<p>Változtasunk némi átúszási id&otilde;ket a képek listájában. Itt van a végleges állapot:</p>
 
 <table>
 	<tbody>
 		<tr>
-			<th>Fade</th>
-			<th>Out Fade</th>
-			<th>Delay</th>
-			<th>Out Delay</th>
+			<th>Fade(úszási id&otilde;)</th>
+			<th>Out Fade(kiúszási id&otilde;)</th>
+			<th>Delay(késleltetés)</th>
+			<th>Out Delay(kiúszási késleltetés)</th>
 		</tr>
 		<tr>
 			<td>0</td>
@@ -129,19 +136,19 @@
 
 <p>Look at the&nbsp;Sequence Executor&nbsp;Sheet. Right click on the cells and type in the new value either on "the calculator" pop-up on the screen, the buttons on your console, or using the keyboard. If a cell is empty then it can be a zero time or in the case of the "OutFade" it is actually the same as the (In)fade. If the in and out fade is the same then you do not need to specify an outfade - only when there is a difference. It is the same with&nbsp;in and out delay.</p>
 
-<p>The final result should look like this:</p>
+<p>A végeredmény így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../../img/grandma2_quick_start_guide/qsg_08_edit-a-sequence_final-seq-exec-sheet_v3-3_1.png" />
-<figcaption><em>The Sequence Executor Sheet with new timings</em></figcaption>
+<figcaption><em>A szekvenciaszerkeszt&otilde; az új id&otilde;beállításokkal</em></figcaption>
 </figure>
 
-<p>Try pressing the big 'Go+' key to see how your channels react to the different times. You find this in the "Masters" section on the right side of your onPC.</p>
+<p>Próbáld meg megnyomni a nagy 'Go+' gombot és nézd meg hogy a csatornák hogyan reagálnak a különböz&otilde; id&otilde;kre. Ezt megtalálod az onPC változatban a "Masters" résznél a jobb oldalon.</p>
 
-<p>Press:&nbsp;<span class="hardkey">Backup</span>&nbsp;<span class="hardkey">Backup</span>&nbsp;(as double-clicking a mouse button). This is the fast way to store your show (with the same name).</p>
+<p>Nyomd meg a :&nbsp;<span class="hardkey">Backup</span>&nbsp;<span class="hardkey">Backup</span>&nbsp;(úgy mintha kett&otilde;t kattintanál az egérrel). Ez egy gyors módja a mentésnek (ugyanazon a néven).</p>
 
 <p>&nbsp;</p>
 
-<p>On the <a href="key_09_add_moving_lights.html">next page</a> we are going to look at adding some moving lights.</p>
+<p>A <a href="key_09_add_moving_lights.html">következ&otilde; oldalon</a> hozzácsapunk még néhány robotlámpát.</p>
 
 		
 	</body>
