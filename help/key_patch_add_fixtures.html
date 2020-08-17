@@ -131,9 +131,9 @@
 
 <p>Jó ötlet a gyártó nevét beírni - legalább részleteiben -ide.. Például, ha a 'Clay Paky' -tól akarsz lámpát, akkor elég beírni azt, hogy 'Clay' vagy 'Paky'. A lista ilyenkor csak a Clay Paky általi lámpákat fogja mutatni. The filter will show all manufacturers with the letters you write, in any part of their name. So if you write "ma" then you get a long list. The first manufacturer might be "Altman" - the letters "ma" are in it. Uppercase letters are not distinguished.</p>
 
-<p>Same goes for the fixture filter. This filters on the fixture name. Try not to be more specific then you need to be. If you are looking for a Clay Paky Alpha Spot QWO 800, they you just need a manufacturer filter "clay" and a fixture filter "qwo". Since no one else currently have a fixture with "qwo" in the fixture name, we do not really need the manufacturer filter.</p>
+<p>Hasonló igaz a lámptípus sz&ucirc;r&otilde;re is. Ez sz&ucirc;ri a lámpákat típus szerint. Próbálj meg nem túl specifikus lenni, csak annyira amennyire szükséges. Ha pl. a Clay Paky Alpha Spot QWO 800-at keresed, akkor elég csak beírni a gyártóhoz, hogy "clay" és a lámpa sz&ucirc;r&otilde;be azt hogy "qwo". Eddig nem sokan gyártottak lámpát "qwo"névvel a típusmegjelölésben, igazából a gyártót sem kel sz&ucirc;rni.</p>
 
-<p>On the right side of the two filters you will find a <span class="softkey">Clear Filter</span> button. This will remove any input you have typed in your filters.</p>
+<p>A két sz&ucirc;r&otilde;ablak jobb oldalán található a <span class="softkey">Clear Filter</span> gomb. Ezzel lehet törölni a sz&ucirc;rési feltételeinket.</p>
 
 <p>Lejjebb találhatóak a sz&ucirc;r&otilde;k a lámpák listájában.</p>
 
@@ -160,7 +160,7 @@
 	Ez a mérete a lámpa fájlnak..</li>
 </ul>
 
-<p>You can choose the display information about the DMX channels below the list. If you tap the&nbsp;<img alt="" src="../../img/icon_info_v3-2.png" /> in the title bar then you will see the list of DMX channels and what function they have.</p>
+<p>Választhatod, hogy akarsz némi DMX infórmációt látni a lista alatt. Ha ráböksz a &nbsp;<img alt="" src="../../img/icon_info_v3-2.png" /> a fejlécben akkor megmutata a DMX csatornák listáját és azt is milyen funkció van hozzárendelve.</p>
 
 <p>Ha megtaáltad a listában a lámpádat, akkor bökj rá és utána az <span class="softkey">Import</span> gombra a jobb alsó sarokban.</p>
 
@@ -174,7 +174,7 @@
 
 <p>&nbsp;</p>
 
-<p>You can see the top two input fields are the fixture type you selected and the second is the <strong>Name</strong> of the fixture. The suggested name comes from the fixture type definition. And it adds a space and a number (1) to the name. The result of this added space and number is that all the fixtures added will be enumerated from this number. You can of course change the name.</p>
+<p>Ahogyan látod a két fels&otilde; beviteli mez&otilde;ben van a lámpa típusa amit kiválasztottál, és a második a lámpa <strong>neve</strong>. Az ajánlott név, a lámpatípus definíciójából következik. Utána következik egy szóköz és egy szám (1). A hozzáadott szóköznek és számnak az eredménye, hogy az összes lámpa ett&otilde;l a sorszámtól tudd növekményesen elnevez&otilde;dni. Természetesen megváltoztathatod a nevet.</p>
 
 <p>&nbsp;</p>
 
@@ -182,55 +182,55 @@
 
 <p>Az ID számoknak két típusa van: A <strong>Fixture ID</strong> és a <strong>Channel ID</strong>.</p>
 
-<p>To use the fixture you need to give it at least one of the ID numbers. You can give it both a Fixture ID and Channel ID. It can be the same number but it does not have to be the same.</p>
+<p>Ha használni akarod a lámpákat, valamelyik Id-t muszály megadni. Mind a kett&otilde;t ki lehet tölteni, lehetnek azonosak is az ID-k, de nem kötelez&otilde;.</p>
 
-<p>The difference between the two are whether or not the fixture is visible in the Channel Sheet and the Fixture Sheet.</p>
+<p>A különbség az, hogy a lámpa látható-e a csatornalistában(Channel Sheet) vagy nem.</p>
 
-<p>A fixture with a Fixture ID is visible in the Fixture Sheet (This sheet displays all attributes for the fixture).</p>
+<p>Egy lámpa Fixture ID-vel látszik a Lámpa táblázatban(Fixture Sheet) (Ez a táblázat minden tulajdonságát mutatja a lámpáknak).</p>
 
-<p>A fixture with a Channel ID is visible in the Channel Sheet (This sheet only shows the Dimmer attributes for the fixture).</p>
+<p>Egy lámpa Channel ID -vel látható a Csatornalistában(Channel Sheet) (Ez a tbálázat csak a Dimmer tulajdonságát mutatja a lámpának).</p>
 
-<p>The console also have a default beginning keyword. This is usually "Fixture" or "Channel". This is what the console assume you are addressing if you do not specify something else.</p>
+<p>A pultnak alapvet&otilde;en van alapértelmezett kulcsszava beállítva. Ez általában vagy "Fixture" vagy "Channel". Ez az amit a pult hisz, hogy alapesetben címezni akarod, ha nem adsz meg mást.</p>
 
-<p>You can see it in your command line. It could look like these two examples:</p>
+<p>Ezt láthatod a parancssorban. Úgy néz ki, mint itt a két példában:</p>
 
 <div class="cl_input">[Channel]&gt;</div>
 
 <div class="cl_input">[Fixture]&gt;</div>
 
-<div class="tip"><strong>Hint:</strong><br />
-If you want to change what the default keyword is, then you can press the key followed by <span class="hardkey">Please</span>.</div>
+<div class="tip"><strong>Tipp:</strong><br />
+Ha meg akarod változtatni az alapvet&otilde; kulcsszót, akkor nyomd meg az egyiket, majd a <span class="hardkey">Please</span>-t.</div>
 
-<p>If you do not want to give the fixtures an ID number then you need to type "0" in the input field. But remember that you need to give them at least one ID number to be able to select and control them.</p>
-
-<p>&nbsp;</p>
-
-<p>Depending on what fixture type you have selected, you might have up to 8 different <a href="key_patch_dmx_break.html">Patch Breaks</a>. Most fixture only need one, but some multi instance fixtures needs several DMX start addresses.</p>
-
-<p>You can type in the DMX address using the following pattern [Universe].[DMX address] - so if you need the fixture to have start address 1 in universe 2, then you need to write <span class="syntax">2.1</span></p>
-
-<p>You can also choose to type the absolute DMX address. In the same example as above you could also type <span class="syntax">513</span> - this is because there are 512 possible DMX addresses in one universe, so the first number in the second universe will be 513.<span class="syntax"> </span></p>
-
-<p>If you do not want to give the fixtures a DMX address now, then you can type "0" (zero) in the Patch Break.</p>
+<p>Ha nem akarsz lámpaazonosítót(Fixture ID-t) adni egy lámpához akkor írj "0"-t a mez&otilde;be. De emlékezz, hogy legalább egy Id-t meg kell adni ahhoz, hogy ki lehessen választani és vezérelni a lámpákat.</p>
 
 <p>&nbsp;</p>
 
-<p>When you are happy with your input then you can tap the <span class="softkey">Apply</span> button. This takes you back to the EditSetup menu.</p>
+<p>Attól függ&otilde;en, hogy milyen lámpát választottál, lehet egészen 8 különböz&otilde; <a href="key_patch_dmx_break.html">Patch Breaks(Címzéstörés?)</a>. A legtöbb lámpának csak egy kell, de néhány többpéldányos lámpának kellhet több DMX kezd&otilde;cím is.</p>
 
-<h2><a id="fixture_list" name="fixture_list"></a>A closer look at the fixture list</h2>
+<p>A DMX címeket a következ&otilde; minta szerint lehet megadni [Univerzum].[DMX cím] - ha a lámpádat az 1-es címre és a 2. Univerzumra akarod patchelni, akkor azt így kell megadni <span class="syntax">2.1</span></p>
 
-<p>When you have added fixtures using the Fixture Wizard and tapped Apply, then you are back in the EditSetup. Here you can see the fixture you have added in the fixture list (right side of the screen).</p>
+<p>Választhatsz abszolút DMX címzést is. Az el&otilde;z&otilde; példánál maradva írhatsz<span class="syntax">513</span> - ez, mivel egy univerzumban csak 512 cím lehet, a következ&otilde; univerzum els&otilde; címe az <span class="syntax">513</span> lesz.</p>
 
-<p>The fixture list shows us a lot of information and we can edit almost all of it. The following is a short description of the columns in the list.</p>
+<p>Ha jelenleg nem akarsz DMX címet hozzárendelni, akkor írj "0" (nullát) a Patch Break ablakba.</p>
+
+<p>&nbsp;</p>
+
+<p>Ha vidám vagy a beállításoktól, akkor rábökhetsz az <span class="softkey">Apply</span> gombra. Ez visszavisz téged az EditSetup menübe.</p>
+
+<h2><a id="fixture_list" name="fixture_list"></a>Közelebbi nézet a lámpalistára</h2>
+
+<p>Ha hozzáadtad a lámpákat a LámpaVarázsló-ból és ráböktél az Apply(elfogad)-ra, akkor visszatérsz az EditSetup-ba. Itt láthatod, hogy a lámpa hozzáadódott a lámpalistához (a képerny&otilde; jobb oldalán).</p>
+
+<p>A lámpa lista elég sok információt mutat és majdnem mindet szerkesztenünk kell. A következ&otilde; gyors leírás ezekr&otilde;l ad némi felvilágosítást.</p>
 
 <p><strong>FixID:</strong><br />
-This is the Fixture ID number. If the fixture does not have an ID the there is a "-" instead of the number.</p>
+Ez a lámpa azonosítójának száma. Ha a lámpának nincs Id-je akkor itt "-" látható a szám helyett.</p>
 
 <p><strong>ChaID:</strong><br />
-This is the Channel ID number. If the fixture does not have an ID the there is a "-" instead of the number.</p>
+Ez a lámpa csatornájának száma. Ha a lámpának nincs Id-je akkor itt "-" látható a szám helyett.</p>
 
-<p><strong>Name:</strong><br />
-This is the name if the fixture. Remember that if you are naming multiple fixtures at once, then you can add a space and a number to automatically enumerate the fixtures from that number.</p>
+<p><strong>Name(név):</strong><br />
+Ez a lámpa elnevezése. Emlékezz, ha több lámpát adsz hozzá, akkor tehetsz egy szóközt a név után és egy számot ami automatikusan növekedni fog a darabszámmal.</p>
 
 <p><strong>Fixture Type(lámpa típus):</strong><br />
 Ez a lámpa típusa. Ha ezt szerkeszted akkor el&otilde;jön a Select Fixture type (válassz lámpatípust) ablakocska. Ilyesmi a kinézete:</p>
@@ -239,46 +239,46 @@ Ez a lámpa típusa. Ha ezt szerkeszted akkor el&otilde;jön a Select Fixture ty
 <figcaption><em>Válassz lámpatípust</em></figcaption>
 </figure>
 
-<p>Here you can select an existing fixture type or you can import a new one (From Library).</p>
+<p>Itt kiválaszthatsz egy már meglév&otilde; lámpatípust vagy importálhatsz egy újat (a könyvtárból).</p>
 
-<p>If you change the Fixture Type for an already used fixture then you are asked how colors should be transformed:</p>
+<p>Ha már egy használt lámpa típusát változtatod meg, akkor megkérdezi, hogy a színeket milyen módon transzformálja át:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup__color-transform-options_v3-3.png" />
-<figcaption><em>Color Transform Options</em></figcaption>
+<figcaption><em>Színtranszformálási beállítások</em></figcaption>
 </figure>
 
-<p>Here are three buttons that selects how the colors should be transformed from one fixture to the other.</p>
+<p>Itt három gomb van amikkel lehet befolyásolni a szinek transzformálását egyik lámpáról a másikra.</p>
 
 <p>A három lehet&otilde;ség a következ&otilde;:</p>
 
 <ul>
 	<li><strong>Prefer MIXColor:</strong><br />
-	This will prefer MIXColor and set all color wheels to open white.</li>
+	Ez a MIXColor-t részesíti el&otilde;nyben és minden színkereket fehérre állít.</li>
 	<li><strong>Prefer Color Wheel:</strong><br />
-	This will prefer the color wheels and set all MIXColors to open white.</li>
+	Ez a color wheels-t részesíti el&otilde;nyben és minden MIXColors fehérre állít.</li>
 	<li><strong>MIXColor + Col.Wheel:</strong><br />
-	This will do a combination of both MIXColors and color wheels.</li>
+	Ez a MIXColors és color wheels kombinációját hozza létre.</li>
 </ul>
 
-<p>When you have selected the options you like then you can tap the <span class="softkey">Transform</span> button or you can choose to not transform the colors by tapping the <span class="softkey">Do not transform</span> button.</p>
+<p>Ha megvana neked tetsz&otilde; opció akkor bökj a <span class="softkey">Transform(átalakítás)</span> gombra vagy válaszd a <span class="softkey">Do not transform(nincs átalakítás)</span> gombot.</p>
 
 <p><a id="readout_mode" name="readout_mode"></a><strong>Patch:</strong></p>
 
-<p>This is the patch address of the fixture. If a fixture is unpatched then there is a "(-)" here.</p>
+<p>Ez a patch címe a lámpának. Ha egy lámpa nincs bepatchelve akkor egy "(-)" jel van itt.</p>
 
-<p>Editing the patch cell opens the DMX Patch window. <a href="#dmx_patch_window">Read below for more info on this</a>.</p>
+<p>A cella szerkesztésével megnyílik a DMX Patch ablak. <a href="#dmx_patch_window">Olvasd tovább a további információkért.</a>.</p>
 
-<p>There are two ways you can have the patch address displayed. Below the list is a button called "Patch Readout". This button has two different modes: "Univ.Address" or "Abs. Address".</p>
+<p>Két lehet&otilde;ség van a patch címek kiírására. Alul a listában van egy gomb "Patch Readout". Ennek a gombnak két módja van a: "Univ.Address" vagy "Abs. Address".</p>
 
-<p>The first one (Universe) will separate the DMX address into universes. First number is the universe, second number is the DMX address. They are separated by a dot.</p>
+<p>Az els&otilde; (Universe) elkülöníti a DMx címeket az univerzumoktól. AZ els&otilde; szám az univerzum a második a DMX cím. Ezeket ponttal különíti el.</p>
 
-<p>The other option (Absolute) will add the address and only display one number. So the first DMX address in the second universe will be displayed as "513". This can be useful with equipment that are subsequently patched. For instance some network dimmer systems are patched using a single absolute DMX number for the address.</p>
+<p>A másik opció (Absolute) ami a cím csak egy számot tartalmaz. Tehát az els&otilde; DMX cím a második univerzumban úgy látszik, hogy: "513". Ez hasznos lehet olyan cuccoknál, ahol sorban van a patchelés. Például néhány hálózati dimmer rendszer csak egy abszolút számmal patchelhet&otilde;.</p>
 
-<p>The readout is a User setting and can also be changed in <span class="hardkey">Setup</span> -&gt; <span class="softkey">User</span> -&gt; <span class="softkey">Settings</span>. Here it is called "Patch Column Readout is absolute DMX address" and it is an On/Off setting.</p>
+<p>A kiolvasás felhasználói beállításfügg&otilde;, és megváltoztatható a <span class="hardkey">Setup</span> -&gt; <span class="softkey">User</span> -&gt; <span class="softkey">Settings</span>. Itt "Patch Column Readout is absolute DMX address" -nak hívják és Be/Ki lehet kapcsolni.</p>
 
 <p><strong>React to Master:</strong></p>
 
-<p>This is "On" as a default. When it is on then the dimmer attribute of the fixture will be affected by the Grand Master, Group Masters and Solo. Turning this off makes sure the intensity is not affect by any such masters. This is great for power relays, blue lights and other stuff you do not want to accidently turn down.</p>
+<p>Ez alapesetben "On(be)". Ha be van kapcsolva akkor a dimmer tulajdonsága a lámpának irányítható a Grand Masterral, Group Masterral, és a Solo-val. Ha kikapcsolod akkor a fényer&otilde;t nem befolyásolja egyik Masterhúzó sem. Ez jó ötlet reléknél, vagy biztonsági fényeknél és más dolgoknál, ahol nem akarsz véletlenül sötétet csinálni.</p>
 
 <p><strong>Pan DMX Invert:</strong></p>
 
@@ -286,106 +286,106 @@ Ez a lámpa típusa. Ha ezt szerkeszted akkor el&otilde;jön a Select Fixture ty
 
 <p><strong>Tilt DMX Invert:</strong></p>
 
-<p>Haz ez be van kapcsolva, akkor a pult invertálja a DMX értékeket a Pan tulajdonságnál.</p>
+<p>Ha ez be van kapcsolva, akkor a pult invertálja a DMX értékeket a Pan tulajdonságnál.</p>
 
 <p><strong>Pan Enc. (Encoder) Invert:</strong></p>
 
-<p>This will invert the direction of the Pan movement when using the encoders. This will make it easier to match the 3D and real world pan movement with the encoder rotation.</p>
+<p>Ez megfordítja a Pan mozgást amikor a görg&otilde;ket használjuk. Ez könnyebbé teszi, hogy stimmeljen a 3d-s és a való világ közötti forgatás a görg&otilde;vel.</p>
 
 <p><strong>Tilt Enc. (Encoder) Invert:</strong></p>
 
-<p>This will invert the direction of the Tilt movement when using the encoders. This will make it easier to match the 3D and real world tilt movement with the encoder rotation.</p>
+<p>Ez megfordítja a Tilt mozgást amikor a görg&otilde;ket használjuk. Ez könnyebbé teszi, hogy stimmeljen a 3d-s és a való világ közötti elforgatás a görg&otilde;vel.</p>
 
 <p><strong>Pásztázás eltolás(Pan Offset):</strong></p>
 
-<p>This can be used to offset the programmed Pan values. This can be very useful if the show has been preprogrammed or it is a touring show, and the fixtures are not hung the way they where planned to be. The offset value is not visible in the Fixture Sheet, but it can be seen in the DMX Sheet. It is a nice function as long the fixtures do not come all the way out to their endpoints in the programming. The number entered here is a degree number and can be a negative value.</p>
+<p>Ez arra való, hogy eltoljuk a programozott Pan értékeket. Ez nagyon hasznos lehet amikor a show el&otilde;re van programozva, vagy turnézunk vele és a lámpák nem pontosan úgy lettek beakasztva ahogy kellene. Az eltolás mértéke nem látszik a Lámpalistában, de meg lehet nézni a DMX Táblázatban. Ez egy hasznos funkció amikor a lámpa nem éri el a tervezett végpontját a programozáskor. A számt amit ide kell írni fokban kell megadni és lehet negatív érték is.</p>
 
-<div class="important"><strong>Important:</strong><br />
-The Pan and Tilt Offset values can also be edited with live output to the fixtures. This can be done in the <a href="key_patch_livepatch.html">Live patching</a>, when editing fixtures, or via command line. When this is done for several hundred fixtures at the same time, then this information is distributed live to all stations and NPUs in the session and this is distributed with a small delay in the system. A progress bar is displayed. Please wait until the distribution is done before continuing working. If this is done live for a small group of fixtures, then there should be no delay. If the value is changed in the EditSetup then the values are updated with the show upload.</div>
+<div class="important"><strong>Fontos:</strong><br />
+A Pan és a Tilt offszetet szerkeszthetjük a lámpák él&otilde; kimenetén is. Ezt a <a href="key_patch_livepatch.html">Live patching</a>-nál tudjuk megtenni, amikor lámápákat szerkesztünk, vagy a parancssorban. Ha egyszerre néhány száz lámpánál alkalmazzuk, akkor ez az információ él&otilde;ben áthalad az összes állomáson és NPU-n a munkafolyamat kicsit késlekedni fog. Egy állapotjelz&otilde;t fog mutatni. Kérjük várja meg ameddig befejez&otilde;dik a beállítás miel&otilde;tt folytatnád a melót. Ha kevés lámpával csiáljuk, akkor nem lesz késlekedés. Ha az értékek megváltoznak az EditSetup-ban akkor az értékek frissülnek a show feltöltésével.</div>
 
 <p><strong>D&otilde;lés eltolás(Tilt Offset):</strong></p>
 
-<p>This can be used to offset the programmed Tilt values. This can be very useful if the show has been preprogrammed or it is a touring show, and the fixtures are not hung the way they where planned to be. The offset value is not visible in the Fixture Sheet, but it can be seen in the DMX Sheet. It is a nice function as long the fixtures do not come all the way out to their endpoints in the programming. The number entered here is a degree number and can be a negative value.</p>
+<p>Ez arra való, hogy eltoljuk a programozott Tilt értékeket. Ez nagyon hasznos lehet amikor a show el&otilde;re van programozva, vagy turnézunk vele és a lámpák nem pontosan úgy lettek beakasztva ahogy kellene. Az eltolás mértéke nem látszik a Lámpalistában, de meg lehet nézni a DMX Táblázatban. Ez egy hasznos funkció amikor a lámpa nem éri el a tervezett végpontját a programozáskor. A számt amit ide kell írni fokban kell megadni és lehet negatív érték is.</p>
 
 <p><strong>Swap:</strong></p>
 
-<p>This will swap the Pan and Tilt DMX output.</p>
+<p>Ez felcseréli a Pan és a Tilt DMX kimenetet.</p>
 
 <p><strong>Bitmap Disable:</strong></p>
 
-<p>Turning this "On" will exclude this fixture from being affected by any Bitmap Fixtures.</p>
+<p>Ezt "On"-ra állítva, kizárja a lámpát, hogy reagáljon minden Bitmap típúsu eszközre.</p>
 
 <p><strong>Color:</strong></p>
 
-<p>Here you can add a color to the light from your fixture. This is nice for dimmers, but does not make sense for any fixture with a color mixing system. It is like placing a color gel in front of the fixture. This color is visible in the Stage view, Layout view, the MA 3D and can be visible in Fixture and Channel Sheets. Editing this cell opens the Select Color pop-up:</p>
+<p>Itt megadhatod, hogy milyen szín jöjjön ki a lámpádból. Ez tök hasznos dolog a dimmereknél, olyan mintha lefóliáznád a lámpát, de semmi hatása nincs az olyan lámpák esetében amik színkever&otilde; rendszerrel rendelkeznek. Ez a szín látszani fog a Stage(színpad) nézetben, az alaprajz(Layout) nézetben, az MA 3D-ben és látható lesz a Lámpa és Csatorna táblázatokban is. A cella szerkesztésekor el&otilde;jön a Színválasztó ablakocska:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-color_v3-2.png" />
-<figcaption><em>Select color</em></figcaption>
+<figcaption><em>Válassz színt</em></figcaption>
 </figure>
 
-<p>Here you can use what ever method you like to select the color and tap <span class="softkey">Please</span> when you are happy or you could tap <span class="softkey">Reset to White</span> if you do not want any color.</p>
+<p>Itt megtdod adni milyen módon szeretnél színt választani utána bökj a<span class="softkey">Please-re</span> ha kész vagy vagy bökhetsz a <span class="softkey">Reset to White</span> ha nem akarsz semmilyen színt.</p>
 
 <p><strong>Pos X, Pos Y, Pos Z:</strong></p>
 
-<p>This the XYZ position of the fixture in the 3D space. Read more about positioning fixtures in the <a href="key_patch_position_fixtures.html">Position fixtures in the 3D stage topic</a>.</p>
+<p>Ez az XYZ pozícióját határozza meg a lámpáknak a 3D-s térben. A lámpák pozícionálásáról itt olvashatsz többet:<a href="key_patch_position_fixtures.html">Lámpák pozicionálása a 3d-s térben fejezet</a>.</p>
 
 <p><strong>Rot X, Rot Y, Rot Z:</strong></p>
 
-<p>This the XYZ rotation of the fixture in the 3D space. Read more about positioning fixtures in the <a href="key_patch_position_fixtures.html">Position fixtures in the 3D stage topic</a>.</p>
+<p>Ez az XYZ elforgatását határozza meg a lámpáknak a 3D-s térben. A lámpák pozícionálásáról itt olvashatsz többet:<a href="key_patch_position_fixtures.html">Lámpák pozicionálása a 3d-s térben fejezet</a>.</p>
 
 <p><strong>No Parameter:</strong></p>
 
-<p>This is for use with MA VPU (= video processing unit) pixel mapping. If this column is set to "Yes", all the programming for this fixture<strong> is lost</strong>, it does not consume any parameters any more in the grandMA2 and the MA VPU will send out the default values defined in the fixture profile additional to the Color RGB 1-3 values. <strong>The idea: </strong>if this flag has been set (No Parameter), the fixtures can still be selected, but only controlled by the MA VPU, not the console. Additionally the set default values for this fixture are transmitted. These values can be changed (for example Dimmer to 100%) in the grandMA2 / Patch &amp; Fixture Schedule / Fixture Types.</p>
+<p>Ez az amit az MA VPU-val (= video processing unit(videófeldolgozó egység)) használ a pixel mappingra. Ha ez az oszlop "Yes"-re van állítva, minden eddigi lámpa programozás <strong> elveszik</strong>, nem fog semmilyen paramétert a konzoltól szerezni, hanem az MA VPU fogja elküldeni neki az alapvet&otilde; értékeket, amiket a lámpa profiljánál lehet beállítani a Color RGB 1-3 értékeket. <strong>Az ötlet: </strong>ha ez be van állítva (Nincs paraméter), a lámpát ki lehet választani, de csak az MA VPU vezérli, nem a pult. Továbá az alapbeállításai ennek a lámpának átküld&otilde;dnek. Ezeket az értékekeet meg lehet változtatni (pl. a Dimmert 100%-ra) az grandMA2 / Patch &amp; Fixture Schedule / Fixture Types helyen.</p>
 
 <p><strong>RDM ID:</strong></p>
 
-<p>This will display the RDM ID of the fixture when it matched in the <a href="key_rdm_match.html">RDM Devices</a>.</p>
+<p>Itt látható az eszközök RDM-id-je ha megfelel&otilde; az  <a href="key_rdm_match.html">RDM Eszközöknek</a>.</p>
 
 <p>&nbsp;</p>
 
-<p>This was all the different columns in the Fixture list.</p>
+<p>Ezek voltak a különböz&otilde; oszlopok a Lámpalistában.</p>
 
 <p>&nbsp;</p>
 
-<h2><a id="dmx_patch_window" name="dmx_patch_window"></a>The DMX Patch pop-up</h2>
+<h2><a id="dmx_patch_window" name="dmx_patch_window"></a>A DMX Patch felugró ablak</h2>
 
-<p>When you edit one or several patch address in the fixture list, then the DMX Patch pop-up. It could look like this:</p>
+<p>Ha egy vagy több címet szerkesztes a lámpalistában ,akkor DMX Patch ablakocska megjelenik. Hasonlóan nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_dmx-patch_v3-3.png" />
 <figcaption><em>DMX Patch</em></figcaption>
 </figure>
 
-<p>Again a window that is divided into two sides.</p>
+<p>Ismét egy ablak ami két részre van osztva.</p>
 
-<p>The left side is the fixture you chose to edit. In the picture above it is four spots that was selected and the patch fields where edited.</p>
+<p>A bal oldalon kiválaszthatod a lámpát amit szerkeszteni akarsz. A fenti képen négy spot van kiválasztva és a patch mez&otilde; szerkesztve.</p>
 
-<p>The right side displays the DMX universe and the DMX addresses.</p>
+<p>A jobb oldalon vanak a DMX uiverzumok és a DMX címek.</p>
 
-<p>The Encoder Toolbar have changed to allow you to select a DMX address and actually text the DMX channel.</p>
+<p>A görg&otilde; eszköztár ávált a DMX címkiválasztásra és a DMX csatorna aktuális szövegére.</p>
 
-<p>Alúl néhány gombot találsz.</p>
+<p>Alul néhány gombot találsz.</p>
 
 <h3>A bal oldal</h3>
 
-<p>The left side shows you the fixtures. You can see the ID numbers, Fixture Type, Name and current DMX Address. If it is unpatched then there is a "-" instead of a number.</p>
+<p>A bal oldal mutatja a lámpákat. Láthatod az ID számot, Lámpatípust, Nevet és az aktuális DMX címet. Ha nincs patchelve akkor egy "-" van a szám helyett.</p>
 
-<p>Below the fixtures you have a button to change if you want the DMX address to be written in Universe or Absolute readout (<a href="#readout_mode">follow this link to read details further up on this page</a>).</p>
+<p>A lámpák alatt van egy gomb, hogy a DMX címeket Univerzum vagy Abszolút értékben akarod kiolvasni (<a href="#readout_mode">kövesd a linket részletekért</a>).</p>
 
-<p>The fixtures here are the ones you selected before editing the patch. The only thing we can change here is the DMX address. The pop-up might close when you have given all your fixtures a DMX address.</p>
+<p>A lámpák itt azok amiket kiválasztottál patchelés el&otilde;tt. Az egyetlen dolog amin változtatunk a DMX cím. Az ablakocskát bezárjuk, ha minden lámpának lesz DMX címe.</p>
 
-<p>The workflow is that you select the"DMX Address" cell for the fixtures you want to give a new patch so the field is blue. Then you can use the right side to find the DMX address.</p>
+<p>A folyamat az, hogy kiválasztod a "DMX Address" cellát a lámpának aminek új címet akarsz adni, tehát a mez&otilde; kék lesz. Utána a jobb oldalon megkeresheted a DMX címet.</p>
 
 <h3>A jobb oldal</h3>
 
-<p>The right side shows you the DMX addresses in the selected universe. On the top right side (just below the yellow "X") you will find a green input field. This shows you the currently selected universe. If you tap it then you can use the calculator to change the universe.</p>
+<p>A jobb oldalon látod a DMX címeket a kiválasztott univerzumban. A jobb föls&otilde; sarokban (kicsivel a sárga "X" alatt) találsz egy zöld beviteli mez&otilde;t. Ez mutatja az aktuálisan kiválasztott univerzumot. Ha ide böksz akkor egy számológépet kapsz, hogy megváltoztasd az univerzumot.</p>
 
-<p>Any DMX addresses that have something patched will have a frame around them. Inside the frame you will see the Fixture ID and Channel ID and maybe the fixture name (if the space allows it).</p>
+<p>A már bepatchelt DMX címek körül egy keret látható. A keretben látod a LámpaId-t a csatorna ID-t és talán a lámpa nevét is (ha elegend&otilde; hly van).</p>
 
-<p>Below the list of DMX addresses you have a button called <strong>Skip Patched</strong>. If this is active then you cannot select already patched DMX addresses. You are only allowed to select empty one. You can scroll the list using the vertical scroll bar or the encoder (read more about that below).</p>
+<p>A DMX címek listája alatt van egy gomb amit <strong>Skip Patched</strong>-nek hívnak. Ha ez aktív akkor nem választhatod a már bepatchelt DMX címeket.Csak üreset választhatsz ki. Gördíthetsz a listában a függ&otilde;leges görget&otilde;sávval, vagy a görg&otilde;vel (olvashatsz róla alant).</p>
 
-<p>When you have found the address you want, then you can tap it and this will assign it to the selected fixture (on the left side).</p>
+<p>Ha megvan a cím amit szeretnél, akkor bökj rá, és ez hozzárendeli a kiválasztott lámpához (a bal oldalon).</p>
 
-<p>If you have more than one fixture selected, then you will automatically patch all the fixtures starting from the address you selected - There might be a gap between them (see "Offset" below).</p>
+<p>Ha több mint egy lámpád van kiválasztva, akkor automatikusan patch-elheted az összeset a kiválasztott kezd&otilde;címt&otilde;l - Még egy kis hézagot is hagyhatsz köztük (nézd meg az "Offset" kifejezést alant).</p>
 
 <p>&nbsp;</p>
 
@@ -402,26 +402,26 @@ The Pan and Tilt Offset values can also be edited with live output to the fixtur
 
 <h3>Az encoder-ek(görg&otilde;k)</h3>
 
-<p>The Encoder Toolbar have changed when you enter the DMX Patch window. It could look like this:</p>
+<p>A görg&otilde; eszköztár megváltozik, amikor belépsz a DMX Patch ablakba. Így fest:</p>
 
 <figure class="caption"><img alt="" src="../../img/img_encoder-toolbar_dmx-patch_v3-3.png" />
-<figcaption><em>The DMX Patch Encoder Toolbar</em></figcaption>
+<figcaption><em>A DMX Patch Görg&otilde; Eszköztár</em></figcaption>
 </figure>
 
-<p>The four encoders can be used to help you patch fixtures.</p>
+<p>A négy görg&otilde; segít a lámpák patchelésében.</p>
 
-<p>The left encoder is used to select the fixtures - if you have selected more than one fixture going into the DMX patch window.</p>
+<p>A bal oldali görg&otilde;vel lehet kiválasztani a lámpákat - ha több mint egy lámpát választottál a DMX patch ablakban.</p>
 
-<p>The left center encoder is used to select the Universe.</p>
+<p>A bal középs&otilde; görg&otilde;vel lehet kiválasztani az Univerzumot.</p>
 
-<p>The right center encoder is used to select or scroll through the DMX addresses.</p>
+<p>A jobb középs&otilde; görg&otilde;vel lehet a DMX címeket görgetni.</p>
 
-<p>The right encoder is a DMX tester. It can be used to test the DMX address. You can turn it to output a DMX value on the selected address. There is a button used to toggle between percent (0-100) or decimal (0-255) scale. This function is especially nice with dimmers and fixtures where the first channel is the dimmer.</p>
+<p>A jobb széls&otilde; görg&otilde; egy DMX tesztel&otilde;. Lehet vele tesztelni a DMX címeket. Eltekerheted, hogy egy DMX értéket küldjön a kimenetre a kiválasztott címen. Van egy gomb amivel lehet a két érték között váltani (0-100) vagy decimálisan a (0-255) skálán. Ez a funkció különösen hasznos dimmerek esetén, és olyan lámpáknál ahol az els&otilde; csatorna a dimmer.</p>
 
 <hr />
-<h2><a id="diagnostic_pop-up" name="diagnostic_pop-up"></a>The Diagnostics</h2>
+<h2><a id="diagnostic_pop-up" name="diagnostic_pop-up"></a>The Diagnostics(a diagnosztika)</h2>
 
-<p>At the bottom of the EditSetup menu, you will find a button called "Diagnostic". You will find this button on other menus and windows as well.</p>
+<p>Az EditSetup menü alján, egy gombot látunk "Diagnostic" néven. Ez a többi menüben és ablakban is megtalálható.</p>
 
 <p>Ez megnyitja a diagnosztikai ablakot. Ami valahogy így néz ki:</p>
 
@@ -429,24 +429,24 @@ The Pan and Tilt Offset values can also be edited with live output to the fixtur
 <figcaption><em>Diagnostic</em></figcaption>
 </figure>
 
-<p>There are two types of messages: Errors and Warnings. Errors are more severe than warnings, but none of them prevents you from leaving the setup.</p>
+<p>Két típusú üzenet lehet: Hibák(Errors) és Figyelmeztetések(Warnings). A hibák azok súlyosabb nehézésg&ucirc;ek mint a figyelmeztetések, de egyik sem akadályoz meg abban, hogy kilépj a beállításokból.</p>
 
-<p>The warnings and errors explain the problem.</p>
+<p>A figyelmeztetések és hibák megmutatják mi a probléma.</p>
 
-<p>The warning might not be a problem at all. Often a narrow beam fixture, might be reported as a warning even though it is not a problem (The beam angle is very small).</p>
+<p>A figyelmeztetés nem probléma. Gyakran egy sz&ucirc;k csóvájú beam lámpa, okozhat figylemeztetést, de ez nem probléma(a fénysugár túl keskeny).</p>
 
 <p>&nbsp;</p>
 
-<p>There is only one button for this pop-up. The "Update" button runs the diagnostics again and check if there are still warnings and errors.</p>
+<p>Már csak egy gomb maradt ebben az ablakocskában. Az "Update(frissítés)" gomb, ez újrafuttatja a diagnosztikát és elen&otilde;rzi, hogy maradtak-e hibák vagy figyelmeztetések.</p>
 
 <hr />
-<h3><a id="leaving_edit-setup" name="leaving_edit-setup"></a>Leaving the Setup and save your changes</h3>
+<h3><a id="leaving_edit-setup" name="leaving_edit-setup"></a>Kilépés a beállításokból és a változások mentése</h3>
 
-<p>When you are happy with your added fixtures, then you can leave the setup and save the changes. You do this by closing the EditSetup menu by tapping the yellow "X" in the upper right corner.</p>
+<p>Ha boldog vagy a hozzáadott lámpáiddal, akkor elhagyhatod a Setupot és mentheted a változásokat. Az EditSetup menüt zárd be a sárga "X"-re bökéssel a jobb fels&otilde; sarokban.</p>
 
-<p>This gives you a pop-up warning asking you what to do.</p>
+<p>Ekkor el&otilde;jön egy ablakocska, hogy mit is szeretnél tenni most.</p>
 
-<p>There are always three options and if the Diagnostics got warnings or error then you have four options. It could look like this:</p>
+<p>Mindíg három lehet&otilde;ség jelenik meg, és ha még diagnosztikai hibád is van akkor meg négy opció lesz. Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_editsetup-warning_v3-2.png" />
 <figcaption><em>Beállításokból kilépés figyelmeztet&otilde; üzi</em></figcaption>
@@ -463,16 +463,16 @@ The Pan and Tilt Offset values can also be edited with live output to the fixtur
 	Ez is megszakítja a kilépést és átvisz a Diagnosztikai ablakra.</li>
 </ul>
 
-<p>If you tap yes and you have made changes, then your console will upload the changes to the system. This is called a "show upload".</p>
+<p>Ha a yes-re böksz és csináltál váloztaásokat, akkor a pult feltölti a változásokat a rendszerbe. Ezt hívják "show upload"(el&otilde;adás feltöltésnek).</p>
 
 <div class="important"><strong>Important:</strong><br />
-The system will stop all DMX output while the show upload is running.</div>
+A rendszer leállít minden DMX kimenetet a feltöltés idejére.</div>
 
 <p>&nbsp;</p>
 
 <h2>További olvasnivaló</h2>
 
-<p><a href="key_basic_fixture.html">Lámpa típiusok</a></p>
+<p><a href="key_basic_fixture.html">Lámpa típusok</a></p>
 
 <p><a href="key_patch_position_fixtures.html">Lámpa pozíciók</a></p>
 
