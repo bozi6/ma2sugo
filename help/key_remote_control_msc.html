@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>MIDI Show Control (MSC)</title>
+		<title>MIDI Show Vezérlés (MSC)</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="MIDI Show Control (MSC), MSC, MIDI via Ethernet" />
@@ -9,124 +9,124 @@
 	<body>
 		
 		
-		<h1>MIDI Show Control (MSC)</h1>
+		<h1>MIDI Show Vezérlés (MSC)</h1>
 		
-		<p><strong>MIDI Show Control (MSC)</strong> is a different way to remote control the system.</p>
+		<p><strong>MIDI Show Control (MSC)</strong> egy másik módja a rendszer vezérlésének.</p>
 
-<p>It was released in 1991 as an extension to the MIDI protocol. The grandMA2 system is capable of receiving and transmitting MSC.</p>
+<p>1991-ben jelent meg a MIDI protokoll kiterjesztéseként. A grandMA2 képes fogadni és küldeni is az MSC-t.</p>
 
-<p>There are a lot of settings to MSC. Most of these are setting to be able to match the transmitting and receiving devices. Please read below.</p>
+<p>Az MSC-nek sok beállítása van. Ezek többésge úgy van beállítva, hogy megfeleljen az adó és vev&otilde;készülékeknek.</p>
 
-<p>Below the settings there is a description of the <a href="#msc_concept">MSC concept</a> and then some words about transporting <a href="#midi_ethernet">MIDI using Ethernet</a>.</p>
+<p>A beállításoknál akad némi leírás az <a href="#msc_concept">MSC koncepciójáról</a> és néhány szó az adatátvitelr&otilde;l hálózaton keresztül <a href="#midi_ethernet">MIDI használata hálózaton</a>.</p>
 
 <p>&nbsp;</p>
 
-<h2>Setting up MSC</h2>
+<h2>Az MSC beállítása</h2>
 
-<p>To access these settings, press the <span class="hardkey">Setup</span> key and then the <span class="softkey">Midi Show Control button</span> under the <strong>Console </strong>tab.</p>
+<p>A beállítások eléréséhez, nyomd meg a <span class="hardkey">Setup</span> gombot és utána a  <span class="softkey">Midi Show Control gombot</span> a <strong>Console </strong>fülön.</p>
 
-<p>The settings could look like this:</p>
+<p>A beállítások így néznek ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_midi-show-control_v3-3.png" />
 <figcaption><em>MIDI Show Control</em></figcaption>
 </figure>
 
-<p>There are four rows with different settings and two monitor fields.</p>
+<p>Négy sor van különböz&otilde; beállításokkal és két ellen&otilde;rz&otilde; mez&otilde;.</p>
 
-<p>The monitor fields display the incoming and outgoing MSC. They display the data as interpreted data, meaning that it does not show the raw hex data.</p>
+<p>Az ellen&otilde;rz&otilde; mez&otilde;k mutatják a bejöv&otilde;, és kimen&otilde; MSC-t. Ezek értelmezhet&otilde; adatokat mutatnak, ami azt jelenti, hogy nem mutatják a nyers hexadecimális adatokat..</p>
 
-<p>The top row has two input fields and one toggle button:</p>
+<p>A föls&otilde; sorban kér bemeneti mez&otilde; van és egy kapcsológomb:</p>
 
 <ul>
 	<li><strong>Channel MIDI In:</strong><br />
-	There are 16 different channels in MIDI. The number in the In field needs to match the channel number from the transmitter.</li>
+	A MIDI szabványvban 16 különböz&otilde; csatorna áll rendelkezésre. Az itt lév&otilde; számnak stimmelnie kell a küld&otilde; eszköz beállításával.</li>
 	<li><strong>Channel MIDI Out:</strong><br />
-	The channel number in this field need to match the channel number of the MSC receiver.</li>
+	Ennek a számnak, meg stimmelnie kell a fogadó MSC eszköz számával.</li>
 	<li><strong>MIDI Thru:</strong><br />
-	This toggle button turn On or Off is any incoming MIDI should also be sent out of the MIDI output.</li>
+	Ez a kapcsoló, állítja be, hogy a bejöv&otilde; MIDI jel, továbbítva legyen a MIDI kijáratra is..</li>
 </ul>
 
-<div class="important"><strong>Important:</strong><br />
-If MSC commands are transmitted and received on the same MIDI channel, then a loop will be created.</div>
+<div class="important"><strong>Fontos:</strong><br />
+Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, akkor egy hurok jön létre.</div>
 
-<p>The next two lines are the same except the first is the settings for any incoming MSC and the second is the outgoing MSC.</p>
+<p>A következ&otilde; két sor hasonló, az egyik a bejöv&otilde;, a másik pedig a kimen&otilde; MSC-t mutatja.</p>
 
 <ul>
-	<li><strong>Device</strong>:<br />
-	There are 112 different devices in MSC. MSC also specifies an "All" option. This is set in the <strong>Send to</strong> button at the lower left corner - read about it below. This input accepts values from 0 to 111.</li>
-	<li><strong>Group</strong>:<br />
-	The MSC standard has the option to organize the devices in 15 different groups. Here it is possible to set a group number from 1 to 15. Please read about the <strong>Send to</strong> setting below.</li>
+	<li><strong>Eszközök</strong>:<br />
+	112 különböz&otilde; eszköz van az MSC-ben. Van továbbá egy "All" leht&otilde;ség is. Ezt a <strong>Send to</strong> gombbal lehet beállítáani a bal alsó sarokban - lejjebb olvashatsz róla. Ezek a bemen&otilde; értékek 0 tól 111-ig lehetnek.</li>
+	<li><strong>Csoport</strong>:<br />
+	Az MSc szabvány megengedi, hogy az eszközöket 15 különböz&otilde; csoportba lehet szervezni. Itt a lehetséges csoport számok 1 tól 15-ig vannak. Nézd meg a <strong>Send to</strong> beállítást lejebb is.</li>
 	<li><strong>Port</strong>:<br />
-	If MSC is to be sent using an Ethernet connection, then there needs to be an IP port number. This can be set here. The default number is 6004. The port number needs to be between 6000 and 6100.</li>
-	<li><strong>Mode</strong>:<br />
-	Tapping here opens a Select MSC Mode pop-up:
+	Ha az MSC-t hálózaton keresztül küldöd, akkor szükséges beállítani egy IP portot(kaput) is. Ezt itt lehet megtenni. Az alapérték 6004. A port számának 6000 és 6100 között kell lennie.</li>
+	<li><strong>Mód</strong>:<br />
+	Ide bökve megnyílik at MSC mód választó ablakocska:
 	<figure class="caption"><img alt="" src="../../img/popup_select-msc-in-mode_v3-3.png" />
-	<figcaption><em>Select MSC (In) Mode pop-up</em></figcaption>
+	<figcaption><em>Válassz MSC (Bemenet) mód ablakocska</em></figcaption>
 	</figure>
 	<br />
-	There are three options here:
+	Három opció van itt:
 	<ul>
-		<li><strong>Disabled</strong> - this is the same turning off the MSC input or output.</li>
-		<li><strong>Ethernet</strong> - This will use MSC via Ethernet - Please read more about MSC via Ethernet <a href="#midi_ethernet">below</a>.</li>
-		<li><strong>MIDI</strong> - This will use the MIDI ports on the station to transmit or receive MSC.</li>
+		<li><strong>Disabled</strong> - Ez ugyanaz mintha kikapcsolod az MSC bemenetet vagy kimenetet.</li>
+		<li><strong>Ethernet</strong> - Ez az MSc-t hálózaton keresztül használja.This will use MSC via Ethernet - Itt találsz további olvasnivalót róla <a href="#midi_ethernet">MSC és hálózat</a>.</li>
+		<li><strong>MIDI</strong> - Ez a pult MIDI csatlakozóját használja az MSC küldéséhez/fogadásához.</li>
 	</ul>
 	</li>
 	<li><strong>Exec</strong>:<br />
-	Tapping here opens the Select MSC Exec pop-up:
+	Bökj ide az MSC Exec ablakocskához:
 	<figure class="caption"><img alt="" src="../../img/popup_select-msc-in-exec_v3-3.png" />
-	<figcaption><em>Select MSC (In) Exec pop-up</em></figcaption>
+	<figcaption><em>Válassz MSC (Bemenet) Exec ablakocska</em></figcaption>
 	</figure>
 	<br />
-	There are three options here:
+	Három opció van itt:
 	<ul>
-		<li><strong>Default Only</strong> - This option will make the MSC commands go to and from the selected executors on the <strong>Master</strong> station only.</li>
-		<li><strong>Exec.Page</strong> - This option can be used if the commands should be sent to a specific executor. The page and executor number needs to be separated by a dot (Hex = 2E).</li>
-		<li><strong>Exec Page</strong> - This option can be used if the commands should be sent to a specific executor. The page and executor number needs to be separated by a space (Hex = 20).</li>
+		<li><strong>Csak alapértelmezett</strong> - Ez az opció az MSC parancsokat csak a <strong> Master </strong> állomáson, a kiválasztott executorok felé irányítja, és onnan küldi el.</li>
+		<li><strong>Exec.Page</strong> - Ezzel a parancsokat, csak egy kiváalsztott executorra lehet küldeni. Az oldal executor számát el kell váalsztani egy ponttal (Hex = 2E).</li>
+		<li><strong>Exec Page</strong> - Ezzel a parancsokat, csak egy kiváalsztott executorra lehet küldeni. Az oldal executor számát el kell váalsztani egy ponttal (Hex = 2E).</li>
 	</ul>
 	</li>
 	<li><strong>Command</strong>:<br />
-	Tapping here opens the Select MSC Command pop-up:
+	Ide bökve megnyílik a Válassz MSC Parancsot ablakocska:
 	<figure class="caption"><img alt="" src="../../img/popup_select-msc-in-command_v3-3.png" />
-	<figcaption><em>Select MSC (In) Command pop-up</em></figcaption>
+	<figcaption><em>Select MSC (In) Command ablakocska</em></figcaption>
 	</figure>
 	<br />
-	There are three options here:
+	Három opció van itt:
 	<ul>
-		<li><strong>Moving Light</strong> - This option will select moving light command format (hex 02).</li>
-		<li><strong>General Light</strong> - This option will select the general lights command format (hex 01).</li>
-		<li><strong>All</strong> - This will use the all type format (hex 7F).</li>
+		<li><strong>Moving Light</strong> - Ez az opció a mozgófejes lámpák parancsmódját állítja be (hex 02).</li>
+		<li><strong>General Light</strong> - Ez az opció az általános lámpák parancsmódját állítja be (hex 01).</li>
+		<li><strong>All</strong> - Ez az opció minden típus formátumát állítja be (hex 7F).</li>
 	</ul>
 	</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<p>The button in the fourth row is called <strong>Send to</strong>. Tapping it open a <strong>Select Send to pop-up</strong> like this:</p>
+<p>A negyedik sorban van egy gomb <strong>Send to</strong>néven. Ide bökve megnyílik a<strong>Select Send to ablakocska</strong> ami így fest:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-send-to_v3-3.png" />
 <figcaption><em>Select Send to pop-up</em></figcaption>
 </figure>
 
-<p>There are three options:</p>
+<p>Három opció van itt:</p>
 
 <ul>
 	<li><strong>Group</strong>:<br />
-	Selecting this will make the station transmit MSC to the specified group number (1 to 15).</li>
+	Ezzel sz&ucirc;kíthet&otilde; az MSC átvitel a megadott csoportokra (1 - 15).</li>
 	<li><strong>Device</strong>:<br />
-	Selecting this will make the station transmit MSC to the specific device number (0 to 111).</li>
+	Csak a meghatározott eszközre küld MSC-t (0 - 111).</li>
 	<li><strong>All</strong>:<br />
-	This option will transmit the the MSC to all connected devices.</li>
+	Ez a beállítás Minden csatlakozott eszköznek továbbítja az MSC-t.</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<h2><a id="msc_concept" name="msc_concept"></a>The MSC Concept</h2>
+<h2><a id="msc_concept" name="msc_concept"></a>az MSC koncepciója</h2>
 
-<p>The MSC command structure and syntax is based on the general SysEx structure defined by MMA (MIDI Manufacturers Association). It was released in 1991 as an extension to the general MIDI.</p>
+<p>Az MSc parancsok az általános SysEx szerkezeten alapulnak, amit az MMA (MIDI Manufacturers Association) határozott meg. 1991-ben jelent meg és egy kiterjesztése a general MIDInek.</p>
 
-<p>The raw MIDI information is written in hex octets (two hexadecimal numbers). Different software manufacturers might present the MSC in an interpreted way and show the data in a more human readable form. This can of course be nice, but since we cannot describe every way this can be presented, this manual is looking at the raw data.</p>
+<p>A nyers MIDI információkat hexadecimális oktettekbne lettek írva (két hexa szám). Különböz&otilde; szoftvergyártók az MSC-t megpróbálták kiterjeszteni, emberek által olvashatóbb formára. Ez persze nagyon szép dolog, de mi nem tudjuk az összes variációt kifejteni most, ezért csak a nyers adatokra támaszkodunk.</p>
 
-<p>The message format looks like this:</p>
+<p>Az üzenet formája így néz ki:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
@@ -134,7 +134,7 @@ If MSC commands are transmitted and received on the same MIDI channel, then a lo
 			<th scope="col">F0 7F</th>
 			<th scope="col">Device ID</th>
 			<th scope="col">02</th>
-			<th scope="col">Command Format</th>
+			<th scope="col">Command format</th>
 			<th scope="col">Command</th>
 			<th scope="col">Data</th>
 			<th scope="col">F7</th>
@@ -154,70 +154,70 @@ If MSC commands are transmitted and received on the same MIDI channel, then a lo
 </table>
 
 <ul>
-	<li><strong>F0 7F</strong> is the header that identifies the message as "universal system exclusive" and a "real time" message.</li>
-	<li><strong>Device ID</strong> is the device or group number.</li>
-	<li><strong>02</strong> is a hex octet specifying that the message is MSC.</li>
-	<li><strong>Command Format</strong> is an octet that specifies the equipment type.</li>
-	<li><strong>Command</strong> is an octet that defines the command type</li>
-	<li><strong>Data</strong> is the actual data. This might change depending on the command type.</li>
-	<li><strong>F7</strong> is a closing octet finishing the message.</li>
+	<li><strong>F0 7F</strong> ez a fejléc, ami azonosítja az üzenetet mint "universal system exclusive" és "real time" message.</li>
+	<li><strong>Device ID</strong> ez az eszköz vagy csoportazonosító.</li>
+	<li><strong>02</strong> ez egy hexa azonosító, hoy az üzenet MSC lesz.</li>
+	<li><strong>Command Format</strong> ez egy okta szám ami meghatározza az eszköz típusát.</li>
+	<li><strong>Command</strong> ez egy octa szám ami meghatározza a parancs típusát</li>
+	<li><strong>Data</strong> ez az aktuális adat. Ez változhat a parancs típusától függ&otilde;en.</li>
+	<li><strong>F7</strong> Ez egy lezáró oktettt, az üzenet vége jel.</li>
 </ul>
 
 <h3>Device ID</h3>
 
-<p>The device ID is an octet actually divided into three different sections:</p>
+<p>Az eszközazonosító(device ID) egy oktet ami három különböz&otilde; részre van osztva:</p>
 
 <ul>
 	<li><strong>00 to 6F</strong>:<br />
-	This is the 112 different specific devices that can be identified.</li>
+	Ez a 112 különböz&otilde; eszköz azonosítószáma.</li>
 	<li><strong>70 to 7E</strong>:<br />
-	This is the 15 group numbers.</li>
+	Ez a lehetséges 15 csoport száma.</li>
 	<li><strong>7F</strong>:<br />
-	This is a broadcast ID that all devices listen to.</li>
+	Ez egy broadcast azonosító, amire minden eszköz hallgat.</li>
 </ul>
 
-<p>In grandMA2 the device ID and group ID can be set for both incoming and outgoing messages.</p>
+<p>A grandMA2-ben az eszköz és csoportazonosító lehet, mind a be illetve kimen&otilde; üzenetekben.</p>
 
-<p>For transmitting MSC it can only transmit one octet in the <strong>Device ID</strong> location. The <strong>Send to</strong> setting (described above) selects which one of the three different sections Id that should be transmitted.&nbsp;</p>
+<p>Az MSC továbbításához csak egy oktettet továbbíthat az <strong> Eszköz-azonosító </strong> helyén. A <strong> Küldés </strong> beállításnak (fentebb leírt) kiválasztja a továbbítani kívánt három különféle azonosító egyikét.&nbsp;</p>
 
 <p>&nbsp;</p>
 
-<h3>Command Format</h3>
+<h3>Parancs formátum(Command Format)</h3>
 
-<p>The command format octet denotes the type of equipment that should receive the message (or at least respond). grandMA2 only transmit and respond to three different formats:</p>
+<p> Az oktet parancsformátuma jelzi annak az eszköznek a típusát, amelynek meg kell kapnia az üzenetet (vagy legalább válaszolnia). A grandMA2 csak három különböz&otilde; formátumban továbbítja és válaszol: </p>
 
 <ul>
 	<li><strong>01</strong>:<br />
-	This is the <strong>General Lighting</strong> format</li>
+	Ez az <strong>General Lighting(általános világítás)</strong> fromátum</li>
 	<li><strong>02</strong>:<br />
-	This is <strong>Moving Lights</strong> format.</li>
+	Ez a <strong>Moving Lights(mozgófejes lámpa)</strong> formátum.</li>
 	<li><strong>7F</strong>:<br />
-	This is an <strong>All</strong> format that all equipment should respond to.</li>
+	Ez az  <strong>All(összes)</strong> formátum, amire minden eszköznek válaszolnia kellene.</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<h3>Command</h3>
+<h3>Command(Parancs)</h3>
 
-<p>The command octet denotes the type of command in the message. The command type will dictate the data information.</p>
+<p> Az octet parancs az üzenetben szerepl&otilde; parancs típusát jelöli. A parancs típusa diktálja az adatinformációkat. </p>
 
-<p>grandMA2 supports 7 different command types:</p>
+<p> A grandMA2 7 különféle parancstípust támogat: </p>
 
 <ul>
 	<li><strong>01 (Go)</strong>:<br />
-	This is the same as a Goto command in grandMA2. It needs to be followed by a cue number.</li>
+	Ez ugyanaz a parancs mint a Goto a grandMA2-ben. Ezt kötelez&otilde; követnie egy kép számnak.</li>
 	<li><strong>02 (Stop)</strong>:<br />
-	This is the same as a Pause command in grandMA2. This can be followed by a cue number.</li>
+	Ugyanaz mint a Pause parancs a pulton, utána egy kép számának kell lennie..</li>
 	<li><strong>03 (Resume)</strong>:<br />
-	This will "un-plause" a cue. If a specific cue has been paused, then the cue number needs to be specified with this command.</li>
+	Ez "un-pause" egy képet. Ha egy bizonyos képet állítottunk le, akkor hasznos ha ide is beírjuk utána a kép számát :-).</li>
 	<li><strong>04 (Timed_Go)</strong>:<br />
-	This can be used to perform a Goto with a specific fade time. It needs both the time and the cue number - in that order.</li>
+	Ezzel lehet Goto parancsot adni megadott átúszási id&otilde;vel. Meg kell adniaz id&otilde;t és a kép számát is - ebben a sorrendben.</li>
 	<li><strong>06 (Set)</strong>:<br />
-	Set can be used to set the position of faders. It needs the fader number and page followed by the position.</li>
+	Ez a húzók pozíciójának megadásához kell. Kell egy húzó szám és az oldal, majd a húzó pozíciója.</li>
 	<li><strong>07 (Fire)</strong>:<br />
-	This can be used to trigger macros. The macro number needs to follow the command. Only macro 1 to 255 can be triggered.</li>
+	Ez makrók indításához kell. A makró számát kell a parancs után írni. Csak az 1 - 255-ig lév&otilde; makrókat lehet indítani.</li>
 	<li><strong>0B (Go_Off)</strong>:<br />
-	This command can be used "Off" executors. This needs to followed by a cue number.</li>
+	Ezzel lehet kikapcsolni a megadott executort. Ez után is meg kell adni a kép számát.</li>
 </ul>
 
 <p>&nbsp;</p>
@@ -226,13 +226,13 @@ If MSC commands are transmitted and received on the same MIDI channel, then a lo
 
 <p><strong>01 (Go):</strong></p>
 
-<p>As stated above: This is interpreted as a GOTO command. A cue number needs to be specified. The cue number also needs to be transmitted in hex octets and the complete cue number including the decimals needs to be transmitted. If cue number 4 is to be triggered then the complete number is <strong>4.000</strong> - the number with all decimal numbers separated by a dot (Hex value 2E). Decimal numbers in hex is some of the easiest to convert. It needs a "3" in front. This means that decimal <strong>4</strong> becomes <strong>34</strong> in hex. The complete cue number including the dot is then: <strong>34 2E 30 30 30</strong>.</p>
+<p>Mint fentebb kijelentettük: Ezt GOTO-parancsnak kell értelmezni. Meg kell adni egy kép számot. A zárószámot hexában is továbbítani kell, és a teljes számot hexákkal együtt. Ha a 4. számú képet kell aktiválni, akkor a teljes szám <strong> 4.000 </strong> - az összes tizedes szám ponttal elválasztott szám (Hex érték 2E). A tizedes számokat hexába a legegyszer&ucirc;bb konvertálni. Elé kell írni egy  "3"-ast. Ez azt jelenti, hogy a tizedes <strong> 4 </strong> <strong> 34 </strong> lesz hexadecimális értékben. A teljes kép száma a ponttal együtt: <strong> 34 2E 30 30 30</strong>.</p>
 
-<p>See <a href="key_remote_control_hex_table.html">this table</a> for a complete decimal to hex translation.</p>
+<p>Lásd <a href="key_remote_control_hex_table.html">ezt a táblázatot</a> a teljes decimál-hexadecimál fordításához.</p>
 
-<p>If the station is set to <strong>Default Only</strong> in the Send MSC In Exec option, then this all that needs to be added after the command.</p>
+<p>Ha azállomást <strong>Default Only</strong>-ra állítottuk a Send MSC In Exec opcióban, akkor ezt mind hozzá kell adni a parancs után.</p>
 
-<p><strong>Example:</strong> Triggering cue number <strong>21.5</strong> on the default executor (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> setting):</p>
+<p><strong>Például:</strong> beállítjuk a kép számát <strong>21.5</strong> -re az alapértelmezett executoron (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -257,9 +257,9 @@ If MSC commands are transmitted and received on the same MIDI channel, then a lo
 	</tbody>
 </table>
 
-<p>If the setting is not Default Only, then an executor and page needs to be specified. There are two options for separating the executor number and the page number. It can be separated by a dot (hex = 2E) or by a space (hex = 20). The cue number and the executor/page data needs to be separated by a hex value <strong>00</strong>.</p>
+<p>Ha a beállítások nem Default Only-ra vannak állítva, akkor az executort és az oldalt meg kell határozni. Két lehet&otilde;ség van az executor és az oldalszám elkülönítésére. El lehet választani ponttal (hex = 2E) vagy szóközzel (hex = 20). A kép száma és az executor/page adatokat a <strong>00</strong>hexa értékkel kell elválasztani egymástól.</p>
 
-<p><strong>Example:</strong> Triggering cue number <strong>37.2</strong> on executor 5 on page 1 (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> setting):</p>
+<p><strong>Például:</strong> Beállítjuk a kép számát <strong>37.2</strong> az 5. executoron az els&otilde; oldalon (<strong>All Devices</strong>,<strong> All Format</strong>, és <strong>Exec.Page</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -284,7 +284,7 @@ If MSC commands are transmitted and received on the same MIDI channel, then a lo
 	</tbody>
 </table>
 
-<p>Same example but with a space separated executor and page:</p>
+<p>Ugyanaz a példa ezúttal szóközzel elválasztva az executor és az oldal:</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
