@@ -104,7 +104,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 <p>A negyedik sorban van egy gomb <strong>Send to</strong>néven. Ide bökve megnyílik a<strong>Select Send to ablakocska</strong> ami így fest:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-send-to_v3-3.png" />
-<figcaption><em>Select Send to pop-up</em></figcaption>
+<figcaption><em>Select Send to ablakocska</em></figcaption>
 </figure>
 
 <p>Három opció van itt:</p>
@@ -122,7 +122,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <h2><a id="msc_concept" name="msc_concept"></a>az MSC koncepciója</h2>
 
-<p>Az MSc parancsok az általános SysEx szerkezeten alapulnak, amit az MMA (MIDI Manufacturers Association) határozott meg. 1991-ben jelent meg és egy kiterjesztése a general MIDInek.</p>
+<p>Az MSC parancsok az általános SysEx szerkezeten alapulnak, amit az MMA (MIDI Manufacturers Association) határozott meg. 1991-ben jelent meg és egy kiterjesztése a general MIDInek.</p>
 
 <p>A nyers MIDI információkat hexadecimális oktettekbne lettek írva (két hexa szám). Különböz&otilde; szoftvergyártók az MSC-t megpróbálták kiterjeszteni, emberek által olvashatóbb formára. Ez persze nagyon szép dolog, de mi nem tudjuk az összes variációt kifejteni most, ezért csak a nyers adatokra támaszkodunk.</p>
 
@@ -230,7 +230,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>Lásd <a href="key_remote_control_hex_table.html">ezt a táblázatot</a> a teljes decimál-hexadecimál fordításához.</p>
 
-<p>Ha azállomást <strong>Default Only</strong>-ra állítottuk a Send MSC In Exec opcióban, akkor ezt mind hozzá kell adni a parancs után.</p>
+<p>Ha az állomást <strong>Default Only</strong>-ra állítottuk a Send MSC In Exec opcióban, akkor ezt mind hozzá kell adni a parancs után.</p>
 
 <p><strong>Például:</strong> beállítjuk a kép számát <strong>21.5</strong> -re az alapértelmezett executoron (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> beállításokkal):</p>
 
@@ -311,13 +311,13 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<p><strong>02 (Stop):</strong></p>
+<p><strong>02 (Stop(álj)):</strong></p>
 
-<p>This is like hitting the pause button. Please read the section above for a better understanding of the hex cue numbering system.</p>
+<p>Ez olyan mintha, megnyomnánák a pause gombot. Továbi információkért olvasd el a felsőbb fejezeteket a hexadecimáis kép számozás jobb megértése érdekében.</p>
 
-<p>With the <strong>Default Only</strong> option there does not need to be any extra data since it is the executor that is paused.</p>
+<p>A <strong>Default Only</strong> opcióhoz nem kell semmilyen extra adatot megadni, mivel az executort szünetelteti.</p>
 
-<p><strong>Example:</strong> Stopping the default executor (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> setting):</p>
+<p><strong>Például:</strong> az alapértelmezett executor leállítása (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -342,11 +342,11 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 	</tbody>
 </table>
 
-<p>If the station is transmitting MSC, then it will transmit a cue number <strong>0.000</strong>. This is like sending a “pause running cue” command.</p>
+<p>Ha a pult küldi az MSC-t, akkor át fogja küldeni a kép számát <strong>0.000</strong>. Ez olyan mintha elküldene egy “pause running cue” (állítsd meg a futó képet) parancsot.</p>
 
-<p>If the settings are not <strong>Default Only</strong> but one of the two Exec/Page options, then the cue 0 also needs to be transmitted.&nbsp;</p>
+<p>Ha beállítások nincsenek <strong>Default Only</strong>-n, de a két Executor/Page opciók közül az egyik ki van választva akkor a 0. képet is továbítani kell.&nbsp;</p>
 
-<p><strong>Example:</strong> Stopping executor 5 on page 1 (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> setting):</p>
+<p><strong>Példa:</strong> Megállítjuk a 5. executort az 1. oldalon (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -373,11 +373,11 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<p><strong>03 (Resume):</strong></p>
+<p><strong>03 (Resume)(visszatérés):</strong></p>
 
-<p>This is the only way to continue a paused cue. The only difference between the Stop and Resume commands are the “02” and “03”.</p>
+<p>Ez az egyetlen módja, hogy folyatassuk egy megállított kép futását. Az egyetlen különbség a Stop és a Resume parancsok között a "02" és "03".</p>
 
-<p><strong>Example:</strong> Continuing the fade paused above (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> setting):</p>
+<p><strong>Példa:</strong> Folytatjuk a kép félbehagyott úsztatását (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -402,11 +402,11 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 	</tbody>
 </table>
 
-<p>If the Default Only setting is chosen then the command is <strong>F0 7F 7F 02 7F 03 F7</strong> to continue the fade.</p>
+<p>Ha a csak alapértelmezett beálítás kivákasztva van akkor a parncso <strong>F0 7F 7F 02 7F 03 F7</strong>, ami kell az úszás folytatásához.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>04 (Timed_Go):</strong></p>
+<p><strong>04 (Timed_Go(Időzített indulj)):</strong></p>
 
 <p>This is the same as the <strong>01 (Go)</strong> command but with a specified time. Please read (and understand) about the <strong>01 (GO)</strong> command and data above. Just to make this a bit simpler we are going to pretend that the “Default Only” option is turned on in the MSC options in Setup.</p>
 
