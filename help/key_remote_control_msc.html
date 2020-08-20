@@ -188,7 +188,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <ul>
 	<li><strong>01</strong>:<br />
-	Ez az <strong>General Lighting(általános világítás)</strong> fromátum</li>
+	Ez a <strong>General Lighting(általános világítás)</strong> fromátum</li>
 	<li><strong>02</strong>:<br />
 	Ez a <strong>Moving Lights(mozgófejes lámpa)</strong> formátum.</li>
 	<li><strong>7F</strong>:<br />
@@ -313,7 +313,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p><strong>02 (Stop(álj)):</strong></p>
 
-<p>Ez olyan mintha, megnyomnánák a pause gombot. Továbi információkért olvasd el a felsőbb fejezeteket a hexadecimáis kép számozás jobb megértése érdekében.</p>
+<p>Ez olyan mintha, megnyomnánák a pause gombot. Továbi információkért olvasd el a fels&otilde;bb fejezeteket a hexadecimáis kép számozás jobb megértése érdekében.</p>
 
 <p>A <strong>Default Only</strong> opcióhoz nem kell semmilyen extra adatot megadni, mivel az executort szünetelteti.</p>
 
@@ -406,17 +406,17 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<p><strong>04 (Timed_Go(Időzített indulj)):</strong></p>
+<p><strong>04 (Timed_Go(Id&otilde;zített indulj)):</strong></p>
 
-<p>This is the same as the <strong>01 (Go)</strong> command but with a specified time. Please read (and understand) about the <strong>01 (GO)</strong> command and data above. Just to make this a bit simpler we are going to pretend that the “Default Only” option is turned on in the MSC options in Setup.</p>
+<p>Ez ugyanaz mint a <strong>01 (Go)</strong> parancs, de meghatározott id&otilde;vel. Ismételd át a <strong>01 (GO)</strong> paancsokat és a fenti adatokat. Hogy egy kicsit egyszer&ucirc;bb legyen a dolog, most feltételezük, hogy a “Default Only” opció bekapcsolva van az MSC beállításokban.</p>
 
-<p>To transmit a timed Goto the time needs to be specified first and then the cue number. The time is specified by five hex octets. They represent (in order) <strong>Hour</strong>,<strong> Minute</strong>,<strong> Second</strong>,<strong> Frame</strong>,<strong> </strong>and<strong> Fraction</strong>.</p>
+<p>A timed Goto küldésénel el&otilde;sz&otilde;r az id&otilde;t kell megadni és utána a kép számát. Az id&otilde;t 5 hexa adja meg. Ezek sorban a következ&otilde;k <strong>Óra</strong>,<strong> Perc</strong>,<strong> Másodperc</strong>,<strong> Képkocka</strong>,<strong> </strong>és<strong> tört</strong>.</p>
 
-<p>The hour, minute, and second sections are very strait forward. The number needs to be transmitted in hex numbers. It is possible to transmit a value above the normal limit for example 64 seconds (hex = 40). The station will transmit this as 1 minute and 4 seconds.</p>
+<p>Az óra,perc,másodperc részek elég egyértelm&ucirc;ek. A számokat hexadecimálisan kell átküldeni. Lehetséges számokat a normális érték fölött is küldeni, például 64 másodpercet (hex=40). A pult ezt úgy küldi át, hogy 1 perc 4 másodperc.</p>
 
-<p>Right now the console will not accept any time specified in the Frame and Fraction sections. But it transmit values below a second in the Frame section. The console divides the second into 24 frames. So 0.5 seconds is 12 Frames and the received hex number would be <strong>0C</strong>.</p>
+<p>Még most a pult, nem fogad el képkocka és a töredék részeket. De a másopercél rövidebb értékeket átküldi képkockaként. A pult a másodpercet 24 képkockára osztja. tehát 0.5 sec. = 12 Képkocka és a fogadott hex szám <strong>0C</strong>.</p>
 
-<p><strong>Example:</strong> Goto cue 75 with the fade time of 20 seconds (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> setting):</p>
+<p><strong>Példa:</strong> Ugorj a 75.-ik képre 20 másodperces átússzással (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -441,7 +441,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 	</tbody>
 </table>
 
-<p><strong>Example:</strong> Goto cue 5.4 with the fade time of 1 minute on executor 3 on page 1 (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> setting):</p>
+<p><strong>Példa:</strong> Menj a 5.4-es képre, 1 perc átúszással a 3. executoron, az els&otilde; oldalon (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> setting):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -468,39 +468,39 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<p><strong>06 (Set):</strong></p>
+<p><strong>06 (Set)(Beállítás):</strong></p>
 
-<p>The set command is used to move a fader to specific position. The 06 command is followed by two hex octets that indicates the fader and then two more octets that dictates the position.</p>
-
-<p>&nbsp;</p>
-
-<p>The first of the two numbers for the fader is the fader number (on a page). The fader number 1 is hex number <strong>00</strong>, the second is <strong>01</strong> and so on. Remember that this is a hex number so fader 16 have hex number <strong>0F</strong> and decimal 17 is hex <strong>10</strong>.</p>
-
-<p>The second of the two numbers for the faders are the page number. This is a little different page 1 is hex number <strong>01</strong>and page 2 is hex <strong>02</strong> and so on.</p>
-
-<p>So executor 1 on page 1 is <strong>00 01</strong>.</p>
+<p>A set parancssal lehet a megadott húzót egy meghatározott pozicíóba állítani. A 06 -os parancs után két hex oktet kell ami meghatározza a húzó számát, és még kett&otilde; ami megadja a pozícióját.</p>
 
 <p>&nbsp;</p>
 
-<p>Calculating the position in hex numbers is a bit more tricky. The faders position is defined by a coarse and fine value. The scale for both values is 128 steps (most MIDI is in 128 steps). The fine value is transmitted first followed by the coarse value.</p>
+<p>Az els&otilde; két szám a húzó száma (egy oldalon). Az els&otilde; húzó száma hexában <strong>00</strong>, a második <strong>01</strong> és így tovább. Emlékezz arra, hogy hexadecimálisban kell számolni, tehát a 16. húzó az <strong>0F</strong> és a 17. lesz a <strong>10</strong>.</p>
 
-<p>The desired fader position (in decimal) need to be multiplied by 1.28. The resulting integer is the coarse value. The remainder (everything on the right side of the separator) should be multiplied by 128 to get the fine value. The two decimal numbers then needs to be converted to hex.</p>
+<p>A második két szám közül, pedig az oldalszám lesz. Ez kicsit más az els&otilde; oldal hexában <strong>01</strong> és a második oldal <strong>02</strong> így tovább.</p>
 
-<p><strong>Example:</strong></p>
+<p>Tehát az executor az els&otilde; ooldalon <strong>00 01</strong>.</p>
 
-<p>The fader 3 on page 2 needs to be moved to 45%. First convert the position.</p>
+<p>&nbsp;</p>
+
+<p>A pozíció kiszámolása hexában kicsit trükkösebb. A húzók pozíciójában van durva és finom érték. A skálája mind a két értéknek 128 lépcs&otilde;s (a legtöbb MIDI 128 lépéses lehet). A finom érték küld&otilde;dik el&otilde;sz&otilde;r, ezt követi a durva érték megadása.</p>
+
+<p>A kívánatos húzó értéke (tízes számrendszerben) megszorzandó 1.28-al. Az eredmény lesz a durva érték. A maradék (minden ami jobbra van a tizedespont után) 128-al szorzandó, hogy megkapjuk a finom értékét. A két számot ezután át kell konvertálni tizenhatos számrendszerbe.</p>
+
+<p><strong>Példa:</strong></p>
+
+<p>A 3. húzó a 2. oldalon 45%-ra kell beálljon. El&otilde;sz&otilde;r alakítsuk át a pozíciót.</p>
 
 <ol>
-	<li>Multiply 45 by 1.28 = 57.6</li>
-	<li>Coarse value is 57.</li>
-	<li>Multiply 0.6 by 128 = 76.8</li>
-	<li>Fine value is 76.</li>
-	<li>Convert decimal 57 to hex = 39.</li>
-	<li>Convert decimal 76 to hex = 4C.</li>
-	<li>Fine is transmitted before coarse so the position is: 4C 39</li>
+	<li>45 szorozva 1.28 = 57.6</li>
+	<li>A durva érték az 57.</li>
+	<li>0.6 szorozva 128 = 76.8</li>
+	<li>Finom érték 76.</li>
+	<li>tizesb&otilde;l 57 hexába = 39.</li>
+	<li>tízesb&otilde;l 76 hexába = 4C.</li>
+	<li>Mivel a finom érték megy el&otilde;bb a pozíció ezért: 4C 39</li>
 </ol>
 
-<p>The MSC message is (<strong>All Devices</strong> and <strong>All Format</strong> setting):</p>
+<p>Az MSC üzenet(<strong>All Devices</strong> and <strong>All Format</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -527,9 +527,9 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<p>A fade time can be added after the fader and position data. The time format explained in the 04 command is used.</p>
+<p>Átúszási id&otilde;t lehet a húzó és a pozíció adat után tenni. Az id&otilde;formátumot már kifejtettük a 04 parancsnál.</p>
 
-<p><strong>Example: </strong>Moving fader 15 on page 1 to 100% in 5 seconds (<strong>All Devices</strong> and <strong>All Format</strong> setting):</p>
+<p><strong>Példa: </strong>Mozgassuk a 15. húzót az els&otilde; oldalon 100%-ra 5sec alatt. (<strong>All Devices</strong> és <strong>All Format</strong> beálításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -556,17 +556,17 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<p>The console only transmit the position of some faders - executors with sequences and all the green colored special masters (for the selected executor), but it accepts positions for all faders that have something assigned.</p>
+<p>A pult csak néhány húzónak küldi át a pozícióját - executorok szekvenciákkal és az összes zöld szín&ucirc; special mastert ( a kiválasztott executoron), de elfogadja az összes húzóra, amihez hozzá van rendelve valami.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>07 (Fire):</strong></p>
+<p><strong>07 (Fire)(t&ucirc;z):</strong></p>
 
-<p>Macros can be fired by this command. It needs to be followed by a single octet specifying the macro number.</p>
+<p>Makrókat lhet ezzel a parancssal indítani. Ez után egy oktettet lehet megadni ami megadja a makró számát.</p>
 
-<p>Macro number 1 is hex number <strong>01</strong>. Hex number <strong>FF</strong> is macro number 255.</p>
+<p>A 1. makró száma hexában <strong>01</strong>. A hexa <strong>FF</strong> a 255. makró számot jelenti.</p>
 
-<p><strong>Example</strong>: Triggering macro number 64 (<strong>All Devices</strong> and <strong>All Format</strong> setting):</p>
+<p><strong>Példa</strong>: A 64. makró indítása (<strong>All Devices</strong> and <strong>All Format</strong> beállítások):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -593,11 +593,11 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<p><strong>0B (Go_Off):</strong></p>
+<p><strong>0B (Go_Off)(menj_ki):</strong></p>
 
-<p>Executors can be turned off using the <strong>0B</strong> command. A cue number needs to be transmitted - cue 0 can be used.</p>
+<p>Az executorokat ki lehet kapcsolni a <strong>0B</strong> parancssal. Egy kép számát kell átküldeni - a kép 0 használható.</p>
 
-<p><strong>Example</strong>: Send an Off command to executor 9 on page 5 (<strong>All Devices</strong>, <strong>All Format</strong>, and <strong>Exec.Page</strong> setting):</p>
+<p><strong>Példa</strong>: Off parancs küldése a 9. executornak az 5. oldalon (<strong>All Devices</strong>, <strong>All Format</strong>, és <strong>Exec.Page</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -624,35 +624,35 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>&nbsp;</p>
 
-<h2><a id="midi_ethernet" name="midi_ethernet"></a>MIDI via Ethernet</h2>
+<h2><a id="midi_ethernet" name="midi_ethernet"></a>MIDI Etherneten keresztül</h2>
 
-<p>MSC can sent using Ethernet. It is transmitted as a UDP message.</p>
+<p>Az MSC-t lehet hálózaton keresztül is küldeni. UDP üzenetként fog menni.</p>
 
-<p>The MSC message is the same as described above, but the MSC message needs a header for the date to be accepted by the grandMA2.</p>
+<p>Az MSC üzenet ugyanaz mint fent leírtuk, de az MSC üzenetnek kell egy fejléc, az adatokhoz, hogy a grandMA2 fogadni tudja.</p>
 
-<p>The header separated into two parts. The first is identifying the message as a grandMA2 MSC message: <strong>47 4D 41 00 4D 53 43 00 </strong>- it translates to GMA MSC.</p>
+<p>A fejléc két részre van osztva. Az els&otilde; azonosítja az üzenetet mint grandMA2 MSC üzenet: <strong>47 4D 41 00 4D 53 43 00 </strong>- ez lefordul GMA MSC-re.</p>
 
-<p>The second part is four octets describing the length of the message - including the header. It is written as little endian byte format (least significant first).</p>
+<p>A második rész négy oktettje leírja az üzenet hosszát - a fejléccel együtt. Ez little endian byte formátumban van (el&otilde;sz&otilde;r a legkisebbhelyiérték következik).</p>
 
-<p>This is calculated by counting the number of octets and then convert the decimal number into hex. Usually we only needs the first octet (it allows for messages up to 255 octets) although all four needs to be sent.</p>
+<p>Ez úgy számolódik ki, hogy megszámoljuk az oktetteket, és utána konvertáljuk a decimális számokat hexába. Általában nekünk csak az els&otilde; oktett kell (ez megengedi 255 üzenet küldését is) bár mind a négyet el kell küldeni.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>Examples:</strong></p>
+<p><strong>Példa:</strong></p>
 
-<p>Send a go command to cue 35. The MSC message is: <strong>F0 7F 7F 02 7F 01 33 35 2E 30 30 30 F7</strong>.</p>
+<p>Küldjünk egy go parancsot a 35. képnek. Az MSC üzenet: <strong>F0 7F 7F 02 7F 01 33 35 2E 30 30 30 F7</strong>.</p>
 
-<p>This is 13 octets. The header is always 12 octets. So the combined length is 25 octets. Decimal 25 is <strong>18</strong> in hex. The entire message is:</p>
+<p>Ez 13 oktett. A fejléc mindig 12 oktettb&otilde;l áll. Tehát a kombinált hossz 25 oktett. Tizesben a 25 az <strong>18</strong> hexadecimálisban. A teljes üzenet:</p>
 
 <p><strong>47 4D 41 00 4D 53 43 00 18 00 00 00 F0 7F 7F 02 7F 01 33 35 2E 30 30 30 F7</strong></p>
 
 <p>&nbsp;</p>
 
-<p>Trigger macro 1 is: <strong>F0 7F 7F 02 7F 07 01 F7</strong> - 8 octets.</p>
+<p>Az els&otilde; makró indítása: <strong>F0 7F 7F 02 7F 07 01 F7</strong> - 8 oktett.</p>
 
-<p>Plus the 12 from the header is decimal 20 = 13 hex.</p>
+<p>Plussz a 12 a fejlécb&otilde;l, ami decimálisan 20 = 13 hex.</p>
 
-<p>The message is:</p>
+<p>Az üzenet tehát:</p>
 
 <p><strong>47 4D 41 00 4D 53 43 00 13 00 00 00 F0 7F 7F 02 7F 07 01 F7</strong></p>
 
