@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Anatomy of a Fixture Type</title>
+		<title>Lámpatípusok szerkezete</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="fixture type anatomy, fixture - fixture editor, attribute - edit, channelset - edit, mode channel, channel sets, channel - edit, virtual attribute, attribute - virtual" />
@@ -9,226 +9,227 @@
 	<body>
 		
 		
-		<h1>Anatomy of a Fixture Type</h1>
+		<h1>Lámpatípusok szerkezete</h1>
 		
-		<p>A fixture type, or the structure of how a fixture is described, is divided into different sections. This makes it possible to have quite advanced fixtures and still be able to control all aspects of the fixture.</p>
+		<p>Egy lámpa típusa, vagy a leírása egy lámpaszerkezetnek, több különböz&otilde; részre oszlik. Ez teszi lehet&otilde;vé, hogy az igen bonyolult eszközöket is vezérelhetjük a lámpák minden szempontajából.</p>
 
-<p>A fixture has at least one <strong>Module</strong> and one <strong>Instance</strong> of this module. There might be several instances of the same module, for example a LED bar with four instances of the same RGB LED module build into one fixture. This will create four sub-fixtures.&nbsp;</p>
+<p>Egy lámpának van legalább egy <strong>Module(modulja)</strong> és egy <strong>Instance(példánya)</strong> enek a modulnak. Lehet több példánya is egy modulnak, például egy LED bar négy példánnyal az azonos RGB LED modulból, ami be van építve egy lámpába. Ez 4 sub-fixtures létrehozását jelenti.&nbsp;</p>
 
-<p>There might be different modules in the same fixture, for instance a LED moving head might have a "main" module with pan/tilt, zoom, master intensity, and then several RGB modules for different sections of the head.</p>
+<p>Lehetnek különböz&otilde; modulok is ugyanazon a lámpán, példáu egy LED-es mozgófejees lámpának lehet egy "main" (f&otilde;) modulja ami szabályozza a pan/tilt, zoom, master fényer&otilde;, és lehet több RGB modulja a különböz&otilde; részein a lámpafejnek.</p>
 
-<p>The modules contains a list of different <strong>Attributes</strong> that are mapped to DMX channels. The modules are added and defined in the <a href="key_adv_fixture_anatomy_modules.html">Module Manager</a>. The module amount and possible physical relationship between the modules is defined in the <a href="key_adv_fixture_anatomy_instance.html">Instance Manager</a>.</p>
+<p>A modulok egy listát tartalmaznak különböz&otilde; <strong>Attributes(tulajdonságokkal)</strong> amik le vannak képezve a DMX csatornákra. A modulokat hozzáadni, és definiálni a <a href="key_adv_fixture_anatomy_modules.html">Module Manager(modulkezel&otilde;ben)</a>lehet. A modulok mennyisége és a lehetséges fizikai kapcsolatokat a modulok között a <a href="key_adv_fixture_anatomy_instance.html">Instance Manager(példánykezel&otilde;)</a>-ben találjuk.</p>
 
-<p>Inside a module there might be different <strong>Wheels</strong>. A wheel can be color wheels, gobo wheels, animation wheels, or other types of wheels. A color scroller is also often defined as a wheel even though it technically is a roll. All the wheels are defined in the <a href="key_adv_fixture_anatomy_wheel.html">Wheel Manager</a>.</p>
+<p>A modulokban lehetnek különböz&otilde; <strong>Wheels(tárcsák)</strong>. Egy tárcsa lehet szín, gobo, animáció, vagy más típúsú tárcsa. Egy színváltó is mint tárcsa van megahtározva, miközben technikailag egy tekercs. Az összes tárcsa a <a href="key_adv_fixture_anatomy_wheel.html">Wheel Manager(tárcsakezel&otilde;ben)</a>van meghatározva.</p>
 
 <p>&nbsp;</p>
 
-<p>Fixtures can be build or modified in the grandMA2 software. It is possible to import downloaded fixture types. Please read the <a href="key_patch_add_fixtures.html">Adding fixtures to the show topic</a> for information about this.</p>
+<p>Lámpákat lehet készíteni és módosítani is a grandMA2 szoftverben. Lehetséges beolvasni letöltött lámpatípus fájlokat is. Ha érdekel akkor a: <a href="key_patch_add_fixtures.html">Lámpák hozzáadsa a show-hoz</a> fejezetben van err&otilde;l szó.</p>
 
-<p>Everything about the fixture types are done in the <strong>Fixture Types Editor</strong>. Open it by pressing <span class="hardkey">Setup</span> then tap <span class="softkey">Patch &amp; Fixture Schedule</span> followed by taping the <span class="softkey">Fixture Types</span> button on the top right corner.</p>
+<p>Minden ami a lámpatípusok beállításához kell, az megtalálható a <strong>Fixture Types Editor(Eszköztípus szerkezt&otilde;)</strong>-ben. Ide a <span class="hardkey">Setup(beállítások)</span> ,  utána bökj a <span class="softkey">Patch &amp; Fixture Schedule</span> ami után bökj a <span class="softkey">Fixture Types</span> gombra a jobb fels&otilde; sarokban.</p>
 
-<p>This is a list of the fixtures in the show file. Tapping a fixture in the list and then the <span class="softkey">Edit</span> button in the lower left corner will open the editor. It could look like this:</p>
+<p>Itt találhatóak a showban lév&otilde; lámpatípusok. Rábökve egy lámpára a listában és utána az <span class="softkey">Edit</span> gombra, a bal alsó sarokban, megnyitja a szerkeszt&otilde;t. Valahogy így fest:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_fixture-editor_module_v3-3.png" />
-<figcaption>Module view in the fixture type editor</figcaption>
+<figcaption>Modul nézete a lámpatípus szerkeszt&otilde;nek</figcaption>
 </figure>
 
-<p>Here is a view of the first module of the fixture. There are four buttons on the right side of this editor. The top three open the three managers mentioned above. The bottom button on the right side opens the RDM Notification - Read about RDM and creating notifications in the <a href="key_rdm_notifications.html">Configure RDM Notifications topic</a>.</p>
+<p>Itt láthatjuk az els&otilde; modulját a lámpának. Négy gomb van a szerkeszt&otilde; jobb oldalán. A fels&otilde; három, a már el&otilde;z&otilde;leg mutatott kezel&otilde;t nyitja meg Az alsó gomb jobbra lent pedig az RDM üzeneteket nyitja meg - Az RDM-r&otilde;l itt olvashatsz b&otilde;vebben <a href="key_rdm_notifications.html">RDM értesítések beállítása</a>.</p>
 
-<p>There are some buttons at the bottom of the editor. There are buttons to <span class="softkey">Add</span> and <span class="softkey">Delete</span> rows in the different sections in the editor. <span class="softkey">Edit Row</span> opens the editor for the selected row, it goes "into" the row. Read below for more information about this. The <span class="softkey">Enable XYZ</span> and <span class="softkey">Disable XYZ</span> is used to control if the fixture can use <a href="key_xyz.html">XYZ programming</a>. <span class="softkey">Diagnostic</span> opens a pop-up that shows errors or warnings for the selected element. In the lower right corner there can be up to four different arrow buttons. Up and Down arrows will move up and down in the rows. Left and Right arrows will change between different elements. The elements can be modules or when editing a row it can change between different row in the upper level (read more below).</p>
+<p>Van néhány gomb a szerkeszt&otilde; alján is. Vannak gombok a <span class="softkey">Add(hozzáadás)</span> és <span class="softkey">Delete(törlés)</span> sorokban a szerkeszt&otilde; különböz&otilde; részeiben. <span class="softkey">Edit Row(sor szerkesztése)</span> megnyitja az aktuális sort a szerkeszt&otilde;ben, ez "belemgy" a sorba. Er&otilde;l lejjebb még olvashatsz. A <span class="softkey">Enable XYZ</span> és <span class="softkey">Disable XYZ</span> arra használható, hogy a lámpát az XYZ programozás szerint vezéreljük, ha a lámpa támogatja a <a href="key_xyz.html">XYZ programozást</a>. <span class="softkey">Diagnostic</span> megnyit egy ablakocskát, ahol a hibákat és figyelmeztetéseket láthatjuk a kiválasztott dologra. A jobb alsó sarokban van négy különböz&otilde; nyílacska. Ezekkel tudunk mozogni a sorok között fel, le. A bal és a jobb pedig az elemek közötti mozgást segítik. Az elemek lehetnek modulok, vagy ha egy sort szerkesztünk, akkor közöttük válthatunk a fels&otilde;bb szinteken (olvasd el lentebb).</p>
 
-<p>Grayed out buttons do not have any functions.</p>
+<p>A szürke gomboknak nincs funkciójuk.</p>
 
 <p>&nbsp;</p>
 
-<h2><a id="edit_module" name="edit_module"></a>Edit Module</h2>
+<h2><a id="edit_module" name="edit_module"></a>Edit Module(Modul szerkesztés)</h2>
 
 <p>The title bar in the <strong>Fixture Type Editor</strong> shows what is being displayed in the editor. In the picture above it is displaying the <strong>Channels</strong> of the module called "Main Module" of the fixture called "VL3500 Spot 00". Here the word "channel" is used as DMX channels and the list is actually the different <strong>Attributes</strong> in the module.</p>
 
-<p>There are several columns in this part of the editor. This is a short description of them:</p>
+<p>Van néhány oszlop még a szerkeszt&otilde; ezen részében. Itt egy rövid leírás róluk:</p>
 
 <ul>
 	<li><strong>No.</strong>:<br />
-	This is a number for the row. Each attribute has its own row. This number cannot be edited</li>
+	Ez a sorok számát mutatja. Minden attribútumnak megvan a saját sora. Ez a szám nem szerkeszthet&otilde;</li>
 	<li><strong>Attrib</strong>:<br />
-	This is the attribute. Editing this opens the Select Attribute pop-up.
+	Ez az attribútum. Ennek szerkesztésére nyílik meg az attríbútum ablakocska.
 	<figure class="caption"><img alt="" src="../../img/popup_select-attribute_v3-3.png" />
-	<figcaption><em>Select an attribute for the module</em></figcaption>
+	<figcaption><em>Válasszd ki a modul atribútumát</em></figcaption>
 	</figure>
 	<br />
-	This is a long list of all the existing attributes in the show. The list can be edited in the <a href="key_adv_fixture_attribute_encoder_grouping.html">Attribute &amp; Encoder Grouping</a>.</li>
-	<li><strong>Break</strong>:<br />
-	Breaks are used if a fixture needs more than one start address.<br />
-	This could be a LED bar with four individually LED instances build in one fixture. Each instance can be address on the back of the fixture, thus there need to be four different DMX start addresses for the fixture. This would be four different DMX breaks.<br />
-	Another example is when a scroller is added to an existing conventional fixture and the fixture is connected to a dimmer - patched in one universe - and the scroller is connected to a PSU - patched in another universe but it is to be treated as one combined fixture.<br />
-	A fixture can have up to 8 different breaks.</li>
-	<li><strong>Coarse</strong>:<br />
-	This is the 8-bit DMX number. This number describes the DMX address offset for the attribute. "1" is the same as the start patch address.</li>
-	<li><strong>Fine</strong>:<br />
-	This is the 16-bit DMX number - the attribute uses two DMX channels.</li>
-	<li><strong>Ultra</strong>:<br />
-	This is the 24-bit DMX number - the attribute uses three DMX channels.</li>
-	<li><strong>Default</strong>:<br />
-	This is the default value for the attribute. This value is used when the attribute does not get a value from anything else.</li>
-	<li><strong>Highlight</strong>:<br />
-	This value is used when the <strong>Highlight</strong> function is activated.</li>
-	<li><strong>Stage</strong>:<br />
-	This value is used, if the "Output Stage Value" function is activated in the <a href="key_patch_autocalibrate.html">Calibrate menu</a>. This could be values that makes the fixtures open in full output in open white and with a narrow beam.</li>
-	<li><strong>Snap</strong>:<br />
-	Snap can be turned On. If it is then the attribute will not fade between values - it will jump directly to the new value. When this jump is performed is controlled by the <strong>Snap Percent</strong> value in the cues (<a href="key_cs_cue_sequence.html">Sequence Executor Sheet</a>).</li>
-	<li><strong>Invert</strong>:<br />
-	Invert can be turned On. When it is On it will invert the DMX output for the channel.</li>
-	<li><strong>React to Master</strong>:<br />
-	For dimmer attributes this function is always On. Other attributes can have this On as well. It will make the value of the attribute react to the value of the <strong>Grand Master</strong>.</li>
+	Ez egy hosszú lista, az összes lehetséges attribútummal, ami a show-ban szerepel. The list can be edited in the <a href="key_adv_fixture_attribute_encoder_grouping.html">Attribute &amp; Encoder Grouping</a>.</li>
+	<li><strong>Break(törés)</strong>:<br />
+	A törést akkor használjuk ha egy lámpának több mint egy kezd&otilde;cím kell.<br />
+	Ez lehet egy LED bar, 4 különböz&otilde; LED lámpával, egy házba építve. Mindgyik példányt külön címezhetjük a lámpatest hátoldalán, ezért négy külön DMX kezd&otilde;cím kellhet a lámpának. Ilyenko 4 DMX törést kell beállítanunk.<br />
+	Egy másik példa erre amikor színváltót adunk egy meglév&otilde; lámpához, és a lámpa egy dimmerhez van csatlakoztatva - egyik univerzumban pachelve - és a színváltó pedig egy PSU-hoz - egy másik univerzumba patchelve  - de ezeket együtt akarjuk kezelni mint kombinált lámpa.<br />
+	Egy lámpának 8 törése lehet.</li>
+	<li><strong>Coarse(durva)</strong>:<br />
+	Ez a 8-bites DMX szám. A szám leírja a DMX cím offszetjét a tulajdonsághoz. Az "1" ugyanaz mint a kezd&otilde;cím.</li>
+	<li><strong>Fine(finom)</strong>:<br />
+	Ez a 16-bites DMX szám - ez a tulajdonság 2 DMX csatornát használ.</li>
+	<li><strong>Ultra(nagyon finom)</strong>:<br />
+	Ez a 24-bites DMX szám - ez a tulajdonság 3 DMX csatornát használ.</li>
+	<li><strong>Default(alapértelmezett)</strong>:<br />
+	Ez a tulajdonság alapértékét adja meg. Ez az érték használódik, ha a tulajdonság nem kap értéket máshonnan.</li>
+	<li><strong>Highlight(kiemelés)</strong>:<br />
+	Ez az érték akkor lesz ha a <strong>Highlight</strong> funkció aktív.</li>
+	<li><strong>Stage(színpad)</strong>:<br />
+	Ez akkor lesz használva ha az "Output Stage Value" funkció aktív a  <a href="key_patch_autocalibrate.html">Kalibrálás menüben</a>. Ez oyan értékeket állít be hogy a lámpa  teljesen nyitott, fehér, és sz&ucirc;k sugarú fényt bocsát ki..</li>
+	<li><strong>Snap(ugrás)</strong>:<br />
+	Ha ez "On" állásban van, akkor a tulajdonság a két érték között nem fog átúszni, hanem odaugrik az új értékre. Ha ez történéik akkor ezt a <strong>Snap Percent(ugrás százaléka)</strong> érték állítja a képben. (Lásd:<a href="key_cs_cue_sequence.html">Szekvencia végrahajtó táblázatban</a>).</li>
+	<li><strong>Invert(megfordítás)</strong>:<br />
+	Ha "On" állásban van, akkor megfordítja a DMX kimenetet az adott csatornán.</li>
+	<li><strong>React to Master(reagál a Masterre)</strong>:<br />
+	Ez a dimmerek tulajdonságánál mindíg "Be". Más tulajdonságoknál, be lehet kapcsolni.Ez engedélyezi, hogy más tulajdonságok is reagáljanak a <strong>Grand Master</strong>értékeire.</li>
 	<li><strong>MIB disable</strong>:<br />
-	MIB disable can be turned On. It makes the attribute ignore the move in black feature.</li>
+	Ez, ha enegedélyezve van akkor, az attribútum átugorja az MIB képességeket.</li>
 	<li><strong>MIB Fade</strong>:<br />
-	This time is used when this attribute is changing values by the move in black feature. The "Default" value means that it will use the time specified in the&nbsp;Setup -&gt; Show -&gt; Playback&nbsp; MIB Timing.</li>
-	<li><strong>Profile</strong>:<br />
-	DMX profiles can be added to an attribute. Editing this opens the Select DMX Profile pop that will list all the existing profiles. Profiles can be added or edited in the Graph Editor - read about it in the <a href="key_dmx_profiles.html">DMX Profiles section</a>.</li>
-	<li><strong>Mode</strong>:<br />
-	This indicates if the attribute is depended of a different attribute. Read more about Mode channels <a href="#mode_channels">below</a>.</li>
+	Ez megadja a MIB idejét. A "Default" érték azt jelenti, hogy azt az értéket használja, amit a &nbsp;Setup -&gt; Show -&gt; Playback&nbsp; MIB Timing-be van beállítva.</li>
+	<li><strong>Profile(profil)</strong>:<br />
+	DMX profilt lehet hozzáadni egy attribútumhoz. Szerkessztésre megnyílik a válassz DMX profilt nev&ucirc; ablakocska, ahol az összes DMX profil listázódik. Profilokat lehet hozzáadni vagy szerkeszteni, a grafikus szerkeszt&otilde;ben. Olvashatsz róla a <a href="key_dmx_profiles.html">DMX Profil fejezetben</a>.</li>
+	<li><strong>Mode(mód)</strong>:<br />
+	Ez azt jelzi, hogy az attribútum függ-e egy másik attribútumtól. További információ a mód csatornákról<a href="#mode_channels">lejebb</a>.</li>
 	<li><strong>React to DIM</strong>:<br />
-	This can be turned On. It makes the attribute react to the dimmer value. Editing this opens the <strong>Select React to Dim</strong> pop-up.
+	Ez be lehet kapcsolva. Ez teszi lehet&otilde;vé, hogy az attribútum reagáljon a dimmerértékre. Ha szerkeszted, akkor megnyílik a  <strong>Select React to Dim</strong> ablakocska.
 	<figure class="caption"><img alt="" src="../../img/popup_select-react-to-dim_v3-3.png" />
-	<figcaption><em>Select a mode for React to Dim</em></figcaption>
+	<figcaption><em>Válassz módot a Dimmer reagálásra</em></figcaption>
 	</figure>
 	<br />
-	There are three options: <strong>No Function</strong> (default), <strong>Linear</strong> (follows the dimmer value), and <strong>Inverse</strong> (is the inverted value of the dimmer).</li>
+	Három lehet&otilde;ség van: <strong>No Function(nincs funkció)</strong> (alapértelmezett), <strong>Linear</strong> (követi a dimmer értékét), és <strong>Inverse(fordított)</strong> (ez az invertált értéke a dimmerének).</li>
 	<li><strong>Color</strong>:<br />
 	This is used to visualize colors and light output in the stage window and the MA 3D. It defines the color for LEDs. It can only be edited for color attributes.</li>
 	<li><strong>Minimum DMX time</strong>:<br />
-	Setting a time here defines the minimum time an attribute will use to change value. This can be useful for scrollers or moving head where fast movement is undesirable.</li>
+	Az itt megadott id&otilde;vel lehet beállítani, hogy egy attribútum minimálsian mennyi id&otilde;t használ egy érték megváltoztatásához. Ez hasznos lehet színváltóknál, vagy mozgófejes lámpáknál, ahol a gyors mozgás nem kívánatos.</li>
 	<li><strong>Trigger</strong>:<br />
-	This can be turned On. It completely changes the function of the attribute. It will make the value count up each time a cue is triggered in a sequence. This function can be used by some media servers to detect a cue change.</li>
+	Ez be lehet kapcsolva. Teljesen megváltoztatja az attribútum funkcióját. Az érték minden alkalommal növekszik , ha egy képet egy szekvenciában aktiválnak. Ezt a funkciót egyes médiaszerverek használhatják a kép változásának észlelésére.</li>
 </ul>
 
-<div class="tip"><strong>Hint:</strong><br />
-More modules can be added in the <a href="key_adv_fixture_anatomy_modules.html">Module Manager</a>.</div>
+<div class="tip"><strong>Tipp:</strong><br />
+Több modult lehet hozzáadni a  <a href="key_adv_fixture_anatomy_modules.html">Modul kezel&otilde;ben</a>.</div>
 
-<p>Editing one of the row will move "into" the channel and the editor changes to match. Keep reading for details on the editor for channels.</p>
+<p>Egy sor szerkesztésekor "belépünk" a csatorna beállításokba. Olvass tovább a részletekért.</p>
 
 <p>&nbsp;</p>
 
-<h2><a id="edit_channel" name="edit_channel"></a>Edit channel/row</h2>
+<h2><a id="edit_channel" name="edit_channel"></a>Csatorna szerkesztése/sor</h2>
 
-<p>Each row in the module is an <strong>Attribute</strong>. This is also called a <strong>Channel </strong>in the editor.</p>
+<p>Minden sor a modulban egy <strong>Attribútum</strong>. Ezt hívhatjuk <strong>Csatornának </strong>is a szerkeszt&otilde;ben.</p>
 
-<p>There is automatically a subattribute defined for most attributes. Often it is only one with the entire DMX range for the attribute.</p>
+<p>Automatikusan létrjön egy szubattribútum a legtöbb meghatározott attribútum mellett. Gyakran ez az egy, ami lefedi a teljes DMX értékét ennek az attribútumnak.</p>
 
-<p>Some attributes can have several subattributes. For instance a color wheel attribute might have different functions depending on the DMX value (as shown in the image below). Other examples could be a Pan attribute that have a position index function in one part of the DMX range and a continuous rotation speed in the rest of the DMX range.&nbsp;</p>
+<p>Néhány tulajdonságnak lehet tbb altulajdonsága. Például egy színkerék tuljadonságnak, lehet különböz&otilde; funkciója a DMX érték függvényében.(mint a képen lenn látszik). Másik példa a Pan tulajdonság, aminek lehet pozíció index funkciója az egyik DMX értékeken, és mondjuk forgássebesség meghatározás a további értékeken.&nbsp;</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_fixture-editor_channel_v3-3.png" />
-<figcaption><em>Edit channels of modules</em></figcaption>
+<figcaption><em>Modul csatornák szerkesztése</em></figcaption>
 </figure>
 
 <ul>
 	<li><strong>No.</strong>:<br />
-	This is an internal row number. It cannot be changed.</li>
+	Ez egy bels&otilde; sorszám. Nem változtatható meg.</li>
 	<li><strong>SubAttrib</strong>:<br />
-	Here the subattribute is defined. Editing this cell will open a pop-up much like the <strong>Select Attribute</strong> shown above, but instead it is <strong>Select Subattribute</strong>. Subattributes are defined in the <a href="key_adv_fixture_attribute_encoder_grouping.html">Attribute &amp; Encoder Grouping</a>.</li>
+	Itt vannak az altulajdonságok meghatározva. Ennek a szerkesztésekor megnyílik a <strong>Select Attribute</strong> -hoz hasonló ablakocska, de most <strong>Select Subattribute</strong> néven. A Szubattribútumok a <a href="key_adv_fixture_attribute_encoder_grouping.html">Attribute &amp; Encoder Grouping</a> vannak meghatározva.</li>
 	<li><strong>Name</strong>:<br />
-	This is the name that will be displayed as a tap in the calculator pop-up when editing the value of the attribute.</li>
+	Ez jelenik meg mint választható dolog a számológépben, ha szerkesztjük az értékét, ennek a tulajdonságnak.</li>
 	<li><strong>Wheel</strong>:<br />
-	Here it is possible to attach a wheel to the subattribute. Editing this cell will open the <strong>Select Wheel</strong> pop-up that lists the different defined wheels. Wheels can be defined in the<a href="key_adv_fixture_anatomy_wheel.html"> Wheel Manager</a>.</li>
+	Itt lehet hozzárendelni kereket a szubattribútumhoz.
+	Ennek a cellának a szerkesztésével el&otilde;jön a <strong>Select Wheel</strong> ablakocska ami több meghatározott kereket listáz ki. Ezeket meghatározhatjuk a <a href="key_adv_fixture_anatomy_wheel.html"> Wheel Manager</a>.</li>
 	<li><strong>From</strong>:<br />
-	This value is being shown on the encoders if the sheet readout is "Natural". This is the first or lowest values. This is often "0" or the minimum value for the attribute. It can make sense to defined this values as a negative values for pan and tilt attributes - often half of the complete rotation for instance "-270".&nbsp;</li>
+	Ezt az értéket mutatja a kerék, amikor a kiolvasás "Natural"-ra van állítva. Ez az els&otilde; vagy legkisebb érték. Ez gyakran "0" vagy minimum értéke a tulajdonságnak. Számít ha negatív értéket adunk meg, pl. a pan és tilt tulajdonságnál - gyakran egy háromnegyed fordulatot jelent pl. "-270".&nbsp;</li>
 	<li><strong>To</strong>:<br />
-	This value is being shown on the encoders if the sheet readout is "Natural". This is the last or highest values. This is often "100" or the maximum value for the attribute. It can make sense to defined this values as a positive degree value for pan and tilt attributes - often half of the complete rotation for instance "270".</li>
+	Ezt az értéket mutatja a kerék, amikor a kiolvasás "Natural"-ra van állítva. Ez az utolsó vagy legnagyobb érték. Ez gyakran "100" vagy maximum értéke a tulajdonságnak. Számít ha pozitív értéket adunk meg, pl. a pan és tilt tulajdonságnál - gyakran egy háromnegyed fordulatot jelent pl. "270".&nbsp;</li>
 	<li><strong>From DMX</strong>:<br />
-	This is the lowest DMX value for the subattribute.</li>
+	A legalacsonyabb DMX értéke szubattribútumnak.</li>
 	<li><strong>To DMX</strong>:<br />
-	This is the highest DMX value for the subattribute.</li>
+	A legmagasabb DMX értéke szubattribútumnak.</li>
 	<li><strong>From Phys</strong>:<br />
-	This is the minimum physical value. It could be the minimum rotation speed (rpm), strobe frequency (Hz), pan value (degree), or the lowest intensity value. The default here is <strong>0.00*</strong>. For some attributes the values is multiplied with a different value. For instance the intensity. The maximum intensity is defined in the Module Manager. This means that the "0" value is multiplied by the intensity value and the result is also "0" equal to no output.<br />
-	This is used by MA 3D and is displayed in sheets if the readout is "Physical".</li>
+	Ez a legkisebb fizikai értéket jelenti. Ez leghet a leglassabb forgási sebesség (rpm), villogási frekvencia (Hz), pan érték (fok), vagy a legkisebb intenzitás érték is. Az alapérték itt  <strong>0.00*</strong>. Néhány tulajdonság az értéket más-más szorzóval használja. Például a fényer&otilde;t. A max. fényer&otilde; meghatározott a Module kezel&otilde;ben. Ez azt jelenti, hogy a "0" érték megszorzódik az intenzitás értékkel és az eredmény is "0" lesz ami egyenl&otilde; azzal, hogy nincs kimenet.<br />
+	Ezt az értéket használja az MA 3D is, és a táblákban ha a kiolvasás "Physical" -ra van álítva.</li>
 	<li><strong>To Phys</strong>:<br />
-	This is the maximum physical value. It could be the maximum rotation speed (rpm), strobe frequency (Hz), or pan value (degree). The default here is <strong>1.00*</strong>. For some attributes the values is multiplied with a different value. For instance the intensity. The maximum intensity is defined in the Module Manager. This means that the "1" value is multiplied by the intensity value and the result is also maximum value equal to full output.<br />
-	This is used by MA 3D and is displayed in sheets if the readout is "Physical".</li>
+	Ez a legnagyobb fizikai értéket jelenti. Ez leghet a leggyorsabb forgási sebesség (rpm), villogási frekvencia (Hz), pan érték (fok), vagy a legnagyobb intenzitás érték is. Az alapérték itt  <strong>1.00*</strong>. Néhány tulajdonság az értéket más-más szorzóval használja. Például a fényer&otilde;t. A max. fényer&otilde; meghatározott a Module kezel&otilde;ben. Ez azt jelenti, hogy az "1" érték megszorzódik az intenzitás értékkel és az eredmény is "1" lesz ami egyenl&otilde; azzal, hogy teljes kimenetet kapunk.<br />
+	Ezt az értéket használja az MA 3D is, és a táblákban ha a kiolvasás "Physical" -ra van álítva.</li>
 	<li><strong>Additional Phys</strong>:<br />
-	This is used to define additional physical values. This is used by prisms. Here the number of facets can be defined. This is used by MA 3D.</li>
+	Ezt további fizikai értékek hozzáadására lehet használni. Ezt használják a prizmák. Itt meghatározható az élek száma, ezt az MA 3D használja.</li>
 	<li><strong>Minimum 3D Time</strong>:<br />
-	This is the fastest time used to travel from start to end of the range. It is only used in MA 3D.</li>
+	A kezd&otilde;értékt&otilde;l a végéig eltelt minimum id&otilde; beállítása. Ezt csak a MA 3D használja.</li>
 	<li><strong>Mode Start</strong>:<br />
-	This column is only visible if the attribute has a defined mode channel. Read more about the Mode channels <a href="#mode_channels">below</a>. This defines the first DMX value of the mode range.</li>
+	Ez az oszlop akkor látszik csak, ha van meghatározott mode csatorna. További információ: <a href="#mode_channels">lejebb</a>. Ez megadja az els&otilde; DMX értékét a mód határainak.</li>
 	<li><strong>Mode End</strong>:<br />
-	This column is only visible if the attribute has a defined mode channel. Read more about the Mode channels <a href="#mode_channels">below</a>. This defines the last DMX value of the mode range.</li>
+	Ez az oszlop akkor látszik csak, ha van meghatározott mode csatorna. További információ: <a href="#mode_channels">lejebb</a>. Ez megadja az utolsó DMX értékét a mód határainak.</li>
 </ul>
 
-<p>Each of the rows here can be edited to add <strong>Channel Sets</strong>.</p>
+<p>Minden itteni sort szerkeszthetünk, hogy hozzáadjuk a <strong>Csatorna készleteket</strong>.</p>
 
 <p>&nbsp;</p>
 
-<h2><a id="edit_channelsets" name="edit_channelsets"></a>Channel Sets for a subattribute</h2>
+<h2><a id="edit_channelsets" name="edit_channelsets"></a>Csatorna készletek a szubattribútumoknak</h2>
 
-<p><strong>Channel Sets</strong> are specific DMX values or ranges of values that has a name.</p>
+<p>A <strong>Channel Sets(csatornakészletek)</strong> meghatározott DMX értékek, vagy keretek, amiknek van nevük.</p>
 
-<p>The channel sets are the basis for information when auto creating presets. The channel sets are shortcuts to easy access to the values. The names are displayed in Fixture Sheets, Channel Sheets, and other places where the attribute values is displayed. The channel sets are also displayed and selectable in the <a href="key_of_smart_view.html">Smart Window</a>.</p>
+<p>A csatornakészletek az alapjai az információknak, amikb&otilde;l kés&otilde;bb az auto presetek lesznek. Ezek a rövidítések, a könny&ucirc; értékhozzáféréshez. A nevek megjelennek a Lámpalistában, csatornalistában. és minden más helyen ahol, a tulajdonság értéke ki van írva.  A csatornakészlet, látható a <a href="key_of_smart_view.html">Smart Window(okos ablakban)</a>is.</p>
 
-<p>When a row is edited in the Channel Editor, it changes to edit the channel sets. It would look like this:</p>
+<p>Ha egy sort a csatornaszerkeszt&otilde;ben szerkesztünk, a változások megjelennek a csatornakészletben. Valahogy így:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_fixture-editor_channel-set_v3-3.png" />
-<figcaption><em>Editing Channel Sets</em></figcaption>
+<figcaption><em>Csatornkészlet szerkesztése</em></figcaption>
 </figure>
 
-<p>Each row here is a channel set whit a defined values range. The columns have changed a little. This is a short description:</p>
+<p>Minden sor itt egy csatornakészlet, amik meghatározott értékeket vesznek fel. Az oszlopok kicsit megváltoztak. Itt a rövid leírásuk:</p>
 
 <ul>
 	<li><strong>No.</strong>:<br />
-	This is again an auto created number for the row. It cannot be edited.</li>
+	Ez ismét a sorszám, nem megváltoztatható.</li>
 	<li><strong>Name</strong>:<br />
-	This is the name of the channel set. It will be displayed where the values are displayed and in the Smart window. It is customary that all the names are unique. This is to avoid confusion.</li>
+	Ez a csatornakészlet neve. Ez mutatja meg mi fog látszódni a mutattot értéke, és a mutatott értéke az okos ablakban is. Szokás egyedi neveket adni. Ez megel&otilde;zi az összetévesztést..</li>
 	<li><strong>From</strong>:<br />
-	This number is linked with the range set for the channel and the value typed in the <strong>From DMX</strong>. It is the minimum range value for the channel set. A value can be typed here but often it is easier to type the DMX values.</li>
+	Ez a szám kapcsolódik a csatorna számára beállított tartományhoz és a <strong> From DMX </strong> -be beírt értékhez. Ez a beállított csatorna minimális tartománya. Itt megadhat egy értéket, de gyakran könnyebb beírni a DMX értékeket.</li>
 	<li><strong>To</strong>:<br />
-	This number is linked with the range set for the channel and the value typed in the <strong>To DMX</strong>. It is the maximum range value for the channel set. A value can be typed here but often it is easier to type the DMX values.</li>
+	Ez a szám kapcsolódik a csatornához beállított tartományhoz és a <strong> To DMX </strong> -be beírt értékhez. Ez a beállított csatorna maximális tartományértéke. Itt megadhat egy értéket, de gyakran könnyebb beírni a DMX értékeket.</li>
 	<li><strong>From DMX</strong>:<br />
-	This is the first (lowest) DMX value of the channel set. It can be the same number in the <strong>To DMX</strong>, then it only this specific value that represents the channel set. This is relevant for many sets like the minimum value for an attribute.</li>
+	Ez a csatornakészlet els&otilde; (legalacsonyabb) DMX értéke. Ugyanaz a szám lehet a <strong> To DMX </strong> -ben, akkor csak ez a meghatározott érték képviseli a csatornakészletet. Ez sok halmaz esetében releváns, például egy attribútum minimális értéke.</li>
 	<li><strong>To DMX</strong>:<br />
-	This is the last (highest) DMX value of the channel set. It can be the same number in the <strong>From DMX</strong>, then it only this specific value that represents the channel set. This is relevant for many sets like the maximum value for an attribute.</li>
+	Ez a csatornakészlet utolsó (legmagasabb) DMX értéke. Ez ugyanaz a szám lehet a <strong> A DMX-b&otilde;l </strong> mez&otilde;ben, akkor csak ez a meghatározott érték képviseli a csatornakészletet. Ez sok halmaz esetében releváns, például egy attribútum maximális értéke.</li>
 	<li><strong>Slot No</strong>:<br />
-	If the subattribute has a wheel attached, then the slot number in the wheel can be typed here. Read more about wheels in the <a href="key_adv_fixture_anatomy_wheel.html">Wheel Manager</a>.</li>
+	Ha az altulajdonsághoz egy kerék van társítva, akkor a tartó számát a keréken lehet ide beírni. További info:<a href="key_adv_fixture_anatomy_wheel.html">Wheel Manager(kerékkezel&otilde;)</a>.</li>
 	<li><strong>From Phys</strong>:<br />
-	For some attributes it makes sense to also add physical values. It can be the a specific strobe frequency, a revolution value, or as the example above a way to set a rotation range for a wheel. This is the lowest physical value.</li>
+	Bizonyos tulajdonságokhoz ésszer&ucirc; fizikai értékeket hozzáadni. Ez lehet a konkrét villanásfrekvencia, a fordulatszám vagy a fenti példaként a kerék forgási tartományának meghatározására szolgáló módszer. Ez a legalacsonyabb fizikai érték.</li>
 	<li><strong>To Phys</strong>:<br />
-	This is the highest physical value.</li>
+	Ez a legmagasabb fizikai érték.</li>
 	<li><strong>Auto Create</strong>:<br />
-	This can be On or Off. If it is On then this channel set will be used when presets are auto created. In the image above the second "open" is turned Off. This means that there will only be one "open" color preset for this color wheel.</li>
+	Ez lehet Be vagy Ki. Ha be van kapcsolva, akkor ezt a csatornakészletet fogja használni, ha az el&otilde;re beállított értékeket automatikusan létrehozza. A képen a második "nyitott" ki van kapcsolva. Ez azt jelenti, hogy csak egy "nyitott" szín lesz beállítva erre a színkerékre.</li>
 </ul>
 
-<p>The rows in channel sets cannot be edited.</p>
+<p>A sorokat a csatorna tömbben, nem lehet szereszteni.</p>
 
 <p>&nbsp;</p>
 
-<h2><a id="mode_channels" name="mode_channels"></a>Details about Mode channels</h2>
+<h2><a id="mode_channels" name="mode_channels"></a>Részletek a csatorna módokról</h2>
 
-<p>Some attributes change function based on the value of a different attribute. The attribute that controls the other attributes is called the <strong>Mode Channel</strong>.</p>
+<p>Egyes attribútumok megváltoztatják a függvényt egy másik attribútum értéke alapján. A többi attribútumot irányító attribútumot <strong> Üzemmód-csatorna </strong> -nak hívják.</p>
 
-<p>Examples could be an attribute that control the rotation mode of a gobo. Imagine a fixture that has an attribute that is used to select a gobo on a gobo wheel. First half of the DMX range will select the different gobos on the wheel, but the gobos are in an "index" mode. A second attribute controls the rotation of the gobo. When the selected gobo is in index mode the rotation is set to be a degree number. The second half of the selection attribute also selects all the gobos on the wheel, but now in a continuous rotation mode. Now the rotation attribute will control the rotation speed and direction.</p>
+<p>Példa lehet egy attribútum, amely szabályozza a gobo forgásmódját. Képzelj el egy olyan lámpát, amely rendelkezik egy attribútummal, amellyel kiválasztható egy gobo egy gobo tárcsán. A DMX sorozat els&otilde; felében választjuk a különböz&otilde; gobokat a tárcsán, de a gobosk "index" módban vannak. Egy második attribútum vezérli a gobo forgását. Ha a kiválasztott gobo index üzemmódban van, akkor a forgatást fokszámra kell beállítani. A kiválasztási attribútum második fele szintén kiválasztja az összes gobot a keréken, de folyamatos forgásmódban. Most a forgatási tulajdonság fogja irányítani a forgási sebességet és az irányt.</p>
 
-<p>A real example of this is the VL3500 Spot from Vari-Lite. This is the settings in the "Main Modul" in the Fixture Type Editor.</p>
+<p>Egy valódi példa erre a  VL3500 Spot a Vari-Lite-tól. Itt vannak a beállításai a "Main Modul" a lámpatípus szerkeszt&otilde;ben.</p>
 
-<p>Notice that the GOBO1 attribute is the mode channel for the GOBO1_POS attribute. The mode setting is changed in the GOBO1_POS attribute. Editing the mode cell opens a pop-up called <strong>Select Mode Channel</strong>.</p>
+<p>A GOBO1 tulajdonság a csatorna módja a GOBO1_POS tulajdonságnak. A mód beállítás változik a GOBO1_POS tulajdonságnál. A mód cella szerkesztésekor feljön a  <strong>Select Mode Channel(válassz mód csatornát)</strong> ablakocska.</p>
 
 <figure class="caption"><img alt="" src="../../img/img_edit-fixture_mode-channel_v3-3.png" />
-<figcaption><em>Mode channel on a Gobo wheel</em></figcaption>
+<figcaption><em>Mód csatorna egy Gobo tárcsán</em></figcaption>
 </figure>
 
-<p>When the GOBO1_POS attribute is edited, it is possible to set <strong>Mode Start</strong> and <strong>Mode End</strong> values. This will make the subattribute row active if the mode channel is in the set range. In the example below each of the three rows cover a range of the mode channel. If there where no mode ranges then these rows would cause errors because the DMX ranges are the same for each row. But since they are in different mode range then it is not an error.</p>
+<p>A GOBO1_POS attribútum szerkesztésekor beállíthatja az <strong> Üzemmód indítása </strong> és az <strong> Üzemmód vége </strong> értékeket. Ez aktívvá teszi az alegység-sorozat sort, ha az üzemmód-csatorna a beállított tartományban van. Az alábbi példában mindhárom sor lefedi a módcsatorna tartományát. Ha ott nincs üzemmódtartomány, akkor ezek a sorok hibákat okoznának, mivel a DMX tartományok minden sorban azonosak. De mivel eltér&otilde; üzemmód-tartományban vannak, akkor ez nem hiba.</p>
 
 <figure class="caption"><img alt="" src="../../img/img_edit-fixture_mode-channel_edit-row_v3-3.png" />
-<figcaption><em>Mode range set in Gobo Position attribute</em></figcaption>
+<figcaption><em>Mód határok beállítása a Gobo Position tulajdonágánál</em></figcaption>
 </figure>
 
-<p>In the VL3500 there are three line because the first is the index mode, the second is the rotation of the gobos, the last is the continuous rotation of the gobo wheel.</p>
+<p>A VL3500-ban három vonal van, mert az els&otilde; index üzemmód, a második a gobos forgása, az utolsó a gobo kerék folyamatos forgása.</p>
 
 <p>&nbsp;</p>
 
-<h2><a id="virtual_attributes" name="virtual_attributes"></a>Virtual Attributes</h2>
+<h2><a id="virtual_attributes" name="virtual_attributes"></a>Virtuális Tulajdonságok(Attributes)</h2>
 
-<p>Virtual attributes can be added to a fixture by adding the attribute as normal but without giving the attribute any DMX numbers in the Coarse, Fine, or Ultra column in the <a href="#edit_module">Module editor</a>.</p>
+<p>Virtuális tulajdonságokat adhatunk egy lámpához, úgy, hogy hozzáadjuk mint normálisan, de nem adunk semmilyen DMX számot a Durva, Finom, Ultra oszlophoz a <a href="#edit_module">Modul szerkeszt&otilde;ben</a>.</p>
 
-<p>Virtual attributes are often dimmer attributes that acts as virtual master intensity control in fixtures that do not have this attribute build in. It could be a LED fixture that only has Red, Green, and Blue attributes. LED fixtures like this fades the MixColor attributes (RGB) with cross fades. Most programmers prefer that the fixtures have the extra (virtual) intensity control.</p>
+<p>A virtuális tuljadonságok gyakran dimmer tulajdonságot takarnak, amik nincsenek beépítve a lámpába. Lehet például LED-es lámpáknál amikben csak Piros, Zöld, Kék tulajdonságok vannak. Az ilyen LED lámpák az RGB-t úsztatják át a színekhez. A legtöbb programozó inkáb szereti, ha van egy (virtuális) intenzitás szabályzó is.</p>
 
 		
 	</body>
