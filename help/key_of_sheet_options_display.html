@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Display</title>
+		<title>Kijelzés</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="sheet options - display" />
@@ -9,413 +9,413 @@
 	<body>
 		
 		
-		<h1>Display</h1>
+		<h1>Kijelzés</h1>
 		
-		<p>The Display tab has potentially a lot of options - all dealing with how the data in the sheets are presented to you.</p>
+		<p>A kijelzés fülnek potenciálisan sok opciója van - minden arról szól, hogy hogyan mutassa meg a táblázatokban lév&otilde; adatokat.</p>
 
-<p>This topic lists all the possible options in the sheets, but each sheet does not have all options.</p>
+<p>Ez a fejezet listázza az össes lehetséges opciót, de nem minde táblázat tartalmazza az összes lehet&otilde;séget.</p>
 
 <p>&nbsp;</p>
 
 <h2>Sheet Style</h2>
 
-<p><strong>Sheet Style</strong> is an option in Fixture and Content sheets.</p>
+<p><strong>Táblázat stílusa</strong> egy lehet&otilde;ség a Lámpa és tartalom táblázatokban.</p>
 
-<p>This can be used to turn how the data is presented in the sheets.</p>
+<p>Ezzel lehet váltani a kétféle megjelenítés között.</p>
 
-<p>There are two options:</p>
+<p>Két lehet&otilde;sége van:</p>
 
 <ul>
-	<li><strong>Horizontal:</strong><br />
-	This will present the fixtures as rows and the Attributes as columns.</li>
-	<li><strong>Vertical:</strong><br />
-	This will organize the fixtures as columns and the Attributes as rows.</li>
+	<li><strong>Horizontal(vízszintes):</strong><br />
+	Ezzel az elrendezéssel a lámpák lesznek a sorok és a tulajdonságaik az oszlopok.</li>
+	<li><strong>Vertical(függ&otilde;leges):</strong><br />
+	Ezzel az elrendezéssel a lámpák az oszlopok és a tulajdonságaik lesznek a sorok.</li>
 </ul>
 
-<p>The default is Horizontal, but some like to use the vertical in situation where you have few fixtures. For instance when programming Media Servers.</p>
+<p>Az alapeset a Horizontális, de néha, hasznos a vertikális, olyan helyzetben amikor kevés lámpád van. Vagy például amikor Média Szervert programozol.</p>
 
 <h2>Font</h2>
 
-<p><strong>Font</strong> is an option in all sheets.</p>
+<p><strong>Font</strong> egy opció minden táblázatban.</p>
 
-<p>There is currently only one font type available in the grandMA2 software. So the only thing to change regarding the Font is the size.</p>
+<p>Csak egy bet&ucirc;típus van a grandMA2 szoftverében. Tehát az állítási lehet&otilde;ség az csak a bet&ucirc;méret marad.</p>
 
-<p>Tapping the button opens the Small Select Font pop-up. It looks like this:</p>
+<p>A gombra rábökve megnyílik egy válassz bet&ucirc;típust ablakocska. Így néz ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-font_v3-3.png" />
-<figcaption><em>Small Select Font pop-up</em></figcaption>
+<figcaption><em>Small Select Font ablakocska</em></figcaption>
 </figure>
 
-<p>Here it is possible to select one of the six different sizes - ranging from 10 to 22.</p>
+<p>Itt hat különböz&otilde; méret közül lehet választani - 10 t&otilde;l 22-es nagyságig.</p>
 
 <h2><a id="readout" name="readout"></a>Readout</h2>
 
-<p><strong>Readout</strong> is an option in Channel, DMX, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Readout</strong> egy opció a Csatorna, DMX, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>The readout determines how the values are displayed in the sheets.</p>
+<p>A readout(kiolvasás) meghatározza, hogyan legyen az érték megjelenítve a táblázatban.</p>
 
-<p>Tapping the button opens a small Select Readout pop-up like this:</p>
+<p>A gombra bökve az alábbi ablakocska jelenik meg:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-readout_v3-3.png" />
-<figcaption><em>Small Select Readout pop-up</em></figcaption>
+<figcaption><em>Small Select Readout ablakocska</em></figcaption>
 </figure>
 
-<p>Here it is possible to select one of the following options:</p>
+<p>Itt vannak a lehetséges választási lehet&otilde;ségek:</p>
 
 <ul>
-	<li><strong>Natural:</strong><br />
-	This displays the value defined in the "From" and "To" columns in the fixture profile. The range is customized, but is is always displayed with one decimal accuracy. It can even be a negative value. This can be useful when the attributes default values is not at the end of the range - for instance with Pan attributes.</li>
-	<li><strong>Percent:</strong><br />
-	Displays the attribute values as a percent without any decimal numbers. Range is 0 through 100.</li>
-	<li><strong>Decimal:</strong><br />
-	Displays the attribute values as an 8-bit DMX value. The range is from 0 through 255.</li>
-	<li><strong>Hex:</strong><br />
-	This displays the DMX values in 8-bit Hexadecimal numbers. The range is from 0 through FF.</li>
-	<li><strong>Physical:</strong><br />
-	This displays the value defined in the "From Phys" and "To Phys" columns in the fixture profile. Just as with the Natural readout, it is possible to customize the range but it is always displayed with one decimal accuracy. The idea is that values here matches the physical values for the fixtures. So for instance the zoom range of a fixture is matched to the physical range of the fixture making the sheets display the actual zoom degree.</li>
-	<li><strong>Decimal16:</strong><br />
-	This is just like the Decimal readout except the DMX value is displayed in a 16-bit range. The range is from 0 through 65 535.</li>
-	<li><strong>Hex16:</strong><br />
-	This is just like the Hex readout except the DMX value is displayed in a 16-bit range. The range is from 0 through FFFF.</li>
+	<li><strong>Natural(természetes):</strong><br />
+	Ez a lámpa profilban beállított "From" és "To" érték közötti oszlopokat mutatja. Az érték testreszabható, de mindig egy tizedesjegy pontossággal mutatja. Lehet negatív szám is. Ez hasznos, ha egy attribútum értéke alapértelmezetten, nem a két érték vége - például a Pan tulajdonság.</li>
+	<li><strong>Percent(százalék):</strong><br />
+	Az értékeket százalékban jeleníti meg, tizedes szám nélkül. Az értéke 0 -tól 100 -ig lehet.</li>
+	<li><strong>Decimal(decimális):</strong><br />
+	Az értékeket 8-bites DMX értékként jeleníti meg. Az értékei 0-tól 255-g lehetnek.</li>
+	<li><strong>Hex(hexadecimális):</strong><br />
+	Az értéket 8-bites hexadecimális számban jeleníti meg. Az értékei 0-tól FF-ig lehetnek.</li>
+	<li><strong>Physical(fizikai):</strong><br />
+	Ez az az érték amit a "From Phys" és "To Phys" oszlop határoz meg a lámpa profiljában. Hasonlóan mint a netuarl-nál, lehetséges testreszabni az értékeket, de mindig csak egy tizedesjegy pontossággal fogja mutatni. Az ötlet az, hogy itt egyezik a lámpa fizikai értékével a szám. Például a Zoom értéke egy lámpának egyezik a fizikai értékével a lámpának, akkor a táblázatba a valódi fizikai érték kerül, itt a zoom értéke fokban.</li>
+	<li><strong>Decimal16(16-os decimális):</strong><br />
+	Ez ugyanaz mint a decimális kiolvasásánál, kivéve, a DMX érték itt 16-biten van ábrázolva. Az értékei 0-tól 65 535-ig lehetnek.</li>
+	<li><strong>Hex16(16-os hexadecimális):</strong><br />
+	Ez ugyanaz mint a hexadecimális kiolvasásnál, kivéve, a DMX érték itt 16-biten van ábrázolva. Az érték 0-tól FFFF-ig lehet.</li>
 </ul>
 
-<p>Changing the readout for a sheet and then tapping in the sheet will also change the readout on your Encoder Bar.</p>
+<p>A kiolvasás megváltoztatása egy táblázatban, és arra való bökésben, a kerekeknél is megváltoztatja az értékek megjelenítését.</p>
 
-<p>Readout can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A kiolvasás lehet a <a href="key_of_sheet_options_title_buttons.html">fejléc</a>egyik gombja is.</p>
 
 <h2><a id="cue_color_columns" name="cue_color_columns"></a>Cue Color Columns</h2>
 
-<p><strong>Cue Color Columns</strong> is an option in Executor and Tracking sheets.</p>
+<p><strong>A kép színek oszlopokban</strong> egy lehet&otilde;ség az executornál és a tracking oldalakon.</p>
 
-<p>The <a href="key_keyword_appearance.html">Appearance keyword</a> can be used to give a color to individual cues. This option changes how this color is displayed in the sheets.</p>
+<p>A <a href="key_keyword_appearance.html">Appearance kulcsszó</a> használható hogy egyes képeket egyéni színekkel töltsünk fel. Ez az opció megváltoztatja, hogyan mutassa a színeket az oldalakon.</p>
 
-<p>Tapping the button opens the small Select Cue Color Columns pop-up. It has two different sizes regarding the options. There are more options in the Executor sheet than in the Tracking sheet. This is the pop-up from the Executor sheet:</p>
+<p>A gombra megjelenik a Select Cue Color Columns ablakocska. Kétféle mérete van a lehet&otilde;ségekhez képest. Több van az executor oldalon mint a trackingen. Ez az ablakocska van az executor oldalon:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-cue-color-columns_v3-3.png" />
-<figcaption><em>Small Select Cue Color Columns pop-up</em></figcaption>
+<figcaption><em>Kicsi Select Cue Color Columns ablakocska</em></figcaption>
 </figure>
 
-<p>The options in the pop-up are:</p>
+<p>Az ablakocska lehet&otilde;ségei ezek:</p>
 
 <ul>
 	<li><strong>Off:</strong><br />
-	This wont display any cue colors.</li>
+	Nem mutat semmilyen kép színt.</li>
 	<li><strong>Number:</strong><br />
-	This will display the color in the cue number column.</li>
+	Ez mutatja a színt a kép sorszám oszlopánál.</li>
 	<li><strong>Number+Name:</strong><br />
-	This will display the color in the cue number and name columns.</li>
+	Ez mutatja a színt a kép sorszámés a név oszlopánál.</li>
 	<li><strong>Number+Info:</strong><br />
-	This will display the color in the cue number and info columns.</li>
+	Ez mutatja a színt a név és az info oszlopokban.</li>
 	<li><strong>Info:</strong><br />
-	This will display the color in the info columns only.</li>
+	Ez csak az info oszlopban mutatja a színt.</li>
 	<li><strong>All Columns:</strong><br />
-	This will display the color in all columns.</li>
+	Ez minden oszlopban mutatja a színt.</li>
 </ul>
 
-<p>The Tracking sheet only has the three first options.</p>
+<p>A tracking oldalon csak az els&otilde; három lehet&otilde;ség van.</p>
 
 <h2>Sort By</h2>
 
-<p><strong>Sort By</strong> is an option in Content and Tracking sheets.</p>
+<p><strong>Rendezés</strong> egy opció a Tartalom és Tracking oldalakon.</p>
 
-<p>This option can be used to choose the sort method for the sheets.</p>
+<p>Ezzel lehet kiválasztani, hogyan rendezze az oldalakat.</p>
 
-<p>There are two options: <strong>Fixture ID</strong> or <strong>Channel ID</strong>. This option makes sense if your fixtures do not have the same number as Fixture ID or Channel ID. Then this chooses the priority for the sorting.</p>
+<p>Két lehet&otilde;ség van: <strong>Fixture ID</strong> vagy <strong>Channel ID</strong>. Ez akkor érdekes, ha nem ugyanaz a  Fixture ID vagy a Channel ID. Ezzel beállítható az els&otilde;dleges rendezés.</p>
 
 <h2>Symbol Output</h2>
 
-<p><strong>Symbol Output</strong> is an option in Channel and Fixture sheets.</p>
+<p><strong>Szimbólum megjelenítése</strong> egy opció a Csatorna és Lámpa oldalakon.</p>
 
-<p>The Symbol Out is a small square next to the Channel ID in the Channel Sheet and next to the fixture name in the Fixture Sheet. This square shows the combined intensity and color output from the fixture.</p>
+<p>A Symbol Out egy kis négyzet a Channel ID melett a Csatorna oldalon és a lámpa neve mellett a Lámpa oldalon. Ez a négyzet mutatja a kombinált szín és fényer&otilde; kimenetét a lámpának.</p>
 
-<p>Tapping the button opens the small Select Symbol Output pop-up. It looks like this:</p>
+<p>A gombra bökve megjelenik a Select Symbol Output ablakocska. Ilyen:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-symbol-output_v3-3.png" />
-<figcaption><em>Small Select Symbol Output pop-up</em></figcaption>
+<figcaption><em>Kicsi Select Symbol Output ablakocska</em></figcaption>
 </figure>
 
-<p>The options are:</p>
+<p>A lehet&otilde;ségek:</p>
 
 <ul>
 	<li><strong>None:</strong><br />
-	The square is hidden.</li>
+	A négyzet rejtett.</li>
 	<li><strong>Auto:</strong><br />
-	The squares output follows the selected layer.</li>
+	A négyzet követi a kiválasztott réteget.</li>
 	<li><strong>Value Layer:</strong><br />
-	The square displays the output from the Value Layer.</li>
+	A négyzet az érték réteg értékeit mutatja.</li>
 	<li><strong>Output Layer:</strong><br />
-	The square displays the output from the Output Layer.</li>
+	A négyzet a kimeneti réteg értékeit mutatja.</li>
 	<li><strong>DMX Layer:</strong><br />
-	The square displays the output from the DMX Layer.</li>
+	A négyzet a DMX réteg értékeit mutatja.</li>
 </ul>
 
-<p>For more information about the different layers please read the <a href="key_of_layers_in_sheets.html">Layers in sheets topic</a>.</p>
+<p>A rétegekr&otilde;l további információ: <a href="key_of_layers_in_sheets.html">Rétegek az oldalakon fejezet</a>.</p>
 
 <h2>Symbol Feature</h2>
 
-<p><strong>Symbol Feature</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Szimbólum képesség</strong> opció a Csatorna, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>Each feature of the fixtures can have a small symbol displaying a graphic representations of the features value. This symbol can be shown or hidden.</p>
+<p>Minden lámpatulajdonságnak van egy kis ikonkája, ami a grafikus megjelenítése az értékeknek. Ennek megjelenítését/elrejtését lehet itt beállítani.</p>
 
-<p>For instance the dimmer value is represented by a dimmer bar. The position values are represented by vertical and horizontal line intersecting. Gobos are displaying a small image of the gobo. Colors are displayed as small squares displaying the colors next to each color feature.</p>
+<p>Például a dimmert egy dimmer-csí reprezentálja. A pozíciót egy vízszintes és függ&otilde;leges vonal metszete. A gobók kis képekként jelennek meg. A színek meg kis szines kockákként.</p>
 
 <h2>Cue Colors</h2>
 
-<p><strong>Cue Colors</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Kép Színek</strong> egy lehet&otilde;ség a Csatorna, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>This option allows you to select how attribute values should be presented in the sheets.</p>
+<p>Ezek a lehet&otilde;ségek, kiválaszthatóvá teszik, az oldalon a megjelenést.</p>
 
-<p>Tapping the button opens the small Select Cue Colors pop-up. It looks like this:</p>
+<p>A gombra bökve megjelenik a Select Cue Colors ablakocska. Így néz ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-cue-color_v3-3.png" />
-<figcaption><em>Small Select Cue Colors pop-up</em></figcaption>
+<figcaption><em>Kicsi Select Cue Colors ablakocska</em></figcaption>
 </figure>
 
-<p>There are three options:</p>
+<p>Három opció van:</p>
 
 <ul>
 	<li><strong>Off</strong><br />
-	All attribute values are displayed with a yellow color.</li>
+	Minden attribútumérték sárga szín&ucirc; lesz.</li>
 	<li><strong>On</strong><br />
-	The attribute values from the primary selected executor displays the colors Cyan, Green, White, and Magenta. These colors are described in detail in the <a href="key_ws_colors_cue.html">Cue Colors Topic</a>. Values from other executors are displayed in yellow.</li>
+	Az els&otilde;dlegesen kiválasztott executor attribútumértékei a cián, a zöld, a fehér és a bíbor színt jelenítik meg. Ezeket a színeket részletesen leírja a <a href="key_ws_colors_cue.html"> színtéma a képekben fejezet </a>. A többi executor értéke sárga szín&ucirc; lesz. </li>
 	<li><strong>My Exec</strong><br />
-	This will color the values from the primary selected executor in Cyan, Green, White, and Magenta. Other executors triggered by your user are displayed in yellow. Values from executors triggered by other users are displayed in a gray color.</li>
+	Ez színezi az els&otilde;dlegesen kiválasztott executor értékeit cián, zöld, fehér és bíbor szín&ucirc;re. A felhasználó által kiválasztott egyéb executorok sárga színnel jelennek meg. A más felhasználók által kiválasztott executorok szürke színben jelennek meg.</li>
 </ul>
 
 <h2>Namefield</h2>
 
-<p><strong>Namefield</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Névmez&otilde;</strong> egy lehet&otilde;ség a Csatorna, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>The name field can be turned On or Off. When it is On then the name of the fixture is displayed in the sheet.</p>
+<p>A névmez&otilde;t ki/be lehet kapcsolni. Ha bevan, akkor a lámpák neve megjelenik a táblázatban.</p>
 
 <h2>Channel ID</h2>
 
-<p><strong>Channel ID</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Csatorna ID</strong> egy lehet&otilde;ség a Csatorna, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>The Channel ID can be turned On or Off. When it is On then the Channel ID will be displayed in the sheet.</p>
+<p>A Csatorna ID-t ki/be lehet kapcsolni. Ha bevan, akkor a Csatorna ID megjelenik a táblázatban
 
-<p>If the fixture has both a Channel ID and Fixture ID and the ID number is the same, then there is only displayed one number even if both Channel ID and Fixture ID is On. If the fixture has two different ID numbers and both are set to On, then they are shown separated by a colon. The Fixture ID is on the left side of the colon and the Channel ID is on the right side.</p>
+<p>Ha a lámpatestnek mind csatornaazonosítója, mind lámpatestazonosítója van, és az azonosító száma azonos, akkor csak az egyik szám jelenik meg akkor is, ha a csatornaazonosító és a lámpatestazonosítója be van kapcsolva. Ha a lámpatestnek két különböz&otilde; azonosító száma van, és mindkett&otilde; be van kapcsolva, akkor kett&otilde;spont elválasztással jelennek meg. A Fixture ID az oszlop bal oldalán, a Channel ID pedig a jobb oldalon található.</p>
 
 <h2>Fixture ID</h2>
 
-<p><strong>Fixture ID</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Lámpa ID</strong> egy lehet&otilde;ség a Csatorna, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>The Fixture ID can be turned On or Off. When it is On then the Fixture ID will be displayed in the sheet.</p>
+<p>A Lámpa ID-t ki/be lehet kapcsolni. Ha bevan, akkor a Lámpa ID megjelenik a táblázatban
 
-<p>If the fixture has both a Channel ID and Fixture ID and the ID number is the same, then there is only displayed one number even if both Channel ID and Fixture ID is On. If the fixture has two different ID numbers and both are set to On, then they are shown separated by a colon. The Fixture ID is on the left side of the colon and the Channel ID is on the right side.</p>
+<p>Ha a lámpatestnek mind csatornaazonosítója, mind lámpatestazonosítója van, és az azonosító száma azonos, akkor csak az egyik szám jelenik meg akkor is, ha a csatornaazonosító és a lámpatestazonosítója be van kapcsolva. Ha a lámpatestnek két különböz&otilde; azonosító száma van, és mindkett&otilde; be van kapcsolva, akkor kett&otilde;spont elválasztással jelennek meg. A Fixture ID az oszlop bal oldalán, a Channel ID pedig a jobb oldalon található.</p>
 
 <h2>Columns</h2>
 
-<p><strong>Columns </strong>is an option in Channel, DMX, Fixture, and Content sheets.</p>
+<p><strong>Oszlopok </strong> egy lehet&otilde;ség a Csatorna, DMX, Lámpák és Tartalom oldalakon</p>
 
-<p>Tapping the green input field allows you to set a number of columns in the sheets.</p>
+<p>A zöld mez&otilde;re bükve beállíthatod az oszlopok számát az oldalon.</p>
 
-<p>The column number is only used in Fixture and Content Sheets if the sheet is in Vertical Sheet Style.</p>
+<p>Az oszlop szám csak akkor m&ucirc;ködik, ha a Lámpa és Tartalom oldalak Vertikális oldal stílusban vannak.</p>
 
 <h2><a id="autoscroll" name="autoscroll"></a>Autoscroll</h2>
 
-<p><strong>Autoscroll</strong> is an option in Executor, and Tracking sheets.</p>
+<p><strong>Autoscroll</strong> egy lehet&otilde;ség az Executor, és Tracking oldalakon.</p>
 
-<p>The Autoscroll function can be turned On or Off. When On it automatically scrolls the cue sequence list in the Executor and Tracking Sheets. This makes sure the active cue is always visible in the sheet.</p>
+<p>Az Autoscroll funkció be- vagy kikapcsolható. Ha be van kapcsolva, automatikusan görgeti a képek listáját az Executor és a Tracking Sheets -en. Ez biztosítja, hogy az aktív kép mindig látható legyen a lapon.</p>
 
-<p>Autoscroll can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>Az Autoscroll lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc Gomb is</a>.</p>
 
 <h2><a id="feature_sort" name="feature_sort"></a>Feature Sort</h2>
 
-<p><strong>Feature Sort </strong>is an option in Fixture, Content, and Tracking sheets.</p>
+<p><strong>Képességrendezés </strong> egy lehet&otilde;ség a Lámpa, Tartalom, és Tracking oldalakon</p>
 
-<p>The sheets can activate an automatic sorting of the features. This will move the attributes of the current feature so it is right next to the name of the fixture or cue. This should avoid a lot of scrolling in the sheets.</p>
+<p>Az oldalakon be lehet kapcsolin egyfajta képesség szerinti rendezést. Ez az aktuálisan kiválasztott képességet rendezi  közvetlen a lámpa,vagy kép neve mellé. Ezzel elkerülhet&otilde; a sok görgetés az oldalon.</p>
 
-<p>Feature Sort can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A Feature Sort lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc gomb is</a>.</p>
 
 <h2><a id="fixture_channel_sort" name="fixture_channel_sort"></a>Fixture / Channel Sort</h2>
 
-<p><strong>Fixture Sort</strong> or <strong>Channel Sort</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Lámpa rendezés</strong> vagy <strong>Csatorna rendezés</strong> egy opció a Csatorna, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>In the Channel Sheet it is called Channel Sort, in the other sheets it is called Fixture Sort. The function is the same. The selected fixtures are displayed first in the sheets and they are displayed in the selection order.</p>
+<p>A csatorna listában csatornarendezésnek hívjuk, a többi lapon pedig lámpa rendezésnek. A funkció ugyanaz. A kiválasztott lámpák jelennek meg a táblázat elején és a kiváalsztás sorrendjében.</p>
 
-<p>Fixture Sort or Channel Sort can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A Fixture Sort vagy Channel Sort is lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc gomb</a>.</p>
 
 <h2>Marker</h2>
 
-<p><strong>Marker</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Jelöl&otilde;</strong> egy lehet&otilde;ség a Csatorna, Lámpa, Tartalom és Tracking oldalakon.</p>
 
-<p>The colored markers in the sheets provide additional information of what is affecting the values and to display what information might be stored in cues. These markers may be turned On or Of.</p>
+<p>A lapon lév&otilde; színes jelöl&otilde;k további információkat nyújtanak arról, hogy mi befolyásolja az értékeket, és megmutatják, hogy milyen információ tárolható a képekben. Ezek a markerek be- vagy kikapcsolhatók.</p>
 
-<p>Read more about the markers in the <a href="key_ws_colors_marker.html">Maker Colors topic</a>.</p>
+<p>További info a markerekr&otilde;l: <a href="key_ws_colors_marker.html">Markerek színei fejezet</a>.</p>
 
 <h2>Preset Readout</h2>
 
-<p><strong>Preset Readout</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Preset Kiolvasás</strong> egy lehet&otilde;ség a Csatorna, Lámpa, Tartalom és a Tracking oldalakon.</p>
 
-<p>Preset Readout is used to change how the preset ID is displayed in sheets. This is relevant when an attribute gets its values from a preset.</p>
+<p>A Preset Readout a preset azonosítók kiolvasását jeleníti meg. Ez akkor érdekes, ha egy tulajdonság az értékét egy presetb&otilde;l veszi.</p>
 
-<p>Tapping the button opens the small Select Preset Readout pop-up. It looks like this:</p>
+<p>A gombra bökve megnyílik a Select Preset Readout ablakocska. Így néz ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-preset-readout_v3-3.png" />
-<figcaption><em>Small Select Preset Readout pop-up</em></figcaption>
+<figcaption><em>Kisi Select Preset Readout ablakocska</em></figcaption>
 </figure>
 
-<p>The options are:</p>
+<p>Az opciók:</p>
 
 <ul>
 	<li><strong>Names:</strong><br />
-	The name of the preset will be displayed.</li>
+	A presetek neve kerül megjelenítésre.</li>
 	<li><strong>Numbers:</strong><br />
-	The number of the preset will be displayed.</li>
+	A presetek száma kerül megjelenítésre.</li>
 	<li><strong>Numbers &amp; Names:</strong><br />
-	Both the number and the name of the preset will be displayed.</li>
+	Mind a név és a szám is megjelenítésre kerül.</li>
 </ul>
 
 <h2>Hide Empty Cells</h2>
 
-<p><strong>Hide Empty Cells</strong> is an option in Channel, Fixture, Content, and Tracking sheets.</p>
+<p><strong>Üres cellák elrejtése</strong> egy lehet&otilde;ség a Csatorna, Lámpa, Tartalom, és Tracking oldalakon..</p>
 
-<p>When a mixture of fixture types are patched in a show it can often happen that not all the fixtures have the same features. This means that a sheet can have empty or unused cells. These cells can be hidden in the sheets. This can often provide a better overview of the features available in the fixtures.</p>
+<p>Egy showban ha többféle lámpánk van, gyakran el&otilde;fordulhat, hogy nem minden lámpa rendelkezik azonos jellemz&otilde;kkel. Ez azt jelenti, hogy egy lapon lehet üres, vagy nem használt cellák. Ezeket a cellákat el lehet rejteni a lapokban. Ez gyakran jobb áttekintést nyújt a lámpák rendelkezésre álló szolgáltatásairól.</p>
 
-<p>Turning Hide Empty Cells On will hide these unused cells.</p>
+<p>Ha bekapcsolod a Hide Empty Cells-t akkor ezek a nem használt cellák elt&ucirc;nnek.</p>
 
 <h2><a id="hide_timing_countdown" name="hide_timing_countdown"></a>Hide Timing Countdown</h2>
 
-<p><strong>Hide Timing Countdown </strong>is an option in the Executor sheets.</p>
+<p><strong>A visszaszámláló elrejtése </strong>egy opció az Executor oldalon.</p>
 
-<p>In the Sequence Executor Sheet you can see the cue times. When a fade is running you can choose to have the time count down to 0 or just always display the time stored in the cue.</p>
+<p>A Sequence Executor Oldalon látod a kép id&otilde;ket. Ha gey átúszás éppen zajlik, akkor láthatod a hátralév&otilde; id&otilde;t, vagy csak az átúszási id&otilde;t mutatja.</p>
 
-<p>Hide Timing Countdown is an On or Off function. When it is On, then there is no visible count down. When it is Off then the count down is displayed.</p>
+<p>A Hide Timing Countdown egy be/ki kapcsolható funkció. Ha be van kapcsolva, akkor nincs vizuális visszaszámlálás. Ha ki van kapcsolva akkor mutatja a hátralév&otilde; id&otilde;t a listában.</p>
 
-<p>Hide Timing Countdown can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A Hide Timing Countdown is lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc Gomb</a>.</p>
 
 <h2><a id="show_additional" name="show_additional"></a>Show Additional</h2>
 
-<p><strong>Show Additional</strong> is an option in the DMX sheets.</p>
+<p><strong>Továbbiak mutatása</strong> egy opció a DMX oldalakon.</p>
 
-<p>This function is used to display more information in the DMX Sheet than just the DMX values.</p>
+<p>Ez a funkció használható, további információkra a DMX oldalakon, mint a szokásos DMX értékek.</p>
 
-<p>Tapping the button opens the small Select Show Additional pop-up. It looks like this:</p>
+<p>A gombra bökve megnyílik a Select Show Additional ablakocska. Emígyen:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-show-additional_v3-3.png" />
-<figcaption><em>Small Select Show Additional pop-up</em></figcaption>
+<figcaption><em>Kicsi Select Show Additional ablakocska</em></figcaption>
 </figure>
 
-<p>The options are:</p>
+<p>A lehet&otilde;ségek a következ&otilde;k:</p>
 
 <ul>
 	<li><strong>Show only Values:</strong><br />
-	No additional information are displayed.
+	Nincs további információ megjelenítve.
 	<figure class="caption"><img alt="" src="../../img/window_dmx_additional-none_v3-2.png" />
-	<figcaption><em>DMX values without additional information</em></figcaption>
+	<figcaption><em>DMX értékek továbi információk nélkül</em></figcaption>
 	</figure>
 	</li>
 </ul>
 
 <ul>
 	<li><strong>Show IDs:</strong><br />
-	The fixtures ID numbers and names are displayed above the DMX values. They are only displayed once per fixture - the ID is nor displayed above each DMX value.
+	A lámpa Id-k, és nevek megjelennek a DMX értékek felett. Lámpánként csak egyszer - Az ID nem jelenik meg minden DMX érték felett.
 	<figure class="caption"><img alt="" src="../../img/window_dmx_additional-id_v3-2.png" />
-	<figcaption><em>DMX values with ID number and name</em></figcaption>
+	<figcaption><em>DMX értékek ID számokkal és nevekkel</em></figcaption>
 	</figure>
 	</li>
 </ul>
 
 <ul>
 	<li><strong>Show Attributes:</strong><br />
-	The attribute connected with the DMX address is displayed above the DMX value.
+	A DMX címhez kapcsolodó attribútumok megjelennek a DMX értékek felett.
 	<figure class="caption"><img alt="" src="../../img/window_dmx_additional-attribute_v3-2.png" />
-	<figcaption><em>DMX values with attribute name above the values</em></figcaption>
+	<figcaption><em>DMX értékek az attribútumok neveivel</em></figcaption>
 	</figure>
 	</li>
 </ul>
 
 <ul>
 	<li><strong>Show Address:</strong><br />
-	The DMX address is displayed above each DMX value.
+	A DMX címe látszódik minden DMX érték felett.
 	<figure class="caption"><img alt="" src="../../img/window_dmx_additional-address_v3-2.png" />
-	<figcaption><em>DMX values with DMX addresses above each value</em></figcaption>
+	<figcaption><em>DMX értékek a DMX címeknél minde egyes értéknél</em></figcaption>
 	</figure>
 	</li>
 </ul>
 
-<p>Show Additional can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A Show Additional is lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc Gomb</a>.</p>
 
 <h2><a id="show_only_selected" name="show_only_selected"></a>Show Only Selected</h2>
 
-<p><strong>Show Only Selected</strong> is an option in the DMX sheets.</p>
+<p><strong>Csak a kiválasztottak mutatása</strong> egy opció a DMX oldalakon.</p>
 
-<p>This will limit the DMX sheet to only display the universes of the selected fixtures.</p>
+<p>Ez csökkenti a DMX listát, hogy csak a kiválasztott lámpához tartozó értékeket mutassa..</p>
 
-<p>Show Only Selected can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A Show Only Selected is lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc Gomb</a>.</p>
 
 <h2><a id="programmer_colors" name="programmer_colors"></a>Programmer Colors</h2>
 
-<p><strong>Programmer Colors</strong> is an option in the DMX sheets.</p>
+<p><strong>Programozó színei</strong> egy opció a DMX oldalon.</p>
 
-<p>There are two color schemes for the DMX values in the DMX sheet.</p>
+<p>Két különböz&otilde; szín lehet a DMX értékeknek a DMX oldalon.</p>
 
-<p>There is the default where the background color changes from gray to light green depending on intensity of the value.</p>
+<p>Az alapértelmezett amikor a háttér színe változik szürkéb&otilde;l zöldbe, az intenzitás függvényében.</p>
 
-<p>But you can choose to use turn On Programmer Colors instead. This will then use the same color schema as the Channel and Fixture Sheets.</p>
+<p>De választhatod a bekapcsolást is, ilyenkor ugyanaz a színséma lesz mint a csatorna és lámpa lapoknál.</p>
 
-<p>Programmer Colors can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A Programmer Colors is lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc Gomb</a>.</p>
 
 <h2>Merge Same Values</h2>
 
-<p><strong>Merge Same Values</strong> is an option in Fixture, Content, and Tracking sheets.</p>
+<p><strong>Hasonló értékek összefésülése</strong> egy opció a Lámpák, Tartalom és Tracking oldalakon.</p>
 
-<p>Some features can combine or merge the values displayed in the sheets if the value is the same. For instance the MixColor attributes "R", "G", and "B". If these three attributes have the same value then it is only displayed once - as a merged value. If they have different values then they are split up into each displaying the values they have.</p>
+<p>Egyes funkciók kombinálhatják vagy egyesíthetik a lapon megjelenített értékeket, ha az érték megegyezik. Például a MixColor "R", "G" és "B" attribútumokat tartalmaz. Ha ennek a három attribútumnak ugyanaz az értéke, akkor csak egyszer jelenik meg - egyesített értékként. Ha eltér&otilde; értékeik vannak, akkor feloszlanak minden egyes értékre, és megjelenítik az értéküket. </p>
 
-<p>This merge function can be turned On or Off.</p>
+<p>A Merge funkció ki/be kapcsolható.</p>
 
 <h2><a id="mixcolor_readout" name="mixcolor_readout"></a>MixColor Readout</h2>
 
-<p><strong>MixColor Readout</strong> is an option in Fixture, Content, and Tracking sheets.</p>
+<p><strong>MixColor Kiolvasás</strong> egy lehet&otilde;ség a Lámpák, Tartalom és Tracking oldalakon.</p>
 
-<p>The MixColor system is a way to present the same attributes to the operator no matter if the fixtures uses different color systems. This means that the operator does not have to change between the different colors systems. In the sheets it is then possible to change how this is displayed.</p>
+<p>A MixColor rendszer lehet&otilde;vé teszi ugyanazon attribútumok bemutatását a kezel&otilde; számára, függetlenül attól, hogy a lámpa különböz&otilde; színrendszereket használ-e. Ez azt jelenti, nem kell váltania a különböz&otilde; színrendszerek között. A lapokban ezután megváltoztathatja ennek megjelenítését.</p>
 
-<p>Tapping the button opens the small Select MixColor Readout pop-up. It looks like this:</p>
+<p>A gombra bökve megjelenik a Select MixColor Readout ablakocska. Emígyen:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-mixcolor-readout_v3-3.png" />
-<figcaption><em>Small Select MixColor Readout pop-up</em></figcaption>
+<figcaption><em>Kicsi Select MixColor Readout ablakocska</em></figcaption>
 </figure>
 
-<p>The options are:</p>
+<p>Az opciók a következ&otilde;ek:</p>
 
 <ul>
 	<li><strong>RGB:</strong><br />
-	The MixColors are displayed as RGB attributes.</li>
+	A MixColors mint RGB kerül megjelenítésre.</li>
 	<li><strong>CMY:</strong><br />
-	The MixColors are displayed as CMY attributes.</li>
+	A MixColors mint CMY kerül megjelenítésre.</li>
 	<li><strong>Default:</strong><br />
-	The MixColors are displayed using the default selected in the setup - Read more about setting this in the <a href="key_single_multi_systems_user_settings.html#settings">User Settings topic</a>.</li>
+	A MixColors a beálítás szerinti alapértelmezésben kerül megjelenítésre - Továbi info: <a href="key_single_multi_systems_user_settings.html#settings">Felhasználói beállítások fejezet</a>.</li>
 </ul>
 
-<p>MixColor Readout can also be a <a href="key_of_sheet_options_title_buttons.html">Title Button</a>.</p>
+<p>A MixColor Readout is lehet <a href="key_of_sheet_options_title_buttons.html">Fejléc Gomb</a>.</p>
 
 <h2>RDM Info</h2>
 
-<p><strong>RDM Info</strong> is an option in Channel, and Fixture sheets.</p>
+<p><strong>RDM Információ</strong> egy lehet&otilde;ség a Csatorna, és Lámpák oldalon.</p>
 
-<p>The RDM info is a small RDM icon that will be displayed next to the fixture name or ID.</p>
+<p>Az RDM info egy kis RDM ikon, amia lámpa neve vagy ID-je mellett jelenik meg.</p>
 
-<p>Tapping the button opens the small Select RDM Info pop-up. It looks like this:</p>
+<p>A gombra bökve megnyílik a Select RDM Info ablakocska. Emígyen:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-rdm-info_v3-3.png" />
-<figcaption><em>Small Select RDM Info pop-up</em></figcaption>
+<figcaption><em>Kicsi Select RDM Info ablakocska</em></figcaption>
 </figure>
 
-<p>The options are:</p>
+<p>A lehetséges opciók:</p>
 
 <ul>
 	<li><strong>None:</strong><br />
-	No icon is displayed in the sheet.</li>
+	Nincs ikon megjelenítve az oldalon.</li>
 	<li><strong>Warning:</strong><br />
-	The yellow RDM warning icon is displayed in the sheet.</li>
+	A sárga RDM figyelmeztetés ikonja van megjelenítve az oldalon.</li>
 	<li><strong>Alert:</strong><br />
-	The red RDM alert icon is displayed in the sheet.</li>
+	A piros RDM hiba ikonja van megjelenítve az oldalon.</li>
 	<li><strong>Warning &amp; Alert:</strong><br />
-	Both icons can be displayed in the sheets.</li>
+	Mindkét ikon megjelenik az oldalon.</li>
 </ul>
 
-<p>Read more about RDM and how to configure the warning and alert notifications in the <a href="key_rdm.html">RDM section</a>.</p>
+<p>További olvasnivaló az RDM-r&otilde;l és a figyelmeztetések/hibák megjelenítésér&otilde;l az <a href="key_rdm.html">RDM fejezetben</a>.</p>
 
 		
 	</body>
