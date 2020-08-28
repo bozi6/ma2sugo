@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Big systems</title>
+		<title>Nagy rendszerek</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="systems - big, networks - big" />
@@ -9,40 +9,40 @@
 	<body>
 		
 		
-		<h1>Big systems</h1>
+		<h1>Nagy rendszerek</h1>
 		
-		<p>There are some limitation to consider when using the grandMA2 in big systems.</p>
+		<p>Van néhány korlátozás amit érdemes szem el&otilde;tt tartani, ha nagy rendszerekben használod a grandMA2-t.</p>
 
-<p>The following is exploring some of these limitations running one session in a good <strong>Gigabit</strong> network.</p>
+<p>A következ&otilde;kben felfedezhetünk néhányat ezekb&otilde;l, ha egy Session-t futtatunk egy jó <strong>Gigabites</strong> hálózaton.</p>
 
-<p>There is the general limitation regarding the parameter count: It can control a maximum of 65 536 parameters.</p>
+<p>Ezek a korlátaozások általában a paraméterek számát jelentik: Maximum 65 536 paramétert tud vezérelni.</p>
 
-<p>Then there is the limit of 256 DMX universes - It is only possible to patch your fixtures in a maximum of 256 universes.</p>
+<p>Aztán van még egy korlátozás a 256 DMX univerzum - a lámpákat csak 256 univerzumba lehet patchelni maximum.</p>
 
-<p>The devices are separated into different classes. There is a limit of how many devices of each class can be in one session.</p>
+<p>Az eszközöket különböz&otilde; osztályokba soroljuk. Van egy határa annak, hogy mennyi eszköz, milyen osztályból lehet egy Sessionban.</p>
 
 <ul>
-	<li><strong>Class A</strong> are grandMA2 full-size, grandMA2 light, grandMA2 ultra-light, grandMA2 replay unit, grandMA2 onPC and MA NPU.<br />
-	Maximum 31 Class A devices in a session. 8 of the 31 are reserved for <strong>Stations</strong> (grandMA2 consoles and grandMA2 onPC), the 23 remaining devices can be any Class A device.</li>
-	<li><strong>Class B</strong> are MA VPU, MA 3D and MA NDP.<br />
-	Maximum 64 Class B devices in a session.</li>
-	<li><strong>Class C</strong> are MA Nodes and MA VPU in "Show mode".<br />
-	Maximum 255 Class C devices in a session.</li>
+	<li><strong>A Osztály</strong> a grandMA2 full-size, grandMA2 light, grandMA2 ultra-light, grandMA2 replay unit, grandMA2 onPC és MA NPU.<br />
+	Maximum 31 A osztályú eszköz lehet a sessionban. 8 a 31-b&otilde;l lefoglalva az <strong>Stations(Állomásoknak)</strong> (grandMA2 consoles és grandMA2 onPC), a maradék 23 eszköz lehet bármilyen A osztályú eszköz.</li>
+	<li><strong>B osztály</strong> az MA VPU, MA 3D és MA NDP.<br />
+	Maximum 64 B osztályú eszköz lehet egy sessionban.</li>
+	<li><strong>C osztály</strong> az MA Nodes és MA VPU a "Show mode"-ban.<br />
+	Maximum 255 C osztályú eszköz lehet egy sessionban.</li>
 </ul>
 
-<p>The amount of RAM or memory is important. It is recommended to have a minimum of 8GB in every class A device in the session. If one device has lower memory, then the entire system can only utilize the lowest amount of memory. For instance if one MA&nbsp; NPU only has 4GB, then the entire session can only use 4GB.</p>
+<p>A meglév&otilde; RAM mérete is fontos. Javasolt, hogy minden A osztályú eszközben, minimum 8GB ram kell a Sessionban. Ha az egyik eszközben kevesebb van, akkor az egész rendszer csak a legkevesebb mennyiség&ucirc;t tudja használni. Például ha egy MA&nbsp; NPU csak 4GB RAM van, akkor az egész rendszer csak 4GB tud használni.</p>
 
-<p>Memory is related to the size of the show file. If the maximum amount of parameters is used, then the amount of cues that can be stored is lower. User Profiles, the amount of fixtures patched, 3D objects in the show file, bitmaps, and so on all affects the memory use. The current memory use and the free memory can be monitored in the <a href="key_ost_desk_status.html">Desk Status window</a>.</p>
+<p>A memória meghatározza a show fájl méretét is. Ha a maximum paramétereket használjuk, akkor kevesebb képet enged eltárolni a rendszer. Felhasználói profilok, a patchelt lámpák száma, 3D-s objektumok, képek és az effektek is kihatssal vannak a memóriahasználatra. Az aktuális és használt memória monitorozható a <a href="key_ost_desk_status.html">Desk Status window</a>(Pult állapotablakában).</p>
 
-<p>For big systems it is always recommended to have an entire system running minimum 1 Gbit/s speed. This goes for all devices including the DMX nodes. It is not recommended to use older nodes that only run 100Mbit/s or 10Mbit/s speed. For a synchronized real time DMX output only use MA Nodes.</p>
-
-<p>&nbsp;</p>
-
-<p>If you are in a situation where you need to build a big system, it is a very good idea to have an experienced <strong>MA System Specialist</strong> involved in the design and implementation of the system and network. There are a lot of other considerations regarding building a network that can handle the traffic especially if there is a high demand for redundancy. A <strong>MA System Specialist</strong> has the required knowledge to help with all these considerations.</p>
+<p>A nagy rendszerekben, mindíg javasolt az egész rendszert 1Gbit/s -es hálózati eszközökön futtatni. Ez minden eszközre vonatkozik, a DMX node-kra is. Nem javasolt régebbi node-kat használni, amik csak 100, vagy 10Mbit/s -el tudnak menni. Egy szinkronizált, valós idej&ucirc; DMX kimenetek csak MA Node-n keresztül mennek.</p>
 
 <p>&nbsp;</p>
 
-<p>It is not recommended to run more than 3 (very) big sessions in one gigabit network. If more than that is needed, please contact our technical support or a <strong>MA System Specialist</strong>.</p>
+<p>Ha olyan helyzetbe kerülsz, hogy egy nagy rendszert kell összehoznod, nagyon jó ötlet ha a tervezésre, és a megvalósításba is meghívsz egy tapasztalt<strong>MA rendszerszakért&otilde;</strong>. Számos más szempont van a hálózat kiépítésével kapcsolatban, amely képes kezelni a forgalmat, különösen ha nagy a redundáció iránti igény. Egy <strong> MA rendszerszakért&otilde; </strong> -nek rendelkeznie kell a szükséges ismeretekkel ahhoz, hogy segítsen mindezen megfontolásokban/p>
+
+<p>&nbsp;</p>
+
+<p>Nem javasolt, hogy 3 (igen) nagy Session fusson egy gigabites hálózaton. Ha többre van szükséged, akkor hívd a technikai támogatást, vagy egy <strong>MA rendszerszakért&otilde;t</strong>.</p>
 
 		
 	</body>

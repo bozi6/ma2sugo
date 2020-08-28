@@ -25,7 +25,7 @@
 
 <p>Lámpákat lehet készíteni és módosítani is a grandMA2 szoftverben. Lehetséges beolvasni letöltött lámpatípus fájlokat is. Ha érdekel akkor a: <a href="key_patch_add_fixtures.html">Lámpák hozzáadsa a show-hoz</a> fejezetben van err&otilde;l szó.</p>
 
-<p>Minden ami a lámpatípusok beállításához kell, az megtalálható a <strong>Fixture Types Editor(Eszköztípus szerkezt&otilde;)</strong>-ben. Ide a <span class="hardkey">Setup(beállítások)</span> ,  utána bökj a <span class="softkey">Patch &amp; Fixture Schedule</span> ami után bökj a <span class="softkey">Fixture Types</span> gombra a jobb fels&otilde; sarokban.</p>
+<p>Minden ami a lámpatípusok beállításához kell, az megtalálható a <strong>Fixture Types Editor(Eszköztípus szerkezt&otilde;)</strong>-ben. Ide a <span class="hardkey">Setup(beállítások)</span> , utána bökj a <span class="softkey">Patch &amp; Fixture Schedule</span> ami után bökj a <span class="softkey">Fixture Types</span> gombra a jobb fels&otilde; sarokban.</p>
 
 <p>Itt találhatóak a showban lév&otilde; lámpatípusok. Rábökve egy lámpára a listában és utána az <span class="softkey">Edit</span> gombra, a bal alsó sarokban, megnyitja a szerkeszt&otilde;t. Valahogy így fest:</p>
 
@@ -60,7 +60,7 @@
 	<li><strong>Break(törés)</strong>:<br />
 	A törést akkor használjuk ha egy lámpának több mint egy kezd&otilde;cím kell.<br />
 	Ez lehet egy LED bar, 4 különböz&otilde; LED lámpával, egy házba építve. Mindgyik példányt külön címezhetjük a lámpatest hátoldalán, ezért négy külön DMX kezd&otilde;cím kellhet a lámpának. Ilyenko 4 DMX törést kell beállítanunk.<br />
-	Egy másik példa erre amikor színváltót adunk egy meglév&otilde; lámpához, és a lámpa egy dimmerhez van csatlakoztatva - egyik univerzumban pachelve - és a színváltó pedig egy PSU-hoz - egy másik univerzumba patchelve  - de ezeket együtt akarjuk kezelni mint kombinált lámpa.<br />
+	Egy másik példa erre amikor színváltót adunk egy meglév&otilde; lámpához, és a lámpa egy dimmerhez van csatlakoztatva - egyik univerzumban pachelve - és a színváltó pedig egy PSU-hoz - egy másik univerzumba patchelve - de ezeket együtt akarjuk kezelni mint kombinált lámpa.<br />
 	Egy lámpának 8 törése lehet.</li>
 	<li><strong>Coarse(durva)</strong>:<br />
 	Ez a 8-bites DMX szám. A szám leírja a DMX cím offszetjét a tulajdonsághoz. Az "1" ugyanaz mint a kezd&otilde;cím.</li>
@@ -73,7 +73,7 @@
 	<li><strong>Highlight(kiemelés)</strong>:<br />
 	Ez az érték akkor lesz ha a <strong>Highlight</strong> funkció aktív.</li>
 	<li><strong>Stage(színpad)</strong>:<br />
-	Ez akkor lesz használva ha az "Output Stage Value" funkció aktív a  <a href="key_patch_autocalibrate.html">Kalibrálás menüben</a>. Ez oyan értékeket állít be hogy a lámpa  teljesen nyitott, fehér, és sz&ucirc;k sugarú fényt bocsát ki..</li>
+	Ez akkor lesz használva ha az "Output Stage Value" funkció aktív a <a href="key_patch_autocalibrate.html">Kalibrálás menüben</a>. Ez oyan értékeket állít be hogy a lámpa teljesen nyitott, fehér, és sz&ucirc;k sugarú fényt bocsát ki..</li>
 	<li><strong>Snap(ugrás)</strong>:<br />
 	Ha ez "On" állásban van, akkor a tulajdonság a két érték között nem fog átúszni, hanem odaugrik az új értékre. Ha ez történéik akkor ezt a <strong>Snap Percent(ugrás százaléka)</strong> érték állítja a képben. (Lásd:<a href="key_cs_cue_sequence.html">Szekvencia végrahajtó táblázatban</a>).</li>
 	<li><strong>Invert(megfordítás)</strong>:<br />
@@ -89,7 +89,7 @@
 	<li><strong>Mode(mód)</strong>:<br />
 	Ez azt jelzi, hogy az attribútum függ-e egy másik attribútumtól. További információ a mód csatornákról<a href="#mode_channels">lejebb</a>.</li>
 	<li><strong>React to DIM</strong>:<br />
-	Ez be lehet kapcsolva. Ez teszi lehet&otilde;vé, hogy az attribútum reagáljon a dimmerértékre. Ha szerkeszted, akkor megnyílik a  <strong>Select React to Dim</strong> ablakocska.
+	Ez be lehet kapcsolva. Ez teszi lehet&otilde;vé, hogy az attribútum reagáljon a dimmerértékre. Ha szerkeszted, akkor megnyílik a <strong>Select React to Dim</strong> ablakocska.
 	<figure class="caption"><img alt="" src="../../img/popup_select-react-to-dim_v3-3.png" />
 	<figcaption><em>Válassz módot a Dimmer reagálásra</em></figcaption>
 	</figure>
@@ -104,7 +104,7 @@
 </ul>
 
 <div class="tip"><strong>Tipp:</strong><br />
-Több modult lehet hozzáadni a  <a href="key_adv_fixture_anatomy_modules.html">Modul kezel&otilde;ben</a>.</div>
+Több modult lehet hozzáadni a <a href="key_adv_fixture_anatomy_modules.html">Modul kezel&otilde;ben</a>.</div>
 
 <p>Egy sor szerkesztésekor "belépünk" a csatorna beállításokba. Olvass tovább a részletekért.</p>
 
@@ -141,10 +141,10 @@ Több modult lehet hozzáadni a  <a href="key_adv_fixture_anatomy_modules.html">
 	<li><strong>To DMX</strong>:<br />
 	A legmagasabb DMX értéke szubattribútumnak.</li>
 	<li><strong>From Phys</strong>:<br />
-	Ez a legkisebb fizikai értéket jelenti. Ez leghet a leglassabb forgási sebesség (rpm), villogási frekvencia (Hz), pan érték (fok), vagy a legkisebb intenzitás érték is. Az alapérték itt  <strong>0.00*</strong>. Néhány tulajdonság az értéket más-más szorzóval használja. Például a fényer&otilde;t. A max. fényer&otilde; meghatározott a Module kezel&otilde;ben. Ez azt jelenti, hogy a "0" érték megszorzódik az intenzitás értékkel és az eredmény is "0" lesz ami egyenl&otilde; azzal, hogy nincs kimenet.<br />
+	Ez a legkisebb fizikai értéket jelenti. Ez leghet a leglassabb forgási sebesség (rpm), villogási frekvencia (Hz), pan érték (fok), vagy a legkisebb intenzitás érték is. Az alapérték itt <strong>0.00*</strong>. Néhány tulajdonság az értéket más-más szorzóval használja. Például a fényer&otilde;t. A max. fényer&otilde; meghatározott a Module kezel&otilde;ben. Ez azt jelenti, hogy a "0" érték megszorzódik az intenzitás értékkel és az eredmény is "0" lesz ami egyenl&otilde; azzal, hogy nincs kimenet.<br />
 	Ezt az értéket használja az MA 3D is, és a táblákban ha a kiolvasás "Physical" -ra van álítva.</li>
 	<li><strong>To Phys</strong>:<br />
-	Ez a legnagyobb fizikai értéket jelenti. Ez leghet a leggyorsabb forgási sebesség (rpm), villogási frekvencia (Hz), pan érték (fok), vagy a legnagyobb intenzitás érték is. Az alapérték itt  <strong>1.00*</strong>. Néhány tulajdonság az értéket más-más szorzóval használja. Például a fényer&otilde;t. A max. fényer&otilde; meghatározott a Module kezel&otilde;ben. Ez azt jelenti, hogy az "1" érték megszorzódik az intenzitás értékkel és az eredmény is "1" lesz ami egyenl&otilde; azzal, hogy teljes kimenetet kapunk.<br />
+	Ez a legnagyobb fizikai értéket jelenti. Ez leghet a leggyorsabb forgási sebesség (rpm), villogási frekvencia (Hz), pan érték (fok), vagy a legnagyobb intenzitás érték is. Az alapérték itt <strong>1.00*</strong>. Néhány tulajdonság az értéket más-más szorzóval használja. Például a fényer&otilde;t. A max. fényer&otilde; meghatározott a Module kezel&otilde;ben. Ez azt jelenti, hogy az "1" érték megszorzódik az intenzitás értékkel és az eredmény is "1" lesz ami egyenl&otilde; azzal, hogy teljes kimenetet kapunk.<br />
 	Ezt az értéket használja az MA 3D is, és a táblákban ha a kiolvasás "Physical" -ra van álítva.</li>
 	<li><strong>Additional Phys</strong>:<br />
 	Ezt további fizikai értékek hozzáadására lehet használni. Ezt használják a prizmák. Itt meghatározható az élek száma, ezt az MA 3D használja.</li>
@@ -164,7 +164,7 @@ Több modult lehet hozzáadni a  <a href="key_adv_fixture_anatomy_modules.html">
 
 <p>A <strong>Channel Sets(csatornakészletek)</strong> meghatározott DMX értékek, vagy keretek, amiknek van nevük.</p>
 
-<p>A csatornakészletek az alapjai az információknak, amikb&otilde;l kés&otilde;bb az auto presetek lesznek. Ezek a rövidítések, a könny&ucirc; értékhozzáféréshez. A nevek megjelennek a Lámpalistában, csatornalistában. és minden más helyen ahol, a tulajdonság értéke ki van írva.  A csatornakészlet, látható a <a href="key_of_smart_view.html">Smart Window(okos ablakban)</a>is.</p>
+<p>A csatornakészletek az alapjai az információknak, amikb&otilde;l kés&otilde;bb az auto presetek lesznek. Ezek a rövidítések, a könny&ucirc; értékhozzáféréshez. A nevek megjelennek a Lámpalistában, csatornalistában. és minden más helyen ahol, a tulajdonság értéke ki van írva. A csatornakészlet, látható a <a href="key_of_smart_view.html">Smart Window(okos ablakban)</a>is.</p>
 
 <p>Ha egy sort a csatornaszerkeszt&otilde;ben szerkesztünk, a változások megjelennek a csatornakészletben. Valahogy így:</p>
 
@@ -207,9 +207,9 @@ Több modult lehet hozzáadni a  <a href="key_adv_fixture_anatomy_modules.html">
 
 <p>Példa lehet egy attribútum, amely szabályozza a gobo forgásmódját. Képzelj el egy olyan lámpát, amely rendelkezik egy attribútummal, amellyel kiválasztható egy gobo egy gobo tárcsán. A DMX sorozat els&otilde; felében választjuk a különböz&otilde; gobokat a tárcsán, de a gobosk "index" módban vannak. Egy második attribútum vezérli a gobo forgását. Ha a kiválasztott gobo index üzemmódban van, akkor a forgatást fokszámra kell beállítani. A kiválasztási attribútum második fele szintén kiválasztja az összes gobot a keréken, de folyamatos forgásmódban. Most a forgatási tulajdonság fogja irányítani a forgási sebességet és az irányt.</p>
 
-<p>Egy valódi példa erre a  VL3500 Spot a Vari-Lite-tól. Itt vannak a beállításai a "Main Modul" a lámpatípus szerkeszt&otilde;ben.</p>
+<p>Egy valódi példa erre a VL3500 Spot a Vari-Lite-tól. Itt vannak a beállításai a "Main Modul" a lámpatípus szerkeszt&otilde;ben.</p>
 
-<p>A GOBO1 tulajdonság a csatorna módja a GOBO1_POS tulajdonságnak. A mód beállítás változik a GOBO1_POS tulajdonságnál. A mód cella szerkesztésekor feljön a  <strong>Select Mode Channel(válassz mód csatornát)</strong> ablakocska.</p>
+<p>A GOBO1 tulajdonság a csatorna módja a GOBO1_POS tulajdonságnak. A mód beállítás változik a GOBO1_POS tulajdonságnál. A mód cella szerkesztésekor feljön a <strong>Select Mode Channel(válassz mód csatornát)</strong> ablakocska.</p>
 
 <figure class="caption"><img alt="" src="../../img/img_edit-fixture_mode-channel_v3-3.png" />
 <figcaption><em>Mód csatorna egy Gobo tárcsán</em></figcaption>
