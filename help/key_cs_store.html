@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Storing cues</title>
+		<title>Képek tárolása</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="cues - store, cues - label, cue parts - store, choose store method, store method" />
@@ -9,244 +9,244 @@
 	<body>
 		
 		
-		<h1>Storing cues</h1>
+		<h1>Képek tárolása</h1>
 		
-		<p>Storing cues is actually quite simple.</p>
+		<p>Képeket eltárolni viszonylag egyszer&ucirc;.</p>
 
-<p>Simply press the <span class="hardkey">Store</span> key and then one of the executor buttons where you want to store.</p>
+<p>Egyszer&ucirc;en nyomd meg a <span class="hardkey">Store</span> gombot és egyet egy executor oszlopban, ahová menteni szeretnéd.</p>
 
-<p>There are of course more details to storing, so please keep reading.</p>
-
-<p>&nbsp;</p>
-
-<h2>Store a new cue on an empty Executor</h2>
-
-<p>If you store a cue on an empty executor then the grandMA2 software automatically stores the cue in a new sequence and assigns this sequence to the executor using the default settings.</p>
-
-<p>Going back to the example in the top of this topic: just pressing the <span class="hardkey">Store</span> key and then an executor button on the empty executor is enough. The software assumes that you are storing a cue.</p>
-
-<p>This will automatically be cue number 1 - nothing else was specified.</p>
+<p>Persze van több részlet is err&otilde;l, olvass tovább.</p>
 
 <p>&nbsp;</p>
 
-<p>Storing cues obeys Worlds and Filters. This enables a control of what is stored. Filters and Worlds can also be assigned to the sequence. This will function as an input filter allowing only the elements in the worlds and filters to be stored in the sequence.</p>
+<h2>Új kép tárolása egy üres executorra</h2>
 
-<p>Read more about then in the <a href="key_wfm_world_filter_mask.html">World, Filters, and Mask section</a>.</p>
+<p>Ha egy képet egy üres executorra mentesz, akkor a grandMA2 szoftver automatikusan tárolja a képet a szekvenciák tárolóban, és hozzárendeli ezt a szekvenciát a kijelült executorhoz az alapvet&otilde; beállításokkal.</p>
 
-<p>&nbsp;</p>
+<p>Vissza a fenti példához: csak megnyomtad a <span class="hardkey">Store</span> gombot és utána egy üres executor gombot, akkor ez is elég. A szoftver feltételezi, hogy egy képet mentesz.</p>
 
-<h2>Cue numbers</h2>
-
-<p>When a cue is stored, it is possible to specify a cue number. This is done using the following syntax: <span class="syntax">Store Cue [cue number]</span>. It is also possible to specify a sequence or an executor, using the keys in the command section, while storing:<br />
-<span class="syntax">Store Cue [cue number] Sequence [sequence number]</span> or<br />
-<span class="syntax">Store Cue [cue number] Executor [executor number]</span>.</p>
-
-<p>Notice that the cues are stored in the sequence, but using the executor number will store the cue into the sequence assigned to that executor.</p>
+<p>Ez automatikusan a 1. kép lesz. - semmi más nincs meghatározva.</p>
 
 <p>&nbsp;</p>
 
-<p>Cue numbers have three decimal numbers. If all are zero then they are not displayed. But cue number "42" is the same as cue number "42.000" - it is not "42 thousand", it is "42 point 0 0 0".&nbsp; The currently highest cue number that can be stored is "9 999.999". The lowest number that can be stored is "0.001".</p>
+<p>A tárolt képek engedelmeskednek a Világoknak és a Sz&ucirc;r&otilde;knek. Ezzel sz&ucirc;kíthet&otilde; a tárolandók listája. Sz&ucirc;r&otilde;ket és Világokat is hozárendelhetünk a szekvenciákhoz. Ez mint egy input sz&ucirc;r&otilde; m&ucirc;ködik csak az enegedélyezett elemeket tárolva a szevenciában.</p>
 
-<div class="restriction"><strong>Restriction:</strong><br />
-Storing nearly 10 000 000 cues will completely fill the memory and make the show file VERY big.<br />
-The software will cancel the store process before the system crashes, but almost any operation after this will make the software shutdown!!</div>
+<p>Olvass többet a <a href="key_wfm_world_filter_mask.html">Világ, Sz&ucirc;r&otilde;, és Maszk fejezetet</a>.</p>
 
 <p>&nbsp;</p>
 
-<p>The software hide the trailing decimal zeros, but they are still there. This means that cue "5.2" is after cue "5.11" because they are actually cue "5.200" and "5.110".</p>
+<h2>Képek számozása</h2>
+
+<p>Amikor eltárolsz egy képet, lehetséges meghatározni a kép számát. Ezt a következ&otilde;képpen teheted meg: <span class="syntax">Store Cue [kép száma]</span>. Lehetséges még megadni egy szekvencia/executor számot, a gombok használatával:<br />
+<span class="syntax">Store Cue [kép száma] Sequence [szekvencia száma]</span> vagy<br />
+<span class="syntax">Store Cue [kép száma] Executor [executor száma]</span>.</p>
+
+<p>Vedd figyelembe, hogy a jelek a szekvenciában vannak tárolva, de az executor számának használatával a képet az executorhoz rendelt sorrendbe tárolja.</p>
 
 <p>&nbsp;</p>
 
-<p>It is not limited to only store a single cue number at a time. It can just as easily be a range of numbers - this means that it is possible to use <span class="hardkey">Thru</span>, <span class="hardkey">+</span>, and <span class="hardkey">-</span> keys to create number ranges to be stored.</p>
+<p>A kép számai három tizedesjegy&ucirc;ek lehetnek. Ha mindegyik nulla akkor ezek nem látszanak. De a "42" kép száma ugyanaz mint a "42.000" - ez nem "42 ezer", ez "42 pont 0 0 0".&nbsp; Az aktuálisan tárolható legnagyobb kép száma  "9 999.999". A legkisebb szám pedig a "0.001".</p>
+
+<div class="restriction"><strong>Korlátozások:</strong><br />
+Közel 10 000 000 kép tárolásakor er&otilde;st megtelít&otilde;dik a memória és a show file IGEN NAGY lesz.<br />
+A szoftver megtagadja a további képek tárolását miel&otilde;tt összeomlana, de bármilyen további m&ucirc;velet szinte biztos, hogy leállítja a rendszert!!</div>
 
 <p>&nbsp;</p>
 
-<p>If you are going to be working with or adding a lot of cues to the same sequence, then it can be a good idea to select the executor with the sequence.</p>
-
-<p>This can be done by pressing the <span class="hardkey">Select</span> key and then one of the keys associated with the executor.</p>
+<p>A szoftver elrejti a bevezet&otilde; tizedes nullákat, de attól még ott vannak. Ez azt jelenti hogy az "5.2"-es kép az "5.11"-es kép után jön, mret aktuálisan ezek "5.200" és "5.110".</p>
 
 <p>&nbsp;</p>
 
-<h2>Store the second cue</h2>
+<p>Nincs korlátozva, hogy csak egy számot mentsünk egy id&otilde;ben. Ez könny&ucirc;, mint tartományokat megadni - azt jelenti, hogy lehetséges a <span class="hardkey">Thru</span>, <span class="hardkey">+</span>, és <span class="hardkey">-</span> gombok használata hogy tartományokat tároljunk.</p>
 
-<p>If the store function is used again on the same executor - without adding cue number details - then the grandMA2 does not know what is wanted and a pop-up appears giving the different choices.</p>
+<p>&nbsp;</p>
+
+<p>Ha sok képet akarsz ugyanahoz a szekvenciához adni, akor jó ötlet ha el&otilde;tte kiválasztod az executort amiben a szekvencia van.</p>
+
+<p>Ezt megteheted a <span class="hardkey">Select</span> gomb, majd az executor gombjára katintással.</p>
+
+<p>&nbsp;</p>
+
+<h2>Második kép tárolása</h2>
+
+<p>Ha mégegyszer ugyanarra az executorra használjuk a Store funkciót - a kép számainak megadása nélkül - akkor a  grandMA2 nem tudja mit akarunk, ezért egy ablakocska jön el&otilde; a választási lehet&otilde;ségekkel.</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_choose-store-method_second-cue_v3-3.png" />
-<figcaption><em>Choose store method pop-up with second cue option</em></figcaption>
+<figcaption><em>Válassz tárolási módot ablakocska a második kép lehet&otilde;séggel</em></figcaption>
 </figure>
 
-<p>The right most button is called <span class="softkey">Create Second Cue</span> - tapping this will store a cue with the next whole number.</p>
+<p>A jobb széls&otilde; gombot <span class="softkey">Create Second Cue(második kép készítése)</span> nak hívják - erre bökve létrejön a következ&otilde; kép, a következ&otilde; egész számmal sorszámozva.</p>
 
-<p>Over write and the two merge options are explained below. Remove and Release are covered in the <a href="key_cs_what_is_tracking.html">What is Tracking topic</a>.</p>
+<p>A felülírás és a két összefésülés opciót lejjebb tárgyaljuk. A Remove és Release a <a href="key_cs_what_is_tracking.html">Mi a Tracking fejezetben van leírva</a>.</p>
 
 <p>&nbsp;</p>
 
-<h2>Store into cues that are not empty</h2>
+<h2>Képek tárolása képekben amik nem üresek</h2>
 
-<p>If the store operation is used to store into already existing cues then a pop-up like this appears:</p>
+<p>Ha tárolást már meglév&otilde; képre használjuk akkor ilyen ablakocska jön el&otilde;:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_choose-store-method_v3-3.png" />
-<figcaption><em>Choose store method pop-up</em></figcaption>
+<figcaption><em>Válassz tárolási módot ablakocska</em></figcaption>
 </figure>
 
-<p>It only appears if you have not specified what should happen. Have a look at the <a href="key_cs_store_options_default.html">Store Options and Defaults topic</a> for information about specifying this while storing.</p>
+<p>Ez csak akkor jön el&otilde;, ha nem határoztad meg mi történjen. Nézz utána a <a href="key_cs_store_options_default.html">Tárolási Opciók és Alapértékek fejezetben</a> a tároláskori meghatározásához.</p>
 
-<p>"Cue Only", "Tracking Shield", "Remove", and "Release" are described in the <a href="key_cs_what_is_tracking.html">What is Tracking topic</a>.</p>
+<p>A "Cue Only", "Tracking Shield", "Remove", és "Release" a <a href="key_cs_what_is_tracking.html">Mi a tracking fejezetben vannak leírva</a>.</p>
 
-<p>The three relevant options are:</p>
+<p>A három releváns opció:</p>
 
 <ul>
-	<li><strong>Overwrite:</strong><br />
-	This will remove what is already stored in the cue and only store the new values.</li>
-	<li><strong>Merge:</strong><br />
-	This will merge the new values into the existing values. New values has a higher priority and will overwrite existing values.</li>
-	<li><strong>Status Merge:</strong><br />
-	This will do a merge of the new values, but will also store any values from the actual cues in the selected executor.</li>
+	<li><strong>Overwrite:</strong>(felülírás)<br />
+	Ez kiveszi ami már tárolva volt és csak az új értékeket tárolja.</li>
+	<li><strong>Merge:</strong>(összefésülés)<br />
+	Ez összefésüli az új értékeket a régebbiekkel. Az új értékeknek magasabb a prioritása és felülírja a régebbi értékeket.</li>
+	<li><strong>Status Merge:</strong>(állapot összefésülése)<br />
+	Ez is összefésüli az új értékeket, de meg&otilde;rzi az aktuális kép értékeit is a kiválasztott executorrol.</li>
 </ul>
 
-<h3>Examples</h3>
+<h3>Példák</h3>
 
-<p>In the following examples we have a cue list with the following two cues (looking at the Sequence Tracking Sheet - read about it <a href="key_cs_cue_content.html#tracking_sheet">here</a>):</p>
+<p>A következ&otilde; példákban van egy kép listánk a következ&otilde; két képpel (nézd meg a szekvencia követ&otilde; oldalt - olvashatsz róla <a href="key_cs_cue_content.html#tracking_sheet">itt</a>):</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_two-cues-before-merge_v3-3.png" />
-<figcaption><em>Cues before any store action</em></figcaption>
+<figcaption><em>Képek a tárolási akció el&otilde;tt</em></figcaption>
 </figure>
 
-<p>Now we turn on fixture 3 at 100 % an store this into cue 2.</p>
+<p>Most beadjuk a 3. lámpát 100%-ra és elmentjük mint 2. kép.</p>
 
-<p>This is the result if "Overwrite" is chosen:</p>
+<p>Ez az eredménye, ha az "Overwrite"(felülírást) választottuk:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_two-cues-after-overwrite_v3-3.png" />
-<figcaption><em>Cues after an Overwrite store action</em></figcaption>
+<figcaption><em>Képek a Felülírási mód után</em></figcaption>
 </figure>
 
-<p>Now fixture 2 is gone. This is because it only had values stored in cue number 2.</p>
+<p>Most a 2. lámpa elt&ucirc;nt. Ez azért van mert tárolt értéke csak a második képben volt.</p>
 
-<p>If we had chosen "Merge" instead it would have looked like this:</p>
+<p>Ha a "Merge"(összefésülést) választottuk akkor így néz ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_two-cues-after-merge_v3-3.png" />
-<figcaption><em>Cues after a Merge store action</em></figcaption>
+<figcaption><em>Képek az összefésülés után</em></figcaption>
 </figure>
 
-<p>Now the values from fixture 3 is added to the existing values.</p>
+<p>Most a 3. lámpa értékei hozzáadódtak a meglév&otilde; értékekhez.</p>
 
-<p>"Status Merge" had resulted in this if cue 1 or 2 is active and the executor is selected:</p>
+<p>A "Status Merge"(állapot összefésülés) -nek hasonló eredménye lenne, ha a 1. vagy 2. kép aktív lenne és az executora ki van jelölve:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_two-cues-after-status-merge_v3-3.png" />
-<figcaption><em>Cues after a Status Merge store action</em></figcaption>
+<figcaption><em>Képek a Status Merge tárolás után</em></figcaption>
 </figure>
 
-<p>The (tracked) value from fixture 1 is stored into cue 3.</p>
+<p>A (tracked(követett)) érték az 1. lámpából eltárolódott a 3. képben.</p>
 
 <p>&nbsp;</p>
 
-<h2>Store cues with timings</h2>
+<h2>Képek tárolása id&otilde;zítéssel</h2>
 
-<p>When storing a cue it is possible to also store the different cue timings. This is described in details the <a href="key_cs_cue_timings.html">Cue Timings topic</a>, but here is the short version.</p>
+<p>Ha képeket tárolunk, akkor lehetséges különböz&otilde; id&otilde;ket a képekhez rendelni. Ez részletesen a <a href="key_cs_cue_timings.html">Képek id&otilde;zítése fejezetben</a>van, de itt a rövid verzió.</p>
 
-<p>The <span class="hardkey">Fade</span> key will add different timing keywords to the command when storing.</p>
+<p>A <span class="hardkey">Fade</span> gomb különböz&otilde; id&otilde;zít&otilde; kulcsszavakat ad a parncshoz amikor tároljuk a képet.</p>
 
-<p>For instance storing cue 4 with a fade time of 6 seconds and a delay of 1 second, the following keys can be pressed:</p>
+<p>Például a 4. képet szeretnénk 6 sec. beúszási és 1 sec. késleltetési id&otilde;vel felvenni, akkor ennyit kell nyomni:</p>
 
 <p><span class="hardkey">Store</span> <span class="hardkey">Cue</span> <span class="hardkey">4</span> <span class="hardkey">Time</span> <span class="hardkey">6</span> <span class="hardkey">Time</span> <span class="hardkey">Time</span> <span class="hardkey">1</span> <span class="hardkey">Please</span></p>
 
-<p>This is the result in the command line feedback:</p>
+<p>Ez az eredménye a visszajelzési parancssorban:</p>
 
 <div class="cl_response">[time] : Executing : Store Cue 4 Fade 6 Delay 1</div>
 
-<p>Pressing the <span class="hardkey">Fade</span> repeatedly will change what timing it adds.</p>
+<p>A <span class="hardkey">Fade</span>gomb ismételt nyomása változtatja a különböz&otilde; id&otilde;ket.</p>
 
 <p>&nbsp;</p>
 
-<h2>Adding and using Cue Labels</h2>
+<h2>Kép hozzáadása kép cimkékkel</h2>
 
-<p>A cue can be given a name - called label - while it is stored. This is the syntax: <span class="syntax">Store Cue [cue number] "my cue name"</span>.</p>
+<p>Egy képnek lehet neve - cimkéknek hívjuk - a tároláskor. Ez a szintakszisa: <span class="syntax">Store Cue [kép száma] "az én képem neve"</span>.</p>
 
-<p>The keyboard is needed for writing this. You need to write the quotation marks to tell the software that this is text - then it is not interpreted as a command.</p>
+<p>A billenty&ucirc;zet kell ehhez.. Le kell írnod az idéz&otilde;jeleket is, hogy a szoftver szövegként értelmezhesse - nem pedig parancsként értelmezze.</p>
 
-<p>Labels can also automatically be numerated while storing. Have a look at this command:</p>
+<p>A cimkéket is lehet sorszámozni a tárolásakor. Nézd meg ezt a parancsot:</p>
 
 <div class="cl_input">[Channel]&gt; store cue 2 + 4 "BO Scene 1"</div>
 
-<p>This will not label both cue 2 and 4 the same - it will add 1 to the number for each cue. The result is that cue 2 is called "BO Scene 1" and cue 4 is "BO Scene 2". This enumeration only works if the number is the last part of the label and if there is a space between the last word and number.</p>
+<p>Ez nemcsak elnevezi a 2. és a 4. képet ugyanúgy - 1-et hozzáad minden kép végére. Az eredmény az lesz, hogy a 2. képe neve "BO Scene 1" és a 4. kép neve pedig "BO Scene 2". Ez a dolog csak akkor m&ucirc;ködik ha szám van a cimke végén és egy darab szóköz van az utolsó szó és a szám között.</p>
 
 <p>&nbsp;</p>
 
-<p>Cue labels can be used when storing. This means that if there are several cues whose labels starts with "BO", then it is possible to store into all these cues in one operation using BO plus an asterisk. See the following example.</p>
+<p>A kép cimkézése tároláskor is megadható. Ez azt jelenti, hogy ha van több kép aminek a cimkéje BO-val kezd&otilde;dik, akkor lehetséges az összes képet tárolni úgy hogy a cimke BO* lesz.. Nézd meg a következ&otilde; példát.</p>
 
-<h3>Example</h3>
+<h3>Példa</h3>
 
-<p>This is the cue sequence and content before storing</p>
+<p>Ez a képszekvenciánk s a tartalma tárolás el&otilde;tt</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_five-cues-before-storing_v3-3.png" />
-<figcaption><em>Cues before storing</em></figcaption>
+<figcaption><em>Képek tárolás el&otilde;tt</em></figcaption>
 </figure>
 
-<p>With an active value of 100% for fixture 1, we use the keyboard to type the following command:</p>
+<p>A 1. lámpa 100%-on, ezt írjuk a parancssorba:</p>
 
 <div class="cl_input">[Channel]&gt; store cue "BO*" /merge /cueonly</div>
 
-<p>This is the result:</p>
+<p>Ez lesz az eredmény:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_five-cues-after-storing_v3-3.png" />
-<figcaption><em>Cue after storing using names</em></figcaption>
+<figcaption><em>Kép a tárolás után nevekkel</em></figcaption>
 </figure>
 
-<p>The two cues whose label begins with BO now got the new value - it was stored as Cue Only.</p>
+<p>A két kép cimkéje BO-val kezd&otilde;dött ezek új értéket vettek fel - ezek a Cue Only-val lettek tárolva.</p>
 
-<p>See more details about the command at the end of this topic.</p>
+<p>Több részlet err&otilde;l a prancsról a fejezet végén található.</p>
 
 <p>&nbsp;</p>
 
-<h2>Store cue parts</h2>
+<h2>Képek részeinek tárolása</h2>
 
-<p>Besides the almost 10 million cues that could be stored in each sequence, if there was enough memory, it is also possible to store 199 cue parts to each cue.</p>
+<p>Azonban a közel 10 millió kép mellett, amelyeket az egyes szekvenciákban tárolhatunk, ha elég memória lenne, 199 kép rész is tárolható az egyes képekben.</p>
 
-<p>Cue parts are a division of the "main" cue. The "main" cue is actually part 0 (zero). The first part that can be stored is number 1.</p>
+<p>A kép részei a "f&otilde;" kép egy részét képezik. A "f&otilde;" kép valójában a 0. rész (nulla). Az els&otilde; tárolható rész az 1. szám.</p>
 
-<p>A value can only be in one of the parts. Have a look at this example from the Sequence Tracking Sheet:</p>
+<p>Az értékek csak az egyik részben lehetnek. Nézd meg a példát a Sequence Tracking Táblázatban:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_two-cues-with-part_v3-3.png" />
-<figcaption><em>Cue 2 part 2 only containing fixture 3</em></figcaption>
+<figcaption><em>2. kép 2. része csak a 3. lámpát tartalmazza</em></figcaption>
 </figure>
 
-<p>Notice that the value for fixture 3 is stored in cue 2 part 1. It does not have a value in cue 2 part 0 (the main cue). And the values from fixture 1 and 2 are in the main cue and therefor do not have any value in cue 2 part 1.</p>
+<p>A 3. lámpa értéke a 2. kép 1. részében van tárolva. Ennek nincs értéke a 2. kép 0. részében (a f&otilde; kép). És az értékek az 1. és 2. lámpának a f&otilde; képben vannak ezért nincs értékük a 2. kép 1. részében.</p>
 
-<p>Storing something in a part is almost as easy as storing the main cue. Using the example above the key presses would be:</p>
+<p>Valamit egy részben tárolni, pont olyan egyszer&ucirc; mint egy képet eltárolni. A fenti példához a következ&otilde; gombokat kell lenyomni:</p>
 
 <p><span class="hardkey">Store</span> <span class="hardkey">Cue</span> <span class="hardkey">2</span> <span class="hardkey">Cue</span> <span class="hardkey">1</span> <span class="hardkey">Please</span></p>
 
-<p>The second press on the cue key will result in the <a href="key_keyword_part.html">Part keyword</a> and the command line feedback looks like this:</p>
+<p>A Cue gomb második megnyomására az eredmény a <a href="key_keyword_part.html">Part kulcsszó lesz</a> és a parancssor visszajelz&otilde; így néz ki:</p>
 
 <div class="cl_response">[time] : Executing : Store Cue 2 Part 1</div>
 
 <p>&nbsp;</p>
 
-<h2>Using command line input to add more while storing</h2>
+<h2>A parancssor haszálata további lehet&otilde;ségekhez</h2>
 
-<p>In the example using the cue labels to store, there was a command that showed some of the other possibilities while storing cues.</p>
+<p>A példában, ahol cimkéket használtunk a tároláshoz, volt egy parancs ami megmiutatta a további lehet&otilde;ségeket is a tároláshoz.</p>
 
-<p>The command line gives access to all the store options that can be found in the GUI Store Options - read about then in the <a href="key_cs_store_options_default.html">Store Options and Defaults topic</a>.</p>
+<p>A parancssor az összes lehetséges tárolási opcióhoz hozzáférést ad, amiket megtalálhatunk a tárolási opciók menüjében is  - olvass róla a <a href="key_cs_store_options_default.html">Tárolási Opciók és Alapértékek fejezetben</a>.</p>
 
-<p>All the different elements are described in the <a href="key_keyword_store.html">Store Keyword topic</a>.</p>
+<p>Mindegyik különböz&otilde; elemr&otilde;l olvashatsz a <a href="key_keyword_store.html">Store kulcsszó fejezetben</a>.</p>
 
-<h3>Examples</h3>
+<h3>Példák</h3>
 
-<p>The following is just a few extra command line examples showing some of the possibilities while storing.</p>
+<p>A következ&otilde; csak egy pár parancssori példa, a lehet&otilde;ségeinkr&otilde;l a tárolás során.</p>
 
 <div class="cl_input">[Channel]&gt; Store Cue 1.2 Executor 1.4</div>
 
-<p>Stores cue number 1.2 in the sequence assigned to executor 4 on executor page 1.</p>
+<p>Az 1.2 számú képet elmentjük az els&otilde; executor oldalon a 4. executorban lév&otilde; szekvenciához adjuk.</p>
 
 <p>&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt; Store Sequence 8 Cue 20 /overwrite</div>
 
-<p>Short version:</p>
+<p>Rövid változat:</p>
 
 <div class="cl_input">[Channel]&gt; S Seq 8 Cu 20 /o</div>
 
-<p>Stores cue number 20 in sequence number 8 using the overwrite function. It does not matter if you write sequence or cue first. So this could also have been:</p>
+<p>a 20. számú képet eltároljuk a 8. szekvenciában az overwrite(felülírás) funkcióval. A sorrend ebben az esetben mindegy. Így is írhattuk volna:</p>
 
 <div class="cl_input">[Channel]&gt; Store Cue 20 Sequence 8 /overwrite</div>
 
@@ -256,19 +256,19 @@ The software will cancel the store process before the system crashes, but almost
 
 <div class="cl_input">[Channel]&gt; Store Cue 42 "Return of the Paranoid Android" /merge /use=Look</div>
 
-<p>This will store the cue with a name and it is merged but it is also stored with the "Look" option. Read more about the store options including Look in the next topic.</p>
+<p>Ez eltárolja a képet a megadott névvel és összefésüli, de használja a "Look"(kinézet) opciót is. A tárolási opció "Look"-ról a következ&otilde; fejezetben olvashatsz.</p>
 
 <p>&nbsp;</p>
 
 <h2><a id="store_remove" name="store_remove"></a>Store Remove</h2>
 
-<p>A version of storing is the Store Remove, where the <span class="softkey">Remove</span> button is selected in the Store pop-up (described above).</p>
+<p>A tárolás egyik módja a Store Remove(Tárolás eltávolítása), ahol a <span class="softkey">Remove</span> gomb lett kiválasztva a tároló ablakocskában (lejjebb írunk róla).</p>
 
-<p>This will remove the stored values for the attributes that currently have active values in the programmer.</p>
+<p>Ez eltávolítja azokat az attribútumokat amiknek van aktív értéke a programozóban.</p>
 
-<p>The values in the programmer is irrelevant&nbsp;in this case. They are simply an indicator of what attributes you want to remove from the cue.</p>
+<p>A programozóban lév&otilde; érték irreleváns ebben az esetben. Ezek csak egyszer&ucirc;en megjelölik, hogy melyik értéket akarod eltávolítani a képb&otilde;l.</p>
 
-<p>For removal of a few values, the Sequence Tracking Sheet or Sequence Content Sheets might be good tools. Read about them in the <a href="key_cs_cue_content.html">Looking at the Cue Content topic</a>. &nbsp;</p>
+<p>Néhány érték eltávolitásához, hasznos a  Sequence Tracking Táblázat vagy a Sequence Content táblázat. Olvashatsz róla a <a href="key_cs_cue_content.html">A kép tartalmának megtekintése fejezetben</a>. &nbsp;</p>
 
 		
 	</body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Parameters vs. DMX channels</title>
+		<title>Paraméterek vs. DMX csatornák</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="parameters, DMX channel" />
@@ -9,37 +9,35 @@
 	<body>
 		
 		
-		<h1>Parameters vs. DMX channels</h1>
+		<h1>Paraméterek vs. DMX csatornák</h1>
 		
-		<p>Most people are used to think in DMX channels when considering how many fixtures can be controlled with system.</p>
+		<p>A legtöbben úgy gondolnak, a DMX csatornákra, mint ami meghatározza hány lámpát lehet vezérelni a pulttal.</p>
 
-<p>MA Lighting are/is more concerned with <strong>Parameters</strong>.</p>
+<p>Az MA Lighting a <strong>Paraméterekkel</strong>foglalkozik jobban.</p>
 
 <p>&nbsp;</p>
 
-<h2>What are Parameters</h2>
+<h2>Mik azok a paraméterek</h2>
 
-<p>Parameters are also called Attributes in the software. A dimmer function is a parameter and a pan function is also a parameter.</p>
+<p>A paramétereket Attribútumoknak is hívjuk a szoftverben. Egy dimmer funkció is egy paraméter, meg egy pan funkció is az.</p>
 
 <p>The software is calculating the different attributes using a higher precision than what is being output via DMX. So the software is calculating the parameter or attribute once and it is then scaled to the amount of DMX channels a fixture uses - typically one or two per attribute.</p>
 
 <p>&nbsp;</p>
 
-<h2>Why counting in Parameters and not DMX</h2>
+<h2>Miért számolunk paraméterekben, és nem DMX-ben</h2>
 
-<p>It is to your advantage. In the MA world you do not pay extra for using fixtures that are running 16 or 24 bit instead of the 8 bit used by one DMX channel.</p>
+<p>Ez a te el&otilde;nyöd. Az MA világában nem fizetnek külön azért, ha olyan lámpákat használunk, amik 16 vagy 24 bitesen futnak, ahelyett, hogy egy DMX csatornán 8 bites lenne. </p>
+<p> El&otilde;fordulhat, hogy további hálózati csomópontokat vagy eszközöket kell hozzáadni a vezérléshez engedélyezett összes paraméter használatához. </p>
+<p><strong>Példa:</strong></p>
 
-<p>There might be a need to add more networked nodes or devices to output all the parameters that are allowed to be controlled.</p>
-
-<p><strong>Example:</strong></p>
-
-<p>A simple moving head with a dimmer might use 5 DMX channels. The channels can be defined like this:</p>
+<p>Egy sima mozgófejes lámpa dimmerrel 5 DMX csatornát használ. A csatornákat e szerint definiálhatjuk:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:200px">
 	<thead>
 		<tr>
-			<th scope="col">Definition:</th>
-			<th scope="col">DMX Channel:</th>
+			<th scope="col">Definíció:</th>
+			<th scope="col">DMX Csatorna:</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -66,14 +64,13 @@
 	</tbody>
 </table>
 
-<p>The Pan and Tilt is one attribute each. Even though both pan and tilt each use two DMX channels it is only counted as one each in the parameter count. This means that the fixture only costs 3 parameters.</p>
-
+<p> A Pan és Tilt egy-egy attribútum. Annak ellenére, hogy mind a Pan, mind a Tilt mindkét DMX csatornát használja, a paraméterek számában mindössze egy lesz. Ez azt jelenti, hogy a lámpatest csak 3 paramétert használ. </p>
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
 		<tr>
-			<th scope="col">Definition:</th>
-			<th scope="col">DMX Channel:</th>
-			<th scope="col">Parameter cost:</th>
+			<th scope="col">Meghatározás:</th>
+			<th scope="col">DMX csatorna:</th>
+			<th scope="col">Paraméterbe kerülés:</th>
 		</tr>
 		<tr>
 			<td>Dimmer</td>
@@ -88,7 +85,7 @@
 		<tr>
 			<td>Pan Fine</td>
 			<td>3</td>
-			<td>free</td>
+			<td>szabad</td>
 		</tr>
 		<tr>
 			<td>Tilt</td>
@@ -98,26 +95,26 @@
 		<tr>
 			<td>Tilt Fine</td>
 			<td>5</td>
-			<td>free</td>
+			<td>szabad</td>
 		</tr>
 	</tbody>
 </table>
 
-<p>This can be a big advantage when there is a lot of fixtures that has a lot of 16-bit (or fine) channels.</p>
+<p>Ez egy nagy el&otilde;relépés, amikor sok lámpát használunk, ezek közül sok 16-bites csatornával.</p>
 
 <p>&nbsp;</p>
 
-<h2>What about preprograming and parameters?</h2>
+<h2>Mi a helyzet az el&otilde;reprogramozással és a paraméterekkel?</h2>
 
-<p>The show can be preprogramed and MA 3D can be used without any parameter unlocking hardware. The lights are still visualized.</p>
+<p>A showt el&otilde;re lehet programozni és az MA 3D használható, bármilyen paraméter feloldó eszköz nélkül. A lámpák attól még megjelennek a programban.</p>
 
-<p>But if 3-party visualizers are used, then the hardware might be needed to give access to the parameters.</p>
+<p>De ha küls&otilde; gyártó általi 3D szoftver-megjelenít&otilde;t használsz, akkor a hardware-nak lehet, hogy hozzáférhet&otilde;vé kell tennie a paramétereket.</p>
 
-<p>MA Lighting is working with many visualizer manufactures to allow them to read the DMX data without hardware.</p>
+<p>Az MA Lighting sok visualizáló gyártóval együttm&ucirc;ködik, hogy a programok megkaphassák a DMX adatokat hardware nélkül is.</p>
 
 <p>&nbsp;</p>
 
-<p>Learn more about parameter expansion <a href="key_so_parameter_expansion.html">here</a>.</p>
+<p>A paraméterek kiterjeszthet&otilde;ségér&otilde;l b&otilde;vebben<a href="key_so_parameter_expansion.html">itt</a>olvashatsz.</p>
 
 		
 	</body>
