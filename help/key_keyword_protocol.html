@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Protocol Keyword</title>
+		<title>Protocol Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="Protocol, Network Protocols" />
@@ -9,32 +9,32 @@
 	<body>
 		
 		
-		<h1>Protocol Keyword</h1>
+		<h1>Protocol Kulcsszó</h1>
 		
-		<p>To go to the Protocol keyword, type <strong>Protocol</strong> in the command line or use the shortcut <strong>Prot</strong>.</p>
+		<p>A Protocol kulcsszóhoz, írd be <strong>Protocol</strong> a parancssorba, vagy rövidebben <strong>Prot</strong>.</p>
 
 <h2>Leírás</h2>
 
-<p>The Protocol keyword is an object keyword to access the network protocols.</p>
+<p>Ez egy objektum kulcsszó, hogy elérd a hálózati protokollokat.</p>
 
-<p>You can store or delete network protocols and assign parameters.</p>
+<p>Mentheted, vagy törölheted a hálózati protokollokat, vagy hozzárendelhetsz paramétereket.</p>
 
-<p>For more information, see <a href="key_network_dmx_protocols.html">Network DMX Protocols</a>.</p>
+<p>További információk: <a href="key_network_dmx_protocols.html">Hálózati DMX Protokollok</a>.</p>
 
 <h2>Szintakszis</h2>
 
-<p><span class="syntax">[Function] Protocol [Network Protocol ID] . [Row ID] </span></p>
+<p><span class="syntax">[Funkció] Protocol Hálózati Protokoll ID] . [Sor ID] </span></p>
 
-<p><span class="syntax">Assign Protocol [Network Protocol ID] / [Parameter] = [Parameter Value]</span></p>
+<p><span class="syntax">Assign Protocol [Hálózati Protokoll ID] / [Paraméter] = [Paraméter Érték]</span></p>
 
-<p><span class="syntax">Assign Protocol [Network Protocol ID] . [Row ID] / [Parameter] = [Parameter Value]</span></p>
+<p><span class="syntax">Assign Protocol [Hálózati Protokoll ID] . [Sor ID] / [Paraméter] = [Paraméter Érték]</span></p>
 
-<p>The following table displays the available network protocol along with their ID.</p>
+<p>A következ&otilde; táblázat, megmutatja az elérhet&otilde; hálózati protokollokat az Id-jükkel együtt.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:250px">
 	<thead>
 		<tr>
-			<th scope="col">Network Protocol</th>
+			<th scope="col">Hálózati Protokoll</th>
 			<th scope="col">ID</th>
 		</tr>
 	</thead>
@@ -66,17 +66,17 @@
 	</tbody>
 </table>
 
-<h2>Parameter</h2>
+<h2>Paramléter</h2>
 
-<p>The following table displays the assignable parameter by use the command <span class="syntax">Assign Protocol [Network Protocol ID] / [Parameter] = [Parameter Value].</span></p>
+<p>A következ&otilde; táblázat megmutatja a hozzárendelhet&otilde; paramétereket, ennek a parancsnak a használatával <span class="syntax">Assign Protocol [Hálózati Protokoll ID] / [Paraméter] = [Paraméter Érték].</span></p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<thead>
 		<tr>
-			<th scope="col">Network Protocol</th>
-			<th scope="col">Parameter</th>
-			<th scope="col">Parameter Value</th>
-			<th scope="col">Description</th>
+			<th scope="col">Hálózati Protokoll</th>
+			<th scope="col">Paraméter</th>
+			<th scope="col">Paraméter Érték</th>
+			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -84,41 +84,41 @@
 			<td style="width:25%">Art-Net, sACN, Kinet1</td>
 			<td style="width:25%">OutActive</td>
 			<td style="width:25%">"On", "Off"</td>
-			<td style="width:25%">Assign if the output is set to on or off.</td>
+			<td style="width:25%">Hozzárendeli, ha a kimenet on/off-ra van állítva.</td>
 		</tr>
 		<tr>
 			<td style="width:25%">Art-Net, sACN, Kinet1</td>
 			<td>InActive</td>
 			<td>"On", "Off"</td>
-			<td>Assign if the input is set to on or off.</td>
+			<td>Hozzárendeli ha a bemenet off/on-ra van állítva.</td>
 		</tr>
 		<tr>
 			<td>Art-Net</td>
 			<td>MaxUnicast</td>
 			<td>0...10</td>
-			<td><strong>Only if the mode is OutputAuto:</strong><br />
-			Assign the maximal amount of members until Art-Net switches from unicast to broadcast.</td>
+			<td><strong>Csak ha a mód OutputAuto:</strong><br />
+			Hozzárendeli a maximum értéket a tagokhoz, addig ameddig az Art-Net átvált  unicastból broadcastba.</td>
 		</tr>
 		<tr>
 			<td>Art-Net, ETC Net2, Pathport, sACN, Shownet, Kinet1</td>
 			<td>Info</td>
-			<td>"Information text"</td>
-			<td>Assign additional information.</td>
+			<td>"Információs szöveg"</td>
+			<td>További információk hozzárendelése.</td>
 		</tr>
 		<tr>
 			<td>ETC Net2, Pathport, Shownet</td>
 			<td>Active</td>
 			<td>"On", "Off"</td>
 			<td>
-			<p>Assign if the console transmit or hide<br />
-			the network protocol.</p>
+			<p>Hozzárendeli, hogy a pult küldje vagy elrejtse a <br />
+			hálózati protokollokat.</p>
 			</td>
 		</tr>
 		<tr>
 			<td>ETC Net2, Pathport, Shownet</td>
 			<td>LocalStart</td>
 			<td>1...256</td>
-			<td>Assign the DMX universe to transmit or receive the network protocol.</td>
+			<td>A DMX univerzum hozzárendelése a küld&otilde; és fogadó hálózati protokollokhoz.</td>
 		</tr>
 		<tr>
 			<td>ETC Net2, Pathport, Shownet</td>
@@ -129,20 +129,20 @@
 
 			<p><strong>Shownet:</strong> 1...256 or "None"</p>
 			</td>
-			<td>Assign the amount of DMX universes to transmit the network protocol.<br />
+			<td> Hozzárendeli a DMX univerzumot a hálózati protokoll továbbításához vagy fogadásához. </td>
 			&nbsp;</td>
 		</tr>
 		<tr>
 			<td>ETC Net2, Pathport, Shownet</td>
 			<td>ExternStart</td>
 			<td>1...64</td>
-			<td>Assign the transmitted or received DMX universe.</td>
+			<td> Hozzárendeli a DMX univerzumok mennyiségét a hálózati protokoll továbbításához vagy fogadásához. </td>
 		</tr>
 		<tr>
 			<td>ETC Net2</td>
 			<td>Groups</td>
 			<td>1...6</td>
-			<td>ETC Net2 uses multicast groups to simplify and optimize the transmission. Assign the group to transmit to.</td>
+			<td>ETC Net2 multicas csoportokat használ az átvitel egyszer&ucirc;sítésére/gyorsítására. Hozzárendeli a csoportot a küldéshez.</td>
 		</tr>
 		<tr>
 			<td>ETC Net2, Shownet,</td>
@@ -153,11 +153,11 @@
 			<p><strong>Shownet:</strong> 0...16</p>
 			</td>
 			<td>
-			<p>Assign the priority to decide who a node should listen to in a conflict.<br />
+			<p> Els&otilde;bbség hozzárendelése, annak eldöntéséhez, hogy kit hallgasson meg egy csomópont egy konfliktusban. <br />
 			<strong>ETC Net2:</strong><br />
-			The lowest number has the highest priority.<br />
+			A legkissebb számnak van a legmagasabb prioritása.<br />
 			<strong>Shownet:</strong><br />
-			A DMX512 slot can be patched to multiple Netslots with each Netslot assigned to a different priority. The DMX512 slot outputs the level of the Netslot with the highest priority if HTP is not selected.</p>
+			A DMX512 b&otilde;vít&otilde;hely több Netslot-hez rendelhet&otilde;, mindegyik Netslothoz más prioritást rendelve. Ha a HTP nincs kiválasztva, a DMX512 slot a legnagyobb prioritású Netslot szintet adja ki. </p>
 			</td>
 		</tr>
 		<tr>
@@ -166,17 +166,16 @@
 			<td>0...255</td>
 			<td>TTL = Time to live<br />
 			<br />
-			Assign the number of routers (hops) that multicast traffic is permitted to pass through before expiring on the network. For each router (hop), the original specified TTL is decremented by one (1). When its TTL reaches a value of zero (0), each multicast datagram expires and is no longer forwarded through the network to other subnets.<br />
-			&nbsp;</td>
+			Rendeljen hozzá olyan útválasztó (ugrások) számot, amelyeken a multicast forgalom megengedett áthaladni, miel&otilde;tt lejár a hálózaton. Mindegyik útválasztó (ugrás) esetében az eredeti TTL-t egy értékkel csökkentik (1). Amikor a TTL eléri a nulla értéket (0), minden egyes multicast datagram lejár, és a hálózaton keresztül már nem továbbítja más alhálózatokra. <br />&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
 
 <p>&nbsp;</p>
 
-<p>The following table displays the assignable parameter by use the command <span class="syntax">Assign Protocol [Network Protocol ID] . [Row ID] / [Parameter] = [Parameter Value].</span></p>
+<p>A következ&otilde; táblázat megmutatja a hozzárendelhet&otilde; paramétereket a következ&otilde; parancs használatakor <span class="syntax">Assign Protocol [Hálózati Protokoll ID] . [Sor ID] / [Paraméter] = [Paraméter Érték].</span></p>
 
-<p>Only available for:</p>
+<p>Csak ezeknél elérhet&otilde;:</p>
 
 <ul>
 	<li>Art-Net</li>
@@ -189,10 +188,10 @@
 <table border="1" cellpadding="1" cellspacing="1">
 	<thead>
 		<tr>
-			<th scope="col">Network Protocol</th>
-			<th scope="col">Parameter</th>
-			<th scope="col">Parameter Value</th>
-			<th scope="col">Description</th>
+			<th scope="col">Hálózati Protokoll</th>
+			<th scope="col">Paraméter</th>
+			<th scope="col">Paraméter Érték</th>
+			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -203,69 +202,68 @@
 			"OutputBroadcast", "OutputUnicast", "OutputAuto", "Input"<br />
 			<strong>sACN:</strong><br />
 			"OutputMulticast", "OutputUnicast", "InputMulticast", "InputUnicast"</td>
-			<td style="width:25%">Assign the output or input mode.</td>
+			<td style="width:25%">Hozzárendeli a kimenet vagy bemenet módot.</td>
 		</tr>
 		<tr>
 			<td>Art-Net, sACN</td>
 			<td>DestinationIP</td>
 			<td>"1.2.3.4"</td>
-			<td><strong>Only if the mode is OutputUnicast.</strong><br />
-			Assign the the destination IP address.</td>
+			<td><strong>Csak ha OutputUnicast módban van.</strong><br />
+			A cél IP címet rendeli hozzá.</td>
 		</tr>
 		<tr>
 			<td style="width:25%">Art-Net, sACN, Kinet1</td>
 			<td>LocalStart</td>
 			<td>1...256</td>
-			<td>Assign the DMX universe to transmit or receive the network protocol.</td>
-		</tr>
+			<td> Hozzárendeli a DMX univerzumot a hálózati protokoll továbbításához vagy fogadásához. </td>		</tr>
 		<tr>
 			<td>Art-Net, sACN, Kinet1</td>
 			<td>Amount</td>
 			<td>1...256</td>
-			<td>Assign the amount of DMX universes to transmit or receive the network protocol.</td>
-		</tr>
+			<td> Hozzárendeli a DMX univerzumok mennyiségét a hálózati protokoll továbbításához vagy fogadásához. </td>
+			</tr>
 		<tr>
 			<td>Art-Net</td>
 			<td>Network</td>
 			<td>1...128</td>
-			<td>Assign the network.</td>
+			<td>A hálózatot rendeli hozzá.</td>
 		</tr>
 		<tr>
 			<td>Art-Net</td>
 			<td>Subnet</td>
 			<td>0...15</td>
-			<td>Assign the subnet.</td>
+			<td>A Subnetet rendeli hozzá.</td>
 		</tr>
 		<tr>
 			<td>Art-Net</td>
 			<td>Universe</td>
 			<td>0...15</td>
-			<td>Assign the universe.</td>
+			<td>Az univerzumot rendeli hozzá.</td>
 		</tr>
 		<tr>
 			<td>Art-Net, sACN</td>
 			<td>Delay(ms)</td>
 			<td>0.000...5.000</td>
-			<td><strong>Only if the mode is an output mode.</strong><br />
-			Assign the milliseconds between the packets.</td>
+			<td><strong>Csak ha a mód a kimeneti mód.</strong><br />
+			A csomagok közötti milliszekundumokat adja meg..</td>
 		</tr>
 		<tr>
 			<td>sACN</td>
 			<td>sACNUniverse</td>
 			<td>&nbsp;1...64000</td>
-			<td>Assign the sACN universe.</td>
+			<td>Az sACN univerzum hozzárendelése.</td>
 		</tr>
 		<tr>
 			<td>sACN</td>
 			<td>Priority</td>
 			<td>0...200 or "None"</td>
-			<td>Assign the priority to decide who a node should listen to in a conflict. The highest number has the highest priority.</td>
+			<td> Hozzárendeli a prioritást annak eldöntéséhez, hogy kit hallgasson meg egy csomópont egy konfliktusban. A legnagyobb szám a legmagasabb prioritással rendelkezik. </td>
 		</tr>
 		<tr>
 			<td>sACN</td>
 			<td>Protocol</td>
 			<td>"Final" or "Draft"</td>
-			<td>Assign a sACN protocol. Some equipment have implemented the draft version of sACN before the final release.</td>
+			<td> SACN-protokoll hozzárendelése. Néhány eszköz az utolsó kiadás el&otilde;tt megvalósította az sACN vázlatos változatát. </td>
 		</tr>
 		<tr>
 			<td>sACN</td>
@@ -273,26 +271,25 @@
 			<td>0...255</td>
 			<td>TTL = Time to live<br />
 			<br />
-			Assign the number of routers (hops) that multicast traffic is permitted to pass through before expiring on the network. For each router (hop), the original specified TTL is decremented by one (1). When its TTL reaches a value of zero (0), each multicast datagram expires and is no longer forwarded through the network to other subnets.<br />
-			&nbsp;</td>
+			Rendeljen hozzá olyan útválasztó (ugrások) számot, amelyeken a multicast forgalom megengedett áthaladni, miel&otilde;tt lejár a hálózaton. Mindegyik útválasztó (ugrás) esetében az eredeti TTL-t egy értékkel csökkentik (1). Amikor a TTL eléri a nulla értéket (0), minden egyes multicast datagram lejár, és a hálózaton keresztül már nem továbbítja más alhálózatokra. <br />&nbsp;</td>
 		</tr>
 		<tr>
 			<td>sACN, Kinet1</td>
 			<td>Info</td>
 			<td>"Information text"</td>
-			<td>Assign additional information.</td>
+			<td>További információk hozzárendelése.</td>
 		</tr>
 		<tr>
 			<td>Kinet1</td>
 			<td>ExternStart</td>
 			<td>0...255 or "None"</td>
-			<td>Assign the transmitted universe number.</td>
+			<td>Hozzárendeli az átvitt univerzumok számát.</td>
 		</tr>
 		<tr>
 			<td>Kinet1</td>
 			<td>IPAddress</td>
 			<td>"1.2.3.4"</td>
-			<td>Assign the IP address.</td>
+			<td>IP cím hozzárendelése.</td>
 		</tr>
 	</tbody>
 </table>
@@ -300,7 +297,7 @@
 <h2>Példa</h2>
 
 <ul>
-	<li>Set the sACN output to active.</li>
+	<li>Az sACN kimenet aktiválása.</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; Assign Protocol 4 /outactive=on</div>
@@ -308,9 +305,9 @@
 <p>&nbsp;</p>
 
 <ul>
-	<li>&nbsp;Send grandMA2 universe 10 to Art-Net universe 9.
-	<div class="important"><strong>Important:</strong><br />
-	Art-Net universe 0 is the first Art-Net universe.</div>
+	<li>&nbsp;A grandMA2 10. univerzumát átküldjük az Art-Net 9. univerzumába.
+	<div class="important"><strong>Fontos:</strong><br />
+	Az Art-Net 0. univerzuma az els&otilde; Art-Net univerzum.</div>
 
 	<div class="cl_input">[Channel]&gt; Assign Protocol 1.1 /mode=outputauto /localstart=10 /amount=1 /network=1 /subnet=0 /universe=9</div>
 	</li>

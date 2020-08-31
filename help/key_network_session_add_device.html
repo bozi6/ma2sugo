@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Adding devices to the session</title>
+		<title>Eszközök hozzáadása a munkamenethez(session)</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="session - add device, MA Network configuration, session member, identify fader, node configuration, bridge" />
@@ -9,87 +9,86 @@
 	<body>
 		
 		
-		<h1>Adding devices to the session</h1>
+		<h1>Eszközök hozzáadása a munkamenethez(session)</h1>
 		
-		<p>MA devices can be added to the session. This will expand the system and allow for bigger systems where it is possible to control more lights (more parameters). Devices like 3D visualizers, Media servers, Networked dimmers, MA Nodes, and MA Network Switches can also be added.</p>
+		<p>Az MA eszközeit lehet hozzáadni a munkamenethez. Ez kiterjeszti a rendszert és a nagyobb rendszer lehetővé teszi a nagyobb rendszerek összehozását, amivel több paraméter kezelhető. Az eszközök mint a 3D vizualizálók, Média szerverek, hálózati dimmerek, MA Nodes, és MA Hálózati Kapcsolók szintén hozzáadhatóak.</p>
 
-<p>It is all controlled in MA Network Configuration. This can be found by pressing <span class="hardkey">Setup</span> and then tap <span class="softkey">MA Network Configuration</span>.</p>
+<p>Minden az MA Hálózati Beállításoknál vezérelhető. Ez elérhető a <span class="hardkey">Setup</span> gomb és utána a<span class="softkey">MA Network Configuration</span>-ra bökéssel.</p>
 
-<p>It could look like this:</p>
+<p>Így néz ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_ma-network-configuration_v3-3.png" />
-<figcaption><em>MA Network Configuration - </em><em>The Console tab </em></figcaption>
+<figcaption><em>MA Hálózati Beállítások - </em><em>A konzol fül </em></figcaption>
 </figure>
 
-<p>The configuration is divided into sections or tabs. The tabs represent each device type. There are tabs for:</p>
+<p>A konfiguráció különböző részekre, ill. fülekre oszlik. A fülek minden egyes eszköz típust jelentenek. Külön fülei vannak a:</p>
 
 <ul>
-	<li>Consoles</li>
+	<li>Pultoknak</li>
 	<li>onPC</li>
 	<li>NPU</li>
 	<li>3D</li>
 	<li>VPU</li>
 	<li>NDP Dimmer</li>
-	<li>DMX Nodes (MA Nodes only)</li>
-	<li>Network Switch (MA Network Switch only)</li>
+	<li>DMX Nodes (Csak MA Nodek)</li>
+	<li>Network Switch (Csak MA Network Switch)</li>
 </ul>
 
-<p>Consoles and grandMA2 onPCs are called <strong>Stations</strong> and are connected to a session using the <a href="key_network_session_create.html">MA Network Control</a>. They cannot be invited or forced to connect from this interface, but the DMX ports and timecode can be configured. Stations in the session will also appear in the MA Network Configuration.</p>
+<p>A Pultokat és a grandMA2 onPCs-t <strong>Stations</strong>(állomásoknak) hívjuk és a <a href="key_network_session_create.html">MA Network Control</a>-al csatlakoznak a munkamenethez. Nem lehet őket meghívni, vagy erőltetni a csatlakozáshoz, de a DMX portok és a timecode-t lehet configurálni. Az állomások a munkamenetben megjelennek az MA Hálózati Beállításoknál is.</p>
 
 <h2>&nbsp;</h2>
 
-<h2>Status colors</h2>
+<h2>Állapot színek</h2>
 
-<p>The devices in the MA Network configuration can have different colors to help identify problems and status of the devices in the network.</p>
+<p>Az eszközöknek az MA Hálózati beállításokban különböző színei lehetnek, ez segít a problémák megkeresésében és az eszköz állapotának mutatásában a hálózaton.</p>
 
-<h3>Hostname, Offset and Bridge</h3>
+<h3>gépnév, Offset és Híd</h3>
 
-<p>The background color of the Hostname, Analog Offset, MIDI Offset and Bridge can have different colors.</p>
+<p>A háttérszíne a Hostname-nek, Analog Offset-nek, MIDI Offset-nek és a Bridge-nek különbözőek lehetnek.</p>
 
 <ul>
-	<li><strong>Red:</strong> The device is not present in the network or it is already connected to a (different) session.</li>
-	<li><strong>Gray / Black:</strong> The device is in the network, but is not in any session. The background is black for Stations - gray for all other devices.</li>
-	<li><strong>Dark green:</strong> The device is in the network and is connected to the same session as you.</li>
-	<li><strong>Bright green:</strong> This is the device you currently using, and it is in a session.</li>
+	<li><strong>Piros:</strong> Az eszköz nincs a hálózaton, vagy már csatlakozott egy másik munkamenethez.</li>
+	<li><strong>Szürke / Fekete:</strong> Az eszköz a hálózaton van, de nincs egy munkamenetben sem. A háttér fekete az állomásoknál - szürke minden egyéb eszköz esetében.</li>
+	<li><strong>Sötétzöld:</strong> Az eszköz a hálózaton van és csatlakozott ugyanahoz a munkamenethez, amelyikhez te is..</li>
+	<li><strong>Világos zöld:</strong> Ezt az eszközt használod most, és benne van a munkamenetben.</li>
 </ul>
 
-<h3>Version number</h3>
+<h3>Verzió számok</h3>
 
-<p>The version number has a default white text color and it can have a red color. The red color is to indicate that the device have an incompatible software version number and it cannot be used in the session.</p>
+<p>A verziószám alapvetően fehért szöveggel van írva, de lehet piros is. A piros szín azt jelenti, hogy az eszköz inkompatibilis szoftver verzióval rendelkezik és nem használható a munkamenetben.</p>
 
 <h2>&nbsp;</h2>
 
-<h2>Consoles</h2>
+<h2>Pultok</h2>
 
-<p>The consoles tab offers the possibility to configure the ports on a console that is connected to the network.</p>
+<p>A pultok fül lehetővé teszi a hálózatra csatlakozott putlok portjainak konfigurálását.</p>
 
-<p><a id="Standard Control Buttons" name="Standard Control Buttons"></a>At the bottom of the screen there are some buttons:</p>
+<p><a id="Standard Control Buttons" name="Standard Control Buttons"></a>A képernyő alján van néhány gomb:</p>
 
 <ul>
-	<li><strong>Add</strong> - Pressing this will open a small pop-up that lists all the available consoles in your network. If there are no consoles, that are not already added, then the list will be empty. Not adding any actual consoles, will create an "empty"&nbsp; console with the 0.0.0.0 IP address.</li>
-	<li><strong>Delete</strong> - Tapping this button will delete the selected console. You cannot delete your own console.</li>
-	<li><strong>Add Present</strong> - This will automatically add all the consoles that are present in the network.</li>
-	<li><strong>Remove Absent</strong> - This will remove the consoles from the list, that are not present in the network.</li>
-	<li><strong>Remove Non-Members</strong> - This will remove the consoles from the list, that are not a member of your session.</li>
+	<li><strong>Add</strong> - Ezt megnyomva megjelenik egy kics ablakocska, ami listázza az elérhető pultokat a hálózaton. Ha nincs olyan pult, ami már ne lenne hozzáadva, akkor a lista üres. Ha nem adunk hozzá A tényleges pultok hozzáadása nélkül "üres" lesz, a 0.0.0.0 IP címmel.</li>
+	<li><strong>Delete</strong> - Erre bökve törlődik a kiválasztott pult a listából. Nem törölheted a saját pultodat.</li>
+	<li><strong>Add Present</strong> - Ez automatikusan hozzáadja a pultokat, amik jelen vannal a hálózaton.</li>
+	<li><strong>Remove Absent</strong> - Ez eltávolítja a pultokat, amik nincsenek a hálózaton.</li>
+	<li><strong>Remove Non-Members</strong> - Ez eltávolítja azokat a pultokat, amik nem tagjai a munkamenetednek.</li>
 </ul>
 
-<p>When you have added a console to the list, then you get a table where the rows are the different consoles (if there are more than one). The columns are different settings. All the settings with a gray background color can be changed. If the console is not connected to the session, then the changes might not be made in the console.</p>
-
-<p><a id="Column Description" name="Column Description"></a>The columns are:</p>
+<p>Ha hozzáadtál egy pultot a listához, akkor kapsz egy táblázatot, ahol a sorok a különféle konzolok (ha egynél több van). Az oszlopok a különböző beállítások. Az összes szürke háttérszínű beállítás megváltoztatható. Ha a pult nincs csatlakoztatva a munkamenethez, akkor előfordulhat, hogy a módosításokat nem hajtják végre a pulton. </p>
+<p><a id="Column Description" name="Column Description"></a>Az oszlopok a következők:</p>
 
 <ul>
-	<li><strong>IP ETHERCON 1 (ETH0)</strong> - This is the IP address of the number 1 EtherCon connector on the back of the console. Changing this number will change the IP address on the console and requires a reboot.</li>
-	<li><strong>DHCP ETHERCON 1 (ETH0)</strong> - Editing this cell will give a "Yes". This enables DHCP for Ethernet port 1 and will prompt a reboot. Read more about DHCP in the <a href="key_network_dhcp.html">Using DHCP in MA devices topic</a>.</li>
-	<li><strong>IP ETHERCON 2 (ETH1)</strong> - This is the IP address of the number 2 EtherCon connector on the back of the console. This connector is for Art-Net and should have an Art-Net compatible IP address. Changing this number will change the IP address on the console and requires a reboot.</li>
-	<li><strong>Hostname</strong> - This is the hostname of the console. This is only for information. It can only be changed in the MA Network Control.</li>
-	<li><strong>Type</strong> - This displays the type of console.</li>
-	<li><strong>XLR A</strong> to <strong>XLR F</strong> - These are the female DMX connectors on the back of the console. Editing this cell will open a pop-up that allows you to change the settings. It is described in details in the <a href="key_network_dmx_get_in_out.html">Getting DMX in and out of the system</a> topic.</li>
-	<li><strong>XLR In</strong> - This is the male DMX port on the back of the console. Editing, works just as the female connectors - see above.</li>
-	<li><strong>MIDI TC</strong> - Choose which Timecode slot the incoming MIDI timecode should be sent to. Please read the <a href="key_timecode.html">Timecode</a> topic for more details about Timecode slots.</li>
-	<li><strong>SMPTE TC</strong> - Choose which Timecode slot the incoming LTC/SMPTE timecode should be sent to. Please read the <a href="key_timecode.html">Timecode</a> topic for more details about Timecode slots.</li>
-	<li><strong>Version</strong> - This is the software version the console is currently running.</li>
-	<li><strong>Memory Complete/Free</strong> - This displays the amount of memory (RAM) in the console and how much of that is not used. If the console uses all the available memory then it will stop working. You will also need an extra memory capacity to connect to a file server.</li>
-	<li><strong>x64</strong> - Here it is displayed if the console is running the 64 -bit version of Linux or the 32-bit. A "Yes" indicates that it is 64-bit.</li>
+	<li><strong>IP ETHERCON 1 (ETH0)</strong> - Ez az első EtherCon csatlakozó IP címe. Megváltoztatva ezt a számot, megváltozik a pult IP címe is és szükséges újraindítani.</li>
+	<li><strong>DHCP ETHERCON 1 (ETH0)</strong> - Ezt a cellát szerkesztve "Yes" -lesz benne. Ez engedélyezi a DHCP-t az 1. hálózati porton és újraindítást igényel. Olvass többet a DHCP-ről a <a href="key_network_dhcp.html">DHCP használata az MA eszközökön fejezetben</a>.</li>
+	<li><strong>IP ETHERCON 2 (ETH1)</strong> - Ez a második EtherCon csatlakozó IP címe. Ez a csatlakozó van az Art-Net-hez és Art-Net kompatibilis IP címet kell nekki adni. Megváltoztatva ezt a számot, megváltozik az IP cím és újraindítást igényel.</li>
+	<li><strong>Hostname</strong> - Ez a gépneve a pultnak. Ez csak plusszinformációnak van. Ezt csak az MA Network Control-ban lehet megváltoztatni.</li>
+	<li><strong>Type</strong> - Ez mutatja a pult típusát.</li>
+	<li><strong>XLR A</strong> tól <strong>XLR F</strong>-ig - Ezek a mama DMX csatlakozók a pult hátulján. e cellát szerkesztve megnyílik egy ablakocska, ami engedi változtatni a beállításokat. Ez részletesen a  <a href="key_network_dmx_get_in_out.html">DMX be és ki a rendszerben</a> fejezetben van.</li>
+	<li><strong>XLR In</strong> - Ez a papa DMX csatlakozó a pult hátulján. Szerkesztése ugyanaz mint a mama csatlakozónál - lásd fent.</li>
+	<li><strong>MIDI TC</strong> - Kiválaszthatod, melyik Timecode aljzatba küldődjön a bejövő MIDI timecode jele. Bővebben a<a href="key_timecode.html">Timecode</a> fejezetben.</li>
+	<li><strong>SMPTE TC</strong> - Kiválaszthatod, melyik Timecode aljzatba küldődjön a bejövő LTC/SMPTE timecode jele. Bővebben a<a href="key_timecode.html">Timecode</a> fejezetben.</li>
+	<li><strong>Version</strong> - Ez a szoftver verziót mutatja amin a pult éppen fut.</li>
+	<li><strong>Memory Complete/Free</strong> - Ez megjeleníti a pult memóriájának (RAM) mennyiségét és azt, hogy mennyi szabad még ebből. Ha a konzol az összes rendelkezésre álló memóriát felhasználja, akkor nem fog működni. Szükség lesz további memóriakapacitásra is a fájlszerverhez való csatlakozáshoz.</li>
+	<li><strong>x64</strong> - Itt mutatja, hogy a pult a 64 -bites verziójú Linuxot, vagy a 32 bitest futtatja. A "Yes" jelentése, hogy a 64-bitest.</li>
 	<li><strong>Analog Offset</strong> - Here remote analog inputs, on the back of the console, can be offset. This can be useful if there are more consoles and you need more analog remote inputs than the 16 a single console offers. The session can handle 64 unique remote inputs. To reach numbers above 16 (the number of inputs on the console) then you will need to offset the input on one or more consoles. An offset of 16 will map physical input number 1 to remote number 17.</li>
 	<li><strong>MIDI Offset</strong> - This is the same as the analog remotes, but for MIDI Notes. Most MIDI systems support 128 notes (0-127). But the MA system can handle 1024 MIDI remote inputs. In combination with the 16 different channels, this allows you to map 16.384 unique MIDI remote inputs!</li>
 	<li><strong>Link Speed</strong> - This is the current connection speed between the console and the switch.</li>
@@ -224,7 +223,7 @@ If the Node is connected to a managed switch, then the port where the node is co
 
 <h2>Bridge</h2>
 
-<p>The Bridge is not implemented, so there is nothing to do in this tab.</p>
+<p>A Bridge nem került megvalósításra, tehát ezen a lapon nincs semmi tennivaló.</p>
 
 		
 	</body>
