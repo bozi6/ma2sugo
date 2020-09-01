@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Commands in cues</title>
+		<title>Parancsok a képekben</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="cues - commands" />
@@ -9,25 +9,24 @@
 	<body>
 		
 		
-		<h1>Commands in cues</h1>
+		<h1>Parancsok a képekben</h1>
 		
-		<p>Each cue can execute a command. The commands are written in the CMD column in the <a href="key_cs_cue_sequence.html">Sequence Executor Sheet</a>.</p>
+		<p>Minden kép elindíthat egy parancsot. A parnacsokat a CMD oszlopba kell írni a <a href="key_cs_cue_sequence.html">Szekvencia Executor Lapon</a>.</p>
 
 <p>&nbsp;</p>
 
-<p>The commands are executed as soon as the cue is triggered. It is possible to delay the command by adding a time in the CMD Delay column.</p>
+<p>A parancsok akkor indulnak amikor a kép triggerelve(elindítva) lesz. Lehetséges késleltetést adni a parancshoz ha id&otilde;t adsz meg a CMD Delay oszlopban.</p>
 
 <p>&nbsp;</p>
 
-<p>If you want to run multiple commands in the same cue, you can separate the commands with a semicolon.</p>
+<p>Ha több parancsot akarsz futtatni egy képen belül, akkor egy pontosvessz&otilde;vel elválaszthatod a parancsokat.</p>
 
-<p>As an alternative you could make cue parts and add each command in each part - remember to add a small CMD Delay, so all commands are not executed at the same time.</p>
-
+<p>Alternatív megoldásként készíthetsz kép részeket, és minden parancsot hozzáadhatsz az egyes részekhez - ne felejts el hozzáadni egy kis parancskésleltetést, így az összes parancs nem egyidej&ucirc;leg lesz végrehajtva. </p>
 <p>&nbsp;</p>
 
-<p>The commands are executed by the logged in user on the master station in a session. So be aware that it might not be the user who triggers the cue that runs the commands.</p>
+<p> A parancsokat a bejelentkezett felhasználó hajtja végre a f&otilde;állomáson egy munkamenet során. Ne felejtsd el tehát, hogy lehet, hogy nem a felhasználó váltja ki a parancsot. </p>
 
-<p>A useful keyword to know, if you need to trigger a command on a specific station, is the <a href="key_keyword_remotecommand.html">RemoteCommand</a>.</p>
+<p>Egy hasznos kulcsszó amit jó ha tudsz, ha egy megadott állomáson akarsz parancsot végrehajtani, ez a<a href="key_keyword_remotecommand.html">RemoteCommand</a>.</p>
 
 <p>&nbsp;</p>
 
