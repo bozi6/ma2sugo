@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>What are cues and sequences</title>
+		<title>Mik a képek és szekvenciák</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="cues, sequences" />
@@ -9,83 +9,83 @@
 	<body>
 		
 		
-		<h1>What are cues and sequences</h1>
+		<h1>Mik a képek és szekvenciák</h1>
 		
-		<p>Being able to store and recall a set of attribute values is one of the most important features of a control system.</p>
+		<p>Képesnek lenni eltárolni és visszahívni attribútumok értékeit, egy a legfontosabb képessége egy vezérl&otilde; rendszernek.</p>
 
-<p>One of the primary ways of doing this is using a <strong>Cue</strong>. Cues contain the stored values. Cues are organized in <strong>Sequences</strong>. A sequence can be assigned to an <strong>Executor</strong> for convenient playback control. Read more about the executors in the <a href="key_exec.html">Executors section</a>.</p>
+<p>Ennek az els&otilde;dleges módja a <strong>Képek</strong> használata. A képek tárolt értékeket tartalmaznak. A képek <strong>Szekvenciákba</strong> vannak szervezve. A szekvenciákat <strong>Executorokhoz</strong> rendelhetjük hozzá a kényelmes lejátszás vezérléshez. Olvass többet az executorokról az <a href="key_exec.html">Executorok fejezetben</a>.</p>
 
-<p>Cues can be split up in different parts called "Part Cues". An attribute value can only be in one of the parts. This will be described in the next topics.</p>
+<p>A képeket feloszthatjuk különböz&otilde; részekre ezeket "Part Cues"-képrésznek hívjuk. Egy attribútum értéke csak egy részben szerepelhet. Ezt a következ&otilde; fejezetben írjuk le.</p>
 
-<p>With sequences we also have control of how values change from one cue to the other and a lot other relevant settings.</p>
+<p>A szekvenciákkal azt is ellen&otilde;rizhetjük, hogyan változnak az értékek az egyik képr&otilde;l a másikra, és sok más releváns beállítást. </p>
 
-<p>These are described in the following topics.</p>
+<p>Ezek a következ&otilde; fejezetben vannak leírva.</p>
 
-<h2><a id="sequence_pool" name="sequence_pool"></a>The Sequence Pool</h2>
+<h2><a id="sequence_pool" name="sequence_pool"></a>A Szekvencia Tároló</h2>
 
-<p>The sequences are organized in a pool. It could look like this:</p>
+<p>A szekvenciák tárolókba vannak szervezve. Ez így fest:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-pool_v3-3.png" />
-<figcaption><em>Sequence Pool - pool mode</em></figcaption>
+<figcaption><em>Szekvencia Tároló - tároló mód</em></figcaption>
 </figure>
 
-<p>If pools are new to you, then please see the <a href="key_pools.html">Pools in General section</a>.</p>
+<p>Ha tárolók még újdonságnak számítanak, akkor nézd meg ezt: <a href="key_pools.html">Tárolókról általában fejezet</a>.</p>
 
-<p>Each pool element (equals each sequence in the show) shows some information about the sequence settings and other relevant information.</p>
+<p>Minden tárolóelem (egyenl&otilde; minden szekvenciával a showban) mutat némi információt a szekvencia beállításáról és más fontos információkat.</p>
 
-<p>The lower half of the pool object shows the name of the sequence.</p>
+<p>Az alsó fele a tárolóobjektumnak tartalmazza a szekvencia nevét.</p>
 
-<p>The top row displays the sequence number on the left. If this number is cyan then the sequence is assigned to an executor. If it is not assigned then the number is gray.</p>
+<p>A fels&otilde; sorban balra látható a szekvencia száma. Ha ez a szám cián szín&ucirc; akkor a szekvencia hozzá van rendelve egy executorhoz. Ha nincs hozzárendelve akkor a száma szürke.</p>
 
-<p>There is a letter indicating the sequences priority. Priorities are described in the <a href="key_cs_playback.html">Playing back cues topic</a>. The different letters are listed in the <a href="key_ws_text_indicators.html">Text indicators topic</a>.</p>
+<p>Vannak bet&ucirc;k amik a szekvencia prioritását jelölik. A prioritások a <a href="key_cs_playback.html">Képek visszajátszása fejezetben</a> leírva. A különböz&otilde; bet&ucirc;k listája a <a href="key_ws_text_indicators.html">Bet&ucirc;k és szimbóumok jelentése fejezetben </a>vannak.</p>
 
-<p>There can be a "T" letter next to priority letter. This shows if tracking is turned On (visible T) or Off for the sequence. Tracking is described in the <a href="key_cs_what_is_tracking.html">What is tracking topic</a>.</p>
+<p>Lehet egy "T" bet&ucirc; a prioritásjelz&otilde; mellett. Ez mutatja, hogy a követés be van kapcsolva (látható T) vagy ki van kapcsolva a szekvencián. A követésr&otilde;l leírás a <a href="key_cs_what_is_tracking.html">Mi az a tracking fejezetben</a>található.</p>
 
-<p>There can be two icons in the top row. It can have the Filter icon if the sequence have assigned an input filter. Filters are described beginning from the <a href="key_wfm_what_are_filters.html">What are Filters topic</a>. The other icon is the information icon. This is present if there are any information written for the sequence (it has nothing to do with information in cues - it is about the sequence).</p>
+<p>Lehet még két ikon a fels&otilde; sorban. Lehet egy sz&ucirc;r&otilde; ikon, amikor a szekvenciához bejöv&otilde; sz&ucirc;r&otilde; lett társítva. A filterekr&otilde;l a <a href="key_wfm_what_are_filters.html">Mik azok a Filterek fejezetben</a>lehet olvasni. A másik ikon az információs ikon. Ez akkor jelenik meg, ha valamilyen információt írtunk a szekvenciába (ez semmit nem csinál a képekben lév&otilde; információkkal - ez a szekvenciáról szól).</p>
 
-<p>Below the top row there might be cyan number below the sequence number on the left side. This shows the amount of executors that have the sequence assigned.</p>
+<p>A fels&otilde; sor alatt, lehet egy cián szín&ucirc; szekvenciaszám a bal oldalon. Ez mutatja hogy hány executorhoz rendeltük hozzá a szekvenciát.</p>
 
-<h2>Sheet Mode</h2>
+<h2>Lap mód</h2>
 
-<p>The Sequence Pool can also be in "Sheet Mode". This is changed in the Pool Options - read about them in the the <a href="key_pools.html">Pools in General section</a>.</p>
+<p>A szekvencia tárolót lehet "Lap módban"is nézni. Ezt a Pool Options-nál lehet állítani - olvasd el a <a href="key_pools.html">Tárolókról Általában fejezetet</a>.</p>
 
-<p>It could look like this:</p>
+<p>Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-pool_sheet-mode_v3-3.png" />
-<figcaption><em>Sequence Pool - sheet mode</em></figcaption>
+<figcaption><em>Szekvencia Tároló - lap mód</em></figcaption>
 </figure>
 
-<p>The title bar can have up to three buttons.</p>
+<p>A címsorban három gomb van.</p>
 
-<p>The right one will hide or show all the empty pool elements in the Sequence Sheet.</p>
+<p>A jobb oldali elrejti vagy megmutatja az üres tároló elemet a szekvencia lapon.</p>
 
-<p>The next on the left changes the Call Mode for the sequence Pool/Sheet. If the "Pool Playback" mode is selected then an extra button appears. This is called "Direct Action" and it toggles the direct action mode pool playback. The different Call Modes are described in the <a href="key_pools_call_modes.html">Call Mode topic</a>. Pool playback is described in the <a href="key_cs_playback.html">Playing back Cues topic</a>.</p>
+<p>A középs&otilde; változtatja a Call Mode-Hívási módot a szekvenciának Tároló/Lap. Ha a "Pool Playback" mód van kiválasztva, akkor egy extra gomb jelenik meg. Ezt "Direct Action"-közvetlen akciónak hívjuk és ez kapcsolja a direkt akció módját a tároló visszajátszásának. A különböz&otilde; hívási módokról a <a href="key_pools_call_modes.html">Hívási Módok fejezetben</a>van infó. A Tárolók visszajátszása a <a href="key_cs_playback.html">Képek visszajátszása fejezetben</a>található.</p>
 
-<p>The Sequence Sheet displays each sequence as a row. The columns are the settings that belongs to the sequence. Everything with a gray background can be changed.</p>
+<p>A szekvencia lap minden szekvenciát soronként mutat. Az oszlopok pedig a szekvenciához tartozó beállításokat mutatják. Minden aminek szürke a háttere, az szerkeszthet&otilde;.</p>
 
 <ul>
 	<li><strong>No.:</strong><br />
-	This is the sequence number. It cannot be changed here - but the sequence can be moved in the sequence pool.</li>
+	Ez a szekvencia száma. Itt nem lehet megváltoztatni - de a szekvencia tárolóban lehet mozgatni &otilde;ket.</li>
 	<li><strong>Name:</strong><br />
-	This is the name of the sequence. It has the frame color from the pool. Editing the cell will allow you to change the name.</li>
+	Ez a szekvencia neve. A tárolóból vett keretszíne van. A cellát szerkesztve megváltoztatható a neve.</li>
 	<li><strong>Track:</strong><br />
-	Here you can turn On or Off tracking for the sequence. Tracking is described in the <a href="key_cs_what_is_tracking.html">What is Tracking topic</a>.</li>
+	Itt lehet be/ki kapcsolni a tracking-követést a szekvenciához. A követés leírása: <a href="key_cs_what_is_tracking.html">Mi az a Tracking-követés fejezetben</a>van.</li>
 	<li><strong>Release Firststep:</strong><br />
-	Here you can turn On or Off "Release First Step". This is related to tracking - follow link above.</li>
+	Itt kapcsolható a "Release First Step"-engedd el az els&otilde; lépést. Ez a követéshez tartozik - lásd fenti link.</li>
 	<li><strong>CueZero:</strong><br />
-	Editing this gives you the pop-up used to select the Cue Zero mode. Read more about Cue Zero in the <a href="key_adv_seq_cue_zero.html">Cue Zero topic</a>.</li>
+	Ezt szerkesztve egy abalkocskában szerkesztheted a Zéró Kép módot. A Zéró képr&otilde;l b&otilde;vebben: <a href="key_adv_seq_cue_zero.html">Zéró Kép fejezetben</a>olvashatsz.</li>
 	<li><strong>CueZero Extract:</strong><br />
-	The Cue Zero Extract can be turned On or Off. It is related to the Cue Zero function - follow link above.</li>
+	A Zéró Kép Kivonat is ki/be kapcsolható. Ez a Zéró Kép funkcióhoz kapcsolódik  leírás, lásd fenn.</li>
 	<li><strong>Input Filter:</strong><br />
-	Here you can set an input filter. Filters and sequences are described in the <a href="key_wfm_apply_to_exec_seq.html">Apply worlds and filters to executors and sequences topic</a>.</li>
+	Itt állíthatsz be bemeneti sz&ucirc;r&otilde;t. A sz&ucirc;r&otilde;k és szekvenciák a <a href="key_wfm_apply_to_exec_seq.html">Világok vagy sz&ucirc;r&otilde;k alkalmazása az executorokban és szekvenciákban fejezetben </a>vannak leírva.</li>
 	<li><strong>Timecode Slot:</strong><br />
-	Here you can select a timecode slot for the sequence. Read the <a href="key_timecode.html">Timecode section</a> to learn more about using timecode with sequences.</li>
+	Itt választhatsz egy timecode tartót a szekvenciához. Olvasd el a <a href="key_timecode.html">Timecode fejezetet</a> ha szekvenciákhoz akarsz timecode-t használni.</li>
 	<li><strong>Info:</strong><br />
-	Here it is possible to add multiple lines of information to the sequence.</li>
+	Itt lehetséges többsoros információt írni a szekvenciához.</li>
 	<li><strong>Forces Pos. mode:</strong><br />
-	The entire sequence can have a forced position mode. This is relevant when working with a mix of Pan/Tilt values and XYZ values. Read more about this in the <a href="key_xyz_pan_tilt_in_cues_sequences.html">XYZ and Pan/Tilt in Sequences topic</a>.</li>
+	Az egész szekvenciát er&otilde;ltetett pozíciós módba teszi. Ez fontos ha kevert Pan/Tilt értékeket és XYZ értékeket használsz. Olvass többet a <a href="key_xyz_pan_tilt_in_cues_sequences.html">XYZ és pan/tilt a képekben és szekvenciákban fejezetben</a>.</li>
 	<li><strong>Used Count:</strong><br />
-	This is the number that indicates the amount of executors that have the sequence assigned. This is not a setting you can change here - it is for information.</li>
+	Ez a szám mutatja, hogy hány db. executor van hozzárendelve az adott szekvenciához. Ez nem egy változtatható beállítás - ez csak információ.</li>
 </ul>
 
 <p>&nbsp;</p>
