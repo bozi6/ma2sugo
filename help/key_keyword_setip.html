@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>SetIP Keyword</title>
+		<title>SetIP Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="SetIP Keyword, Set IP, SetIP" />
@@ -9,43 +9,43 @@
 	<body>
 		
 		
-		<h1>SetIP Keyword</h1>
+		<h1>SetIP Kulcsszó</h1>
 		
-		<p>To execute keyword&nbsp;SetIP type <strong>SetIP</strong> into the command line.</p>
+		<p>A &nbsp;SetIP kulcsszó megjelenéséhez, írd be a <strong>SetIP</strong>-t a parancssorba.</p>
 
 <h2>Leírás</h2>
 
-<p>The SetIP keyword changes the IP address of the Ethernet interfaces of the console or station.</p>
+<p>A SetIP kulcsszó megváltoztatja az IP címét a pult vagy állomás Ethernet csatolójának.</p>
 
-<p>If SetIP is used standalone, the command line feedback window lists the available Ethernet interfaces with their IP addresses.</p>
+<p>Ha a SetIP-t önállóan használod, a parancssor visszajelz&otilde; ablakban kilistázza az elérhet&otilde; Ethernet csatolókat a hozzárendelt IP címekkel együtt.</p>
 
-<p>A grandMA2 console has two network interfaces, <strong>eth0</strong> and <strong>eth1</strong>, which are on the back of the console labeled as <strong>Ethernet 1</strong> and <strong>Ethernet 2</strong>.</p>
+<p>A grandMA2 pultnak kett&otilde; hálózati csatolója van, <strong>eth0</strong> és <strong>eth1</strong>, amelyek a pult hátulján találhatóak <strong>Ethernet 1</strong> és <strong>Ethernet 2</strong>cimkével ellátva.</p>
 
-<div class="important"><strong>Important:</strong><br />
-To apply the changed IP address, a reboot is necessary.</div>
+<div class="important"><strong>Fontos:</strong><br />
+Az IP cím változásához újra kell indítani a pultot.</div>
 
 <div class="tip"><strong>Tipp:</strong><br />
-Another way to change the IP address of the Ethernet-interfaces of the console or station is, press <span class="hardkey">Setup</span> I tap <span class="softkey">MA Network Configuration</span>&nbsp; I column<strong> IP ETHERCON 1(ETH0) </strong>or<strong> IP ETHERCON 2 (ETH1)</strong>. For more information see <a href="key_network_set_ip_onpc.html">Networking - Set the IP address in onPC</a>.&nbsp;</div>
+Másik módja az IP cím megváltoztatásának, a pulton vagy állomáson, ha megnyomod a <span class="hardkey">Setup</span>gombot majd ráböksz a <span class="softkey">MA Network Configuration</span>&nbsp; els&otilde; oszlopban<strong> IP ETHERCON 1(ETH0) </strong>vagy<strong> IP ETHERCON 2 (ETH1)</strong>. További információkért lásd <a href="key_network_set_ip_onpc.html">Hálózat - Az IP cím beállítása az onPC-n</a>.&nbsp;</div>
 
 <h2>Szintakszis</h2>
 
 <p><span class="syntax">SetIP [network interface] [IP address] / [option] = [option value]</span></p>
 
-<h2>Options</h2>
+<h2>Opciók</h2>
 
-<p>To get a list of all available options to the SetIP keyword in the command line feedback window, type in the command line</p>
+<p>Az összes elérhet&otilde; opció lekérdezéséhez a SetIP kulcsszónak, írd be a parancssorba</p>
 
 <div class="cl_input">[Channel]&gt; SetIP /?</div>
 
-<p>The SetIP keyword has the following options.</p>
+<p>A SetIP kulcsszónak a következ&otilde; opciói vannak.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
-			<th scope="col">Option</th>
-			<th scope="col">Shortcut</th>
-			<th scope="col">Option Value</th>
-			<th scope="col">Description</th>
+			<th scope="col">Opció</th>
+			<th scope="col">Rövidítés</th>
+			<th scope="col">Opció értéke</th>
+			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -53,65 +53,65 @@ Another way to change the IP address of the Ethernet-interfaces of the console o
 			<td>mask</td>
 			<td>m</td>
 			<td>e.g. 255.0.0.0</td>
-			<td>Sets the subnet mask of the Ethernet adapter.</td>
+			<td>Az alhálózati maszkot állítja be.</td>
 		</tr>
 		<tr>
 			<td>dhcp</td>
 			<td>not available</td>
 			<td>no option value</td>
-			<td>Enables DHCP for the Ethernet adapter.</td>
+			<td>Engedélyezi a DHCP-t a hálózati csatolóhoz.</td>
 		</tr>
 		<tr>
 			<td>gateway</td>
 			<td>not available</td>
 			<td>e.g. 192.168.0.1</td>
-			<td>Sets the default gateway for the Ethernet adapter.</td>
+			<td>Beállítja az alapértelmezett átjárót a hálózati csatolóhoz.</td>
 		</tr>
 		<tr>
 			<td>noconfirm</td>
 			<td>nc</td>
 			<td>no option value</td>
-			<td>Suppress the SetIP confirmation pop-up.</td>
+			<td>Elnémítja a SetIP elfogadás ablakocskát.</td>
 		</tr>
 	</tbody>
 </table>
 
-<h2>Example:</h2>
+<h2>Példa:</h2>
 
 <p>&nbsp;&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt; SetIP eth0 192.168.0.5</div>
 
-<p>&nbsp;Sets the IP address of the first Ethernet interface.</p>
+<p>&nbsp;Beállítja az els&otilde; hálózati csatoló IP címét.</p>
 
 <p>&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt;&nbsp;SetIP&nbsp;eth0 /DHCP</div>
 
-<p>Activates DHCP client which takes over the IP address&nbsp;automatically from the server.&nbsp;</p>
+<p>Engedélyezi a DHCP kliens használatát az els&otilde; hálózati csatolón.&nbsp;</p>
 
 <p>&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt; SetIP eth1 2.0.0.10 /mask=255.0.0.0</div>
 
-<p>Sets IP address and network mask for the second Ethernet interface.</p>
+<p>Beállítja az IP címét és a hálózati maszkot a második hálózati csatolón.</p>
 
 <p>&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt; SetIP</div>
 
-<p>Lists available Ethernet interfaces along with their IP addresses in the command line feedback window.</p>
+<p>Kilistázza az elérhet&otilde; hálózati csatolókat az IP címekkel együtt a prancs visszajelz&otilde; ablakban.</p>
 
 <p>&nbsp;</p>
 
-<div class="important"><strong>Important:</strong><br />
-Do not use DHCP&nbsp;on eth1, unless you are a skilled network operator.&nbsp;</div>
+<div class="important"><strong>Fontos:</strong><br />
+Ne használd a DHCP&nbsp;-t az els&otilde; hálózati csatolón, hacsak nem vagy képzett hálózati operátor.&nbsp;</div>
 
 <p>&nbsp;</p>
 
-<p>For more information on what DHCP is see the <a href="key_glossary.html">Glossary</a>.&nbsp;</p>
+<p>További információ a DHCP-r&otilde;l nézd meg <a href="key_glossary.html">Szójegyzék</a>.&nbsp;</p>
 
-<p>For more information on how to use DHCP see <a href="key_network_dhcp.html">Using DHCP in MA devices</a>.</p>
+<p>További információ a DHCP-r&otilde;l nézd meg <a href="key_network_dhcp.html">DHCP használata az MA eszközökön</a>.</p>
 
 <p>&nbsp;</p>
 

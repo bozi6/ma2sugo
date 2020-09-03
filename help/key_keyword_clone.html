@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Clone keyword</title>
+		<title>Clone kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="Clone keyword, world - clone, fixtures - clone" />
@@ -9,15 +9,15 @@
 	<body>
 		
 		
-		<h1>Clone keyword</h1>
+		<h1>Clone kulcsszó</h1>
 		
-		<p>It is possible to <strong>clone </strong>from fixture to fixture; from fixture to fixture type; from fixture type to fixture; or from fixture type to fixture type.&nbsp;</p>
+		<p>Lehetséges <strong>klónozni </strong>lámpáról lámpára;lámpáról lámpatípusra; lámpatípusról lámpára; vagy lámpatípusról lámpatípusra.&nbsp;</p>
 
-<p>To execute this keyword, press <span class="hardkey">Copy</span> twice, type <strong>Clone </strong>or the shortcut <strong>Clo&nbsp;</strong>into the command line.&nbsp;</p>
+<p>A kulcsszó elindításához, nyomd meg a <span class="hardkey">Copy</span>-t  kétszer, vagy írd be a <strong>Clone </strong> vagy röviden <strong>Clo&nbsp;</strong>a parancssorba.&nbsp;</p>
 
-<div class="important"><strong>Note:</strong><br />
-Cloning to fixtures adds selective data to presets.&nbsp;<br />
-Cloning to fixture types adds global data to presets.&nbsp;</div>
+<div class="important"><strong>Jegyzet:</strong><br />
+A lámpák klónozása a kiválasztott adatokat presetekbe rakja.&nbsp;<br />
+a lámpatípus klónozása a globális adatokat adja hozzá a presetekhez.&nbsp;</div>
 
 <h2>Szintakszis</h2>
 
@@ -27,21 +27,21 @@ Cloning to fixture types adds global data to presets.&nbsp;</div>
 
 <p>&nbsp;</p>
 
-<h2>Options</h2>
+<h2>Opciók</h2>
 
-<p>To get a list of all options available for the keyword <strong>Clone </strong>in the command line feedback window, type the following into the command line:</p>
+<p>Az <strong>Clone </strong> összes lehetséges opciójának lekéréséhez, írd be a parancssorba:</p>
 
 <div class="cl_input">[Channel]&gt; Clone /?</div>
 
-<p>The keyword <strong>Clone </strong>has the following options:</p>
+<p>A <strong>Clone </strong>kulcsszó opciói:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
-			<th scope="col">Option</th>
-			<th scope="col">Shortcut</th>
-			<th scope="col">Option value</th>
-			<th scope="col">Description</th>
+			<th scope="col">Opció</th>
+			<th scope="col">Rövidítés</th>
+			<th scope="col">Opció érték</th>
+			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -49,69 +49,68 @@ Cloning to fixture types adds global data to presets.&nbsp;</div>
 			<td>overwrite</td>
 			<td>o</td>
 			<td>no option value</td>
-			<td>Removes and replaces original data of the destination by new data.</td>
+			<td>Eltávolítja és kicseréli a cél eredeti adatait új adatokkal.</td>
 		</tr>
 		<tr>
 			<td>merge</td>
 			<td>m</td>
 			<td>no option value</td>
-			<td>Adds data to existing content.</td>
+			<td>Adatokat ad hozzá a meglév&otilde; tartalomhoz.</td>
 		</tr>
 		<tr>
 			<td>lowmerge</td>
 			<td>lm</td>
 			<td>no option value</td>
-			<td>Adds data to existing content and never destroys the existing content.&nbsp;</td>
+			<td>Adatokat ad a meglév&otilde; tartalomhoz, és soha nem semmisíti meg a meglév&otilde; tartalmat.&nbsp;</td>
 		</tr>
 		<tr>
 			<td>disablecolortransform</td>
 			<td>dct</td>
 			<td>no option value</td>
-			<td>Disables transformation of color (fetches hard attribute values).</td>
+			<td>Letiltja a szín átalakítását (lekéri a kemény attribútumértékeket).</td>
 		</tr>
 		<tr>
 			<td>prefercolorwheel</td>
 			<td>pcw</td>
 			<td>no option value</td>
-			<td>Prefers transforming color to color wheel.&nbsp;</td>
+			<td>El&otilde;nyben részesíti a szín átalakítását a szín keréknek megfelel&otilde;en.&nbsp;</td>
 		</tr>
 		<tr>
 			<td>prefermixcolor</td>
 			<td>pmc</td>
 			<td>no option value</td>
-			<td>Prefers transforming color to MIXColor.&nbsp;</td>
+			<td>El&otilde;nyben részesíti a szín átalakítását MIXColor színre.&nbsp;</td>
 		</tr>
 		<tr>
 			<td>prefercolorboth</td>
 			<td>pcb</td>
 			<td>no option value</td>
-			<td>Prefers transforming color to both MIXColor and color wheel.&nbsp;</td>
+			<td>A színátalakítást részesíti el&otilde;nyben mind a MIXColor, mind a színkerék mellett.&nbsp;</td>
 		</tr>
 		<tr>
 			<td>noconfirm</td>
 			<td>nc</td>
 			<td>no option value</td>
-			<td>Suppresses confirmation pop-up.&nbsp;</td>
+			<td>Elnyomja a meger&otilde;sít&otilde; el&otilde;ugró ablakocska megjelenítését.&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
 
 <p>&nbsp;</p>
 
-<div class="important"><strong>Important:</strong><br />
-However, using the keyword&nbsp;If&nbsp;may limit the scope of cloning to just cloning parts of your show file.</div>
+<div class="important"><strong>Fontos:</strong><br />
+Ha használod az &nbsp;If&nbsp; kulcsszót, az csökkenti a klónozás határait, úgy, hogy csak egy részét fogja a show file-nak klónozni.</div>
 
 <p>&nbsp;</p>
 
-<div class="important"><strong>Note:</strong><br />
-The keyword clone obeys the world and does not change data outside your current world. For more information see <a href="key_keyword_world.html">World</a>.&nbsp;</div>
-
+<div class="important"><strong>Megjegyzés:</strong><br />
+A klón kulcsszó engedelmeskedik a világnak, és nem változtatja meg az adatokat a jelenlegi világon kívül. További információ: <a href="key_keyword_world.html"> Világ </a>.&nbsp; </div>
 <p>&nbsp;</p>
 
 <hr />
-<h2>1.Example:</h2>
+<h2>1. példa:</h2>
 
-<p><strong>Cloning fixtures to fixtures</strong></p>
+<p><strong>Lámpák klónozása lámpákra</strong></p>
 
 <p>&nbsp;</p>
 
@@ -119,15 +118,14 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates selective data for fixture 2. Fixture 2 now does the exact same thing it did before cloning. Additionally, fixture 2 keeps the data of fixture 1 in case fixture 2 should not have any data for specific objects.&nbsp;</p>
-
+<p>Szelektív adatokat hoz létre a 2. lámpához. A 2. lámpa most pontosan ugyanazt csinálja, mint a klónozás el&otilde;tt. Ezenkívül a 2-es lámpa meg&otilde;rzi az 1-es lámpa adatait abban az esetben, ha a 2-es lámpának nem lenne adata bizonyos objektumokról.&nbsp;</p>
 <p>&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt;&nbsp;Clone Fixture 1 + 2 At Group 10 If Sequence 1 Thru 10</div>
 
 <p>&nbsp;</p>
 
-<p>Copies data from fixture 1 and 2 to fixtures in Group 10 within sequence 1 thru 10 only.</p>
+<p>Átmásolja az adatokat az 1. és 2.  lámpáról a 10. csoportban lév&otilde; lámpákra, de csak az 1-10-ig terjed&otilde; szekveniákban.</p>
 
 <p>&nbsp;</p>
 
@@ -135,7 +133,7 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates selective data for fixture 2. Fixture 2 now does the exact same thing as fixture 1. Additionally, fixture 2 keeps its data in case fixture 1 should not have any data for specific objects.&nbsp;</p>
+<p>Szelektív adatokat hoz létre a 2. lámpához. A 2-es lámpa most pontosan ugyanazt csinálja, mint az 1-es. Ezenkívül a 2-es lámpa meg&otilde;rzi adatait abban az esetben, ha az 1-es lámpának nincsenek adatai bizonyos objektumokról.&nbsp;</p>
 
 <p>&nbsp;</p>
 
@@ -143,12 +141,12 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates selective data for fixture 2. Fixture 2 now does the exact same thing as fixture 1.</p>
+<p>Szelektív adatokat hoz létre a 2. lámpához. A 2-es lámpa most pontosan ugyanazt csinálja mint az 1-es.</p>
 
 <hr />
-<h2>2.Example:</h2>
+<h2>2.Példa:</h2>
 
-<p><strong>Cloning fixture to fixture type&nbsp;</strong></p>
+<p><strong>Klónozás lámpáról lámpatípusra&nbsp;</strong></p>
 
 <p>&nbsp;</p>
 
@@ -156,7 +154,7 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates global data for fixture type 2. Fixture type 2 now does the exact same thing it did before cloning. Additionally, fixture type 2 keeps the data of fixture 1 in case fixture type 2 should not have any data for specific objects.&nbsp;</p>
+<p>Globális adatokat hoz ltre a 2. lámpához. A 2. lámpa most pontosan ugyanazt csinálja, mint a klónozás el&otilde;tt. Ezenkívül a 2-es lámpa meg&otilde;rzi az 1-es lámpa adatait abban az esetben, ha a 2-es lámpának nem lenne adata bizonyos objektumokról.&nbsp;</p>
 
 <p>&nbsp;</p>
 
@@ -164,7 +162,7 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates global data for fixture type 2. Fixture type 2 now does the exact same thing as fixture 1. Additionally, fixture type 2 keeps its data in case fixture 1 should not have any data for specific objects.&nbsp;</p>
+<p>Globális adatokat hoz ltre a 2. lámpához. Fixture type 2 now does the exact same thing as fixture 1. Ezenkívül a 2-es lámpa meg&otilde;rzi adatait abban az esetben, ha az 1-es lámpának nincsenek adatai bizonyos objektumokról.&nbsp;</p>
 
 <p>&nbsp;</p>
 
@@ -172,14 +170,14 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates global data for fixture type 2. Fixture type 2 now does the exact same thing as fixture 1.</p>
+<p>Globális adatokat hoz ltre a 2. lámpához. A 2-es lámpa most pontosan ugyanazt csinálja mint az 1-es.</p>
 
 <p>&nbsp;</p>
 
 <hr />
-<h2>3. Example:</h2>
+<h2>3. Példa:</h2>
 
-<p><strong>Cloning fixture type to fixture</strong></p>
+<p><strong>Lámpa típus klónozása lámpára</strong></p>
 
 <p>&nbsp;</p>
 
@@ -187,7 +185,7 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates selective data for fixture 2. Fixture 2 now does the exact same thing it did before cloning. Additionally, fixture 2 keeps the data of fixture type 1 in case fixture 2 should not have any data for specific objects.&nbsp;</p>
+<p>Szelektív adatokat hoz létre a 2. lámpához. A 2. lámpa pontosan ugyanazt csinálja, mint a klónozás el&otilde;tt. Ezenkívül a 2-es lámpa meg&otilde;rzi adatait abban az esetben, ha az 1-es lámpának nincsenek adatai bizonyos objektumokról.&nbsp;</p>
 
 <p>&nbsp;</p>
 
@@ -195,7 +193,7 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates selective data for fixture 2. Fixture&nbsp;2 now does the exact same thing as fixture type 1. Additionally, fixture 2 keeps its data in case fixture type 1 should not have any data for specific objects.&nbsp;</p>
+<p>Szelektív adatokat hoz létre a 2. lámpához. A 2-es lámpa most pontosan ugyanazt csinálja mint az 1-es. Ezenkívül a 2-es lámpa meg&otilde;rzi adatait abban az esetben, ha az 1-es lámpának nincsenek adatai bizonyos objektumokról.&nbsp;</p>
 
 <p>&nbsp;</p>
 
@@ -203,14 +201,14 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates selective data for fixture 2. Fixture 2 now does the exact same thing as fixture type 1.&nbsp;</p>
+<p>Szelektív adatokat hoz létre a 2. lámpához. A 2-es lámpa most pontosan ugyanazt csinálja mint az 1-es.&nbsp;</p>
 
 <p>&nbsp;</p>
 
 <hr />
-<h2>4.Example:</h2>
+<h2>4.Példa:</h2>
 
-<p><strong>Cloning fixture type to fixture type&nbsp;</strong></p>
+<p><strong>Lámpatípus klónozása lámpatípusra&nbsp;</strong></p>
 
 <p>&nbsp;</p>
 
@@ -218,7 +216,7 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates global data for fixture type 2. Fixture type 2 now does the exact same thing it did before cloning. Additionally, fixture type 2 keeps the data of fixture type 1 in case fixture type 2 should not have any data for specific objects.&nbsp;</p>
+<p>Globális adatokat hoz létre a 2. lámpához. A 2. típusú lámpa pontosan ugyanazt csinálja, mint a klónozás el&otilde;tt. Ezenkívül a 2-es lámpa meg&otilde;rzi adatait abban az esetben, ha az 1-es lámpának nincsenek adatai bizonyos objektumokról.&nbsp;</p>
 
 <p>&nbsp;</p>
 
@@ -226,7 +224,7 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates global data for fixture type 2. Fixture type 2 keeps its data in case fixture type 1 should not have any data for specific objects.&nbsp;</p>
+<p>Globális adatokat hoz ltre a 2. lámpához. A 2. típusú lámpa meg&otilde;rzi adatait abban az esetben, ha az 1. típusú lámpának nincsenek adatai bizonyos objektumokról.&nbsp;</p>
 
 <p>&nbsp;</p>
 
@@ -234,12 +232,12 @@ The keyword clone obeys the world and does not change data outside your current 
 
 <p>&nbsp;</p>
 
-<p>Creates global data for fixture type 2. Fixture type 2 now does the exact same thing as fixture type 1.</p>
+<p>Globális adatokat hoz ltre a 2. lámpához. A 2-es lámpa most pontosan ugyanazt csinálja mint az 1-es.</p>
 
 <p>&nbsp;</p>
 
-<div class="important"><strong>Note:</strong><br />
-It is also possible to clone using the screen. For more information on how to clone on screen see <a href="key_clone_clone_in_user_interface.html">Clone&nbsp;–&nbsp;Clone using screens</a>.</div>
+<div class="important"><strong>Megjegyzés:</strong><br />
+Lehetséges a klónozás a képerny&otilde; használatával is. További információ: <a href="key_clone_clone_in_user_interface.html">Clone&nbsp;–&nbsp;Klónozás a képerny&otilde; használataával fejezetben</a>.</div>
 
 <p>&nbsp;</p>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>RdmSetParameter Keyword</title>
+		<title>RdmSetParameter Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="SetRDMParameter, PID, Parameter ID" />
@@ -9,41 +9,41 @@
 	<body>
 		
 		
-		<h1>RdmSetParameter Keyword</h1>
+		<h1>RdmSetParameter Kulcsszó</h1>
 		
-		<p>To get the RdmSetParameter keyword in the command line, type <strong>RdmSetParameter</strong> in the command line or use the shortcut <strong>RdmS</strong>.</p>
+		<p>Az RdmSetParameter kulcsszó beírásához, írd be a parancssorba <strong>RdmSetParameter</strong> vagy röviden <strong>RdmS</strong>.</p>
 
 <h2>Leírás</h2>
 
-<p>With the RdmSetParameter keyword you can set RDM parameters by using the command line.</p>
+<p>Az RdmSetParameter kulcsszóval beállíthatsz RDM paramétereket a parancssor használatával.</p>
 
-<p>If no Unique ID is given, the fixture selection will be used.</p>
+<p>Ha nem adsz meg egyedi ID-t, akkor a kiválasztott lámpák lesznek használva.</p>
 
-<p>The RdmSetParameter keyword is a function keyword.</p>
+<p>Az RdmSetParameter kulcsszó egy funkció kulcsszó.</p>
 
 <h2>Szintakszis</h2>
 
-<p><span class="syntax">RdmSetParameter<span class="syntax"> [P</span>arameter ID ] [Parameter Value] / [Option] = [Option value]</span></p>
+<p><span class="syntax">RdmSetParameter [Parameter ID ] [Parameter Value] / [Option] = [Option value]</span></p>
 
 <h2>Parameter ID (= PID)</h2>
 
-<p>You can enter the PIDs in the command line by using the PID name or the PID hex number.</p>
+<p>Beírhatod a PIDs-et a parancssorba a PID name felhasználásával vagy a PID hexa számával.</p>
 
-<div class="important"><strong>Important:</strong><br />
-If you enter manufacturer specific PIDs or PID values in the command line, it is necessary to use the hex value. A manufacturer specific PID name or PID value name can not be processed from a grandMA2 command line.</div>
+<div class="important"><strong>Fontos:</strong><br />
+Ha gyártóspecifikus PIDs-et vagy PID értéket írsz a parancssorba, akkor szükséges a hexa értékit megadni. A gyártóspecifikus PID név vagy PID érték nem feldolgozható a grandMA2 parancssorában.</div>
 
-<p>The following table lists the supported PIDs along with the command line and the parameter value.</p>
+<p>A következ&otilde; táblázat kilistázza a támogatott PIDs-t a parancssorral együtt és a paraméterek értékét is.</p>
 
-<p>The PIDs will be processed only, if the RDM device supports the PID.</p>
+<p>A PIDs csak akkor lesz feldolgozva, ha az RDM eszköz támogatja a PID-et.</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<thead>
 		<tr>
-			<th scope="col">PID name</th>
-			<th scope="col">PID hex value</th>
-			<th scope="col">PID value name</th>
-			<th scope="col">PID value hex value</th>
-			<th scope="col">Description</th>
+			<th scope="col">PID neve</th>
+			<th scope="col">PID hexa értéke</th>
+			<th scope="col">PID érték neve</th>
+			<th scope="col">PID érték hexa értéke</th>
+			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -52,28 +52,28 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			<td>0x0032</td>
 			<td>No value.</td>
 			<td>---</td>
-			<td>Clears the status message queue.</td>
+			<td>Kitörli az állapot sort.</td>
 		</tr>
 		<tr>
 			<td>DEVICE_HOURS</td>
 			<td>0x0400</td>
 			<td>32 bit number.</td>
 			<td>---</td>
-			<td>Retrieves or sets the number of hours of operation.</td>
+			<td>Lekérdezi vagy beállítja az üzemid&otilde;t órában.</td>
 		</tr>
 		<tr>
 			<td>DEVICE_LABEL</td>
 			<td>0x0082</td>
 			<td>ASCII text label. Up to 32 characters.</td>
 			<td>---</td>
-			<td>Provides a means of setting a descriptive label for each device.</td>
+			<td>Lehet&otilde;séget biztosít minden eszköz leíró címkéjének beállítására.</td>
 		</tr>
 		<tr>
 			<td>DEVICE_POWER_CYCLES</td>
 			<td>0x0405</td>
 			<td>Power Cycle Count (32-bit)</td>
 			<td>---</td>
-			<td>Retrieves or sets the number of power-up cycles. Some devices may only support the GET_COMMAND for this operation and not allow the device’s power-up cycles to be set.</td>
+			<td>Beolvassa vagy beállítja a bekapcsolási ciklusok számát. Egyes eszközök csak a GET_COMMAND funkciót támogatják ehhez a m&ucirc;velethez, és nem engedélyezik az eszköz bekapcsolási ciklusainak beállítását.</td>
 		</tr>
 		<tr>
 			<td>DISPLAY_INVERT</td>
@@ -84,14 +84,14 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			<td>0x00<br />
 			0x01<br />
 			0x02</td>
-			<td>Retrieves or changes the display invert setting. Invert is often used to rotate the display image by 180 degrees.</td>
+			<td>Beolvassa vagy megváltoztatja a kijelz&otilde; invert beállítását. Az invertálást gyakran használják a kép 180 fokos elforgatására.</td>
 		</tr>
 		<tr>
 			<td>DISPLAY_LEVEL</td>
 			<td>0x0501</td>
 			<td>Display Level</td>
-			<td>Manufacturer specific. See fixture manual.</td>
-			<td>Retrieves or changes the display intensity setting.</td>
+			<td>Gyártóspecifikus. Nézd meg az eszköz leírásában.</td>
+			<td>Beolvassa vagy megváltoztatja a kijelz&otilde; intenzitását.</td>
 		</tr>
 		<tr>
 			<td>DMX_PERSONALITY</td>
@@ -101,14 +101,14 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			# of Personalities</p>
 			</td>
 			<td>---</td>
-			<td>Sets the responder’s DMX512 personality. Many devices such as moving lights have different DMX512 personalities. Many RDM parameters may be affected by changing personality.</td>
+			<td>Beállítja a válaszadó DMX512 személyiségét. Számos eszköz, például a mozgó lámpák különböz&otilde; személyiség&ucirc;ek a DMX512-ben. Számos RDM paramétert befolyásolhat a személyiség megváltozása.</td>
 		</tr>
 		<tr>
 			<td>DMX_START_ADDRESS</td>
 			<td>0x00F0</td>
 			<td>DMX512 Address (16-bit).</td>
 			<td>---</td>
-			<td>Sets the DMX512 start address</td>
+			<td>Beállítja a DMX512 kezd&otilde;címet</td>
 		</tr>
 		<tr>
 			<td>FACTORY_DEFAULTS</td>
@@ -117,7 +117,7 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			True</td>
 			<td>0x00<br />
 			0x01</td>
-			<td>Reverts the device to its factory default user settings or configuration.</td>
+			<td>Visszaállítja a készülék gyári alapértelmezett felhasználói beállításait vagy konfigurációját.</td>
 		</tr>
 		<tr>
 			<td>IDENTIFY_DEVICE</td>
@@ -126,14 +126,14 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			On, Start</td>
 			<td>0x00<br />
 			0x01</td>
-			<td>Physically identifies the device represented by the UID.</td>
+			<td>Fizikailag azonosítja az eszközt az UID alapján.</td>
 		</tr>
 		<tr>
 			<td>LAMP_HOURS</td>
 			<td>0x0401</td>
 			<td>Lamp Hours (32-bit)</td>
 			<td>---</td>
-			<td>Retrieves the number of lamp hours or to sets the counter to a specific start value.</td>
+			<td>Beolvassa a lámpaórák számát, vagy beállítja a számlálót egy meghatározott kezd&otilde;értékre.</td>
 		</tr>
 		<tr>
 			<td>LAMP_ON_MODE</td>
@@ -148,7 +148,7 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			0x02<br />
 			0x03<br />
 			0x80 – 0xDF</td>
-			<td>Retrieves or changes the current Lamp On Mode. The Lamp On Mode defines the conditions under which a lamp will be struck.</td>
+			<td>Letölti vagy megváltoztatja az aktuális Lámpa bekapcsolt módot. A Lámpa bekapcsolt üzemmódja meghatározza azokat a körülményeket, amelyek mellett a lámpa meg fogja adni magát.</td>
 		</tr>
 		<tr>
 			<td>LAMP_STATE</td>
@@ -167,21 +167,21 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			0x04<br />
 			0x7F<br />
 			0x80 – 0xDF</td>
-			<td>Retrieves or changes the current operating state of the lamp.</td>
+			<td>Beolvassa vagy megváltoztatja a lámpa aktuális üzemi állapotát.</td>
 		</tr>
 		<tr>
 			<td>LAMP_STRIKES</td>
 			<td>0x0402</td>
 			<td>Lamp Strikes (32-bit)</td>
 			<td>---</td>
-			<td>Retrieves the number of lamp strikes or to sets the counter to a specific start value.</td>
+			<td>Beolvassa a lámpaütések számát, vagy a számlálót egy meghatározott kezd&otilde;értékre állítja.</td>
 		</tr>
 		<tr>
 			<td>LANGUAGE</td>
 			<td>0x00B0</td>
 			<td>2 character alpha code for ISO 639-1</td>
 			<td>---</td>
-			<td>Changes the language of the messages.</td>
+			<td>Megváltoztatja az üzenetek nyelvét.</td>
 		</tr>
 		<tr>
 			<td>PAN_INVERT</td>
@@ -192,7 +192,7 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			</td>
 			<td>0x00<br />
 			0x01</td>
-			<td>Retrieves or changes the pan invert setting.</td>
+			<td>Beolvassa vagy módosítja a pan inverzió beállítását.</td>
 		</tr>
 		<tr>
 			<td>PAN_TILT_SWAP</td>
@@ -201,7 +201,7 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			On</td>
 			<td>0x00<br />
 			0x01</td>
-			<td>Retrieves or changes the pan/tilt swap setting.</td>
+			<td>Letölti vagy megváltoztatja az pan/tilt csere beállítását.</td>
 		</tr>
 		<tr>
 			<td>PERFORM_SELFTEST</td>
@@ -212,7 +212,7 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			<td>0x00<br />
 			0x01 – 0xFE<br />
 			0xFF</td>
-			<td>Executes any built in self-test routine that may be present.</td>
+			<td>Végrehajt minden beépített önteszt rutint, amely lehetséges.</td>
 		</tr>
 		<tr>
 			<td>POWER_STATE</td>
@@ -225,21 +225,21 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			0x01<br />
 			0x02<br />
 			0xFF</td>
-			<td>Retrieves or changes the power state.</td>
+			<td>Lekérdezi vagy megváltoztatja az áramellátás állapotát.</td>
 		</tr>
 		<tr>
 			<td>REAL_TIME_CLOCK</td>
 			<td>0x0603</td>
 			<td>Year (16-bit), Month, Day, Hour, Minute, Second</td>
 			<td>---</td>
-			<td>Retrieves or set the real-time clock in a device.</td>
+			<td>Lekérdezi vagy beállítja a valós idej&ucirc; órát egy eszközben.</td>
 		</tr>
 		<tr>
 			<td>RECORD_SENSORS</td>
 			<td>0x0202</td>
 			<td>Sensor Number</td>
 			<td>---</td>
-			<td>Instructs devices such as dimming racks that monitor load changes to store the current value for monitoring sensor changes.</td>
+			<td>Arra utasítja az eszközöket, mint a fényer&otilde;-szabályozó rackek, amelyek figyelik a terhelés változását, hogy tárolják az érzékel&otilde; változásainak figyelemmel kíséréséhez az aktuális értéket.</td>
 		</tr>
 		<tr>
 			<td>RESET_DEVICE</td>
@@ -248,14 +248,14 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			Cold Reset</td>
 			<td>0x01<br />
 			0xFF</td>
-			<td>Resets the responder.</td>
+			<td>Visszaállítja a válaszadót.</td>
 		</tr>
 		<tr>
 			<td>SENSOR_VALUE</td>
 			<td>0x0201</td>
 			<td>Sensor #, Present Value (16-bit), Lowest Detected Value (16-bit), Highest Detected Value (16-bit), Recorded Value (16-bit)</td>
 			<td>---</td>
-			<td>Retrieves or reset sensor data.</td>
+			<td>Az érzékel&otilde; adatainak lekérése vagy visszaállítása.</td>
 		</tr>
 		<tr>
 			<td>TILT_INVERT</td>
@@ -264,26 +264,26 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			On</td>
 			<td>0x00<br />
 			0x01</td>
-			<td>Retrieves or changes the tilt invert setting.</td>
+			<td>Beolvassa vagy megváltoztatja a tilt invert beállítását.</td>
 		</tr>
 	</tbody>
 </table>
 
-<h2>Options</h2>
+<h2>Opciók</h2>
 
-<p>To get a list all available options to the RdmSetParameter keyword, type in the command line:</p>
+<p>Ha minden lehetséges opciót ki akarsz listázni az RdmSetParameter kulcsszóhoz, akkor írd be a parancssorba:</p>
 
 <div class="cl_input">[Channel]&gt; RdmSetParameter /?</div>
 
-<p>The RdmSetParameter has the following options:</p>
+<p>Az RdmSetParameter a következ&otilde; opciói vannak:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
-			<th scope="col">Option</th>
-			<th scope="col">Option shortcut</th>
-			<th scope="col">Option value</th>
-			<th scope="col">Description</th>
+			<th scope="col">Opció</th>
+			<th scope="col">Opció rövidítés</th>
+			<th scope="col">Opció érték</th>
+			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -293,28 +293,28 @@ If you enter manufacturer specific PIDs or PID values in the command line, it is
 			<td>0 = multipatch for all fixtures<br />
 			1 = multipatch for one fixture<br />
 			and so on</td>
-			<td>Sets the multipatch index.</td>
+			<td>Beállítja a multipatch indexét.</td>
 		</tr>
 		<tr>
 			<td>UID</td>
 			<td>No shortcut available</td>
 			<td>e.g. "43500F019FCB"</td>
-			<td>Sets the RDM UID to send RDM Parameter to the device.</td>
+			<td>Beállítja az RDM UID-ot amit küldeni kell az eszközre.</td>
 		</tr>
 	</tbody>
 </table>
 
-<h2>Examples</h2>
+<h2>Példa</h2>
 
 <ul>
-	<li>To set the DMX start address to 3 of a RDM device, type in the command line:</li>
+	<li>A 3. DMX kezd&otilde;cím megadása egy RDM eszköznek, írd be a parancssorba:</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; RdmSetParameter dmx_start_address 3 / UID =&nbsp; 43500F019FCB</div>
 
 <hr />
 <ul>
-	<li>To invert the display of a RDM device for the selected fixture, type in the command line:</li>
+	<li>Egy RDM eszköz kijelz&otilde;jének megfordítsához, írd be a parancssorba:</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; RdmSetParameter display_invert 1</div>

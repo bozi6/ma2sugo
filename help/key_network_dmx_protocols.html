@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Network DMX protocols</title>
+		<title>Hálózati DMX protokollok</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="Network DMX protocols, protocols, Art-Net, ETC-Net2, Pathport, sACN, Kinet1, Shownet, Kinet" />
@@ -9,230 +9,230 @@
 	<body>
 		
 		
-		<h1>Network DMX protocols</h1>
+		<h1>Hálózati DMX protokollok</h1>
 		
-		<p>DMX can be transmitted or received using network DMX protocols instead of or together with the DMX ports in the system.</p>
+		<p>A DMX jelet lehet küldeni vagy fogadni h&ucirc;lózaton keresztül, a rendszer DMX portjai helyett vagy ezekkel együtt.</p>
 
-<p>This is all controlled from the Network Protocols menu. The menu can be opened by pressing the <span class="hardkey">Setup</span> key followed by a tap on the <span class="softkey">Network Protocols</span> button.</p>
+<p>Ezeket a Hálózati protokoll menüb&otilde;l lehet beállítani. A megnyitáshoz nyomd meg a <span class="hardkey">Setup</span> gombot majd bökj a <span class="softkey">Network Protocols</span> gombra.</p>
 
-<p>It could look like this:</p>
+<p>Ezt kéne látnod:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_network-protocols_v3-3.png" />
 <figcaption><em>Network Protocols menu - Art-Net tap</em></figcaption>
 </figure>
 
-<p>The grandMA2 supports the following network DMX protocols, each having their own tab in the <strong>Network Protocols</strong> view:</p>
+<p>A grandMA2 a következ&otilde; hálózati DMX protokollokat támogatja, mindegyiknek megvan a saját <strong>Network Protocols</strong> nézete:</p>
 
 <p><strong>Art-Net:</strong></p>
 
-<p>Both transmit and receive. Several ranges of universes can have different settings.</p>
+<p>Küldhet és fogadhat. Az univerzumok több tartományának különböz&otilde; beállításai lehetnek.</p>
 
 <p><strong>ETC-Net2:</strong></p>
 
-<p>Transmit only. Only one range of universes.</p>
+<p>Csak küldés. Egy univerzumot használhat csak.</p>
 
 <p><strong>Pathport:</strong></p>
 
-<p>Transmit only. Only one range of universes.</p>
+<p>Csak küldés. Egy univerzumot használhat csak.</p>
 
 <p><strong>sACN:</strong> (streaming ACN)</p>
 
-<p>Both transmit and receive. Several ranges of universes can have different settings.</p>
+<p>Küldhet és fogadhat. Az univerzumok több tartományának különböz&otilde; beállításai lehetnek.</p>
 
 <p><strong>Shownet:</strong></p>
 
-<p>Transmit only. Only one range of universes.</p>
+<p>Csak küldés. Egy univerzumot használhat csak.</p>
 
 <p><strong>KiNET:</strong></p>
 
-<p>Transmit only. Several ranges of universes can have different settings.</p>
+<p>Csak küldés. Az univerzumok több tartományának különböz&otilde; beállításai lehetnek.</p>
 
 <p>&nbsp;</p>
 
-<p>It is always the Master in a session that transmit and receive the network DMX data.</p>
+<p>A munkamenet során mindig a Mester továbbítja és fogadja a hálózati DMX adatokat.</p>
 
-<p>Each of the different network protocols have at least one configuration line. If the protocols support it, then there might be more lines.</p>
+<p>A különböz&otilde; hálózati protokollok mindegyikének van legalább egy konfigurációs sora. Ha a protokollok támogatják, akkor több sor is lehet.</p>
 
-<h2><a id="general_buttons" name="general_buttons"></a>General buttons in Network Protocols</h2>
+<h2><a id="general_buttons" name="general_buttons"></a>Általános gombok a Hálózati Protokollokban</h2>
 
-<p>There are up to three buttons on the right side of the view:</p>
+<p>Három gomb is lehet a jobb oldalon a nézetben:</p>
 
 <ul>
-	<li><strong>Network DMX if Alone</strong> - When this is active (the text is yellow), then the station will output DMX via the network. All network protocols are sent from the master station in a session. If there is no connected stations, you need to turn this on to output network DMX. This toggles all network DMX outputs. If the frame is red, then this station does not output network DMX. If the frame is green then this station outputs network DMX. This setting is shared across all network DMX protocols.</li>
-	<li><strong>[Protocol name] Output Active</strong> - When this is on (the text is yellow), then you can output the network DMX protocol. This needs to be enabled or disabled for each protocol.</li>
-	<li><strong>[Protocol name] Input Active</strong> - When this is on (the text is yellow), then you can input the DMX protocol. This is only possible in Art-Net and sACN.</li>
+	<li><strong>Network DMX if Alone</strong> - Ha ez aktív (a szöveg sárga), akkor az állomás a hálózaton keresztül bocsát ki DMX-et. Az összes hálózati protokollt a master állomás küldi el egy munkamenet során. Ha nincs csatlakoztatott állomás, akkor ezt be kell kapcsolnia a DMX hálózati kimenethez. Ez az összes hálózati DMX kimenetet váltja. Ha a keret piros, akkor ez az állomás nem adja ki a DMX hálózatot. Ha a keret zöld, akkor ez az állomás a DMX hálózatot kiadja. Ez a beállítás az összes hálózati DMX protokollon meg van osztva.</li>
+	
+	<li><strong>[Protocol name] Output Active</strong> - Ha ez be van kapcsolva (a szöveg sárga), akkor kimegy a hálózati DMX protokollt. Ezt minden protokoll esetében engedélyezni vagy letiltani kell.</li>
+	<li><strong>[Protocol name] Input Active</strong> - Ha ez be van kapcsolva (a szöveg sárga), akkor bejön a hálózati DMX protokollt. Ezt minden protokoll alapján engedélyezni vagy letiltani kell.</li>
 </ul>
 
-<p>At the bottom of the view, there might be two buttons. They are only visible in Art-Net, sACN and Kinet1. They are used to <strong>Add</strong> and <strong>Delete</strong> lines in the table above. The three mentioned protocols can have more configurations lines.</p>
+<p>A nézet alján, van két gomb. Ezek csak az Art-Net, sACN és a Kinet1-nél látszanak. Ezekkel <strong>Hozzáadhatsz</strong> és <strong>Törölhetsz</strong> sorokat a táblázatból.A három említett protokollnak több konfigurációs sora is lehet.</p>
 
-<h2><a id="general_settings" name="general_settings"></a>General settings in Network Protocols</h2>
+<h2><a id="general_settings" name="general_settings"></a>Általános beállítások a Hálózati Protokollban</h2>
 
-<p>Some settings are shared by the different protocols.</p>
+<p>Egyes beállításokat a különböz&otilde; protokollok megosztanak.</p>
 
 <ul>
-	<li><strong>LocalStart</strong> - This is the number of the first DMX universe in your console that you want to transmit, or the first universe you want to receive.</li>
-	<li><strong>Amount</strong> - This is the amount of universes you want to receive or transmit.</li>
-	<li><strong>ExternStart</strong> - Many of the protocols use this to set the protocol universe number. For example grandMA2 universe number 10 should be transmitted as Shownet universe 5, then the ExternStart should be 5 and LocalStart is 10.&nbsp;</li>
-	<li><strong>TTL (Time To Live)</strong> -&nbsp;Specifies the number of routers (hops) that multicast traffic is permitted to pass through before expiring on the network. For each router (hop), the original specified TTL is subtracted by 1. When TTL reaches a value of 0, then the DMX data is no longer forwarded through the network.</li>
-	<li><strong>Priority</strong> - Many network protocols uses a Priority setting. This is used to tell the receiver how important the DMX data from this transmitter is. This is only relevant if the receiver have multiple DMX sources. Usually the highest number equals a higher priority.</li>
-	<li><strong>Info</strong> - In the Info cell you can write any relevant information.</li>
+	<li><strong>LocalStart</strong> - Ez az els&otilde; száma a DMX univerzumnak amit, küldeni, vagy fogadni akarsz.</li>
+	<li><strong>Amount</strong> - Ez a küldött/fogadott univerzumok számát adja meg.</li>
+	<li><strong>ExternStart</strong> - Több protokoll is használja ezt a protokoll univerzumának megadásához. Például a grandMA2 univerzum száma 10, ez átküldhet&otilde; mint Shownet univerzum 5, akkor az ExternStart-ot 5-re állítjuk és a LocalStart marad 10.&nbsp;</li>
+	<li><strong>TTL (Time To Live)</strong> -&nbsp;Megadja az útválasztók (ugrások) számát, amelyeken keresztül a csoportos küldés&ucirc; forgalom áthaladhat, miel&otilde;tt lejárna a hálózaton. Minden útválasztó (ugrás) esetében az eredeti TTL-t csökkenti 1-el. Amikor a TTL eléri a 0 értéket, akkor a DMX-adatokat már nem továbbítják a hálózaton keresztül.</li>
+	<li><strong>Priority</strong> - Sok hálózati protokoll használja a Prioritás beállítást. Ez arra szolgál, hogy megmondja a vev&otilde;nek, hogy mennyire fontosak ebb&otilde;l az adóból a DMX adatok. Ez csak akkor érdekes, ha a vev&otilde;nek több DMX forrása van. Általában a legmagasabb szám magasabb prioritással egyenl&otilde;.</li>
+	<li><strong>Info</strong> - Az Info cellába bármilyen lényeges információt beírhatsz.</li>
 </ul>
 
 <p>&nbsp;</p>
 
 <h2><a id="art-net" name="art-net"></a>Art-Net</h2>
 
-<p>Art-Net is a royalty free protocol developed by Artistic Licence (<a href="http://www.artisticlicence.com">http://www.artisticlicence.com</a>).</p>
+<p>Az Art-Net egy jogdíjmentes protokoll, amelyet az Artistic Licence (<a href="http://www.artisticlicence.com">http://www.artisticlicence.com</a>)fejleszt.</p>
 
-<p>MA supports Art-Net 1, 2 and 3.</p>
+<p>Az MA támogatja az Art-Net 1, 2 és 3. változatát</p>
 
-<p>Art-Net 3 provides 128 networks of 256 universes. If the Network number is set to 1, then it is compatible with Art-Net 1 and 2.</p>
+<p>Art-Net 3 biztosít 128 hálózatát a 256 univerzumnak. Ha a hálózati szám 1, akkor az kompatibilis az  Art-Net 1 és 2-vel.</p>
 
-<p>To add a line in the Art-Net window, tap <strong>Add</strong>. To remove a unwanted line, select it and tap <strong>Delete</strong>.</p>
+<p>Egy sor hozzáadására az  Art-Net ablakban, bökj az <strong>Add</strong>-ra. A nem szükséges sorok eltávolításához bökj a <strong>Delete</strong>-re.</p>
 
-<p>There several options for each line (here is only mentioned the ones that are not mentioned in <a href="#General Settings">General Settings above</a>):</p>
+<p>Minden sorhoz több lehet&otilde;ség van (itt csak azokat említjük, amelyeket a fenti <a href="#General Settings"> Általános beállításoknál nem említünk)</a>):</p>
 
 <ul>
-	<li><strong>Valid</strong> - This field is read only and tells if the line is valid. It is not allowed to transmit (or receive) the same universe more than once. A valid line will transmit or receive data.</li>
-	<li><strong>Requested</strong> - Here you can set if the line is requested or not. A line that is not requested get a status of <strong>Not valid</strong> and will not transmit or receive Art-Net data.</li>
-	<li><strong>Mode</strong> - Change between <strong>OutputBroadcast</strong>, <strong>OutputUnicast</strong>, <strong>OutputAuto</strong>, and <strong>Input</strong>. Read more below.</li>
-	<li><strong>Destination IP</strong> - Only available if the mode is OutputUnicast. This is the IP address of the receiver.</li>
-	<li><strong>Network</strong> - This is the Art-Net network setting (1-128).</li>
-	<li><strong>Subnet</strong> - This is the Art-Net subnet setting (0-F).</li>
-	<li><strong>Universe</strong> - This is the Art-Net universe setting (0-F).</li>
-	<li><strong>Delay</strong> - Adding a number here will add milliseconds delay between the packets. This can be needed in slow networks. Only for Art-Net output.</li>
+	<li><strong>Valid</strong> - Ez a mez&otilde; csak olvasható, és megmondja, hogy a sor érvényes-e. Tilos ugyanazt az univerzumot többször továbbítani (vagy fogadni). Az érvényes sor továbbítja vagy fogadja az adatokat.</li>
+	<li><strong>Requested</strong> - Itt állíthatja be, hogy a sort kérik-e vagy sem. A nem kért sor állapotát <strong>Not valid</strong> lesz, és nem továbbítódik az Art-Net adat.</li>
+	<li><strong>Mode</strong> - Változtatható az<strong>OutputBroadcast</strong>, <strong>OutputUnicast</strong>, <strong>OutputAuto</strong>, és <strong>Input</strong>között. Lejjebb vannak a részletek.</li>
+	<li><strong>Destination IP</strong> - Csak ha a Mode= OutputUnicast. Ez az IP címe a fogadó állomásnak.</li>
+	<li><strong>Network</strong> - Ez az Art-Net hálózati beállítása (1-128).</li>
+	<li><strong>Subnet</strong> - Ez az Art-Net alhálózat beállítása (0-F).</li>
+	<li><strong>Universe</strong> - Ez az Art-Net univerzum beállítása (0-F).</li>
+	<li><strong>Delay</strong> - Egy számot ide írva milliszekundumos késleltetést adhatsz a csomagok közé. Ez szükséges lassú hálózatokon. Csak az Art-Net kimenetnél számít.</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<p>The <strong>Mode</strong> selection changes the functionality of the Art-Net line. Editing it opens a small pop-up giving the above mentioned options. The pop-up look like this:</p>
+<p>A <strong>Mode</strong> választó megváltoztatja az Art-Net sor funkcionalitását. Szerkesztve megnyílik egy ablakocska, a lehetséges válaszokkal. Az ablakocska így néz ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-mode-artnet_v3-3.png" />
-<figcaption><em>Select Mode pop-up - Art-Net mode</em></figcaption>
+<figcaption><em>Select Mode ablakocska - Art-Net mode</em></figcaption>
 </figure>
 
-<p>The last option is "Input". This makes the line merge incoming Art-Net DMX into your system.</p>
+<p>Az utolsó lehet&otilde;ség az "Input". Ez a sor teszik lehet&otilde;vé a bejöv&otilde;  Art-Net DMX összefésülését a rendszerben.</p>
 
-<p>DMX output via Art-Net supports Auto detection and manually setting of Broadcast or Unicast network traffic per universe.</p>
+<p>A DMX kimenet Art-Net-en támogatja az Automatikus észlelést és kézi beállításokat is lehet a Broadcast vagy Unicast hálózat felé univerzumonként állítani.</p>
 
 <ul>
-	<li><strong>OutputBroadcast</strong> - sends the DMX Universes as broadcast.</li>
-	<li><strong>OutputUnicast</strong> - sends the DMX Universes as unicast to the IP address set in the <strong>Destination IP</strong> column.</li>
-	<li><strong>OutputAuto</strong> - sends each DMX Universe as Unicast to up to 5 receivers detected via ArtPoll. If more than 5 receivers, or if there are no detected receivers requesting the universe, then the universe will be send as broadcast!
+	<li><strong>OutputBroadcast</strong> - A DMX Univerzumot broadcast ként küldi.</li>
+	<li><strong>OutputUnicast</strong> - A DMX Univerzumot mint unicast küldi a megadott IP címre, amit a <strong>Destination IP</strong> oszlopban lehet beállítani.</li>
+	<li><strong>OutputAuto</strong> - Minde egyes DMX Univerzumot Unicast-ként küld egészen 5 fogadó érzékeléséig, ArtPoll on keresztül. Ha több mint 5 fogadó van, vagy ezek közül nem érzékel fogadót az univerzumra, akkor az univerzumok broadcast-ként kerülnek elküldésre!
 	<div class="tip"><strong>Tipp:</strong><br />
-	The default limitation of 5 individual receivers can be changed to a maximum of 10. This can only be done using the command line configuration and by using the "MaxUnicast" property.&nbsp;</div>
+	Az alapértelmezett 5 külön fogadó beállítása megváltoztatható maximum 10-re. Ezt csak a parncssorban lehet megtenni a "MaxUnicast" tulajdonság állításával.&nbsp;</div>
 	</li>
 </ul>
 
-<div class="important"><strong>Important:</strong><br />
-Art-Net is transmitted from Ethernet connector number 2. If you use a onPC, then you do not need to make a valid Art-Net IP address. The software will create one and use it. If your computer have a valid Art-Net address, then it will use it. If there are several valid addresses, then it will use the first it sees.</div>
+<div class="important"><strong>Fontos:</strong><br />
+Az Art-Net a második Ethernet csatlakozón van forgalmazva. Ha onPC-t használsz, akkor nem kell érvényes Art-Net IP-címet megadni. A szoftver létrehozza és felhasználja azt ami van. Ha számítógépnek érvényes Art-Net címe van, akkor azt használni fogja. Ha több érvényes cím van, akkor az els&otilde;t fogja használni.</div>
 
-<div class="restriction"><strong>Do not</strong> give your Ethernet connector number 1 a valid Art-Net IP address.</div>
+<div class="restriction"><strong>Ne adj</strong> az Ethernet csatlakozó 1-nek érvényes Art-Net IP címet.</div>
 
 <h2><a id="etc-net2" name="etc-net2"></a>ETC-Net2</h2>
 
-<p>ETC-Net2 is developed by ETC (Electronic Theater Control - <a href="http://www.etcconnect.com">http://www.etcconnect.com</a>). It was introduced in 1997.</p>
+<p>ETC-Net2 -et az ETC (Electronic Theater Control - <a href="http://www.etcconnect.com">http://www.etcconnect.com</a>)fejleszti. Ez 1997-ben lett bevezetve.</p>
 
-<p>MA supports transmission of one range of DMX universes as ETC-Net2. This was implemented to support communication to older ETC dimmers and DMX nodes. Using sACN might be a better option if the receivers supports it.</p>
+<p>Az MA támogatja az egy DMX univerzumon való továbbítást az ETC-Net2-n. Ez azért lett kifejlesztve, hogy támogassa a régebbi ETC dimmerek és DMX node-k közötti kommunikációt. Az sACN használata jobb választás lehet, ha a fogadó fél támogatja.</p>
 
-<p>There are several options (here is only mentioned the ones that are not mentioned in <a href="#General Settings">General Settings above</a>):</p>
+<p>Minden sorhoz több lehet&otilde;ség van (itt csak azokat említjük, amelyeket a fenti <a href="#General Settings"> Általános beállításoknál nem említünk)</a>):</p>
 
 <ul>
-	<li><strong>Active</strong> - This is an 'On'/'Off' option. When 'On' the console will transmit ETCNet2. When it is 'Off', then the text is hidden. This can also be toggled by the button on the right side.</li>
-	<li><strong>Groups</strong> - ETC-Net2 uses multicast groups to simplify and optimize the transmission. Here you can select what group to transmit to.</li>
-	<li><strong>Priority</strong> - The lowest number has the highest priority.</li>
+	<li><strong>Active</strong> - Ez egy 'Be/Ki' opció. Ha 'On' akkor a pult küldi az ETCNet2. Ha ez 'Off', akkor a szöveg rejtett. Ezt lehet a jobb oldali gombokkal is kapcsolni.</li>
+	<li><strong>Groups</strong> - ETC-Net2 multicast csoportokat használ az átvitel egyszer&ucirc;sítésére és optimalizálására. Itt kiválaszthatod melyik csoportot akarod átküldeni.</li>
+	<li><strong>Priority</strong> - A legkissebb számnak lesz a lemagasabb prioritása.</li>
 </ul>
 
 <h2><a id="pathport" name="pathport"></a>Pathport</h2>
 
-<p>Pathport is created by Pathway Connectivity (<a href="http://www.pathwayconnect.com">http://www.pathwayconnect.com</a>).</p>
+<p>A Pathportot a Pathway Connectivity hozta létre(<a href="http://www.pathwayconnect.com">http://www.pathwayconnect.com</a>).</p>
 
-<p>MA supports transmission of one range of DMX universes as Pathport. This was implemented to support communication to older Pathway DMX nodes. Using sACN might be a better option if the receivers supports it.</p>
+<p>Az MA támogatja egy DMX univerzum küldését mint Pathport. Ez azért lett kifejlesztve, hogy támogassa a régebbi Pathway DMX node-kat. Az sACN használata jobb választás lehet, ha a fogadó fél támogatja.</p>
 
-<p>There are several options (here is only mentioned the ones that is not mentioned in <a href="#General Settings">General Settings above</a>):</p>
+<p>Minden sorhoz több lehet&otilde;ség van (itt csak azokat említjük, amelyeket a fenti <a href="#General Settings"> Általános beállításoknál nem említünk)</a>):</p>
 
 <ul>
-	<li><strong>Active</strong> - This is an 'On'/'Off' option. When 'On' the console will transmit Pathport. When it is 'Off', the the text is hidden. This can also be toggled by the button on the right side.</li>
+	<li><strong>Active</strong> - Ez egy 'Be/Ki' opció. Ha 'On' akkor a pult küldi a Pathway-t. Ha ez 'Off', akkor a szöveg rejtett. Ezt lehet a jobb oldali gombokkal is kapcsolni.</li>
 </ul>
 
 <h2><a id="sacn" name="sacn"></a>sACN (streaming ACN)</h2>
 
-<p>ACN (and streaming ACN) is an ANSI/ESTA international standard. Further readings: <a href="http://en.wikipedia.org/wiki/Architecture_for_control_networks">http://en.wikipedia.org/wiki/Architecture_for_control_networks</a>.</p>
+<p>ACN (és folyamatos ACN) egy ANSI/ESTA nemzetközi sztenderd. További olvasnivaló: <a href="http://en.wikipedia.org/wiki/Architecture_for_control_networks">http://en.wikipedia.org/wiki/Architecture_for_control_networks</a>.</p>
 
-<p>ACN (Architecture for Control Networks) is suite protocol. It uses a lot of elements that is currently not supported by grandMA. But the ACN protocols also have a lighter version for transporting DMX data. It is called 'Lightweight streaming protocol for transport of DMX512 using ACN' or more popular "streaming ACN" or "sACN". It is international standard number E1.31.</p>
+<p>ACN (Architecture for Control Networks) egy csomag protokoll. Sok elemet használ, ami jelenleg nem támogatott a grandMA által. De az ACN protokollnak van egy könnyebb változata a DMX adatok küldéséhz. Ezt hívják 'Lightweight streaming protocol for transport of DMX512 using ACN' vagy ismertebb néven "streaming ACN" vagy "sACN". Ez az E1.31.-es nemzetközi szabvány.</p>
 
 <p>&nbsp;</p>
 
-<p>There are several options (here is only mentioned the ones that are not mentioned in <a href="#General Settings">General Settings above</a>):</p>
+<p>Minden sorhoz több lehet&otilde;ség van (itt csak azokat említjük, amelyeket a fenti <a href="#General Settings"> Általános beállításoknál nem említünk)</a>):</p>
 
 <ul>
-	<li><strong>Valid</strong> - This displays a "Yes" if the line is valid. Only valid lines transmit or receive data.</li>
-	<li><strong>Requested</strong> - Here you can set if the line is requested or not. A line that is not requested, get a status of <strong>Not valid</strong> and will not transmit or receive sACN data.</li>
-	<li><strong>Mode</strong> - Change between <strong>OutputMulticast</strong>, <strong>OutputUnicast</strong>, <strong>InputMulticast</strong>, and <strong>InputUnicast</strong>. Read more below.</li>
-	<li><strong>Destination IP</strong> - Only available if the mode is OutputUnicast. This is the IP address of the receiver.</li>
-	<li><strong>sACN Universe</strong> - This is the sACN universe the DMX data should be transmitted to or received from (1 - 64000).</li>
-	<li><strong>Priority</strong> - The allowed value is 0 to 200. The highest number has the highest priority. The default value should be 100.</li>
-	<li><strong>Protocol</strong> - Here you can select between two different variations of the sACN protocol. You can choose the "Draft" or "Final" release of the sACN protocol. Some equipment have implemented the draft version of sACN before the final version was released. You might need to change to "draft mode" for those devices to work.</li>
-	<li><strong>Delay(ms)</strong> - The delay can be used to slow down the traffic in the network. For some older and slower network nodes there is a big difference in receiving 10 universes in one burst or one by one.</li>
+	<li><strong>Valid</strong> - Ez "Yes"-t mutat ha a sor érvényes. Csak az érvényes sorok tudnak küldeni vagy fogadni adatokat.</li>
+	<li><strong>Requested</strong> - Itt beállíthatod, hogy a sor szükséges-e vagy sem. A sor ami nem szükséges,  <strong>Not valid</strong> állapotú lesz és nem küld/fogad  sACN adatokat.</li>
+	<li><strong>Mode</strong> - Változtatható az <strong>OutputMulticast</strong>, <strong>OutputUnicast</strong>, <strong>InputMulticast</strong>, és <strong>InputUnicast</strong>. Részletek alább.</li>
+	<li><strong>Destination IP</strong> - Csak ha a mód OutputUnicast. Ez a fogadó IP címe.</li>
+	<li><strong>sACN Universe</strong> - Ez az sACN univerzum amin a DMX adat küldve/fogadva lesz (1 - 64000-ig).</li>
+	<li><strong>Priority</strong> - A megengedett érték 0 - 200. A legnagyobb számnak van a legmagasabb prioritása. Az alapértelmezett érték 100.</li>
+	<li><strong>Protocol</strong> - Itt lehet különböz&otilde; variációit megadni az sACN protokollnak. Választhatsz a "Draft" vagy "Final" kiadás közül. Néhány eszközben a durva változat lett beépítva még a véglelges sACN kiadás el&otilde;tt. Ezeknél kell a "draft mode" beállítást alkalmazni, hogy m&ucirc;ködjenek.</li>
+	<li><strong>Delay(ms)</strong> - Ezzel a késleltetéssel lehet lassítani a hálózati forgalmat. Néhány régi és lassú hálózati node-nál nagy különbség van ha 10 univerzumot fogadnak egyszerre vagy egyesével.</li>
 </ul>
 
 <h3>Mode</h3>
 
-<p>Editing the Mode cell will open a small select pop-up that allows you to choose the different input an output modes mentioned above.</p>
+<p>A mode cellát szerkesztve megnyílik egy ablakocska, ahol választani lehet az alábbi lehet&otilde;ségekb&otilde;l.</p>
 
-<p>The pop-up looks like this:</p>
+<p>A ablakocska így néz ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-mode-sacn_v3-3.png" />
 <figcaption><em>Select Mode pop-up - sACN mode</em></figcaption>
 </figure>
 
-<p>You can choose between input and output and each of them can be unicast or multicast.</p>
+<p>Választhatsz a be- és kimenetek között és mindegyik lehet unicast vagy multicast is.</p>
 
 <ul>
 	<li><strong>OutputMulticast:</strong><br />
-	When choosing Output Multicast, sACN will be sent as multicast to the relevant multicast addresses.</li>
+	Ha ezt választod Output Multicast, sACN multicast-ként küldi a vonatkozó multicast címekre.</li>
 	<li><strong>OutputUnicast:</strong><br />
-	When choosing Output Unicast, a valid IP address has to be entered in the <strong>Destination IP</strong> column. Universes configured in this row will be sent as unicast to this IP address.</li>
+	Az Output Unicasthoz, egy létez&otilde; IP címet kell a <strong>Destination IP</strong> oszlopban megadni. Ebben a sorban beállított univerzumnak unicastban lesz küldve az adat.</li>
 	<li><strong>InputMulticast:</strong><br />
-	Input Multicast will join the Multicast group of the relevant DMX Input Universe.<br />
-	Input Multicast is limited to max. 10 Universes. If more than 10 rows are configured as Input Multicast, all rows beyond multicast input row 10 will be invalid.</li>
+	Az Input Multicast csatlakozik a vonatkozó DMX Input Univerzum Multicast csoportjához. <br />
+	A bemeneti csoportos küldés max. 10 univerzum lehet. Ha több mint 10 sor van konfigurálva Input Multicastként, akkor a 10. csoportos küldés bemeneti során túl minden sor érvénytelen lesz. </li>
 	<li><strong>InputUnicast:</strong><br />
-	Input Unicast is not limited and receives sACN data for the relevant universe without joining any multicast group.</li>
-</ul>
+	Az Input Unicast nem korlátozott, és a multicast csoporthoz való csatlakozás nélkül fogadja az adott univerzum sACN-adatait. </li>
+</ ul>
 
-<div class="restriction">sACN input of grandMA2 console ignores sACN priorities.</div>
+<div class="restriction">Az sACN bemenetek az grandMA2 pulton ignorálják az sACN prioritás beállításokat.</div>
 
 <h2><a id="shownet" name="shownet"></a>Shownet</h2>
 
-<p>Strand Shownet is created by Strand Lighting (<a href="http://www.strandlighting.com">http://www.strandlighting.com</a>).</p>
+<p>Strand Shownet-et a Strand Lighting készítette(<a href="http://www.strandlighting.com">http://www.strandlighting.com</a>).</p>
 
-<p>MA supports transmission of one range of DMX universes as Shownet. Using sACN might be a better option if the receivers supports it.</p>
+<p>Az MA támogatja egy DMX univerzum forgalmazását mint Shownet. Az sACN használata jobb választás lehet, ha a fogadó fél támogatja.</p>
 
-<p>There are several options (here is only mentioned the ones that is not mentioned in <a href="#General Settings">General Settings above</a>):</p>
+<p>Minden sorhoz több lehet&otilde;ség van (itt csak azokat említjük, amelyeket a fenti <a href="#General Settings"> Általános beállításoknál nem említünk)</a>):</p>
 
 <ul>
-	<li><strong>Active</strong> - This is an 'On'/'Off' option. When 'On' the console will transmit Strand Shownet. When it is 'Off', then the text is hidden. This can also be toggled by the button on the right side.</li>
+	<li><strong>Active</strong> - Ez egy 'Be/Ki' opció. Ha 'On' akkor a pult küldi a Strand Shownet-et. Ha ez 'Off', akkor a szöveg rejtett. Ezt lehet a jobb oldali gombokkal is kapcsolni.</li>
 </ul>
 
-<div class="important"><strong>Important:</strong><br />
-Shownet is a Broadcast protocol, but is transmitted from Ethernet connector 1.</div>
+<div class="important"><strong>Fontos:</strong><br />
+A Shownet egy Broadcast protokoll, de az 1. Ethernet csatlakozón keresztül van forgalma.</div>
 
 <h2><a id="kinet" name="kinet"></a>KiNET</h2>
 
-<p>KiNET is developed by Philips Color Kinetic (<a href="http://www.colorkinetics.com/">http://www.colorkinetics.com/</a>).</p>
+<p>A KiNET-et a Philips Color Kinetic fejlesztette ki(<a href="http://www.colorkinetics.com/">http://www.colorkinetics.com/</a>).</p>
 
-<p>MA supports transmission of several ranges of DMX universes.</p>
+<p>Az MA néhány DMX univerzum átvitelét támogatja.</p>
 
-<p>There are several options (here is only mentioned the ones that are not mentioned in <a href="#General Settings">General Settings above</a>):</p>
+<p>Minden sorhoz több lehet&otilde;ség van (itt csak azokat említjük, amelyeket a fenti <a href="#General Settings"> Általános beállításoknál nem említünk)</a>):</p>
 
 <ul>
-	<li><strong>Valid</strong> - There will be a "Yes" for each line that is a valid line. Only valid lines will transmit data.</li>
-	<li><strong>IP Address</strong> - This is the IP address of the receiver.</li>
+	<li><strong>Valid</strong> - Van egy "Yes" minden érvényes sorra, csak az érvényes sorokon keresztül van forgalmazás.</li>
+	<li><strong>IP Address</strong> - Ez a fogadó fél IP címe.</li>
 </ul>
 
-<div class="important"><strong>Important:</strong><br />
-KiNET is a Broadcast protocol, but is transmitted from Ethernet connector 1.</div>
-
+<div class="important"><strong>Fontos:</strong><br />
+A KiNET egy Broadcast protokoll, de az 1. Ethernet csatlakozón keresztül van forgalma.</div>
 		
 	</body>
 </html>
