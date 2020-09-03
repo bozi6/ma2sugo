@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Cue timings</title>
+		<title>Képek időzítése</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="cue timing, fade time, delay time" />
@@ -9,105 +9,105 @@
 	<body>
 		
 		
-		<h1>Cue timings</h1>
+		<h1>Képek időzítése</h1>
 		
-		<p>Cue timing is about the stored values transition from one cue to the next.</p>
+		<p>A képek időzítése a tárolt értékek átváltozása a másikba a tárolt képek sorrendjében.</p>
 
-<p>There are several levels of timing that can be relevant for a values transition time.</p>
+<p>Az időzítésnek több szintje lehet releváns az értékek átállási ideje szempontjából.</p>
 
-<p>There are different timing levels. They are:</p>
+<p>Több időzítési szint lehetséges. Ezek a következők:</p>
 
 <ul>
-	<li><strong>General Cue Timing</strong></li>
-	<li><strong>Preset Type Timing</strong></li>
-	<li><strong>Individual Timing</strong></li>
-	<li><strong>Rate</strong></li>
-	<li><strong>Executor Time</strong></li>
+	<li><strong>General Cue Timing-általános</strong></li>
+	<li><strong>Preset Type Timing-Preset szerint</strong></li>
+	<li><strong>Individual Timing-Egyéni értékek</strong></li>
+	<li><strong>Rate-Arány</strong></li>
+	<li><strong>Executor Time-Executor idő</strong></li>
 </ul>
 
-<p>There is also manual cross fading. This overwrites any timing. Read more about cross fading in the <a href="key_cs_playback.html#crossfade">Playing back Cues topic</a>.</p>
+<p>És még van a kézi áthúzás is. Ez minden időzítést felülbírál. Olvass többet az átúszásról a<a href="key_cs_playback.html#crossfade">Képek visszajátszása fejezetben</a>.</p>
 
 <p>&nbsp;</p>
 
-<h2>General Cue Timing</h2>
+<h2>General Cue Timing-Általános képidőzítés</h2>
 
-<p>This is the general timing columns that can be seen in the <a href="key_cs_cue_sequence.html">Sequence Executor Sheet</a>.</p>
+<p>Ez az általános időzítés oszlop amit látsz a <a href="key_cs_cue_sequence.html">Sequence Executor Lapon</a>.</p>
 
-<p>These timings have the lowest priority. If a value has a different Preset Type Timing or an Individual Timing then they have a higher priority.</p>
+<p>Ezeknek az időzítéseknek a legalacsonyabb a prioritása. Ha egy értéknek más a Preset Type Időzítése vagy az Individual Időzítése akkor azoknak magasabb prioritása van.</p>
 
-<p>They are:</p>
+<p>Ezek lehetnek:</p>
 
 <ul>
 	<li><strong>Fade:</strong><br />
-	This is the time used by all attributes and dimmer values going "up" in value. It can also be called "InFade".</li>
+	Ez az idő ami alatt az összes attribútum és dimmer érték "felmegy". Ezt hívhatjuk "InFade" nek is.</li>
 	<li><strong>OutFade:</strong><br />
-	This is time used by dimmer values going "down" in value. This only effects Dimmer values. The default for this is "InFade" - automatically making it the same as the "Fade" value.</li>
+	Ezt az időt használja a dimmer értékek "lejövetele" értékben. Ez csak a dimmerekre van hatással. Az alapértéke ennek az "InFade" - automatikusan megegyezik a "Fade" értékkel.</li>
 	<li><strong>Delay:</strong><br />
-	This is the time used to wait before executing the "Fade". It can also be called "InDelay".</li>
+	Ezt az időt szükséges kivárni a "Fade" indítása előtt. Ezt nevezhetjük "InDelay"-nak is.</li>
 	<li><strong>OutDelay:</strong><br />
-	This is the time used to wait before executing the "OutFade". This only effects Dimmer values.The default for this is "InDelay" - automatically making it the same as the "Delay" value.</li>
+	Ezt az időt várja ki mielőtt elindul az "OutFade". Ez csak a dimmer értékekre vonatkozik. Az alapértéke egyenlő az "InDelay" - Automatikusan megegyezik a "Delay" értékkel.</li>
 	<li><strong>Snap Percent:</strong><br />
-	This is the percent number used to control when the "Snap" is performed. Read more about <a href="#snap_percent">Snap Percent</a> at the bottom of this topic.</li>
+	Ez a százalékos szám ami vezérli amikor "Snap" történik. Olvass erről a <a href="#snap_percent">Snap Percent</a>ennek a fejezetnek az alján.</li>
 </ul>
 
-<p>The defaults are a user setting and can be changed in the <span class="hardkey">Setup</span> -&gt; <span class="softkey">User</span> -&gt; <span class="softkey">Defaults</span> -&gt; <span class="softkey">Sequence Defaults</span>.</p>
+<p>Az alapértékek felhasználó által választhatóak, és egváltoztathatóak a <span class="hardkey">Setup</span>-&gt; <span class="softkey">User</span>-&gt; <span class="softkey">Defaults</span>-&gt; <span class="softkey">Sequence Defaults</span>menüben.</p>
 
 <p>&nbsp;</p>
 
-<h2>Preset Type Timing</h2>
+<h2>Preset Type Timing - Preset típusú időzítés</h2>
 
-<p>Each preset type has two columns in the Sequence Executor Sheet. One is <strong>Fade</strong> the other is <strong>Delay</strong>.</p>
+<p>Minden preset tíőusnak két oszlopa van a Sequence Executor Lapon. Az egyik a <strong>Fade</strong>a másik a <strong>Delay</strong>.</p>
 
-<p>These times will will be used by all changing the values of that preset type. Overwriting the General Cue Timings for that Preset Type.</p>
+<p>Ezeket az időket az preset típus értékeinek minden megváltoztatása fogja használni. Az adott preset típus általános cue időzítésének felülírása. </p>
 
-<div class="important"><strong>Important:</strong><br />
-Dimmer values changing to a lower value are not effected by the ""Fade Dimmer" time. They are controlled by the "OutFade".</div>
+<div class="important"><strong>Fontos:</strong><br />
+A dimmer értékek változása alacsonyabb értékre nem használja a ""Fade Dimmer" időt. Ezek az "OutFade" által vezéreltek.</div>
 
-<p>The default value for these are "Cue" making the automatically the same as the General Cue Timings.</p>
+<p>Az alapértéket ezeknek a "Kép" határozza meg és így ugyanaz lesz mint az Általános Kép Időzítés.</p>
 
-<p>The defaults are a user default and this can be changed in the <span class="hardkey">Setup</span> -&gt; <span class="softkey">User</span> -&gt; <span class="softkey">Defaults</span> -&gt; <span class="softkey">Sequence Defaults</span>.&nbsp;</p>
+<p>Az alapértékek felhasználó által választhatóak, és egváltoztathatóak a <span class="hardkey">Setup</span>-&gt; <span class="softkey">User</span>-&gt; <span class="softkey">Defaults</span>-&gt; <span class="softkey">Sequence Defaults</span>menüben.</p>
 
 <p>&nbsp;</p>
 
-<h2>Individual Timing</h2>
+<h2>Individual Timing-Egyéni időzítés</h2>
 
-<p>Each individual attribute can have a special individual fade and/or delay time. This is called individual time.</p>
+<p>Minden egyedi attribútumnak van sajátegyéni fade és/vagy delay ideje. Ezt hívjuk egyedi időnek.</p>
 
-<p>There are two columns in the Sequence Executor Sheet called <strong>I.Fade</strong> and <strong>I.Delay</strong>, they display the range if the individual times - the lowest and the highest time.</p>
+<p>Két oszlop van a Sequence Executor Lapon amiket<strong>I.Fade</strong>és <strong>I.Delay</strong>-nak hívunk, ezek határértéket mutatnak ha az egyéni értékek - a legalacsonyabb és legmagasabb idők.</p>
 
-<p>If there are individual times stored then the background of the <strong>Fade</strong> or the <strong>Delay</strong> columns will have a green or orange color. This is a visual indicator that there are some individual times stored.</p>
+<p>Ha vannak egyedi idők tárolva, akkor a <strong>Fade </strong>vagy a <strong>Delay </strong>oszlopok háttere zöld vagy narancssárga lesz. Ez egy vizuális jelzés arra vonatkozóan, hogy van néhány egyedi időpont tárolva.</p>
 
-<h3>Storing Individual Timing</h3>
+<h3>Egyéni Idők Tárolása</h3>
 
-<p>Individual times are usually stored together with active values in the programmer.</p>
+<p>Az egyéni időket általában együtt tároljuk az aktív értékekkel a programozóban.</p>
 
-<p>The Encoder Toolbar should look like this when working with values:</p>
+<p>A kódoló sáv így néz ki ha értékekkel dolgozunk:</p>
 
 <figure class="caption"><img alt="" src="../../img/img_encoder-toolbar_value_v3_3.png" />
-<figcaption><em>Encoder Toolbar - Value Layer</em></figcaption>
+<figcaption><em>Kódoló Sáv - Érték Réteg - Value Layer</em></figcaption>
 </figure>
 
-<p>Here in the Encoder toolbar there are three buttons in the center of the top row called: Value, Fade, and Delay.</p>
+<p>Itt a kódoló sávban három gomb van középen a felső sor neve: Value-Érték, Fade-Átúszás, és Delay-Késleltetés.</p>
 
-<p>They control if the encoders below the buttons are used to set a value or to set an individual time. They change between different layers.</p>
+<p>Azt ellenőrzik, hogy a gombok alatti kódolók használnak-e értéket vagy egyedi időt. Különböző rétegek között változhatnak.</p>
 
-<p>An attribute needs to have values stored in the cue where the individual time is stored. The time can be stored at the same time as the value, but can also be added (merged) into the cue after the values is stored.</p>
+<p>Az attribútumnak olyan értékeket kell tárolnia, amelyek az egyedi időt tárolják. Az idő az értékkel egy időben tárolható, de az értékek tárolása után hozzáadható (összevonható) a képben.</p>
 
-<p>To get the fade or delay times into your programmer, you need to select the layer you want to work with. You can tap the buttons in the Encoder Toolbar or you can press the <span class="hardkey">Time</span> key to toggle between the layers.</p>
+<p> Ahhoz, hogy az átúszási vagy késleltetési idők bekerüljenek a programozóba, ki kell választani azt a réteget, amellyel dolgozni akarsz. Bökj a Kódoló eszköztár gombjaira, vagy megnyomhatod a <span class = "hardkey">Time</span> gombot a rétegek közötti váltáshoz. </p>
 
-<p>When the correct layer is selected then you can use the encoders to set a time or you can use the keys to type a time - pay attention to your command line input.</p>
+<p>Ha a megfelelő réteg van kiválasztva, akkor használhatod a tekerőkéket az idő meghatározásához, vagy beírhatod számokkal is - figyelj a parancssori bemenetre.</p>
 
-<p>This is what the Encoder Toolbar looks like when Pan and Tilt have 2 seconds as individual fade time in the programmer</p>
+<p>Így néz ki a kódoló sáv amikor a Pan és Tiltnek 2 másodperces egyéni beúszási ideje van beállítva a programozóban </p>
 
 <figure class="caption"><img alt="" src="../../img/img_encoder-toolbar_fade_active-values_v3_3.png" />
-<figcaption><em>Encoder Toolbar - Fade Layer with active fade times</em></figcaption>
+<figcaption><em>Encoder Toolbar - Fade Layer aktív úszási időkkel</em></figcaption>
 </figure>
 
 <p>When the individual time is in the programmer then it needs to be stored like any other value.</p>
 
 <p>&nbsp;</p>
 
-<p>Depending on what is stored with individual times, please consider if using <a href="key_cs_store.html">Part Cues</a> might be a better solution for you.</p>
+<p>Depending on what is stored with individual times, please consider if using <a href="key_cs_store.html">Part Cues</a>might be a better solution for you.</p>
 
 <p>&nbsp;</p>
 
@@ -115,25 +115,25 @@ Dimmer values changing to a lower value are not effected by the ""Fade Dimmer" t
 
 <p>All executors have a Rate Fader. This fader might not be assigned to a physical fader but it is still there. For details about this please have a look at the <a href="key_exec.html">Executors section</a>.</p>
 
-<p>A Rate fader is used to modulate or dynamically adjust the stored times. It does not change the stored times, it simply adjust the time to be faster or slower.&nbsp;</p>
+<p>Az arány-rate húzót használhatod hogy moduláld, vagy dinamikusan változtasd a tárolt értékeket. Ez nem változtatja meg a tárolt értékeket, csak egyszerűen állítja, hogy az idő gyorsabb vagy lassabb legyen.&nbsp;</p>
 
-<p>When the time is adjusted by the Rate fader then the time displayed in the Sequence Executor Sheet is also visually adjusted. There is an asterisk symbol in front of the time to show you that the time is adjusted. It could look like this:</p>
+<p>Ha az időt állítottad a rate húzóval, akkor az időt kijelzi a Sequence Executor Sheet vizuálisan állítva. Van egy csillag szimbólum az idő előtt, ami mutatja, hogy az idő igazítva van. Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-executor-sheet_rate-adjusted_v3-3.png" />
-<figcaption><em>Sequence Executor Sheet with adjusted times</em></figcaption>
+<figcaption><em>Sequence Executor Lap az állított időkkel</em></figcaption>
 </figure>
 
-<p>The default value for the Rate fader is "1:1". This means that times will not be adjusted. If the rate is changed then the stored time is divided by the value of the rate - this includes the individual times.</p>
+<p>A Rate fader alapértelmezett értéke "1: 1". Ez azt jelenti, hogy az idők nem lesznek módosítva. Ha a sebességet megváltoztatják, akkor a tárolt időt elosztjuk az arány értékével - ideértve az egyes időket is.</p>
 
-<p>In the image above the stored fade time for cue 1 is "1". The Rate is set to "2". The result is 1 divided by 2 equals 0.5.</p>
+<p>A fenti képen az 1. kép tárolt átúszási ideje "1". Az arány "2" -re van állítva. Az eredmény elosztva 2-vel egyenlő 0,5-el. </p>
 
-<p>Moving the Rate fader above "1:1" will make the rate time larger and the result is that the times are faster. Moving the Rate below the "1:1" will make the rate time smaller than 1 and the result is that the cue times are slower.</p>
+<p>Ha a Rate Fader-t áttolod az "1:1" fölé, az idő nagyobb lesz, és ennek eredményeként az idő gyorsabb. Ha a sebességet az "1:1" alá mozgatod, akkor az idő 1-nél kisebb lesz, és ennek eredményeként a képváltási idők lassabbak lesznek. </p>
 
-<p>The Rate fader can be reset to "1:1" by typing:</p>
+<p>A Rate húzót visszaállíthatod "1:1" ha beírod:</p>
 
 <div class="cl_input">[Channel]&gt; Rate 1</div>
 
-<p>Or by having the "Rate1" function assigned to one of the associated executor keys.</p>
+<p>Vagy ha a "Rate1" funkció hozzá van rendelve egy execuor gombhoz akkor azzal egyszerűb.</p>
 
 <p>&nbsp;</p>
 
@@ -141,13 +141,13 @@ Dimmer values changing to a lower value are not effected by the ""Fade Dimmer" t
 
 <p>The "Exec Time" or "Executor Time" fader can be used to override the stored times in the cues. It is a fader visible in the lower right corner of screen 2 (unless you are on a grandMA2 onPC with the "CmdWing Bar" turned on). It can also be assigned to a physical fader - read about it in the <a href="key_adv_exec_spec_master.html">Special Masters topic</a>.</p>
 
-<p>If the Exec Time fader is On, then all the stored cue timing is ignored and the time set on the Exec Time fader is used instead. The default range for the fader is 0 seconds to 10 seconds. The maximum is a user setting and it can be changed in <span class="hardkey">Setup</span> -&gt; <span class="softkey">User</span> -&gt; <span class="softkey">Settings</span>. It it called "Max. Exec Time".</p>
+<p>If the Exec Time fader is On, then all the stored cue timing is ignored and the time set on the Exec Time fader is used instead. The default range for the fader is 0 seconds to 10 seconds. The maximum is a user setting and it can be changed in <span class="hardkey">Setup</span>-&gt; <span class="softkey">User</span>-&gt; <span class="softkey">Settings</span>. It it called "Max. Exec Time".</p>
 
 <p>The Exec Time fader also has a "Manual XFade" function. This will allow you to use the move from one end position to the other as the timing for the cue change.</p>
 
 <p>Exec Time ignores any individual times. The Rate Fader is effecting the Exec Time, except when doing the Manual XFade.</p>
 
-<p>It is possible to activate <strong>Ignore Exec Time</strong> in the options for each Executor - see the <a href="key_adv_exec_options.html">Executor Options topic</a>. This will exclude the executor from being effected by the Exec Time.</p>
+<p>It is possible to activate <strong>Ignore Exec Time</strong>in the options for each Executor - see the <a href="key_adv_exec_options.html">Executor Options topic</a>. This will exclude the executor from being effected by the Exec Time.</p>
 
 <p>&nbsp;</p>
 
