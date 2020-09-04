@@ -11,14 +11,13 @@
 		
 		<h1>Appearance Kulcsszó</h1>
 		
-		<p>You can change the frame color of pool objects and the background color of cues with the <strong>Appearance </strong>keyword.</p>
-
+	<p>Az <strong>Appearance</strong> kulcsszóval megváltoztathatod a készlet objektumainak keretszínét és a jelek háttérszínét. </p>
 <div class="important"><strong>Fontos:</strong><br />
-<strong>Appearance</strong> is used directly on objects. Thus, changing the color in all user profiles.</div>
+Az <strong>Appearance</strong>-t direkt az objektumokon használjuk. Ezért, megváltoztatja a színeket, minden felhasználói profilban.</div>
 
-<p>To execute this keyword press <span class="hardkey">Assign</span>&nbsp;<span class="hardkey">Assign</span> <span class="hardkey">Assign</span>, type <strong>Appearance </strong> vagy röviden<strong>Ap </strong>into the command line.</p>
+<p>A kulcsszó végrehajtásához nyomd meg az <span class="hardkey">Assign</span>&nbsp;<span class="hardkey">Assign</span> <span class="hardkey">Assign</span>, vagy gépeld be az  <strong>Appearance </strong> vagy röviden<strong>Ap </strong>a parancssorba.</p>
 
-<p>To reset assigned colors repeat the appearance command and select color pop-up&nbsp;<strong>Reset&nbsp;</strong>in the edit, then tap <strong>Please</strong>.</p>
+<p>A hozzárendelt szinek visszaállításához ismételd meg az appearance parancsot, majd az ablakocskában válaszd a &nbsp;<strong>Reset&nbsp;</strong>-et, majd bökj a <strong>Please</strong>-re.</p>
 
 <h2>Szintakszis</h2>
 
@@ -26,130 +25,130 @@
 
 <p><span class="syntax"><strong>Appearance [Object-list] At [Source-object]</strong></span></p>
 
-<h2>Options</h2>
+<h2>Opciók</h2>
 
-<p>To see a list of all options of the keyword Appearance in the command line feedback window, type the following into the command line:</p>
+<p>Az összes opció megjelenítéséhez,a parancsvisszajelz&otilde; ablakban,  írd be a parancssorba:</p>
 
 <div class="cl_input">[Channel]&gt; Appearance /?</div>
 
-<p>The keyword Appearance has the following options:</p>
+<p>Az Appearance kulcsszónak a következ&otilde; opciói vannak:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
-			<th scope="col">Option</th>
-			<th scope="col">Shortcut</th>
-			<th scope="col">Option value</th>
-			<th scope="col">Description</th>
+			<th scope="col">Opció</th>
+			<th scope="col">Rövidítés</th>
+			<th scope="col">Opció értéke</th>
+			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>reset</td>
 			<td>r</td>
-			<td>no option value</td>
-			<td>Resets appearance.</td>
+			<td>nincs opciós érték</td>
+			<td>Visszaállítja a kinézetet.</td>
 		</tr>
 		<tr>
 			<td>color</td>
 			<td>no shortcut</td>
-			<td>Gel name from the Swatch Book in the color picker, e.g., medium amber; or hex value (000000-FFFFFF)</td>
-			<td>Sets color appearance.&nbsp;</td>
+			<td>A fólia neve a könyvb&otilde;l a színválasztóban, pl.: medium amber;vagy hexa érték (000000-FFFFFF)</td>
+			<td>Beállíítja a megjelenés színét.&nbsp;</td>
 		</tr>
 		<tr>
 			<td>red</td>
 			<td>r</td>
 			<td>0-100</td>
-			<td>Sets red component of the color appearance (0 by default).</td>
+			<td>A piros részt állítja be a megjelenés színének (0 az alapérték).</td>
 		</tr>
 		<tr>
 			<td>green</td>
 			<td>g</td>
 			<td>0-100</td>
-			<td>Sets green component of the color appearance (0 by default).&nbsp;</td>
+			<td>A zöld részt állítja be a megjelenés színének (0 az alapérték).</td>
 		</tr>
 		<tr>
 			<td>blue</td>
 			<td>b</td>
 			<td>0-100</td>
-			<td>Sets blue component of the color appearance (0 by default).&nbsp;</td>
+			<td>A kék részt állítja be a megjelenés színének (0 az alapérték).</td>
 		</tr>
 		<tr>
 			<td>hue</td>
 			<td>h</td>
 			<td>0-360</td>
-			<td>Sets hue of the color appearance (saturation and brightness 100 by default).&nbsp;</td>
+			<td>A színárnyalatot állítja be (színtelítettség és fényer&otilde; 100-on alapból).&nbsp;</td>
 		</tr>
 		<tr>
 			<td>saturation</td>
 			<td>s</td>
 			<td>0-100</td>
-			<td>Sets saturation of the color appearance (hue 0 by default; brightness 100 by default).</td>
+			<td>A színtelítettséget állítja be (színárnyalat 0 alap; fényer&otilde; 100 alap).</td>
 		</tr>
 		<tr>
 			<td>brightness</td>
 			<td>br</td>
 			<td>0-100</td>
-			<td>Sets brightness of the color appearance (saturation and hue 0 by default).&nbsp;</td>
+			<td>A fényer&otilde;t állítja be (színtelítettség és színárnyalat 0 alapból).&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
 
-<h3>Example: 1 - Change Frame Color of a Single Object</h3>
+<h3>1. Példa:  - Egy objektum színes keretének megváltoztatása</h3>
 
-<p>Assign preset object 1 a red frame in the preset pool.</p>
+<p>Egy presetobjektum keretének pirosra állítása a preset tárolóban.</p>
 
-<p>1. Press <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign </span> (=Appearance) and tap preset 1 in the preset pool .</p>
+<p>1. Nyomd meg az  <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign </span> (=Appearance) és bökj az els&otilde; elemre a preset tárolóban.</p>
 
-<p>The Edit Color pop-up opens.</p>
+<p>A színszerkeszt&otilde; ablakocska megjelenik.</p>
 
-<p>2. Select a red color and tap <strong>Please</strong>.</p>
+<p>2. Válassz egy piros színt és bökj a <strong>Please</strong>-re.</p>
 
-<p>Preset object 1 has a red frame around it.</p>
+<p>A presettároló 1. objektuma körül most piros keret van.</p>
 
 <div class="tip"><strong>Tipp:</strong><br />
-Executors display the appearance of objects assigned. To view the appearance of objects on executors, open <strong>Playback big</strong>. For more information see <a href="key_exec_on_screen.html#playback_big">Executors on the screens</a>.&nbsp;</div>
+Az executorok a hozzárendelt objektumok megjelenését jelenítik meg. Az objektumok executorokon való megjelenésének megtekintéséhez nyisd meg a <strong> Playback big </strong> lehet&otilde;séget. További információ: <a href="key_exec_on_screen.html#playback_big">Executorok a képerny&otilde;kön</a>.nbsp;</div>
 
-<h2>Example: 2 - Change Frame Color of Several Objects</h2>
+<h2>2. Példa: - Több objektum keretének módosítása</h2>
 
-<p>Assign group object 1 thru 5 a blue frame in the group pool.</p>
+<p>Kék keret beállítása a cspoort tárolóban az 1-t-ig csoportelemekre.</p>
 
-<p>1. Press <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> (=Appearance) <span class="hardkey">Group</span> <span class="hardkey">1</span> <span class="hardkey">Thru</span> <span class="hardkey">5</span> <span class="hardkey">Please</span>.</p>
+<p>1. Nyomd meg az<span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> (=Appearance) <span class="hardkey">Group</span> <span class="hardkey">1</span> <span class="hardkey">Thru</span> <span class="hardkey">5</span> <span class="hardkey">Please</span>.</p>
 
-<p>The Edit Color pop-up opens.</p>
+<p>A színválasztó megjelenik.</p>
 
-<p>2. Select a blue color and tap <strong>Please</strong>.</p>
+<p>2. Válassz egy kék színt aztán bökj a <strong>Please</strong>-re.</p>
 
-<p>Group objects 1 thru 5 have a blue frame around them.</p>
+<p>Az 1-5-ig Csportobjektumok kerete most kék lett.</p>
 
-<h2>Example: 3 - Change Background Color of Cues</h2>
+<h2>3. Példa - Képek háttérszínének megváltoztatása</h2>
 
-<p>Change the background color of cue 1 of the selected executor. For more information see <a href="key_cs_renumber_cues.html#cue_color">change cue color</a>.</p>
+<p>Megváltoztatjuk a háttérszínét az 1. képnek a kiválasztott executoron. További információ: <a href="key_cs_renumber_cues.html#cue_color">Kép színének megváltoztatása</a>.</p>
 
 <div class="important"><strong>Fontos:</strong><br />
-Cue color columns have to be enabled in the option menu.&nbsp;</div>
+A képek oszlopának színét az opcióknál lehet engedélyezni.&nbsp;</div>
 
-<p>1. Press <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> (=Appearance) <span class="hardkey">Cue</span> <span class="hardkey">1</span> <span class="hardkey">Please</span>.</p>
+<p>1. Nyomd meg az <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> (=Appearance) <span class="hardkey">Cue</span> <span class="hardkey">1</span> <span class="hardkey">Please</span>.</p>
 
-<p>The Edit Color pop-up opens.</p>
+<p>A színszerkeszt&otilde; ablakocska megjelenik.</p>
 
-<p>2. Choose the color and tap <strong>Please</strong>.</p>
+<p>2. Válassz színt aztán bökj a <strong>Please</strong>-re.</p>
 
-<p>Cue 1 of the selected executor has a new background color.&nbsp;</p>
+<p>A kiválasztott executorban az 1. képnek új háttérszíne lett.&nbsp;</p>
 
-<h2>Example: 4 - Cue Background Color same as Group Color</h2>
+<h2>4. Példa: - A kép háttérszíne ugyanaz mint a csport színe</h2>
 
-<p>Cue 1 is to have the same color as group 2.</p>
+<p>a 1. kép színe legyen ugyanaz mint a 2. csoporté.</p>
 
-<p>Press <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> (=Appearance) <span class="hardkey">Cue</span> <span class="hardkey">1</span> <span class="hardkey">At</span> <span class="hardkey">Group</span> <span class="hardkey">2</span> <span class="hardkey">Please</span>.</p>
+<p>Nyomd meg az <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> <span class="hardkey">Assign</span> (=Appearance) <span class="hardkey">Cue</span> <span class="hardkey">1</span> <span class="hardkey">At</span> <span class="hardkey">Group</span> <span class="hardkey">2</span> <span class="hardkey">Please</span>.</p>
 
-<p>Cue 1 has the same color as group 2.</p>
+<p>A 1. képnek ugyanaz a szine mint a 2. csoporté.</p>
 
-<h2>Example: 5 - Use Command Line Only</h2>
+<h2>5. Példa: - Csak parancssor használatával</h2>
 
-<p>Assign the All preset pool (0) object 1 a red frame using the command line only.</p>
+<p>Legyen az ALL preset tároló 1. objektuma piros, csak a parancssor használatával.</p>
 
-<p>Type in the command line:</p>
+<p>Írd be a parancssorba:</p>
 
 <p>&nbsp;</p>
 
@@ -157,9 +156,9 @@ Cue color columns have to be enabled in the option menu.&nbsp;</div>
 
 <p>&nbsp;</p>
 
-<p>Press <span class="hardkey">Please</span>.</p>
+<p>Nyomd meg a  <span class="hardkey">Please</span>-t.</p>
 
-<p>- or -</p>
+<p>- vagy -</p>
 
 <p>&nbsp;</p>
 
@@ -167,21 +166,21 @@ Cue color columns have to be enabled in the option menu.&nbsp;</div>
 
 <p>&nbsp;</p>
 
-<p>Press <span class="hardkey">Please</span>.</p>
+<p>Nyomd meg a <span class="hardkey">Please</span>-t.</p>
 
-<p>Pool object 1 has a red frame around it.</p>
+<p>A 1. tárolóobjektum körül most piros keret lett.</p>
 
-<h2>Example: 6 – Assign the Appearance from Source Object to Destination Object</h2>
+<h2>6. Példa: – Kinézet hozzárendelése a forrás objektumtól a cél objektumra.</h2>
 
-<p>Assign the appearance of one macro to another.</p>
+<p>Egy makró kinézete egy másikra.</p>
 
-<p>Type in the command line:</p>
+<p>Írd be a parancssorba:</p>
 
 <div class="cl_input">[Channel]&gt; Appearance Macro 2 At Macro 13</div>
 
-<p>Press <span class="hardkey">Please</span>.</p>
+<p>Nyomd meg a <span class="hardkey">Please</span>-t.</p>
 
-<p>&nbsp;Macro 2 receives the same appearance as macro 13.&nbsp;</p>
+<p>&nbsp;A 2. Makró ugyanúgy néz ki mint a 13. Makró.&nbsp;</p>
 
 <p>&nbsp;</p>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
 		<title>AddVar Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,41 +11,44 @@
 		
 		<h1>AddVar Kulcsszó</h1>
 		
-		<p>To get the AddVar keyword in the command line type <strong>AddVar </strong> vagy röviden<strong>Ad </strong>a parancssorba.</p>
+		<p>Az AddVar kulcsszó beírásához, írd be <strong>AddVar </strong> vagy röviden<strong>Ad </strong>a parancssorba.</p>
 
 <h2>Leírás</h2>
 
-<p>AddVar&nbsp;is a function keyword to change or extend content of show specific variables.</p>
+<p>AddVar&nbsp;egy függvény kulcsszó, ami megváltoztatja vagy kiterjeszti egy show specifikus változó értékét.</p>
 
 <h2>Szintakszis</h2>
 
-<p><span class="syntax">AddVar&nbsp;$variablename = numericvalue</span></p>
+<p><span class="syntax">AddVar&nbsp;$variablename = számérték</span></p>
 
-<p><span class="syntax">AddVar&nbsp;$variablename = "text"</span></p>
+<p><span class="syntax">AddVar&nbsp;$variablename = "szöveg"</span></p>
 
-<h2>Examples</h2>
+<p>A változók nevében, meg úgy általában a grandMA2 nem teszi lehet&otilde;vé az ékezetes kartakterek használatát, ezért azokat kerüljük.</p>
 
-<div class="cl_input">[Channel]&gt; SetVar&nbsp;$myname = "John"</div>
+<h2>Példák</h2>
 
-<p>&nbsp;- Sets the variable $myname to&nbsp;John</p>
+<div class="cl_input">[Channel]&gt; SetVar&nbsp;$myname = "Jani"</div>
+
+<p>&nbsp;- A $myname változót beállítja &nbsp;Janinak</p>
 
 <p>&nbsp;</p>
 
-<div class="cl_input">[Channel]&gt; AddVar&nbsp;$myname = " Doe"</div>
+<div class="cl_input">[Channel]&gt; AddVar&nbsp;$myname = " a hegyrol"</div>
 
-<p>&nbsp;- Sets the variable $myname to&nbsp;John Doe</p>
+<p>&nbsp;- A $myname változóhoz hozzáadja a "Doe" értéket így a $myname egyenl&otilde; lesz "Jani a hegyrol"</p>
+
 
 <p>&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt; SetVar&nbsp;$mycounter = 5</div>
 
-<p>&nbsp;- Sets the variable $mycounter to 5</p>
+<p>&nbsp;- Beállítja a $mycounter változót 5-re</p>
 
 <p>&nbsp;</p>
 
 <div class="cl_input">[Channel]&gt; AddVar&nbsp;$mycounter = 6</div>
 
-<p>&nbsp;- Sets the variable $mycounter to 11</p>
+<p>&nbsp;- Beállítja a $mycounter változót 11 -re (AddVar = hozzáad a változóhoz)</p>
 
 <p>&nbsp;</p>
 
