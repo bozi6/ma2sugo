@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Loading a show</title>
+		<title>Show betöltése</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="Load Show" />
@@ -9,99 +9,98 @@
 	<body>
 		
 		
-		<h1>Loading a show</h1>
+		<h1>Show betöltése</h1>
 		
-		<p>A show can be loaded from any tab in the Backup Menu.</p>
+		<p>Egy show-t be lehet tölteni bármelyik fülr&otilde;l a Backup Menüben.</p>
 
-<h2>Using the GUI</h2>
+<h2>A GUI használatával</h2>
 
-<p>When Load Show is tapped in the Backup Menu then it will open a pop-up like this:</p>
+<p>Ha a Backup menüben ráböksz a Load Show-ra akkor egy ilyesmi ablakocska jelenik meg:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_load-show_v3-2.png" />
-<figcaption>Load Show pop-up</figcaption>
+<figcaption>Show betöltése ablakocska</figcaption>
 </figure>
 
-<p>Here is a list of the shows in the selected tab.</p>
+<p>Itt egy lista van a kiválasztott fülön lév&otilde; showkról.</p>
 
-<p>On the right side it is possible to choose what data that will be loaded from the selected show.</p>
+<p>Jobb oldalon választhatsz a lehetséges betöltend&otilde; adatokból, a kiválasztott showból.</p>
 
-<p>The idea is that it is possible to load just a small part of a different show into the currently loaded show.</p>
+<p>Az ötlet az, hogy kisebb részeket is be tudsz tölteni a kiválasztott show fájlokból, az aktuálisan megnyitott showfájlba.</p>
 
 <h3>Show Data</h3>
 
-<p>This is activated as a default. The show data is the patch and fixture schedule, stored sequences, presets, groups, effects, and so on. Basically everything that is in a pool somewhere and the imported 3D elements and their location in the 3D stage.</p>
+<p>Ez aktiválva van alapból. A show data a patchelés, a tárolt szekvenciák, a presetek, csoportok, effektek, és a többit tartalmazza. Alapvet&otilde;en minden ami egy tárolóban van valahol és az importált 3D elemeket és a helyüket a 3D színpadon.</p>
 
-<p>If the Show Data is loaded and <strong>not</strong> the User Profiles (read below), then the existing <strong>User Profiles</strong> will be overwritten with the ones from the show being loaded and it will add the additional User Profiles from the show. It will not add <strong>Users</strong>.</p>
+<p>Ha a show adatai betölt&otilde;dnek és <strong>nem</strong> a User Profiles (olvass lejjebb), akkor a meglév&otilde;<strong>User Profiles</strong> felülíródik a betöltend&otilde; showból, és további felhasználói profilt hoznak létre. Felhasználót nem adnak hozzá.</p>
 
 <h3>Time Config</h3>
 
-<p>The time configuration is the time, location, daylight savings settings and NTP&nbsp;(Network Time Protocol) setup.</p>
+<p>A id&otilde; beállítások, az id&otilde;, heyl, téli/nyári id&otilde;számítás és az NTP&nbsp;(Network Time Protocol) beállítások.</p>
 
 <h3>Global Settings</h3>
 
-<p>The global settings are the ones found in Setup -&gt; Console -&gt; Global Settings. The settings here are shared in the session and includes enabling and disabling the Remote and Telnet, RDM, WYSIWYG, and so on.</p>
+<p>A globális beállítások azok amik a Setup -&gt; Console -&gt; Global Settings. A beállítások itt megosztav vannak a munkamenetben, és a Remote, Telnet, RDM WYSIWYG, és egyéb beállításokat tartalmazzák.</p>
 
 <h3>Local Settings</h3>
 
-<p>The local settings are the ones found in Setup -&gt; Console -&gt; Local Settings. These settings only affects the local console and not all consoles in a session. It includes settings like the console language and LED background light settings.</p>
+<p>A lokális beállítások a Setup -&gt; Console -&gt; Local Settingsnél vannak. Ezek csak a helyi pultot  érintik és nem minden pultot a munkamenetben. Beállításokat tartalmaz a pult nyelvi beállításához, a LED hátterek fényerejét, ilyesmiket.</p>
 
 <h3>Network Protocols</h3>
 
-<p>Network protocols are the settings for outputting DMX via an Ethernet connection. It includes ArtNet, sACN, ETC-Net2, KiNet1, Pathport and Shownet. These are found in Setup -&gt; Network -&gt; Network Protocols.</p>
+<p> A hálózati protokollok a DMX Ethernet-kapcsolaton keresztüli kimenetének beállításai. Az ArtNet, az sACN, az ETC-Net2, a KiNet1, a Pathport és a Shownetet tartalmazza. Ezeket a Setup -&gt; Network -&gt; Network  Protocols nál lehet beállítani.</p>
 
 <h3>Network Config</h3>
 
-<p>Network configuration is the settings for what devices should be in the session and the DMX port settings on the Consoles, onPC Wings and NPU's.</p>
+<p>A hálózati konfiguráció az a beállítás, amellyel az eszközöknek részt kell vennie a munkamenetben, és a DMX port beállításai a konzolokon, az onPC Wings és az NPU-kon. </p>
 
 <h3>User Profiles</h3>
 
-<p>User Profiles keep all the data that is connected to the Users. Loading this data will delete all the Users and User Profiles in the current show and load all the Users and User Profiles from the show file being loaded.</p>
+<p>A felhasználói profilok meg&otilde;rzik a felhasználókhoz kapcsolódó összes adatot. Ezen adatok betöltése törli az összes felhasználót és felhasználói profilt az aktuális show-ból, és betölti az összes felhasználót és felhasználói profilt a betöltött show fájlból.</p>
 
 <p>&nbsp;</p>
 
-<p>There is a <span class="softkey">Check All</span> button that selects all the above boxes.</p>
+<p>Van egy <span class="softkey">Check All</span>-Mindent kijelöl gomb, ami bejelöli az összes dobozkát.</p>
 
 <p>&nbsp;</p>
 
-<p>As a default only the main show files are displayed, but it is possible to also choose to load data from a backup version of the show.</p>
+<p>Alapvet&otilde;en csak a show fájlok látszanak, de lehetséges hogy egy backupot változatát is betölthesd.</p>
 
-<p>In the picture above there is a button called "Viewing Shows". This is a button with three different modes:</p>
+<p>A fenti képen látsik egy gomb "Viewing Shows"néven. Ennek három különböz&otilde; módja van:</p>
 
 <ul>
 	<li><strong>Viewing Shows</strong>:<br />
-	This only shows a list of the main show files.</li>
+	Ez csak a f&otilde; show fájlokat mutatja.</li>
 	<li><strong>Viewing Shows &amp; Backups</strong>:<br />
-	This shows the main show files and the backup files.</li>
+	Ez mutatja a biztonság mentéseket és a f&otilde; show fájlokat is.</li>
 	<li><strong>Viewing Backups only</strong>:<br />
-	This only shows the backup files.</li>
+	Ez csak a biztonsági mentés fájlokat mutatja.</li>
 </ul>
 
-<p>All columns in this pop-up can be sorted in ascending or descending order. This can be done by pressing the <span class="hardkey">Edit</span> key and then the column title. If a mouse or trackball is connected, then it is also possible to right click the column title.</p>
+<p>Minden oszlop ebben a nézetben rendezhet&otilde;, noövekv&otilde; vagy csökken&otilde; sorrendben. Ezeket úgy lehet kivitelezni, hogy megnyomod az <span class="hardkey">Edit</span> gombot, és utána az oszlop fejlécére böksz. Ha egér vagy hanyattegér van csatlakoztatva, akkor lehet jobb kattintással az oszlop fejlécre kattintva ugyanezt kiváltani.</p>
 
-<p>In the title bar it is possible to toggle the information button. It looks like this (active): <img alt="" src="../../img/icon_info_v3-2.png" />.</p>
+<p>A fejlécben lehet váltani az információk megjelenését illet&otilde;en. Így néz ki (aktív): <img alt="" src="../../img/icon_info_v3-2.png" />.</p>
 
-<p>When it is active then the information about the selected show are displayed at the bottom. It is information about the different software versions it has been through and when it was last saved in those versions.</p>
-
-<p>It is also possible to see the information that has been saved into the show by the users. Read more about this in <a href="key_backup_menu_save_show.html">Save Show topic</a>.</p>
+<p>Ha aktív, akkor a kiválasztott showval kapcsolatos információk alul jelennek meg. Információk a különböz&otilde; szoftver verziókról, amelyeken mentve volt, és mikor mentették utoljára ezekben a verziókban. </p>
+<p>Szintén lehetséges megnézni azt az információt is, amelyet a felhasználók elmentettek a showba. B&otilde;veben a <a href="key_backup_menu_save_show.html">Show mentése fejezetben</a>.</p>
 
 <p>&nbsp;</p>
 
-<p>When the desired show file and the wanted data type is selected, then tap the <span class="softkey">Load Show</span> button.</p>
+<p>Ha a vágyott show fájl megvan, és kivan választva, akkor bökj a <span class="softkey">Load Show</span>-Show betöltése gombra.</p>
 
-<p>It is possible to cancel the load process by tapping the <span class="softkey">Cancel</span> button or the big <span class="softkey">X</span> in the upper right corner on the pop-up.</p>
+<p>Lehetséges megszakítani a betöltést, a <span class="softkey">Cancel</span>&nbsp;gombra bökéssel, vagy a nagy <span class="softkey">X</span> -re bökve a jobb fels&otilde; sarokba az ablakocskában.</p>
 
 <div class="tip"><strong>Tipp:</strong><br />
-Executing onPC.exe with parameter -s allows to specify a show file for loading.</div>
+Az onPC.exe a -s paraméterrel elindítva, megadhatod, hogy mgelyik show fájlt töltse be induláskor.</div>
 
-<h2>Example:</h2>
+<h2>Példa:</h2>
 
-<p>&lt;path&gt;/gma2onpc.exe -s:my_showfile</p>
+<p>&lt;útvonal&gt;/gma2onpc.exe -s:my_showfile</p>
 
-<p>​Loads the show file my_showfile.show.gz from the gma2/shows folder of the corresponding software version.&nbsp;</p>
+<p>​Betölti a show fájlt: my_showfile.show.gz a gma2/shows mappából a megfelel&otilde; szoftververzióban.&nbsp;</p>
 
-<h2>Using the Command Line</h2>
+<h2>Parancssor használatával</h2>
 
-<p>Show files can be loaded using the command line. The command is called <span class="syntax">LoadShow</span>. Read more about it <a href="key_keyword_loadshow.html">here</a>.</p>
+<p>A show fájlok betölthet&otilde;ek a pranacssor használataával is. A parancs neve <span class="syntax">LoadShow</span>. Olvass róla b&otilde;vebben <a href="key_keyword_loadshow.html">itt</a>.</p>
 
 		
 	</body>

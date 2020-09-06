@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Setting up a file server</title>
+		<title>Fájlkiszolgáló beállítása</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="File Server, FTP, NFS, Store to a Shared folder" />
@@ -9,99 +9,97 @@
 	<body>
 		
 		
-		<h1>Setting up a file server</h1>
+		<h1>Fájlkiszolgáló beállítása</h1>
 		
-		<p>The session <strong>Master</strong> can be connected to a file server in the network.</p>
+		<p>A <strong>Master</strong>munkamenet csatlakozhat fájlszerverhez a hálózaton.</p>
 
-<p>There are three different server systems that can be use. Each type is described below.</p>
+<p>Három különböz&otilde; szerverrendszer használható. Mindegyik típusról itt írnuk.</p>
 
-<p>Generally you need to tap the <span class="softkey">Setup Server</span> button in the <strong>Backup Menu</strong>. Then select the type wanted in the drop down menu called "Connection Type".</p>
+<p>Általában rá kell böknöd a <span class="softkey">Setup Server</span>-Szerver beállítása gombra a <strong>Backup Menu</strong>-ben. Utána kiválasztani a típusát a legördül&otilde; menüb&otilde;l amit "Connection Type"-Kapcsolat típusának hívunk.</p>
 
-<p>If the console succeeds connecting to the server, then it will create a new tab with the label you provide in the setup (read below).</p>
+<p>Ha pult sikeresen csatlakozott a szerverhez, akkor létrehoz egy új fület aminek a cimkéje a beállítás szerinti lesz.</p>
 
-<div class="restriction"><strong>Restriction:</strong><br />
-grandMA2 onPC cannot be a session Master and connect to a server.</div>
+<div class="restriction"><strong>Korlátozás:</strong><br />
+grandMA2 onPC nem lehet egyszerre csatlakozva szerverhez és a munkamenet Masterja.</div>
 
-<div class="restriction"><strong>Restriction:</strong><br />
-Consoles needs enough free memory to mount a file server. It will most likely not be able to successfully connect using a console with only 2GB RAM.</div>
+<div class="restriction"><strong>Korlátozás:</strong><br />
+A pultnak elég memória kell, hogy bef&ucirc;zhessen egy fájlszervert. Többnyire nem szokott sikerülni, rendesen csatlakozni, ha olyan pultot használsz, amiben csak 2GB RAM-van.</div>
 
-<div class="restriction"><strong>Restriction:</strong><br />
-The server tab is only available for the master in the session.</div>
+<div class="restriction"><strong>Korlátozás:</strong><br />
+A szerver fül, csak a munkamenet master-én látható.</div>
 
 <h2>FTP</h2>
 
-<p>In the FTP setup you need to connect to a FTP server (using port 21).</p>
+<p>Az FTP beállításnál FTP szerverhez kell csatlakoznod (21-es port használatával).</p>
 
-<p>The pop-up looks like this (empty):</p>
+<p>Az abalkocska így ézhet ki (üres):</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_file-server_ftp_v3-2.png" />
-<figcaption><em>File Server Configuration pop-up - FTP mode</em></figcaption>
+<figcaption><em>Fájlkiszolgáló Konfigurálás ablakocska - FTP mód</em></figcaption>
 </figure>
 
-<p>Here you need to fill out the green input fields. The following is a short description of the different fields.</p>
+<p>Itt ki kell töltened a zöld mez&otilde;ket. A következ&otilde; rövid leírás mutatja a mez&otilde;k leírását.</p>
 
 <p><strong>Label:</strong></p>
 
-<p>This is the text written on the tab used to select the server as a location or "drive".</p>
+<p>Ez az a szöveg, amely a szerver helyként vagy "meghajtóként" történ&otilde; kiválasztásához használt fülön található.</p>
 
 <p><strong>Server Name/IP:</strong></p>
 
-<p>This is the name or IP address of the server.</p>
+<p>Ez a neve vagy IP címe a kiszolgálónak.</p>
 
 <p><strong>Subdirectory:</strong></p>
 
-<p>Here it is possible to add a subdirectory in the server location. Leave it empty to use the location chosen in the server. Inside this location there will be created a gma2 folder and several folders will be create inside this. It is just like using a USB memory stick.</p>
+<p>Itt lehet&otilde;ség van egy alkönyvtár hozzáadására a kiszolgálón. Hagyd üresen a kiszolgálón kiválasztott hely használatához. Ezen a helyen létrejön egy gma2 mappa, és ezen belül több mappa is létrejöhet. Olyan, mint egy pendrive használata. </p>
 
 <p><strong>Username:</strong></p>
 
-<p>It is recommended to have a username and password on the FTP server. This input field can be used to write the username.</p>
+<p>Javasolt, hogy legyen az FTP szerveren felhasználónév és jelszó beállítva. Ide csak a felhasználónevet kell írni.</p>
 
 <p><strong>Password:</strong></p>
 
-<p>This field is to write the password for the FTP server.</p>
+<p>Ide kerül a jelszó az FTP szerverhez.</p>
 
 <p>&nbsp;</p>
 
-<p>When all fields are filled out correctly, then tap the <span class="softkey">Please</span> button. If the console can mount/connect to the server, a new tab will appear in the Backup Menu and other places where it is possible to select a tab to store or export/import objects.</p>
-
+<p>Ha minden mez&otilde; kitöltése megfelel&otilde;, akkor bökj a <span class = "softkey">Please</span> gombra. Ha a pult képes bef&ucirc;zni/csatlakozni a kiszolgálóhoz, egy új fül jelenik meg a Backup menüben, és más helyeken, ahol lehet választani egy fület az objektumok tárolásához vagy exportálásához/ importálásához.</p>
 <p>&nbsp;</p>
 
 <h2>Shared Folder (windows)</h2>
 
-<p>The Shared Folder option for windows.</p>
+<p>A megosztott mappa lehet&otilde;ség a windowshoz van.</p>
 
-<p>A folder on the Windows computer needs to be shared for this to work. It is a good idea to have this folder on the primary drive on the computer</p>
+<p>A m&ucirc;ködéshez meg kell osztani egy mappát a Windows számítógépen. Célszer&ucirc;, hogy ez a mappa a számítógép els&otilde;dleges meghajtóján legyen.</p>
 
-<p>The File Server Configuration pop-up looks like this (empty):</p>
+<p>A fájlkiszolgáló ablakocska így nézhet ki (üresen):</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_file-server_shared-folder_v3-2.png" />
-<figcaption><em>File Server Configuration pop-up - Shared Folder mode</em></figcaption>
+<figcaption><em>Fájlkiszolgáló Konfigurálás ablakocska - Megosztott mappa mód</em></figcaption>
 </figure>
 
-<p>Many of the input fields are the same as in the FTP setup - read above for the description.</p>
+<p>Sok mez&otilde; megegyezik az FTP beállításoknál látottakkal - nézd meg feljebb a leírásukat.</p>
 
-<p>The "Subdirectory" is however replaced with "Sharename". Here you need to input the folder name. The location of the shared folder is also needed if it is not directly in the root of the hard drive.</p>
+<p>A "Subdirectory" például kicserél&otilde;dött "Sharename". It adhatod meg a mappa nevét. A helyét a megosztott mappának, ha az nem közvetlen a kiszolgáló kezd&otilde;mappájában található.</p>
 
-<p>When you are happy with your setting, then tap <span class="softkey">Please</span> to mount the server. If successful then a tab will appear with the label specified.</p>
+<p>Ha örömérzet van a beállításokkal, akkor bökj a <span class="softkey">Please</span>gombra a csatlakozáshoz. Ha sikerült akkor egy fül megjelenik a megadott névvel.</p>
 
 <p>&nbsp;</p>
 
 <h2>NFS</h2>
 
-<p>The NFS file share system was developed by Sun Microsystems. It is mostly used in Unix and Unix-like (For instance Linux) operating system.</p>
+<p>Az NFS fájlmegosztó rendszert a Sun Microsystems fejlesztette ki. Leginkább Unix és Unix-szer&ucirc; (például Linux) operációs rendszerekben használják.</p>
 
-<p>There are less input fields with NFS. The pop-up looks like this (empty):</p>
+<p>Kevesebb bemeneti mez&otilde; van NFS-nél. Az ablakocska így néz ki (üres):</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_file-server_nfs_v3-2.png" />
-<figcaption><em>File Server Configuration pop-up - NFS mode</em></figcaption>
+<figcaption><em>Fájlkiszolgáló Konfigurálás ablakocska - NFS mód</em></figcaption>
 </figure>
 
-<p>The <strong>Label</strong> and<strong> Server Name/IP</strong> are the same as above.</p>
+<p>A <strong>Label</strong> és<strong> Server Name/IP</strong> ugyanaz mint feljebb.</p>
 
-<p>The special input field for NFS is <strong>NFS Export Path</strong>. It is the path or directory in your server where the files will be stored.</p>
+<p>Az NFS speciális beviteli mez&otilde;je az <strong> NFS Export Path </strong>. Ez az elérési út vagy könyvtár a szerveren, ahol a fájlok tárolódnak.</p>
 
-<p>When you are happy with your setting, then tap <span class="softkey">Please</span> to mount the server. If successful then a tab will appear with the label specified.</p>
-
+<p>Ha elégedett vagy a beállításokkal, bökj a <span class = "softkey">Please</span> elemre a szerver csatlakoztatásához. Sikeres esetben megjelenik egy lap a megadott címkével. </p>
 <p>&nbsp;</p>
 
 		
