@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
 		<title>PMArea Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,13 +11,13 @@
 		
 		<h1>PMArea Kulcsszó</h1>
 		
-		<p>To get the PMArea (= Pixel Mapper Area) keyword in the command line, type <strong>PMArea</strong> or the shortcut <strong>PM </strong>a parancssorba.</p>
+		<p>A PMArea (= Pixel Mapper Area) kulcsszó beírásához írd be a <strong>PMArea</strong> vagy röviden <strong>PM </strong>a parancssorba.</p>
 
 <h2>Leírás</h2>
 
-<p>The PMArea keyword is an object keyword to access pixel mapper areas and pixel mapper outputs. You can store, copy, and delete pixel mapper setups. For more information, see <a href="key_keyword_vpupixelmapperview.html">MA VPU pixel mapper</a>.</p>
+<p>A PMArea kulcsszó egy objekutm kulcsszó, a pixe mapper areas és a pixel mapper outputs eléréséhez. Tárolhastz, másolhatsz, és törölhetsz pixel mapper beállításokat. További információkért: <a href="key_keyword_vpupixelmapperview.html">MA VPU pixel mapper</a>.</p>
 
-<p>The default function for the PMArea keyword is SelFix. For more information, see <a href="key_keyword_selfix.html">SelFix kulcsszó</a>.</p>
+<p>Az alapvet&otilde; funkciója a PMArea kulcsszónak a SelFix. További információ: <a href="key_keyword_selfix.html">SelFix kulcsszó</a>.</p>
 
 <h2>Szintakszis</h2>
 
@@ -27,7 +27,7 @@
 
 <h2>Opciók</h2>
 
-<p>To get a list of all available options to the PMArea keyword, type in the command line:</p>
+<p>A PMArea kulcsszó minden elérhet&otilde; opciójáért, írd be a parancssorba:</p>
 
 <div class="cl_input">[Channel]&gt; PMArea /?</div>
 
@@ -35,7 +35,7 @@
 	<thead>
 		<tr>
 			<th scope="col">Opció</th>
-			<th scope="col">Option Shortcut</th>
+			<th scope="col">Opció rövidítés</th>
 			<th scope="col">Opció értéke</th>
 			<th scope="col">Leírás</th>
 		</tr>
@@ -44,69 +44,69 @@
 		<tr>
 			<td>merge</td>
 			<td>m</td>
-			<td>no option value</td>
-			<td>Adds to the existing content. By default, the 3D coordinates will be used.</td>
+			<td>nincs opció érték</td>
+			<td>Hozzáadja a meglév&otilde; tartalomhoz. Alapesetben a 3D koordináták határozzák meg.</td>
 		</tr>
 		<tr>
 			<td>overwrite</td>
 			<td>o</td>
-			<td>no option value</td>
-			<td>Replace the existing content. By default, the 3D coordinates will be used.</td>
+			<td>nincs opció érték</td>
+			<td>Kicseréli a meglév&otilde; tartalmat. Alapesetben a 3D koordináták határozzák meg.</td>
 		</tr>
 		<tr>
 			<td>remove</td>
 			<td>r</td>
-			<td>no option value</td>
-			<td>Removes the selected content.</td>
+			<td>nincs opció érték</td>
+			<td>Eltávolítja a meglév&otilde; tartalmat.</td>
 		</tr>
 		<tr>
 			<td>autoalign</td>
 			<td>aa</td>
-			<td>no option value</td>
-			<td>Ignores the 3D position data and stores as a matrix (equal to the layout view).</td>
+			<td>nincs opció érték</td>
+			<td>Átugorja a 3D-s adatokat és matrixként tárolja (egyenl&otilde; az alaprjaz nézettel).</td>
 		</tr>
 		<tr>
 			<td>x (only if the option autoalign is used)</td>
-			<td>no shortcut available</td>
+			<td>nincs rövidítése</td>
 			<td>1.000...500.000</td>
-			<td>Defines the position of the x axis in the pixel mapper area.</td>
+			<td>Meghatározza a pozíciót az x tengelyen a pixel mapper területen.</td>
 		</tr>
 		<tr>
 			<td>y (only if the option autoalign is used)</td>
-			<td>no shortcut available</td>
+			<td>nincs rövidítése</td>
 			<td>1.000...500.000</td>
-			<td>Defines the position of the y axis in the pixel mapper area.</td>
+			<td>Meghatározza a pozíciót az y tengelyen a pixel mapper területen..</td>
 		</tr>
 		<tr>
 			<td>axis</td>
-			<td>no shortcut available</td>
-			<td>All possible combination with + and -, e.g. +x+y, +x+z</td>
-			<td>Defines the horizontal and vertical axis.</td>
+			<td>nincs rövidítése</td>
+			<td>Minden lehetséges kombinációja a + és - pl.: +x+y, +x+z</td>
+			<td>Meghatározza a vízszintes és függ&otilde;leges tengelyt.</td>
 		</tr>
 		<tr>
 			<td>3dcoordinates</td>
-			<td>no shortcut available</td>
-			<td>no option value</td>
-			<td>Uses the 3D position coordinates of the fixture. See Patch &amp; Fixture Schedule.&nbsp;</td>
+			<td>nincs rövidítése</td>
+			<td>nincs opció érték</td>
+			<td>A 3D pozícióját használja a lámpának. Lásd PAtchelés.&nbsp;</td>
 		</tr>
 		<tr>
 			<td>noconfirm</td>
 			<td>nc</td>
-			<td>no option value</td>
-			<td>Suppress the storing output pop-up.</td>
+			<td>nincs opció érték</td>
+			<td>Elnémítja a tároláskori ablakocska megjelenését.</td>
 		</tr>
 	</tbody>
 </table>
 
-<h2>Parameter</h2>
+<h2>Paraméter</h2>
 
-<p>The following table displays the assignable parameter for <strong>pixel mapper areas</strong> via command line.</p>
+<p>A következ&otilde; táblázat megmutatja a hozzárendelhet&otilde; paramétereket a <strong>pixel mapper területekhez</strong> a parancssor által.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
-			<th scope="col">Parameter</th>
-			<th scope="col">Parameter Value</th>
+			<th scope="col">Paraméter</th>
+			<th scope="col">Paraméter Értéke</th>
 			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
@@ -114,28 +114,28 @@
 		<tr>
 			<td style="width:33%">Name</td>
 			<td style="width:33%">"Area 1"</td>
-			<td style="width:33%">Assign the pixel mapper area name.</td>
+			<td style="width:33%">Nevet rendel a pixel mapper területéhez.</td>
 		</tr>
 		<tr>
 			<td>DimX[m]</td>
 			<td>1.000...500.000</td>
-			<td>Assign the dimension of the x axis in meter.</td>
+			<td>Megadja a méretét az x tengelyen méterben.</td>
 		</tr>
 		<tr>
 			<td>DimY[m]</td>
 			<td>1.000...500.000</td>
-			<td>Assign the dimension of the y axis in meter.</td>
+			<td>Megadja a méretét az y tengelyen méterben.</td>
 		</tr>
 	</tbody>
 </table>
 
-<p>The following table displays the assignable parameter for <strong>pixel mapper outputs</strong> via command line.</p>
+<p>A következ&otilde; táblázat megmutatja a hozzárendelhet&otilde; paramétereket a <strong>pixel mapper kimenetéhez</strong> a parancssor által.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
-			<th scope="col" style="width:33%">Parameter</th>
-			<th scope="col">Parameter Value</th>
+			<th scope="col" style="width:33%">Paraméter</th>
+			<th scope="col">Paraméter Érték</th>
 			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
@@ -143,91 +143,90 @@
 		<tr>
 			<td>Name</td>
 			<td style="width:33%">"Output 1"</td>
-			<td style="width:33px">Assign the pixel mapper output name.</td>
+			<td style="width:33px">Nevet rendel a pixel mapper kimenetéhez.</td>
 		</tr>
 		<tr>
 			<td>RenderIP</td>
 			<td>"192.168.0.4"</td>
-			<td>Assign the VPU IP address.</td>
+			<td>Megadja a VPU IP címét.</td>
 		</tr>
 		<tr>
 			<td>Camera</td>
 			<td>"Camera 4"</td>
-			<td>Assign one of the patched cameras.</td>
+			<td>Hozzárendel egy patchelt kamerát.</td>
 		</tr>
 		<tr>
 			<td>ResX[Px]</td>
 			<td>1...4096</td>
-			<td>Assign the resolution of the x axis in pixel.</td>
+			<td>Megadja a felbontását az x tengelyen pixelben.</td>
 		</tr>
 		<tr>
 			<td>ResY[Px]</td>
 			<td>1...4096</td>
-			<td>Assign the resolution of the y axis in pixel.</td>
+			<td>Megadja a felbontását az y tengelyen pixelben.</td>
 		</tr>
 		<tr>
 			<td>VirtOut</td>
 			<td>"None", "Virtual Output 1"... "Virtual Output 16"</td>
-			<td>Assign if the camera, and resolution in pixel should be use for a virtual output.</td>
+			<td>Megadja, hogy ha kamera van, és a felbontás pixelben, használható virtuális kimenetnek.</td>
 		</tr>
 		<tr>
 			<td>Protocol</td>
 			<td>"Art-Net", "sACN", "MA-Net2"</td>
-			<td>Assign the protocol.</td>
+			<td>Hozzárendeli a protocollt.</td>
 		</tr>
 		<tr>
 			<td>Priority</td>
 			<td>"Super", "Swp", "HTP", "High", "LTP", "Low"</td>
-			<td>Assign the pixel mapper priority.</td>
+			<td>Prioritást rendel a pixel mapperhez.</td>
 		</tr>
 		<tr>
 			<td>Art-NetMode (only if the protocol is Art-Net)</td>
 			<td>"Broadcast", "Unicast", "Auto"</td>
-			<td>Assign the Art-Net mode.</td>
+			<td>Az Art-Net módot rendeli hozzá.</td>
 		</tr>
 		<tr>
 			<td>Art-NetStartAddress (only if the protocol is Art-Net)</td>
 			<td>1...128 : 0..F : 0..F</td>
-			<td>Assign the Art-Net start address.</td>
+			<td>Megadja az Art-Net kezd&otilde;címét.</td>
 		</tr>
 		<tr>
 			<td>sACNMode (only if the protocol is sACN)</td>
 			<td>"Multicast", "Unicast"</td>
-			<td>Assign the sACN mode.</td>
+			<td>sACN mód hozzrendelése.</td>
 		</tr>
 		<tr>
 			<td>sACNVersion (only if the protocol is sACN)</td>
 			<td>"Final", "Draft"</td>
-			<td>Assign the sACN version.</td>
+			<td>sACN verzió megadása.</td>
 		</tr>
 		<tr>
 			<td>sACNPriority (only if the protocol is sACN)</td>
 			<td>0...200</td>
-			<td>Assign the priority. The highest number has the highest priority.</td>
+			<td>Prioritás hozzárendelés. A legnagyobb szám, a legnagyobb prioritás.</td>
 		</tr>
 		<tr>
 			<td>sACN TTL (only if the protocol is sACN)</td>
 			<td>0...255</td>
 			<td>&nbsp;
-			<p>TTL = Time to live</p>
-
-			<p>Assign the number of routers (hops) that multicast traffic is permitted to pass through before expiring on the network. For each router (hop), the original specified TTL is decremented by one (1). When its TTL reaches a value of zero (0), each multicast datagram expires and is no longer forwarded through the network to other subnets.</p>
+			<p>TTL = Élet ideje</p>
+			<p> Rendelje hozzá azon útválasztók (node) számát, amelyeken keresztül a csoportos küldés&ucirc; forgalom áthaladhat, miel&otilde;tt lejárna a hálózaton. Minden útválasztó (hop) esetében az eredeti TTL-t eggyel (1) csökkentik. Amikor a TTL eléri a nulla értéket (0), minden egyes multicast datagram lejár, és a hálózaton keresztül már nem továbbítja más alhálózatokra. </p>			
 			</td>
 		</tr>
 		<tr>
 			<td>sACN Start (only if the protocol is sACN)</td>
 			<td>0...63999 or "Original"</td>
-			<td>Assign the sACN universe. Original uses the same as patched.</td>
+			<td>sACN univerzum hozzárendelése. Eredetileg ugyanaz mint a patchelt..</td>
 		</tr>
 		<tr>
 			<td>Delay(ms) (only if the protocol is sACN or Art-Net)</td>
 			<td>0.000...2.500</td>
-			<td>Assign the packet delay.</td>
+			<td>A csomagkésleltetést adja meg.</td>
 		</tr>
 		<tr>
 			<td>FrameDelay (1/30s)</td>
 			<td>0...8</td>
-			<td>Assign the frame delay.</td>
+			<td>A keret késést adja meg.</td>
 		</tr>
 	</tbody>
 </table>
@@ -235,14 +234,14 @@
 <h2>Példák</h2>
 
 <ul>
-	<li>To store the selected fixtures in the existing pixel mapper area 1 output 2 with a horizontal +x axis and a vertical +z axis, type in the command line:</li>
+	<li>A kiválasztott lámpák tárolása a meglév&otilde; pixel mapper 1. területén a 2. kimeneten, vízszintesen +x tengelyen, és függ&otilde;legesen +z tengelyen, írd be a parancssorba:</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; Store PMArea 1.2 /axis=+X+Z /noconfirm</div>
 
 <hr />
 <ul>
-	<li>To assign the pixel mapper area 1 the name "Sunstrips", type in the command line:</li>
+	<li>A "Sunstrip" név hozzárendelése a pixel mapper 1. területéhez, írd a parancssorba:</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; Assign PMArea 1 /name="Sunstrips"</div>
