@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Use temporary filters</title>
+		<title>Ideiglenes szűrők használata</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="temporary filter, filter - store, at filter, if - filter, endif - filter" />
@@ -9,100 +9,100 @@
 	<body>
 		
 		
-		<h1>Use temporary filters</h1>
+		<h1>Ideiglenes szűrők használata</h1>
 		
-		<p>Besides the filter pool with the defined or prepared filters, you can also use temporary filters.</p>
+		<p>A szűrő tárolóban lévő és előre beállított szűrőkön kívül, használhatsz ideiglenes szűrőket is.</p>
 
-<p>They are used in the same actions as the filters from the filter pool.</p>
+<p>Ugyanazokat az akciókat tudod végrehajtani velük mint a filter tárolóban lévőkkel.</p>
 
-<p>The following text describes how to open a temporary filter pop-up. But you can also have the <a href="key_wfm_create_filters.html#command_filter">Command Filter window</a> on one of your screens and use this.</p>
+<p>A következő szöveg leírja, hogyan tudsz megnyitni ideiglenes szűrő ablakocskát. De van még a <a href="key_wfm_create_filters.html#command_filter">Parancs Szűrő ablakod is</a> valamelyik képernyőn, ezt is használhatod.</p>
 
-<p>In the following text we are going to explore the temporary filters using the same examples as in the <a href="key_wfm_use_filter.html">Use Filters when programming topic</a>. If you have not read that, it is a strong suggestion to do that first.</p>
+<p>A következő szövegben, felfedezzük az ideiglenes szűrőket néhány példán keresztül, ugyanolyan példákon, mint amit a  <a href="key_wfm_use_filter.html">Szűrők használata programozáskor fejezetben</a>. Ha még nem olvastad volna, akkor itt a remek alkalom.</p>
 
-<h2>Temporary Store Filter</h2>
+<h2>Temporary Store Filter - Ideiglenes tároló szűrő(ITS)</h2>
 
-<p>You can access the temporary Store filter by pressing the <span class="hardkey">Store</span> key. Now you got the <a href="key_cs_store_options_default.html">Store Encoder Toolbar</a> visible at the bottom of screen 2. In this toolbar you will find a button called <span class="softkey">Store Filter</span>. Tapping this will open a filter editor pop-up. It works just as explained in the <a href="key_wfm_create_filters.html">Create filters topic</a>. There are two extra buttons on the right side of the pop-up. They are called "Reset Filter on Clear" and "Store Filter and Select".</p>
+<p>Elérheted az ITS-t a <span class="hardkey">Store</span> gomb nyomvatartásával. Most látod a <a href="key_cs_store_options_default.html">Store Encoder Toolbar-t</a> a 2. képernyő alján. Ebben az eszköztárban van egy gomb amit <span class="softkey">Store Filter-Tároló Szűrőnek</span> hívnak. Rábökve megnyílik egy szűrő szerkesztő ablakocska. Ez ugyanúgy működik mint ahogy a <a href="key_wfm_create_filters.html">Szűrők készítése fejezetben</a> láttuk. Van két extra gomb a jobb oldalon, ezek a "Reset Filter on Clear-Szűrő törlése törléskor" és "Store Filter and Select-Szűrő tárolása és kiválasztása".</p>
 
 <p><strong>Reset Filter on Clear:</strong></p>
 
-<p>Usually the filter will reset back to the selected filter when you do the (store) action, but if you want to keep the filter. then you can activate this button. Then it is only the Clear(All) command that will reset to the selected filter.</p>
+<p>Általában a szűrőt visszaállítjuk amikor végrehajtod a (tárolás) akciót, de lehet, hogy kellene még a szűrő. Akkor aktiváld ezt a gombot. Ilyenkor csak a Clear(All) parancs törli a kiválasztott szűrőt.</p>
 
 <p><strong>Store Filter and Select:</strong></p>
 
-<p>Tapping this button will store the current filter settings as the next free available filter and you are prompted for a name. Also be aware that this new filter will be the Selected one. Not just the Applied filter.</p>
+<p>Erre a gombra bökve az aktuális szűrőbeállítások elmentődnek a következő szabad szűrő tároló helyre, és megkérdezi a nevét. Az új szűrő is kiválasztódik ilyenkor, nem csak az eddig alkalmazott szűrő.</p>
 
-<h3>Example of the temporary store filter</h3>
+<h3>Példa az ideiglenes tárolószűrőre</h3>
 
-<p>The following example is the same as the one used in the <a href="key_wfm_use_filter.html">Use filters when programming topic</a>.</p>
+<p>A következő példa ugyanaz mint amit a <a href="key_wfm_use_filter.html">Szűrők használata programozáskor fejezetben</a> mutattunk.</p>
 
-<p>We are going to look at a practical situation where filters can help you work more efficient.</p>
+<p>Megnézünk egy praktikus helyzetet, amikor a szűrők segítségével gyorsabban lehet dolgozni.</p>
 
 <ol>
-	<li>Use the "Demo Dimmer and more" demo show or a show with some fixtures.</li>
-	<li>Make sure the Selected filter is the "All" filter so nothing is filtered already.</li>
-	<li>Select a fixture and give it values on several attributes including Dimmer.</li>
+	<li>Használd a "Demo Dimmer and more" demo showt vagy egy showt néhány lámpával.</li>
+	<li>Nézd meg, hogy a kiválasztott szűrő az "All" legyen, tehát semmi ne legyen szűrve.</li>
+	<li>Válassz ki néhány lámpát és adj nekik értékeket, a dimmert is beleértve.</li>
 </ol>
 
-<p>So now we imagine that this is the look we want in a cue - it is going to be cue number 2.</p>
+<p>Képzeld el ez az amit szeretnél egy képben látni - ez legyen pl. a 2. kép.</p>
 
-<p>We do not want to use the move in black function but we want the fixture to already be pre-positioned when we run cue number 2. So we are going to store all data except the dimmer in cue number 1 and then the dimmer value in cue number 2.</p>
+<p>Nem akarunk MIB-et használni, de azt akarjuk, hogy a lámpa már álljon be a helyére amikor a 2. képet adjuk. Tehát minden adatot elmentünk, kivéve a dimmer értékét az 1. képben és a dimmer adatát a 2. képben.</p>
 
 <ol start="4">
-	<li>Press <span class="hardkey">Store</span> and then the <span class="softkey">Store Filter</span> button in the Encoder Toolbar.</li>
-	<li>Turn off the "Dim" attribute in the Store filter pop-up.</li>
-	<li>Press an empty executor button - creating a new cue 1 in a new sequence and executor.</li>
+	<li>Nyomd meg a <span class="hardkey">Store</span> és utána a <span class="softkey">Store Filter</span> gombokat a kódoló sávban.</li>
+	<li>Kapcsold ki a "Dim" attribútumot a Tároló szűrő ablakocskában.</li>
+	<li>Nyomj meg egy executor gombot - létrehozva az 1. képet egy új szekvenciában és executorban.</li>
 </ol>
 
-<p>Now you have stored all values except the dimmer in cue number 1. You still have the dimmer values active in your programmer, the rest is stored. The temporary filter is now gone and noting is filtered anymore.</p>
+<p>Most mindent elmentettél kivéve a dimmer értékeket az 1. képben. A dimmer értékek még aktívak a programozóban, a maradék eltárolódik. Az ideiglenes szűrő most eltűnik és semmi nem szűrődik továbbá.</p>
 
 <ol start="7">
-	<li>Press <span class="hardkey">Store</span> and then the same executor button.</li>
-	<li>In the pop-up select <span class="softkey">Create Second Cue</span>.</li>
+	<li>Nyomd meg a <span class="hardkey">Store</span> és ugyanazt az executor gombot.</li>
+	<li>Az ablakocskában válaszd a <span class="softkey">Create Second Cue</span>-t.</li>
 </ol>
 
-<p>That was the second cue. Clear your programmer and try to run the cues.</p>
+<p>Ez lett a második kép. Töröld a programozót és próbáld meg futattni a képet.</p>
 
 <hr />
-<h2>Temporary At Filter</h2>
+<h2>Temporary At Filter - Ideiglenes At szűrő(TAF)</h2>
 
-<p>The temporary At filter works just like the filter used as if you had it in a Filter pool.</p>
+<p>A TASF olyan mintha a szűrő tárolóban lennél.</p>
 
-<p>Keeping the <span class="hardkey">At</span> key pressed for about 1 second will open the filter pop-up.</p>
+<p>Tartsd nyomva az <span class="hardkey">At</span> gombot kb. .1 másodpercig és megnyílik a szűrő ablakocska.</p>
 
-<p>This pop-up also have the two extra buttons described in the temporary store filter above.</p>
+<p>Ebben az ablakban van két extra gomb, ami már fent le lett írva.</p>
 
-<p>And at the bottom you will find three extra buttons. They are color transform buttons. They are used to select how to transform the color if the source and destination fixtures do not have the same color attributes.</p>
+<p>Alul találsz még három extra gombot. Ezek színtranszformáló gombok. Arra használjuk, hogy mi történjen ha a forrás és a cél lámpának nincs azonos szín attribútúma.</p>
 
 <p><strong>MixColor:</strong></p>
 
-<p>This will use the MixColor system. Depending on your settings it will also set an Open value in any color wheels.</p>
+<p>Ez a MixColor rendszert használja. A beállításoktól függően lehet Open értéket állítani bármely színkörben.</p>
 
 <p><strong>Color Wheel:</strong></p>
 
-<p>This will use the nearest color on the color wheels. Depending on your settings it will also set an Open value to the MixColor system.</p>
+<p>Ez a legközelebbi színt használja a színkeréken. Beállítástól függően ez is beállítható Open értékre a MixColor rendszerben.</p>
 
 <p><strong>MixColor + Col Wheel:</strong></p>
 
-<p>This will use both the MixColor and the Color Wheels to create the best result.</p>
+<p>Ez mindkét lehetőséget használja a legjobb eredmény elérése érdekében.</p>
 
-<h3>Example</h3>
+<h3>Példa</h3>
 
-<p>The following example is the same as the one used in the <a href="key_wfm_use_filter.html">Use filters when programming topic</a>.</p>
+<p>A következő példa, ugyanaz amit már a <a href="key_wfm_use_filter.html">Szűrők használata a programozáshoz fejezetben</a> használtunk.</p>
 
-<p>In this example we are going to grab only the color values from one fixture and apply it to another.</p>
+<p>Ebben a példában csak a színeket vesszük ki az egyik lámpából és átteszük a másikra.</p>
 
 <ol>
-	<li>Use the "Demo Dimmer and more" demo show or a show with some fixtures and some filters.</li>
-	<li>Make sure the Selected filter is the "All" filter.</li>
-	<li>Select a fixture and give it values on several attributes including Dimmer, Position, and use the MixColor attributes to blend a new color.</li>
-	<li>Select a different fixture and give it another position and dimmer values.</li>
+	<li>Használd a "Demo Dimmer and more" demo showt, vagy egy másik showt amiben néhány lámpa van és néhány szűrő.</li>
+	<li>Legyen a kiválasztott szűrő az "All" szűrő.</li>
+	<li>Válassz lámpát és adj nekik értéket néhány attribútúmára a dimmer, pozíció, és mixcolor értékeket is, hogy új színben usszon át.</li>
+	<li>Válassz egy másik lámpát és adj neki egy másik pozíciót és dimmer értéket.</li>
 </ol>
 
-<p>Now we would like to grab the color values only from the first fixture. We do not want to grab the position and dimmer values from the fixture, only the color.</p>
+<p>Most csak a szín értékeket vesszük az első lámpából. Nem akarjuk a pozíció és dimmer értékekt elvenni, csak a színeket.</p>
 
 <ol start="5">
-	<li>Press and hold the <span class="hardkey">At</span> key until the filter pop-up appears.</li>
-	<li>Tap the None button on the title bar so no attributes are selected.</li>
+	<li>Tartsd nyomva az <span class="hardkey">At</span> gombot ameddig a szűrő ablakocska megjelenik.</li>
+	<li>Bökj a None gombra a fejlécen, tehát ne legyen attribútum kiválasztva.</li>
 	<li>Tap the <span class="softkey">Color</span> preset type so it turns on. This will allow all color information to pass the filter.</li>
 	<li>Tap the first fixture on the screens (or use the keys - <span class="hardkey">Fixture</span> [number] <span class="hardkey">Please</span>).</li>
 </ol>
