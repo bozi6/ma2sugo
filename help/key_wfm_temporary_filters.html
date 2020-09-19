@@ -140,41 +140,41 @@
 	<li>Nyomd meg a <span class="hardkey">Store</span>gombot.</li>
 	<li>Nyomd meg az  <span class="hardkey">If</span> gombot, és utána a <span class="hardkey">-</span>-t. Most a szűrő aktív és már kiválasztottuk amit nem szeretnénk tárolni.</li>
 	<li>Ki akarjuk hagyni a dimmert, szóval bökj a <span class="softkey">Dimmer</span> gombra a <a href="key_ws_preset_control_bar.html">Preset Vezérlő Sávban</a>.</li>
-	<li>Zárd le az ideiglenes stűrőt az <span class="hardkey">If</span> ismételt megnyomásával. Now the command line should read: <span class="syntax">Store If - PresetType "DIMMER" EndIf</span>.</li>
-	<li>Press an empty executor button - creating a new cue 1 in a new sequence and executor.</li>
+	<li>Zárd le az ideiglenes stűrőt az <span class="hardkey">If</span> ismételt megnyomásával. Most a parancssorban ez olvasható: <span class="syntax">Store If - PresetType "DIMMER" EndIf</span>.</li>
+	<li>Nyomj meg egy üres executor gombot - készítettél egy új szekvenciát egy executoron 1. kép néven.</li>
 </ol>
 
-<p>Now you have stored all values except the dimmer in cue number 1. You still have the dimmer values active in your programmer, the rest is stored. The temporary filter is now gone and noting is filtered anymore.</p>
+<p>Most minden értéket eltároltál, kivéve a dimmert az 1. képben. A dimmer értékek még aktívak a programozóban, a maradék eltárolódott.. Az ideiglenes szűrő eltűnt és nincs további szűrés.</p>
 
 <ol start="9">
-	<li>Press <span class="hardkey">Store</span> and then the same executor button.</li>
-	<li>In the pop-up select <span class="softkey">Create Second Cue</span>.</li>
+	<li>Nyomd meg a <span class="hardkey">Store</span> gombot, és utána ugyanazt az executor gombot.</li>
+	<li>Az ablakocskában válaszd a <span class="softkey">Create Second Cue</span>.</li>
 </ol>
 
-<p>This was an example on&nbsp; how to use the If command to exclude an attribute - actually an entire preset type.</p>
+<p>Ez egy példa volt, a hogyan használjuk az If parancsot, hogy kihagyjunk egy attribútumot - aktuálisan egy preset típust.</p>
 
 <p>&nbsp;</p>
 
-<p>The next example is about allowing some attributes to pass the filter.</p>
+<p>A következő példa megmutatja, hogyan lehet átengedni néhány attribútumot a szűrőn.</p>
 
-<p>In this example we are going to grab only the color values from one fixture and apply it to another.</p>
+<p>Ebben a példában csak a szín értékét vesszük egy lámpának és alklalmazzuk egy másikra.</p>
 
 <ol>
-	<li>Use the "Demo Dimmer and more" demo show or a show with some fixtures and some filters.</li>
-	<li>Make sure the Selected filter is the "All" filter.</li>
-	<li>Select fixture 1 and give it values on several attributes including Dimmer, Position, and use the MixColor attributes to blend a new color.</li>
-	<li>Select a different fixture and give it another position and dimmer values.</li>
+	<li>Használd a "Demo Dimmer and more" demo showt, vagy egy másik showt amiben van néhány lámpa és néhány szűrő.</li>
+	<li>Legyen a kiválasztott szűrő az "All" szűrő, ez nem szűr semmit.</li>
+	<li>Válaszd ki az 1. lámpát és adj neki értékeket, mint dimmer, pozíció, és a MixColor.</li>
+	<li>Válassz egy másik lámpát és adj neki más pozíciót és dimmer értéket.</li>
 </ol>
 
-<p>Now we would like to grab the color values only from the first fixture. We do not want to grab the position and dimmer values from the fixture, only the color.</p>
+<p>Most szeretnénk az első lámpáról csak a szín értéket kivenni. Nem szeretnénk a pozíciót és a dimmert a lámpából, csak a színt.</p>
 
 <ol start="5">
-	<li>Press <span class="hardkey">At</span> <span class="hardkey">Fixture</span> <span class="hardkey">1</span> <span class="hardkey">If</span>. Now you can select the filter you want to use.</li>
-	<li>We need all the color information so tap the <span class="softkey">Color</span> button in the Preset Control Bar. The "EndIf" command is automatically added when a single thing is tapped after pressing the If key</li>
-	<li>Press the <span class="hardkey">Please</span> keys to execute the command.</li>
+	<li>Nyomd meg az <span class="hardkey">At</span> <span class="hardkey">Fixture</span> <span class="hardkey">1</span> <span class="hardkey">If</span> gombokat. Most kiválaszthatod melyik szűrőt akarod használni.</li>
+	<li>Minden színinformációra szükség van, ezért bökj a <span class="softkey">Color</span> gombra a preset vezérlősávban. Az "EndIf" parancs automatikusan beíródik, amikor egyszerű dologra böksz az iIf gomb után</li>
+	<li>Nyomd meg a <span class="hardkey">Please</span> gombot a parancs végrehajtásához.</li>
 </ol>
 
-<p>Now both fixtures have the same color values.</p>
+<p>Most mindkét lámpának ugyanaz a szín értéke.</p>
 
 		
 	</body>
