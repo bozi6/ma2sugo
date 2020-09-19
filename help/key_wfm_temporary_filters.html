@@ -103,44 +103,44 @@
 <ol start="5">
 	<li>Tartsd nyomva az <span class="hardkey">At</span> gombot ameddig a szűrő ablakocska megjelenik.</li>
 	<li>Bökj a None gombra a fejlécen, tehát ne legyen attribútum kiválasztva.</li>
-	<li>Tap the <span class="softkey">Color</span> preset type so it turns on. This will allow all color information to pass the filter.</li>
-	<li>Tap the first fixture on the screens (or use the keys - <span class="hardkey">Fixture</span> [number] <span class="hardkey">Please</span>).</li>
+	<li>Bökj a <span class="softkey">Color</span> preset típusra, hogy bekapcsolódjon. Ez átengedi az összes színinformációt a szűrőn.</li>
+	<li>Bökj az első lámpára a képernyőn (vagy használd a  - <span class="hardkey">Fixture</span> [szám] <span class="hardkey">Please</span> gombokat).</li>
 </ol>
 
-<p>Now both fixtures have the same color values.</p>
+<p>Most mindkét lámpának azonos a színe.</p>
 
 <hr />
-<h2>Temporary filtering using the If key</h2>
+<h2>Ideiglenes szűrés az If gomb használatával</h2>
 
-<p>While storing or using the At command you can include an encapsulated condition. The condition can be almost anything and can include many different elements.</p>
+<p>Az At parancs tárolása vagy használata közben tartalmazhat egy beágyazott feltételt. Az állapot szinte bármi lehet, és sokféle elemet tartalmazhat.</p>
 
-<p>The condition is encapsulated using the <span class="hardkey">If</span> key. You can keep the key pressed if you are making a complex condition or press it shortly if it is a more simple condition.</p>
+<p>A feltételt az <span class = "hardkey"> If </span> gombbal ágyazhatjuk be. Tarthatod nyomva a billentyűt, ha összetett állapotot hozol létre, vagy röviden megnyomhatod, ha egyszerűbb feltételről van szó.</p>
 
-<p>The encapsulation is between the <a href="key_keyword_if.html">If command</a> and the <a href="key_keyword_endif.html">EndIf command</a>. EndIf is available as a command using the <span class="hardkey">If</span> key after you have typed the first If command. Sometimes the software will automatically add the EndIf command.</p>
+<p>A beágyazás az <a href="key_keyword_if.html">If parancs</a> és az <a href="key_keyword_endif.html">EndIf parancs</a> között történik. Az EndIf elérhető mint parancs az <span class="hardkey">If</span> gombbal, miután beírtad az első If parancsot. Néha a szoftver automatikusan hozzáadja az EndIf parancsot.</p>
 
-<p>The condition is usually made by pressing different elements on the screens, but it can just as well be written commands. The condition can be positive or negative. For example: If you want to only have position values then you can simply tap the <span class="softkey">Position</span> button in the Preset Control Bar. If you want everything except the position values, then you can press the <span class="hardkey">-</span> key and then the <span class="softkey">Position</span> button to get the following command: <span class="syntax">If - PresetType "POSITION" EndIf</span> in the command line.</p>
+<p>A feltételek beállítása a különböző elemek megnyomásával történik a képernyőn, de parancsként is beírhatóak. A feltételek lehetnek pozitívak és negatívak is. Például: Ha csak poziíció értékeket akarsz akkor egyszerűen csak bökj rá a  <span class="softkey">Position</span> gombra a Preset Vezérlő Sávban. Ha minden más értéket akarsz, kivétel a poziíció értékeit, akkor megnyomhatod a <span class="hardkey">-</span> gombot és utána a <span class="softkey">Position</span> gombot, hogy a következő parancs: <span class="syntax">If - PresetType "POSITION" EndIf</span> legyen a prancssorban.</p>
 
 <p>&nbsp;</p>
 
-<h3>Examples</h3>
+<h3>Példák</h3>
 
-<p>The two examples used above can also be achieved using the <span class="hardkey">If</span> key.</p>
+<p>A következő két példát használjuk amit az <span class="hardkey">If</span> gombnál már csináltunk.</p>
 
 <ol>
-	<li>Use the "Demo Dimmer and more" demo show or a show with some fixtures.</li>
-	<li>Make sure the Selected filter is the "All" filter so nothing is filtered already.</li>
-	<li>Select a fixture and give it values on several attributes including Dimmer.</li>
+	<li>Használd a "Demo Dimmer and more" demo showt, vagy egy másik showt amiben van néhány lámpa.</li>
+	<li>Legyen a kiválasztott szűrő az "All" szűrő, ez nem szűr semmit.</li>
+	<li>Válassz lámpát és adj nekik értéket néhány attribútúmára a dimmerrel együtt.</li>
 </ol>
 
-<p>So now we imagine that this is the look we want in a cue - it is going to be cue number 2.</p>
+<p>Képzeljük el, hogy ezt akarjuk látni egy képben - ez lesz a 2. kép.</p>
 
-<p>We do not want to use the move in black function but we want the fixture to already be pre-positioned when we run cue number 2. So we are going to store all data except the dimmer in cue number 1 and then the dimmer value in cue number 2.</p>
+<p>Nem akarjuk használni az MIB-t, de szeretnénk, hogy a lámpák már beálljanak, amikor futtatjuk a 2. képet. Tehát a dimmer kivételével minden adatot az 1. képre mentünk és a dimmert tesszük a 2.-ba.</p>
 
 <ol start="4">
-	<li>Press <span class="hardkey">Store</span>.</li>
-	<li>Press <span class="hardkey">If</span> and then <span class="hardkey">-</span>. Now the filtering is active and we have already selected that we want to exclude something.</li>
-	<li>We want to exclude the dimmer so now you can tap the <span class="softkey">Dimmer</span> button in the <a href="key_ws_preset_control_bar.html">Preset Control Bar</a>.</li>
-	<li>Finish the temporary filter by pressing the <span class="hardkey">If</span> key again. Now the command line should read: <span class="syntax">Store If - PresetType "DIMMER" EndIf</span>.</li>
+	<li>Nyomd meg a <span class="hardkey">Store</span>gombot.</li>
+	<li>Nyomd meg az  <span class="hardkey">If</span> gombot, és utána a <span class="hardkey">-</span>-t. Most a szűrő aktív és már kiválasztottuk amit nem szeretnénk tárolni.</li>
+	<li>Ki akarjuk hagyni a dimmert, szóval bökj a <span class="softkey">Dimmer</span> gombra a <a href="key_ws_preset_control_bar.html">Preset Vezérlő Sávban</a>.</li>
+	<li>Zárd le az ideiglenes stűrőt az <span class="hardkey">If</span> ismételt megnyomásával. Now the command line should read: <span class="syntax">Store If - PresetType "DIMMER" EndIf</span>.</li>
 	<li>Press an empty executor button - creating a new cue 1 in a new sequence and executor.</li>
 </ol>
 
