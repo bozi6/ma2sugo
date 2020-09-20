@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Cue path</title>
+		<title>Képútvonal</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="cue path, path column, fade path" />
@@ -9,66 +9,66 @@
 	<body>
 		
 		
-		<h1>Cue path</h1>
+		<h1>Képútvonal - Cue path</h1>
 		
-		<p>Each cue and cue part can have a path assigned. It is done in the <a href="key_cs_cue_sequence.html">Sequence Executor Sheet</a>, where there is a <strong>Path</strong> column.</p>
+		<p>Minden kép és kép részhez lehet útvonalat hozzárendelni. Ezt a <a href="key_cs_cue_sequence.html">Szekvencia Executor Lapon</a>lehet megtenni, ahol van egy <strong>Path</strong> nev&ucirc; oszlop.</p>
 
-<p>The path is used by attributes fading from a value and into the value stored in the cue where the path is assigned. The path defines the transition form/path.</p>
+<p>Az útvonal használható, az attribútumok átúsztatásához egy képb&otilde;l egy útvonalhozzárendelt képbe. Az útvonal megadja az átúszás formáját/útvonalát.</p>
 
-<p>Editing a cell in this column will open a <strong>Select Fade Path pop-up</strong> like this:</p>
+<p>A cellát szerkesztve megnyílik a <strong>Válassz Úszáútvonalat ablakocska</strong> ilyenformán:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_select-fade-path_v3-3.png" />
-<figcaption><em>Select Fade Path pop-up</em></figcaption>
+<figcaption><em>Válassz Átúszási Útvonalat ablakocska</em></figcaption>
 </figure>
 
-<p>This lists the predefined fade paths including the <strong>No Path</strong> option. Most of the paths in this list only exist as fade paths. They cannot be imported or edited.</p>
+<p>A lista el&otilde;re beállított átúszási útvonalakat tartalmaz, bennfoglalva a <strong>No Path</strong> opciót is. A legtöbb útvonal itt csak mint úszásútvonal szerepel. Ezek nem beolvashatóak és szerkeszthet&otilde;ek.</p>
 
-<p>Read below for a description of the predefined paths for cues and cue parts.</p>
+<p>Olvass tovább a képek és kép részekben lév&otilde; el&otilde;redefiniált útvonalak leírásához.</p>
 
-<p>The path is assigned different than most other elements. This is because the fade path is an object that is assigned to a different object. Use the following syntax:</p>
+<p>Az útvonal különböz&otilde;képpen van hozzárendelve mint a többi elem. Ez azért van, mert az úszásútvonal egy objektum ami különböz&otilde; objektumokhoz van rendelve. Használd a következ&otilde; szintaktikát:</p>
 
-<p><span class="syntax">Assign Fadepath [path number] (At) Cue [cue number] (Part [par number] )</span></p>
+<p><span class="syntax">Assign Fadepath [útvonal száma] (At) Cue [kép száma] (Part [rész száma] )</span></p>
 
-<p>Once a fade path is assigned to a cue, then it cannot be removed. Assigning the <strong>Linear</strong> path will give the same result as not having a path defined.</p>
+<p>Miután egy útvonalat hozzárendeltél egy képhez, az már nem eltávolítható. Hozzárendelve a <strong>Linear</strong> útvonalat, ugyanazt az eredményt kapod mintha nem lenne hozzárendelve útvonal.</p>
 
 <p>&nbsp;</p>
 
-<p>Custom paths can be made in the <a href="key_dmx_profiles.html">DMX Profiles Graph Editor</a>. If there are customs paths, then they will appear at the bottom of the <strong>Select Fade Path pop-up</strong>.</p>
+<p>Saját útvonalat létrehozhatsz a <a href="key_dmx_profiles.html">DMX Profil Grafikus Szerkeszt&otilde;ben</a>. Ha van saját útvonalad, akkor az megjelenik a <strong>Válassz Átúszási Útvonalat ablakocska</strong>alján.</p>
 
 <hr />
-<h2><a id="fadepaths" name="fadepaths"></a>Predefined Fade Paths</h2>
+<h2><a id="fadepaths" name="fadepaths"></a>El&otilde;re definiált úszásútvonalak</h2>
 
-<p>There are some predefined paths in the pop-up pictured above.</p>
+<p>Látszik néhány el&otilde;redefiniált útvonal a fenti ablakocskában.</p>
 
-<p>The <strong>No Path</strong> option is actually not a path but selecting this will remove any path assigned to the cue or cue part.</p>
+<p>A <strong>No Path</strong> opció nem tartalmaz útvonalat, de ezt választva eltávolítható a képhez vagy kép részhez társított másik útvonal.</p>
 
-<p>The <strong>Linear</strong> path is the same as not having a path assigned. This path can be assigned using the command line. This means that it can be used to replace any other paths.</p>
+<p>A <strong>Linear</strong> hasonló mintha nem lenne útvonal megadva. Ezt a parancssorban tudod hozzáadni. Azt jelenti, hogy használhatod bármely más útvonalak lecserélésére.</p>
 
-<p>There are four different forms. Each form can be at the beginning at the fade and at the ending of the fade. Resulting in the list of combination in the predefined fade path pop-up.</p>
+<p>Van négy különböz&otilde; forma. Mindegyik forma lehet az úszás elején és végén. A listában ezek kombinációi vannak definiálva.</p>
 
-<p>The beginning of the path defines the acceleration of the fade. The end of the path is the de-acceleration of the fade.</p>
+<p>Az útvonal elején megadja a gyorsulását az átúszásnak. Az útvonal vége pedig a lassulását az átúszásnak.</p>
 
-<p>The <strong>Normal</strong> form is the same as linear. Having this at either end will not add any softening of the fade.</p>
+<p>A <strong>Normal</strong> forma ugyanaz mint a linear. Ezt használva mindkét végén nem lágyítja a görbét semmerre sem.</p>
 
-<p>The <strong>Low</strong> form offers the lowest or slowest acceleration/de-acceleration.&nbsp;</p>
+<p>A <strong>Low</strong> orma a legalacsonyabb vagy leglassabb gyorsulást/lassulást okozza.&nbsp;</p>
 
-<p>The <strong>Mid</strong> form is between the Low and High forms.</p>
+<p>A <strong>Mid</strong> forma a Low és High között helyezkedik el.</p>
 
-<p>The <strong>High</strong> form offers the highest or fastest acceleration/de-acceleration. It is still a softening of the fade compared to the linear path.</p>
+<p>A <strong>High</strong> forma a legmagasabb vagy leggyorsabb gyorsulást/lassulást okozza. Ez is lágyítja az átúszást összehasonlítva a linearis útvonallal.</p>
 
 <p>&nbsp;</p>
 
-<p>The following picture displays four different paths for comparison. They might not be completely correct but is exaggerated to make the differences more visible.</p>
+<p>A következ&otilde; kép megmutatja a négy különb&otilde;z&otilde; útvonalat, összehasonlításilag. Lehet, hogy nem teljesen helyesek, de azért vannak eltúlozva, hogy jobban láthatóvá tegyék a különbségeket.</p>
 
-<p>The white path is the <strong>Linear</strong> path - this is the same as having the Normal form at both the beginning and the ending.</p>
+<p>A fehér vonal a <strong>Linear</strong> útvonal - ez ugyanaz mintha a normál lenne a kezdet meg a vég is.</p>
 
-<p>The blue path is the <strong>High-High</strong> path. The green path is the <strong>Mid-Mid</strong> path. Finally the red path is the <strong>Low-Low</strong> path.</p>
+<p>A kék vonal a <strong>High-High</strong> útvonal. A zöld vonal a<strong>Mid-Mid</strong> útvonal. Végül a piros vonal a <strong>Low-Low</strong> útvonal.</p>
 
 <figure class="caption"><img alt="" src="../../img/img_path-comparison_v3-3.png" />
-<figcaption><em>Four paths for comparison</em></figcaption>
+<figcaption><em>Négy útvonal az összehasonlításhoz</em></figcaption>
 </figure>
 
-<p>The vertical axis is the fade time. The horizontal axis describes the fade from one value to the next.</p>
+<p>A függ&otilde;leges tengely az átúszás ideje. A vízszintes tengely leírja az átúszástt az egyik értékb&otilde;l a másikba.</p>
 
 		
 	</body>
