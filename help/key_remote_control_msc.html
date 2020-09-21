@@ -15,7 +15,7 @@
 
 <p>1991-ben jelent meg a MIDI protokoll kiterjesztéseként. A grandMA2 képes fogadni és küldeni is az MSC-t.</p>
 
-<p>Az MSC-nek sok beállítása van. Ezek többésge úgy van beállítva, hogy megfeleljen az adó és vev&otilde;készülékeknek.</p>
+<p>Az MSC-nek sok beállítása van. Ezek többsége úgy van beállítva, hogy megfeleljen az adó és vev&otilde;készülékeknek.</p>
 
 <p>A beállításoknál akad némi leírás az <a href="#msc_concept">MSC koncepciójáról</a> és néhány szó az adatátvitelr&otilde;l hálózaton keresztül <a href="#midi_ethernet">MIDI használata hálózaton</a>.</p>
 
@@ -39,7 +39,7 @@
 
 <ul>
 	<li><strong>Channel MIDI In:</strong><br />
-	A MIDI szabványvban 16 különböz&otilde; csatorna áll rendelkezésre. Az itt lév&otilde; számnak stimmelnie kell a küld&otilde; eszköz beállításával.</li>
+	A MIDI szabványban 16 különböz&otilde; csatorna áll rendelkezésre. Az itt lév&otilde; számnak stimmelnie kell a küld&otilde; eszköz beállításával.</li>
 	<li><strong>Channel MIDI Out:</strong><br />
 	Ennek a számnak, meg stimmelnie kell a fogadó MSC eszköz számával.</li>
 	<li><strong>MIDI Thru:</strong><br />
@@ -47,13 +47,13 @@
 </ul>
 
 <div class="important"><strong>Fontos:</strong><br />
-Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, akkor egy hurok jön létre.</div>
+Ha az MSC parancsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, akkor egy hurok jön létre.</div>
 
 <p>A következ&otilde; két sor hasonló, az egyik a bejöv&otilde;, a másik pedig a kimen&otilde; MSC-t mutatja.</p>
 
 <ul>
 	<li><strong>Eszközök</strong>:<br />
-	112 különböz&otilde; eszköz van az MSC-ben. Van továbbá egy "All" leht&otilde;ség is. Ezt a <strong>Send to</strong> gombbal lehet beállítáani a bal alsó sarokban - lejjebb olvashatsz róla. Ezek a bemen&otilde; értékek 0 tól 111-ig lehetnek.</li>
+	112 különböz&otilde; eszköz van az MSC-ben. Van továbbá egy "All" leht&otilde;ség is. Ezt a <strong>Send to</strong> gombbal lehet beállítani a bal alsó sarokban - lejjebb olvashatsz róla. Ezek a bemen&otilde; értékek 0 tól 111-ig lehetnek.</li>
 	<li><strong>Csoport</strong>:<br />
 	Az MSc szabvány megengedi, hogy az eszközöket 15 különböz&otilde; csoportba lehet szervezni. Itt a lehetséges csoport számok 1 tól 15-ig vannak. Nézd meg a <strong>Send to</strong> beállítást lejebb is.</li>
 	<li><strong>Port</strong>:<br />
@@ -67,21 +67,21 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 	Három opció van itt:
 	<ul>
 		<li><strong>Disabled</strong> - Ez ugyanaz mintha kikapcsolod az MSC bemenetet vagy kimenetet.</li>
-		<li><strong>Ethernet</strong> - Ez az MSc-t hálózaton keresztül használja.This will use MSC via Ethernet - Itt találsz további olvasnivalót róla <a href="#midi_ethernet">MSC és hálózat</a>.</li>
+		<li><strong>Ethernet</strong> - Ez az MSC-t hálózaton keresztül használja - Itt találsz további olvasnivalót róla <a href="#midi_ethernet">MSC és hálózat</a>.</li>
 		<li><strong>MIDI</strong> - Ez a pult MIDI csatlakozóját használja az MSC küldéséhez/fogadásához.</li>
 	</ul>
 	</li>
 	<li><strong>Exec</strong>:<br />
 	Bökj ide az MSC Exec ablakocskához:
 	<figure class="caption"><img alt="" src="../../img/popup_select-msc-in-exec_v3-3.png" />
-	<figcaption><em>Válassz MSC (Bemenet) Exec ablakocska</em></figcaption>
+	<figcaption><em>Válassz MSC (Bemenetet) Exec ablakocska</em></figcaption>
 	</figure>
 	<br />
 	Három opció van itt:
 	<ul>
 		<li><strong>Csak alapértelmezett</strong> - Ez az opció az MSC parancsokat csak a <strong> Master </strong> állomáson, a kiválasztott executorok felé irányítja, és onnan küldi el.</li>
-		<li><strong>Exec.Page</strong> - Ezzel a parancsokat, csak egy kiváalsztott executorra lehet küldeni. Az oldal executor számát el kell váalsztani egy ponttal (Hex = 2E).</li>
-		<li><strong>Exec Page</strong> - Ezzel a parancsokat, csak egy kiváalsztott executorra lehet küldeni. Az oldal executor számát el kell váalsztani egy ponttal (Hex = 2E).</li>
+		<li><strong>Exec.Page</strong> - Ezzel a parancsokat, csak egy kiválasztott executorra lehet küldeni. Az oldal executor számát el kell választani egy ponttal (Hex = 2E).</li>
+		<li><strong>Exec Page</strong> - Ezzel a parancsokat, csak egy kiváalsztott executorra lehet küldeni. Az oldal executor számát el kell választani egy ponttal (Hex = 2E).</li>
 	</ul>
 	</li>
 	<li><strong>Command</strong>:<br />
@@ -124,7 +124,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>Az MSC parancsok az általános SysEx szerkezeten alapulnak, amit az MMA (MIDI Manufacturers Association) határozott meg. 1991-ben jelent meg és egy kiterjesztése a general MIDInek.</p>
 
-<p>A nyers MIDI információkat hexadecimális oktettekbne lettek írva (két hexa szám). Különböz&otilde; szoftvergyártók az MSC-t megpróbálták kiterjeszteni, emberek által olvashatóbb formára. Ez persze nagyon szép dolog, de mi nem tudjuk az összes variációt kifejteni most, ezért csak a nyers adatokra támaszkodunk.</p>
+<p>A nyers MIDI információkat hexadecimális oktettekben lettek írva (két hexa szám). Különböz&otilde; szoftvergyártók az MSC-t megpróbálták kiterjeszteni, emberek által olvashatóbb formára. Ez persze nagyon szép dolog, de mi nem tudjuk az összes variációt kifejteni most, ezért csak a nyers adatokra támaszkodunk.</p>
 
 <p>Az üzenet formája így néz ki:</p>
 
@@ -156,16 +156,16 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 <ul>
 	<li><strong>F0 7F</strong> ez a fejléc, ami azonosítja az üzenetet mint "universal system exclusive" és "real time" message.</li>
 	<li><strong>Device ID</strong> ez az eszköz vagy csoportazonosító.</li>
-	<li><strong>02</strong> ez egy hexa azonosító, hoy az üzenet MSC lesz.</li>
+	<li><strong>02</strong> ez egy hexa azonosító, hogy az üzenet MSC lesz.</li>
 	<li><strong>Command Format</strong> ez egy okta szám ami meghatározza az eszköz típusát.</li>
 	<li><strong>Command</strong> ez egy octa szám ami meghatározza a parancs típusát</li>
 	<li><strong>Data</strong> ez az aktuális adat. Ez változhat a parancs típusától függ&otilde;en.</li>
-	<li><strong>F7</strong> Ez egy lezáró oktettt, az üzenet vége jel.</li>
+	<li><strong>F7</strong> Ez egy lezáró oktett, az üzenet vége jel.</li>
 </ul>
 
 <h3>Device ID</h3>
 
-<p>Az eszközazonosító(device ID) egy oktet ami három különböz&otilde; részre van osztva:</p>
+<p>Az eszközazonosító(device ID) egy oktett ami három különböz&otilde; részre van osztva:</p>
 
 <ul>
 	<li><strong>00 to 6F</strong>:<br />
@@ -184,11 +184,11 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <h3>Parancs formátum(Command Format)</h3>
 
-<p> Az oktet parancsformátuma jelzi annak az eszköznek a típusát, amelynek meg kell kapnia az üzenetet (vagy legalább válaszolnia). A grandMA2 csak három különböz&otilde; formátumban továbbítja és válaszol: </p>
+<p> Az oktett parancsformátuma jelzi annak az eszköznek a típusát, amelynek meg kell kapnia az üzenetet (vagy legalább válaszolnia). A grandMA2 csak három különböz&otilde; formátumban továbbítja és válaszol: </p>
 
 <ul>
 	<li><strong>01</strong>:<br />
-	Ez a <strong>General Lighting(általános világítás)</strong> fromátum</li>
+	Ez a <strong>General Lighting(általános világítás)</strong> formátum</li>
 	<li><strong>02</strong>:<br />
 	Ez a <strong>Moving Lights(mozgófejes lámpa)</strong> formátum.</li>
 	<li><strong>7F</strong>:<br />
@@ -199,7 +199,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <h3>Command(Parancs)</h3>
 
-<p> Az octet parancs az üzenetben szerepl&otilde; parancs típusát jelöli. A parancs típusa diktálja az adatinformációkat. </p>
+<p> Az ocett parancs az üzenetben szerepl&otilde; parancs típusát jelöli. A parancs típusa diktálja az adatinformációkat. </p>
 
 <p> A grandMA2 7 különféle parancstípust támogat: </p>
 
@@ -313,7 +313,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p><strong>02 (Stop(álj)):</strong></p>
 
-<p>Ez olyan mintha, megnyomnánák a pause gombot. Továbi információkért olvasd el a fels&otilde;bb fejezeteket a hexadecimáis kép számozás jobb megértése érdekében.</p>
+<p>Ez olyan mintha, megnyomnánk a pause gombot. További információkért olvasd el a fels&otilde;bb fejezeteket a hexadecimáis kép számozás jobb megértése érdekében.</p>
 
 <p>A <strong>Default Only</strong> opcióhoz nem kell semmilyen extra adatot megadni, mivel az executort szünetelteti.</p>
 
@@ -344,7 +344,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>Ha a pult küldi az MSC-t, akkor át fogja küldeni a kép számát <strong>0.000</strong>. Ez olyan mintha elküldene egy “pause running cue” (állítsd meg a futó képet) parancsot.</p>
 
-<p>Ha beállítások nincsenek <strong>Default Only</strong>-n, de a két Executor/Page opciók közül az egyik ki van választva akkor a 0. képet is továbítani kell.&nbsp;</p>
+<p>Ha beállítások nincsenek <strong>Default Only</strong>-n, de a két Executor/Page opciók közül az egyik ki van választva akkor a 0. képet is továbbítani kell.&nbsp;</p>
 
 <p><strong>Példa:</strong> Megállítjuk a 5. executort az 1. oldalon (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> beállításokkal):</p>
 
@@ -375,9 +375,9 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p><strong>03 (Resume)(visszatérés):</strong></p>
 
-<p>Ez az egyetlen módja, hogy folyatassuk egy megállított kép futását. Az egyetlen különbség a Stop és a Resume parancsok között a "02" és "03".</p>
+<p>Ez az egyetlen módja, hogy folytassuk egy megállított kép futását. Az egyetlen különbség a Stop és a Resume parancsok között a "02" és "03".</p>
 
-<p><strong>Példa:</strong> Folytatjuk a kép félbehagyott úsztatását (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> beállításokkal):</p>
+<p><strong>Példa:</strong> Folytatjuk a kép félbehagyott úsztatását (<strong>All Devices</strong>,<strong> All Format</strong>, és <strong>Exec.Page</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -402,21 +402,21 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 	</tbody>
 </table>
 
-<p>Ha a csak alapértelmezett beálítás kivákasztva van akkor a parncso <strong>F0 7F 7F 02 7F 03 F7</strong>, ami kell az úszás folytatásához.</p>
+<p>Ha a csak alapértelmezett beállítás kiválasztva van akkor a parancs <strong>F0 7F 7F 02 7F 03 F7</strong>, ami kell az úszás folytatásához.</p>
 
 <p>&nbsp;</p>
 
 <p><strong>04 (Timed_Go(Id&otilde;zített indulj)):</strong></p>
 
-<p>Ez ugyanaz mint a <strong>01 (Go)</strong> parancs, de meghatározott id&otilde;vel. Ismételd át a <strong>01 (GO)</strong> paancsokat és a fenti adatokat. Hogy egy kicsit egyszer&ucirc;bb legyen a dolog, most feltételezük, hogy a “Default Only” opció bekapcsolva van az MSC beállításokban.</p>
+<p>Ez ugyanaz mint a <strong>01 (Go)</strong> parancs, de meghatározott id&otilde;vel. Ismételd át a <strong>01 (GO)</strong> parancsokat és a fenti adatokat. Hogy egy kicsit egyszer&ucirc;bb legyen a dolog, most feltételezzük, hogy a “Default Only” opció bekapcsolva van az MSC beállításokban.</p>
 
-<p>A timed Goto küldésénel el&otilde;sz&otilde;r az id&otilde;t kell megadni és utána a kép számát. Az id&otilde;t 5 hexa adja meg. Ezek sorban a következ&otilde;k <strong>Óra</strong>,<strong> Perc</strong>,<strong> Másodperc</strong>,<strong> Képkocka</strong>,<strong> </strong>és<strong> tört</strong>.</p>
+<p>A timed Goto küldésénél el&otilde;sz&otilde;r az id&otilde;t kell megadni és utána a kép számát. Az id&otilde;t 5 hexa adja meg. Ezek sorban a következ&otilde;k <strong>Óra</strong>,<strong> Perc</strong>,<strong> Másodperc</strong>,<strong> Képkocka</strong>,<strong> </strong>és<strong> tört</strong>.</p>
 
 <p>Az óra,perc,másodperc részek elég egyértelm&ucirc;ek. A számokat hexadecimálisan kell átküldeni. Lehetséges számokat a normális érték fölött is küldeni, például 64 másodpercet (hex=40). A pult ezt úgy küldi át, hogy 1 perc 4 másodperc.</p>
 
-<p>Még most a pult, nem fogad el képkocka és a töredék részeket. De a másopercél rövidebb értékeket átküldi képkockaként. A pult a másodpercet 24 képkockára osztja. tehát 0.5 sec. = 12 Képkocka és a fogadott hex szám <strong>0C</strong>.</p>
+<p>Még most a pult, nem fogad el képkocka és a töredék részeket. De a másodpercél rövidebb értékeket átküldi képkockaként. A pult a másodpercet 24 képkockára osztja. tehát 0.5 sec. = 12 Képkocka és a fogadott hex szám <strong>0C</strong>.</p>
 
-<p><strong>Példa:</strong> Ugorj a 75.-ik képre 20 másodperces átússzással (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Default Only</strong> beállításokkal):</p>
+<p><strong>Példa:</strong> Ugorj a 75.-ik képre 20 másodperces átúszással (<strong>All Devices</strong>,<strong> All Format</strong>, és <strong>Default Only</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -441,7 +441,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 	</tbody>
 </table>
 
-<p><strong>Példa:</strong> Menj a 5.4-es képre, 1 perc átúszással a 3. executoron, az els&otilde; oldalon (<strong>All Devices</strong>,<strong> All Format</strong>, and <strong>Exec.Page</strong> setting):</p>
+<p><strong>Példa:</strong> Menj a 5.4-es képre, 1 perc átúszással a 3. executoron, az els&otilde; oldalon (<strong>All Devices</strong>,<strong> All Format</strong>, és <strong>Exec.Page</strong> beállítások):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -470,7 +470,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p><strong>06 (Set)(Beállítás):</strong></p>
 
-<p>A set parancssal lehet a megadott húzót egy meghatározott pozicíóba állítani. A 06 -os parancs után két hex oktet kell ami meghatározza a húzó számát, és még kett&otilde; ami megadja a pozícióját.</p>
+<p>A set paranccsal lehet a megadott húzót egy meghatározott pozícióba állítani. A 06 -os parancs után két hex oktet kell ami meghatározza a húzó számát, és még kett&otilde; ami megadja a pozícióját.</p>
 
 <p>&nbsp;</p>
 
@@ -478,7 +478,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>A második két szám közül, pedig az oldalszám lesz. Ez kicsit más az els&otilde; oldal hexában <strong>01</strong> és a második oldal <strong>02</strong> így tovább.</p>
 
-<p>Tehát az executor az els&otilde; ooldalon <strong>00 01</strong>.</p>
+<p>Tehát az executor az els&otilde; oldalon <strong>00 01</strong>.</p>
 
 <p>&nbsp;</p>
 
@@ -529,7 +529,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>Átúszási id&otilde;t lehet a húzó és a pozíció adat után tenni. Az id&otilde;formátumot már kifejtettük a 04 parancsnál.</p>
 
-<p><strong>Példa: </strong>Mozgassuk a 15. húzót az els&otilde; oldalon 100%-ra 5sec alatt. (<strong>All Devices</strong> és <strong>All Format</strong> beálításokkal):</p>
+<p><strong>Példa: </strong>Mozgassuk a 15. húzót az els&otilde; oldalon 100%-ra 5sec alatt. (<strong>All Devices</strong> és <strong>All Format</strong> beállításokkal):</p>
 
 <table border="1" cellpadding="1" cellspacing="1">
 	<tbody>
@@ -562,7 +562,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p><strong>07 (Fire)(t&ucirc;z):</strong></p>
 
-<p>Makrókat lhet ezzel a parancssal indítani. Ez után egy oktettet lehet megadni ami megadja a makró számát.</p>
+<p>Makrókat lhet ezzel a paranccsal indítani. Ez után egy oktettet lehet megadni ami megadja a makró számát.</p>
 
 <p>A 1. makró száma hexában <strong>01</strong>. A hexa <strong>FF</strong> a 255. makró számot jelenti.</p>
 
@@ -595,7 +595,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p><strong>0B (Go_Off)(menj_ki):</strong></p>
 
-<p>Az executorokat ki lehet kapcsolni a <strong>0B</strong> parancssal. Egy kép számát kell átküldeni - a kép 0 használható.</p>
+<p>Az executorokat ki lehet kapcsolni a <strong>0B</strong> paranccsal. Egy kép számát kell átküldeni - a kép 0 használható.</p>
 
 <p><strong>Példa</strong>: Off parancs küldése a 9. executornak az 5. oldalon (<strong>All Devices</strong>, <strong>All Format</strong>, és <strong>Exec.Page</strong> beállításokkal):</p>
 
@@ -632,7 +632,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>A fejléc két részre van osztva. Az els&otilde; azonosítja az üzenetet mint grandMA2 MSC üzenet: <strong>47 4D 41 00 4D 53 43 00 </strong>- ez lefordul GMA MSC-re.</p>
 
-<p>A második rész négy oktettje leírja az üzenet hosszát - a fejléccel együtt. Ez little endian byte formátumban van (el&otilde;sz&otilde;r a legkisebbhelyiérték következik).</p>
+<p>A második rész négy oktettje leírja az üzenet hosszát - a fejléccel együtt. Ez little endian byte formátumban van (el&otilde;sz&otilde;r a legkisebb helyi-érték következik).</p>
 
 <p>Ez úgy számolódik ki, hogy megszámoljuk az oktetteket, és utána konvertáljuk a decimális számokat hexába. Általában nekünk csak az els&otilde; oktett kell (ez megengedi 255 üzenet küldését is) bár mind a négyet el kell küldeni.</p>
 
@@ -642,7 +642,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>Küldjünk egy go parancsot a 35. képnek. Az MSC üzenet: <strong>F0 7F 7F 02 7F 01 33 35 2E 30 30 30 F7</strong>.</p>
 
-<p>Ez 13 oktett. A fejléc mindig 12 oktettb&otilde;l áll. Tehát a kombinált hossz 25 oktett. Tizesben a 25 az <strong>18</strong> hexadecimálisban. A teljes üzenet:</p>
+<p>Ez 13 oktett. A fejléc mindig 12 oktettb&otilde;l áll. Tehát a kombinált hossz 25 oktett. Tízesben a 25 az <strong>18</strong> hexadecimálisban. A teljes üzenet:</p>
 
 <p><strong>47 4D 41 00 4D 53 43 00 18 00 00 00 F0 7F 7F 02 7F 01 33 35 2E 30 30 30 F7</strong></p>
 
@@ -650,7 +650,7 @@ Ha az MSC parncsok ugyanazon a MIDI csatornán lesznek küldve és fogadva is, a
 
 <p>Az els&otilde; makró indítása: <strong>F0 7F 7F 02 7F 07 01 F7</strong> - 8 oktett.</p>
 
-<p>Plussz a 12 a fejlécb&otilde;l, ami decimálisan 20 = 13 hex.</p>
+<p>Plusz a 12 a fejlécb&otilde;l, ami decimálisan 20 = 13 hex.</p>
 
 <p>Az üzenet tehát:</p>
 

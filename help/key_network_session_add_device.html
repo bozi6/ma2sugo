@@ -34,7 +34,7 @@
 	<li>Network Switch (Csak MA Network Switch)</li>
 </ul>
 
-<p>A Pultokat és a grandMA2 onPCs-t <strong>Stations</strong>(állomásoknak) hívjuk és a <a href="key_network_session_create.html">MA Network Control</a>-al csatlakoznak a munkamenethez. Nem lehet &otilde;ket meghívni, vagy er&otilde;ltetni a csatlakozáshoz, de a DMX portok és a timecode-t lehet configurálni. Az állomások a munkamenetben megjelennek az MA Hálózati Beállításoknál is.</p>
+<p>A Pultokat és a grandMA2 onPCs-t <strong>Stations</strong>(állomásoknak) hívjuk és a <a href="key_network_session_create.html">MA Network Control</a>-al csatlakoznak a munkamenethez. Nem lehet &otilde;ket meghívni, vagy er&otilde;ltetni a csatlakozáshoz, de a DMX portok és a timecode-t lehet konfigurálni. Az állomások a munkamenetben megjelennek az MA Hálózati Beállításoknál is.</p>
 
 <h2>&nbsp;</h2>
 
@@ -49,7 +49,7 @@
 <ul>
 	<li><strong>Piros:</strong> Az eszköz nincs a hálózaton, vagy már csatlakozott egy másik munkamenethez.</li>
 	<li><strong>Szürke /Fekete:</strong> Az eszköz a hálózaton van, de nincs egy munkamenetben sem. A háttér fekete az állomásoknál - szürke minden egyéb eszköz esetében.</li>
-	<li><strong>Sötétzöld:</strong> Az eszköz a hálózaton van és csatlakozott ugyanahoz a munkamenethez, amelyikhez te is..</li>
+	<li><strong>Sötétzöld:</strong> Az eszköz a hálózaton van és csatlakozott ugyanahhoz a munkamenethez, amelyikhez te is..</li>
 	<li><strong>Világos zöld:</strong> Ezt az eszközt használod most, és benne van a munkamenetben.</li>
 </ul>
 
@@ -66,9 +66,9 @@
 <p><a id="Standard Control Buttons" name="Standard Control Buttons"></a>A képerny&otilde; alján van néhány gomb:</p>
 
 <ul>
-	<li><strong>Add</strong> - Ezt megnyomva megjelenik egy kics ablakocska, ami listázza az elérhet&otilde; pultokat a hálózaton. Ha nincs olyan pult, ami már ne lenne hozzáadva, akkor a lista üres. Ha nem adunk hozzá A tényleges pultok hozzáadása nélkül "üres" lesz, a 0.0.0.0 IP címmel.</li>
+	<li><strong>Add</strong> - Ezt megnyomva megjelenik egy kicsi ablakocska, ami listázza az elérhet&otilde; pultokat a hálózaton. Ha nincs olyan pult, ami már ne lenne hozzáadva, akkor a lista üres. Ha nem adunk hozzá A tényleges pultok hozzáadása nélkül "üres" lesz, a 0.0.0.0 IP címmel.</li>
 	<li><strong>Delete</strong> - Erre bökve törl&otilde;dik a kiválasztott pult a listából. Nem törölheted a saját pultodat.</li>
-	<li><strong>Add Present</strong> - Ez automatikusan hozzáadja a pultokat, amik jelen vannal a hálózaton.</li>
+	<li><strong>Add Present</strong> - Ez automatikusan hozzáadja a pultokat, amik jelen vannak a hálózaton.</li>
 	<li><strong>Remove Absent</strong> - Ez eltávolítja a pultokat, amik nincsenek a hálózaton.</li>
 	<li><strong>Remove Non-Members</strong> - Ez eltávolítja azokat a pultokat, amik nem tagjai a munkamenetednek.</li>
 </ul>
@@ -79,8 +79,8 @@
 <ul>
 	<li><strong>IP ETHERCON 1 (ETH0)</strong> - Ez az els&otilde; EtherCon csatlakozó IP címe. Megváltoztatva ezt a számot, megváltozik a pult IP címe is és szükséges újraindítani.</li>
 	<li><strong>DHCP ETHERCON 1 (ETH0)</strong> - Ezt a cellát szerkesztve "Yes" -lesz benne. Ez engedélyezi a DHCP-t az 1. hálózati porton és újraindítást igényel. Olvass többet a DHCP-r&otilde;l a <a href="key_network_dhcp.html">DHCP használata az MA eszközökön fejezetben</a>.</li>
-	<li><strong>IP ETHERCON 2 (ETH1)</strong> - Ez a második EtherCon csatlakozó IP címe. Ez a csatlakozó van az Art-Net-hez és Art-Net kompatibilis IP címet kell nekki adni. Megváltoztatva ezt a számot, megváltozik az IP cím és újraindítást igényel.</li>
-	<li><strong>Hostname</strong> - Ez a gépneve a pultnak. Ez csak plusszinformációnak van. Ezt csak az MA Network Control-ban lehet megváltoztatni.</li>
+	<li><strong>IP ETHERCON 2 (ETH1)</strong> - Ez a második EtherCon csatlakozó IP címe. Ez a csatlakozó van az Art-Net-hez és Art-Net kompatibilis IP címet kell neki adni. Megváltoztatva ezt a számot, megváltozik az IP cím és újraindítást igényel.</li>
+	<li><strong>Hostname</strong> - Ez a gépneve a pultnak. Ez csak plusz információnak van. Ezt csak az MA Network Control-ban lehet megváltoztatni.</li>
 	<li><strong>Type</strong> - Ez mutatja a pult típusát.</li>
 	<li><strong>XLR A</strong> tól <strong>XLR F</strong>-ig - Ezek a mama DMX csatlakozók a pult hátulján. e cellát szerkesztve megnyílik egy ablakocska, ami engedi változtatni a beállításokat. Ez részletesen a  <a href="key_network_dmx_get_in_out.html">DMX be és ki a rendszerben</a> fejezetben van.</li>
 	<li><strong>XLR In</strong> - Ez a papa DMX csatlakozó a pult hátulján. Szerkesztése ugyanaz mint a mama csatlakozónál - lásd fent.</li>
@@ -98,7 +98,7 @@
 
 <h2>grandMA2 onPC</h2>
 
-<p>grandMA2 onPCs figylembe vett "Állomás" és csak a <a href="key_network_session_create.html">MA Hálózati Vezérlésben</a> lehet hozzáadni.</p>
+<p>grandMA2 onPCs figyelembe vett "Állomás" és csak a <a href="key_network_session_create.html">MA Hálózati Vezérlésben</a> lehet hozzáadni.</p>
 
 <p>Az onPC résznek <a href="#Standard Control Buttons">ugyanazok a gombjai vannak alul, mint a pultnak</a> - és még kett&otilde;. Ezeket  called <strong>Identify Fader 1</strong> és&nbsp;<strong>Identify Fader 2</strong>hívjuk. Minde grandMA2&nbsp;onPC-nek lehet egy MA onPC&nbsp;command wing-je és kett&otilde; MA onPC&nbsp;fader wing-je. Mindegyik USB-n keresztül csatlakozik. Ha két MA&nbsp;onPC fader wing-et csatlakoztatsz, akkor meg kell mondani a számítógépnek, hogy melyik az 1. és melyik a 2.</p>
 
@@ -116,7 +116,7 @@
 
 <p>Az MA NPUs (Hálózati Feldolgozó Egység) hozzáadódik és csatlakozik az MA Hálózati Konfigurációban. Ennek a <a href="#Standard Control Buttons">szekciónak az alján ugyanazok a gombok találhatóak mint a pult résznél</a> és használhatod ezeket qa gombokat, MA NPU-k hozzáadására, már ha hálózaton vannak.</p>
 
-<p>Ha az MA NPU látszik a táblázatban, akor szerkesztheted a <strong>Session Member</strong>(munkamenet tagja) oszlopot. Ez egy kapcsoló cella. Üres lehet, vagy lehet "Yes". Ha yes, akkor az MA NPU az mondja hogy csatlakozz a munkamenethez. Ha egy másik munkamenet is szeretné, hogy csatlakozzon hozzá, akkor az MA NPU ahoz csatlakozik, amelyiket el&otilde;bb látta a hálózaton.</p>
+<p>Ha az MA NPU látszik a táblázatban, akkor szerkesztheted a <strong>Session Member</strong>(munkamenet tagja) oszlopot. Ez egy kapcsoló cella. Üres lehet, vagy lehet "Yes". Ha yes, akkor az MA NPU az mondja hogy csatlakozz a munkamenethez. Ha egy másik munkamenet is szeretné, hogy csatlakozzon hozzá, akkor az MA NPU ahhoz csatlakozik, amelyiket el&otilde;bb látta a hálózaton.</p>
 
 <p>Az MA NPU nem tud küldeni/fogadni Art-Net-et, tehát csak egy oszlop van az IP címnek, és a DHCP-nek. Az IP cím megváltoztatása az IP oszlopban, megváltoztatja az IP címét az MA NPU-nak és újraindítja.</p>
 
@@ -126,7 +126,7 @@
 
 <h2>MA 3D</h2>
 
-<p>Az MA 3D megjelenító szerves része az MA rendszernek. Ez egy megjelenít&otilde;-program, ami beszélget az állomásokkal és a beállítások megváltoztatása rögtön láthatóvá is válik az MA 3D-ben. Ugyanazok <a href="#Standard Control Buttons">a gombok vannak itt is alul mint a pultnál</a>.</p>
+<p>Az MA 3D megjelenít&otilde; szerves része az MA rendszernek. Ez egy megjelenít&otilde;-program, ami beszélget az állomásokkal és a beállítások megváltoztatása rögtön láthatóvá is válik az MA 3D-ben. Ugyanazok <a href="#Standard Control Buttons">a gombok vannak itt is alul mint a pultnál</a>.</p>
 
 <p>Amikor egy MA 3D visualizer-t hozzáadunk a táblázathoz, akkor ugyanaz a <strong>Munkamenet tag</strong> oszlop lesz, mint az MA NPU-nál és az eljérés is ugyanaz. Amikor csatlakoztatsz egy MA 3D-t akkor kiválaszthatod melyik <strong>Felhasználót</strong> kövesse. A felhasználóknak a showban mindegyiknek van egy <a href="key_patch_stage.html">Színpad nézetük</a>. A MA 3D csatlakozik a Színpad nézethez, tehát, ha megváltoztatod a virtuális kamera szögét vagy helyét a színpad nézetben, vagy a MA 3D programban, akkor követni fogják egymást. Az MA 3D szintén követi a felhasználót a Blind és Preview módokban is és a blind és preview kimenetet mutatják az él&otilde; kimenet helyett.</p>
 
@@ -134,7 +134,7 @@
 
 <h2>MA VPU</h2>
 
-<p>The MA VPU (Video Feldolgozó Egység)-nek van néhány extra gombja a képerny&otilde; aljén. A hagyományos gombok mellett még van:</p>
+<p>Az MA VPU (Video Feldolgozó Egység)-nek van néhány extra gombja a képerny&otilde; aljén. A hagyományos gombok mellett még van:</p>
 
 <ul>
 	<li><strong>Edit</strong> - Ez megnyit egy szerkeszt&otilde;t a kiválasztott MA VPU-hoz. Itt sok beállítását lehet babrálni az MA VPU-nak.</li>
@@ -203,11 +203,11 @@ Ha egy Node menedzselt switchhez van kapcsolva, akkor a portot ahova a node van 
 	<li><strong> None </strong> - Ez letiltja a csomópontot. </li>
 </ul>
 
-<p> A DMX csomópontok hozzáadása a munkamenethez más, mint az összes többi elem, amelyet eddig megvizsgáltunk. Nem hívják meg &otilde;ket, hogy csatlakozzanak ahhoz a munkamenethez, amelyben jelenleg vannak, és arra vannak rendelve, hogy meghallgassanake egy adott munkamenet számát - ezt a <strong> Munkamenet azonosító/hálózat </strong> oszlopban kell elvégezni. Megtartják a saját konfigurációjukat - ez nem része a show fájlnak.<a href="key_export_and_import.html"> importálható vagy exportálható </a>. Olvasd el a <a href="key_network_dmx_get_in_out.html"> DMX be- és kikapcsolása </a> témákat a DMX konfigurációval kapcsolatos további információkért. </p>
+<p> A DMX csomópontok hozzáadása a munkamenethez más, mint az összes többi elem, amelyet eddig megvizsgáltunk. Nem hívják meg &otilde;ket, hogy csatlakozzanak ahhoz a munkamenethez, amelyben jelenleg vannak, és arra vannak rendelve, hogy meghallgassanak egy adott munkamenet számát - ezt a <strong> Munkamenet azonosító/hálózat </strong> oszlopban kell elvégezni. Megtartják a saját konfigurációjukat - ez nem része a show fájlnak.<a href="key_export_and_import.html"> importálható vagy exportálható </a>. Olvasd el a <a href="key_network_dmx_get_in_out.html"> DMX be- és kikapcsolása </a> témákat a DMX konfigurációval kapcsolatos további információkért. </p>
 
 <p>Továbbra is lehetséges 8 DMX portot használni, ezek a "XLR A" tól "XLR H"-ig oszlopok.</p>
 
-<p>A <strong>Light Mode</strong>nev&ucirc; oszlop vezérli a háttérvilágítását a kijez&otilde;knek (és az adadt LED-eket a régi grandMA1 node-oknál).</p>
+<p>A <strong>Light Mode</strong>nev&ucirc; oszlop vezérli a háttérvilágítását a kijez&otilde;knek (és az adott LED-eket a régi grandMA1 node-oknál).</p>
 
 <p>A <strong>Light Intensity</strong> oszlop csak a grandMA1 nodekra érvényes. Három különböz&otilde; szinten lehet állítani a LED és a kijelz&otilde; fényerejét.</p>
 
