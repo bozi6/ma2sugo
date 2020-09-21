@@ -30,7 +30,7 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 <figcaption><em>Csatorna oldal tároló</em></figcaption>
 </figure>
 
-<p>Ez úgyanúgy m&ucirc;ködik, mint minden más tároló - ha még nem olvastál róluk, a <a href="key_pools.html">Tárolókról általában fejezetben</a>, akkor tedd meg most.</p>
+<p>Ez ugyanúgy m&ucirc;ködik, mint minden más tároló - ha még nem olvastál róluk, a <a href="key_pools.html">Tárolókról általában fejezetben</a>, akkor tedd meg most.</p>
 
 <p>Ilyen amikor táblázatos elrendezésben van:</p>
 
@@ -38,19 +38,19 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 <figcaption><em>Csatorna oldal tároló - Táblázatos stílusban</em></figcaption>
 </figure>
 
-<p>A zöld <strong>C </strong>jelenti az aktív csatorna oldalt. A szürke <strong>C </strong>jelzi, hogy ez az utoljára, meglátogatott oldal (Valószínüleg viszatértél az Executor oldalra).</p>
+<p>A zöld <strong>C </strong>jelenti az aktív csatorna oldalt. A szürke <strong>C </strong>jelzi, hogy ez az utoljára, meglátogatott oldal (Valószínűleg visszatértél az Executor oldalra).</p>
 
-<p>Egy objektumra bökve a tárolóban, megváltozik a csatorna oldal. Szintén lehet az oldalalkat lapozni, a <span class="hardkey">Ch Pg +</span> és <span class="hardkey">Ch Pg -</span> gombokkal, vagy a <a href="key_keyword_channelpage.html">ChannelPage</a> parancssal. Ha nyomva tartod a <span class="hardkey">Ch Pg -&nbsp;</span> gombot, egy másodpercig, akkor visszaugrik az 1. oldalra.</p>
+<p>Egy objektumra bökve a tárolóban, megváltozik a csatorna oldal. Szintén lehet az oldalalkat lapozni, a <span class="hardkey">Ch Pg +</span> és <span class="hardkey">Ch Pg -</span> gombokkal, vagy a <a href="key_keyword_channelpage.html">ChannelPage</a> paranccsal. Ha nyomva tartod a <span class="hardkey">Ch Pg -&nbsp;</span> gombot, egy másodpercig, akkor visszaugrik az 1. oldalra.</p>
 
 <p>&nbsp;</p>
 
 <h2>Lámpák hozzárendelése</h2>
 
-<p>A statikus csatorna oldalt fell kell építeni - ez azt jelenti, hogy hozzá kell rendelni csatornákat a csatorna húzókhoz.</p>
+<p>A statikus csatorna oldalt fel kell építeni - ez azt jelenti, hogy hozzá kell rendelni csatornákat a csatorna húzókhoz.</p>
 
 <p>Ezt a következ&otilde; gombokkal lehet megtenni: <span class="hardkey">Assign</span> <span class="hardkey">Chanel</span> (vagy <span class="hardkey">Fixture</span>) [szám vagy tartomány] <span class="hardkey">Page</span> <span class="hardkey">Page</span> (ez a ChannelPage parancsot adja) [oldalszám].[húzószám] <span class="hardkey">Please</span>.</p>
 
-<p>Ha nincs megadva attribútum, akkor a dimmer rendel&otilde;dik hozzá. Más attribútumokat is hozzá lehet rendelni, de ehhez kicsit nyomozni kell, hogy kitaláld az attribútumok számát vagy nevét. Ez az általános szintakszis.:</p>
+<p>Ha nincs megadva attribútum, akkor a dimmer rendel&otilde;dik hozzá. Más attribútumokat is hozzá lehet rendelni, de ehhez kicsit nyomozni kell, hogy kitaláld az attribútumok számát vagy nevét. Ez az általános szintaxis.:</p>
 
 <p><span class="syntax">Assign Fixture [id szám].[al lámpa szám].[attribútum] (At) ChannelPage [oldalszám].[húzószám]</span></p>
 
@@ -84,9 +84,9 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <div class="cl_input">[LiveSetup/Layers 4/Spots 3/Spot 1 1]&gt;CD 1</div>
 
-<p>Ha tudom, hogy a lámpámnak csak egy al-lámpája van (vagy az 1. al-lámpára van szükségem), akkor lehetséges idenavigálni a következ&otilde; parancssal is <span class="syntax">CD Fixture 1.1</span> - Ne futtasd most ezt a parancsot.</p>
+<p>Ha tudom, hogy a lámpámnak csak egy al-lámpája van (vagy az 1. al-lámpára van szükségem), akkor lehetséges idenavigálni a következ&otilde; paranccsal is <span class="syntax">CD Fixture 1.1</span> - Ne futtasd most ezt a parancsot.</p>
 
-<p>Most kell mégey  <strong>List</strong> parancsot futtatni, hogy láthassuk az attribútumok listáját ehhez a lámpához. A listában amit a parancs visszajelz&otilde; ablak mutat, a PAN a 3. elem és a TILT a 4. Ezzel az új tudásmorzsával felvértezve, visszamehetünk a parancssor kezdetére és hozzárendelhetjük az attribútumokat. Írd be a következ&otilde;ket:</p>
+<p>Most kell még egy <strong>List</strong> parancsot futtatni, hogy láthassuk az attribútumok listáját ehhez a lámpához. A listában amit a parancs visszajelz&otilde; ablak mutat, a PAN a 3. elem és a TILT a 4. Ezzel az új tudásmorzsával felvértezve, visszamehetünk a parancssor kezdetére és hozzárendelhetjük az attribútumokat. Írd be a következ&otilde;ket:</p>
 
 <div class="cl_input">[LiveSetup/Layers 4/Spots 3/Spot 1 1/Spot 1 1]&gt;CD/</div>
 
@@ -124,11 +124,11 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <p>A folyamat az, hogy kiválasztasz egy vagy több elemet a lista bal oldalán és utána kiválasztasz vagy nem a jobb oldalon lámpákat. Minden kiválasztott lámpának a dimmer attribútumával jön létre húzó.</p>
 
-<p>A jobb szélen van három zöld beviteli mez&otilde;. A legfels&otilde; beállítja a ChannelPage számát az auto létrehozott húzoknak. A középs&otilde; beállítja az adott húzó számát az adott oldalon. Az alsó beállítja az oldal szélességét. Egy jó ötlet, hogy beállítsd a szélességét, hogy stimmeljen az eszközödhöz.</p>
+<p>A jobb szélen van három zöld beviteli mez&otilde;. A legfels&otilde; beállítja a ChannelPage számát az auto létrehozott húzóknak. A középs&otilde; beállítja az adott húzó számát az adott oldalon. Az alsó beállítja az oldal szélességét. Egy jó ötlet, hogy beállítsd a szélességét, hogy stimmeljen az eszközödhöz.</p>
 
 <p>Bökj a <span class="softkey">Always ask for Name</span> gombot, ha el akarod nevezni a létrehozott Csatorna oldalt.</p>
 
-<p>Az <span class="softkey">Overwrite</span> gomb nem tesz semmi különbséget. Attribútumok hozzárendelése a csatorna húzókhoz, mindíg felülírja az aktuálisan hozzárendelt húzókat..</p>
+<p>Az <span class="softkey">Overwrite</span> gomb nem tesz semmi különbséget. Attribútumok hozzárendelése a csatorna húzókhoz, mindig felülírja az aktuálisan hozzárendelt húzókat..</p>
 
 <p>Bökj a <span class="softkey">Create</span> gombra a csatorna húzók létrehozásához. Vedd figyelembe, hogy ez a m&ucirc;velet megváltoztatja a kezd&otilde;lapot és a kezd&otilde; fader beviteli mez&otilde;ket a következ&otilde; elérhet&otilde; ChannelPage és ChannelFader csatornákra.</p>
 
@@ -145,7 +145,7 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <p>&nbsp;</p>
 
-<p>Dinamikus Csatorna Oldalakat meghívhatod a <a href="key_keyword_channellink.html">ChannelLink</a> parancssal.</p>
+<p>Dinamikus Csatorna Oldalakat meghívhatod a <a href="key_keyword_channellink.html">ChannelLink</a> paranccsal.</p>
 
 <p>Ezzel ki/bekapcsolhatod a Dinamikus Csatorna Oldalakat.</p>
 
