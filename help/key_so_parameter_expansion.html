@@ -17,7 +17,7 @@
 
 <h2>Paraméterek száma</h2>
 
-<p>Ez a rész az egyes paaméterek számát mutatja egyes eszközökön.</p>
+<p>Ez a rész az egyes paraméterek számát mutatja egyes eszközökön.</p>
 
 <p>A legtöbb fel&otilde;l a legkevesebb felé haladva:</p>
 
@@ -70,11 +70,11 @@
 
 <h2>Parameters kiterjesztése</h2>
 
-<p>Az MA NPU az<strong> egyetlen egység</strong> ami megnöveli a praméterek számát, ha grandMA2 pultot használsz. <strong>Minden MA NPU hozzáadása a hálózathoz újab 4 096 paramétert add hozzá a rendszerhez!</strong></p>
+<p>Az MA NPU az<strong> egyetlen egység</strong> ami megnöveli a paraméterek számát, ha grandMA2 pultot használsz. <strong>Minden MA NPU hozzáadása a hálózathoz újabb 4 096 paramétert add hozzá a rendszerhez!</strong></p>
 
 <p>Maximum 15 MA NPU-t lehet hozzáadni; a legnagyobb pult függvényében.</p>
 
-<p>Van egy <strong> maximum határa a 65 536 paraméternek</strong> egy grandMA2 sessionben.</p>
+<p>Van egy <strong> maximum határa a 65 536 paraméternek</strong> egy grandMA2 munkamenetben.</p>
 
 <p>Az MA NPU-k segítsége a paraméter számolásban.</p>
 
@@ -92,13 +92,13 @@
 
 <p>1 grandMA2 light (4 096) + 15 2Port Node onPC 2K (2 048) = 4 096 paraméter (A Nod-ok nem tudják megnövelni a paraméterek számát, tehát a pult paraméterei lesznek használva - onPC nod-ok nem tudnak paramétereket adni a pultnak)</p>
 
-<p>1 grandMA2 light (4 096) + 1 onPC computer with a Command Wing (2 048) = 4 096 paraméter (A Wing-es nem tudják kib&otilde;víteni a praméterek számát, tehát a pult paraméterei lesznek használva - onPC Wingek nem adhatnak paramétereket a pultnak)</p>
+<p>1 grandMA2 light (4 096) + 1 onPC computer with a Command Wing (2 048) = 4 096 paraméter (A Wing-es nem tudják kib&otilde;víteni a paraméterek számát, tehát a pult paraméterei lesznek használva - onPC Wingek nem adhatnak paramétereket a pultnak)</p>
 
 <p>&nbsp;</p>
 
 <h2>grandMA2 onPC, wings, nodes és NPU-val használva</h2>
 
-<p>Ha az grandMA2 onPC-t használod, akkor kell némi MA cucc, hogy felold a parmétereket. <strong>A maximum engedélyezett paraméter egy grandMA2 onPC rendszerben 4 096!</strong></p>
+<p>Ha az grandMA2 onPC-t használod, akkor kell némi MA cucc, hogy felold a paramétereket. <strong>A maximum engedélyezett paraméter egy grandMA2 onPC rendszerben 4 096!</strong></p>
 
 <p>Bármilyen onPC eszköz használható a számítógépeddel. Minden darab ilyen hozzáadja a paramétereit, egészen a 4 096 -os határig.</p>
 
@@ -124,7 +124,7 @@
 
 <h2>MA VPU és grandMA2 onPC</h2>
 
-<p>Ha egy MA VPU-t használsz, az csak a saját paramétereit használja és nincs hatása a határra. Tobb MA VPU-t is vezérelhetsz az grandMA2 onPC-vel. ha kevered a VPU-kat és más lámpákat akkor, szükséged lehet további MA eszközökre, hogy feloldd a használható paramétereket(a lámpák használatához).</p>
+<p>Ha egy MA VPU-t használsz, az csak a saját paramétereit használja és nincs hatása a határra. Több MA VPU-t is vezérelhetsz az grandMA2 onPC-vel. ha kevered a VPU-kat és más lámpákat akkor, szükséged lehet további MA eszközökre, hogy feloldd a használható paramétereket(a lámpák használatához).</p>
 
 <p>Akkor is ha az MA VPU nem számít a paraméter határaiba, jó ötlet az MA VPU-t nagyobb univerzumba patchelni, mint a többi lámpát. Van némi kockázata, hogy "ellopja" a lámpák paramétereit, ha alacsonyabb univerzumban van mint a lámpák.</p>
 
