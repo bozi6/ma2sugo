@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Set the IP address in the console</title>
+		<title>A pult IP címének beállítása</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
-		<meta name="keywords" content="IP address - console" />
+		<meta name="keywords" content="IP cím - console" />
 	</head>
 	<body>
 		
 		
-		<h1>Set the IP address in the console</h1>
+		<h1>A pult IP címének beállítása</h1>
 		
-		<p>An IP address in a matching range is needed to be able to connect devices. This page is about setting a static IP address in the console. If you need to set the IP in the onPC, please <a href="key_network_set_ip_onpc.html">follow this link</a>.</p>
+		<p>Egy IP cím egy megadott tartományban szükséges az eszközök összekapcsolásához. Ez az oldal a statikus IP cím beállításáról szól a pulton. Ha az onPc-n akarod beállítani az IP címet akkor <a href="key_network_set_ip_onpc.html">kövesd ezt a linket</a>.</p>
 
-<p>If you have a network using DHCP, then you can might want to allow a DHCP server to set the IP address in the console. You can read more about this in the <a href="key_network_dhcp.html">Using DHCP in MA devices topic</a>.</p>
+<p>Ha olyan hálózatod van ami DHCP-t használ, akkor engedélyezheted a DHCP szervernek az IP címek kiosztását. Ezekr&otilde;l b&otilde;vebben a <a href="key_network_dhcp.html">DHCP használata az MA eszközökben fejezetben</a> olvashatsz.</p>
 
-<p>There are three ways to set the IP address in the console. No matter what way you choose, you will need to reboot the console for the change to take affect.</p>
+<p>Három módja van az IP cím beállításának a pulton. Mindegy melyiket választod, mindenképpen újra kell indítani a pultot, hogy a változások érvénybe lépjenek..</p>
 
-<h2>Set the IP address using the command line</h2>
+<h2>Az IP cím beállítása parancssorból</h2>
 
-<p>Use the <a href="key_keyword_setip.html">SetIP command</a> to see and change the IP addresses of the console. This command can be used to change both Ethernet connectors and even set a gateway. Follow the link to read about using the command.</p>
+<p>Használd a <a href="key_keyword_setip.html">SetIP parancsot</a>, hogy megnézd és módosítsd az IP címet a pulton. Ez a parancs használható az Ethernet csatlakozó váltásához, és átjáró beállításához is. Kövesd a linket, hogy olvashass a parancsról.</p>
 
-<h2>Set the IP address using MA Network Control</h2>
+<h2>IP cím beállítása az MA hálózati beállításaival</h2>
 
-<p>You can change the IP address in the console by pressing <span class="hardkey">Setup</span> and then <span class="softkey">MA Network Control</span>.</p>
+<p>Megváltoztathatod az IP címet a pulton, ha megnyomod a <span class="hardkey">Setup</span> és utána az <span class="softkey">MA Network Control</span> gombot.</p>
 
-<p>Here it is only possible to change the IP address of Ethernet connector number 1, when the console is <strong>not </strong>connected to a session. In the title bar of the menu you can see the current status of the console. If it says anything other than "Standalone", then you need to tap <span class="softkey">Leave Session</span>.</p>
+<p>Itt csak az 1. számú Ethernet vezérl&otilde; IP címét lehet megváltoztatni, amikor a pult <strong>nincs </strong>munkamenethez csatlakoztatva. A menü fejlécében láthatod az aktuális állapotát a pultnak. Ha más van kiírva mint "Standalone", akkor bökj rá a <span class="softkey">Leave Session</span> gombra.</p>
 
-<p>When the console is standalone, then tap the green input field next to "Station IP". Then type the new IP address - and reboot.</p>
+<p>Ha pult standalone módban van, akkor bökj a zöld beviteli mez&otilde;re a "Station IP" mellett. Utána írd be az új IP címet - és indítsd újra a rendszert.</p>
 
-<h2>Set the IP address using MA Network Configuration</h2>
+<h2>IP cím beállítása az MA Network Configuration segítségével</h2>
 
-<p>You can change the IP addresses in the console by pressing <span class="hardkey">Setup</span> and then <span class="softkey">MA Network Configuration</span>.</p>
+<p>Megváltoztathatod a pult IP címét ha megnyomod a <span class="hardkey">Setup</span> és utána a <span class="softkey">MA Network Configuration</span>-ba lépsz.</p>
 
-<p>In this menu you need to select the <span class="softkey">Consoles</span> tab. Here are all the consoles in your system listed. Selecting a cell with an IP address in the table and pressing the screen encoder will give open an input box that allows changes to the IP address. Each console have two IP addresses - one for each Ethernet connector on the back.</p>
+<p>Ebben a menüben válaszd ki a <span class="softkey">Consoles</span> fület. Itt a rendszerben lév&otilde; összes pult látható. Kiválasztva egy oszlopot ami IP címmel rendelkezik a táblázatban, majd a képerny&otilde; görget&otilde;re nyomva, kapsz egy ablakot, ahol megváltoztathatod az IP címet. Minden pultnak két IP címe van - minden egyes Ethernet csatolónak egy.</p>
 
-<p>The second IP address should always be an Art-Net address. The Art-Net addresses have two ranges that are allowed - one starting with 2 and one starting with 10. Other manufacturers and networks specifiers often uses the "10" range for their primary address scheme. For this reason it is a good practice to keep the Art-Net in the "2" range. That could avoid problems in networks that are not only MA devices and not completely under your control.</p>
+<p>A második IP címet meghagyhatod mindig az Art-Net címnek. Az Art-Net címek mindig két határérték között lehetnek - az egyik 2.-vel kezd&otilde;dik és a másik 10-el. Más gyártók gyakran használják a "10"-es tartományt az els&otilde;dleges címzéshez. Emiatt is hasznos gyakorlat, ha az Art-Net-et a "2"-es tartományban tartod. Ez megel&otilde;zi a gondokat, azokon a hálózatokon, ahol nem csak MA eszközök csatlakoznak és nem állíthatod &otilde;ket.</p>
 
-<p>There is a column for activating DHCP. Read more about DHCP in the <a href="key_network_dhcp.html">Using DHCP in MA devices topic</a>.</p>
+<p>Van egy oszlop a DHCP bekapcsolásához. Olvass a DHCP-r&otilde;lRead a <a href="key_network_dhcp.html">DHCP használata az MA eszközökben fejezetben</a>.</p>
 
 		
 	</body>
