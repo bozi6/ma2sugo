@@ -16,129 +16,129 @@
 <p>Ha munkamenet fut és másik MA eszközök is vannak a munkamenetben, akkor ezeken az eszközökön is lehet a DMX portot kezelni.<br />
 &nbsp;</p>
 
-<p>A művelet ugyanaz, független a rendszer méretétől. Ezt a <strong>MA Network Configuration</strong>-ban lehet végrehajtani. Ezt úgy tudod megcsinálni, hogy megnyomod a <span class="hardkey">Setup</span> gombot és utána a <span class="softkey">MA Network Configuration</span> gombot a "Network" feliratnál.</p>
+<p>A m&ucirc;velet ugyanaz, független a rendszer méretét&otilde;l. Ezt a <strong>MA Network Configuration</strong>-ban lehet végrehajtani. Ezt úgy tudod megcsinálni, hogy megnyomod a <span class="hardkey">Setup</span> gombot és utána a <span class="softkey">MA Network Configuration</span> gombot a "Network" feliratnál.</p>
 
-<p>Az MA Network Configuration különböző részekre van osztva. Mindegyik más MA eszköztípusnak külön. Többet olvashatsz ezekről a részekről és eszközök hozzáadásáról az <a href="key_network_session_add_device.html">eszközök hozzáadása a munkamenethez</a> fejezetben.</p>
+<p>Az MA Network Configuration különböz&otilde; részekre van osztva. Mindegyik más MA eszköztípusnak külön. Többet olvashatsz ezekr&otilde;l a részekr&otilde;l és eszközök hozzáadásáról az <a href="key_network_session_add_device.html">eszközök hozzáadása a munkamenethez</a> fejezetben.</p>
 
 <p>Az állomás amit használsz az mindig a rendszerben van, függetlenül attól, hogy az egy pult, vagy onPC.</p>
 
-<p>All devices that have a DMX port will have columns for each port. The columns can be named from "XLR A" to "XLR H". The consoles also have a "XLR In".</p>
+<p>Minden olyan eszköznek amely rendelkezik DMX porttal, külön oszlopa van minden egyes portnak. Az oszlopok "XLR A" tól "XLR H"-ig lesznek elnevezve. A pultnak van "XLR In" portja is.</p>
 
-<p>They could look like this:</p>
+<p>Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_ma-network-configuration_dmx-ports_v3-2.png" />
-<figcaption><em>DMX&nbsp;Ports in the MA Network Configuration</em></figcaption>
+<figcaption><em>DMX&nbsp;Portok az MA Hálózati Beállításban</em></figcaption>
 </figure>
 
-<p>If the mode or the universe of a port needs to be changed, then select the relevant cell in the window and edit the cell. This can be done by tapping the the screen encoder, if you are on a console. It is also possible to right click if a mouse or trackball is connected. Or press <span class="hardkey">Edit</span> followed by the cell you want to edit.</p>
+<p>Ha a módot vagy univerzumot kell megváltoztatni, akkor válaszd ki a szükséges cellát az ablakban és szerkeszd a cellát. Ezt megteheted, ha ráböksz a képerny&otilde;kerékre, ha a pult el&otilde;tt ülsz. Lehetséges jobb klikkel is szerkeszteni, ha van egér vagy hanyattegér a közelben. Vagy nyomd meg az <span class="hardkey">Edit</span> gombot, és utána ráböksz a szerkesztend&otilde; cellára.</p>
 
-<p>When editing a DMX port cell, a pop-up like this appears:</p>
+<p>Amikor szerkesztesz egy DMX port cellát, egy ablakocska jelenik meg, ilyesmi kinézettel:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_ma-network-configuration_dmx-node_configure-port_v3-3.png" />
-<figcaption><em>Configure&nbsp;DMX&nbsp;port pop-up - DMX node version</em></figcaption>
+<figcaption><em>DMX&nbsp;port ablakocska - DMX node verzió</em></figcaption>
 </figure>
 
 <h3><a id="port_modes" name="port_modes"></a>Port Mode</h3>
 
-<p>The "Port Mode" is a drop down list that has the following options:</p>
+<p>A "Port Mode" egy legördül&otilde; lista a következ&otilde; opciókkal:</p>
 
 <ul>
-	<li><strong>Off</strong> - The DMX port is turned off and the device will not input or output any DMX.</li>
-	<li><strong>In</strong> - The DMX port is functioning as an DMX input. It will merge values into the universe number typed in the green universe field - If "DMX In Merge" is activated in the Setup-&gt;Show-&gt;Patch only-&gt;<a href="key_patch_dmx_parameter_list.html#dmx_list">DMX List</a>.</li>
-	<li><strong>Out</strong> - The DMX port is outputting the DMX universe set in the green universe field.</li>
+	<li><strong>Off</strong> - A DMX port kikapcsolva, nincs DMX ki-/bemenet az eszközön.</li>
+	<li><strong>In</strong> - A DMX port mint DMX bemenet m&ucirc;ködik. Ez összefésüli az értékeket, a zöld mez&otilde;be beírt, univerzumba - Ha "DMX In Merge" aktivált a Setup-&gt;Show-&gt;Patch only-&gt;<a href="key_patch_dmx_parameter_list.html#dmx_list">DMX Listában</a>.</li>
+	<li><strong>Out</strong> - A DMX port kiküldi a DMX jelet a beállított univerzumba.</li>
 </ul>
 
-<p>All DMX ports can be an Input or an Output. It is just a matter of maybe adding a XLR gender changer to the physical connector. The <strong>exceptions</strong> are:</p>
+<p>Minden DMX port, lehet bemenet vagy kimenet. Hasznos, ha XLR fordítót dugsz a fizikai csatlakozóba. A <strong>kivételek </strong>a következ&otilde;k:</p>
 
 <ul>
-	<li>grandMA2 onPC Command Wing: The connector called "DMX B" / "XLR B" can NOT be input!</li>
-	<li>MA NSP in <strong>Art-Net mode</strong> or <strong>4-port mode</strong>: The connector called "DMX A" / "XLR A" and "DMX B" / "XLR B" can NOT be input!</li>
+	<li>grandMA2 onPC Command Wing: A csatlakozó "DMX B" / "XLR B" NEM lehet bemenet!</li>
+	<li>MA NSP <strong>Art-Net módban</strong> vagy <strong>4-port módban</strong>: A csatlakozó "DMX A" / "XLR A" és "DMX B" / "XLR B" NEM lehet bemenet!</li>
 </ul>
 
 <div class="important"><strong>Fontos:</strong><br />
-If a DMX port is turned off or do not transmit DMX data (for any reason), then the port is in <strong>High-Z</strong> mode. This means that there is no data being transmitted at all!</div>
+Ha a DMX port ki van kapcsolva, vagy nem küld DMX adatokat(valmilyen oknál fogva), akkor a port <strong>High-Z</strong> módban van. Ez azt jelenti, hogy semmiképpen nincs adatforgalom!</div>
 
-<h3><a id="input_limitation" name="input_limitation"></a>Other limitations with DMX input</h3>
+<h3><a id="input_limitation" name="input_limitation"></a>Más határai a DMX bemenetnek</h3>
 
-<p>There is limitations regarding the number of DMX sources per universe. It is only allowed that a maximum of <strong>two outside sources</strong> send DMX data to the same Universe -&nbsp; this is <strong>per universe</strong>. It does not matter how the DMX is received. It can come from a DMX port on a console or from a Network Protocol. Only two outside sources per universe.</p>
+<p>Van egy limitálása a DMX forrásoknak univerzumonként. Maximum <strong>két küls&otilde; forrásból </strong> engedélyezett DMX adat küldése ugyanabba az univerzumba -&nbsp; ez van <strong>univerzumonként</strong>. Nem számít, hogyan fogadja a DMX adatokat. Jöhet DMX portról egy pultból, vagy hálózaton keresztül. Csak kett&otilde; küls&otilde; forrás univerzumonként.</p>
 
-<p>If there is both an Art-Net and sACN source merging data into the same universe, then the limit of two different sources have been reached.</p>
+<p>Ha egyszerre az Art-Net és sACN források is adatokat fésülnek össze ugyanabba az univerzumba, akkor máris elérted a két forrásos határt.</p>
 
-<p>There is also a limitation regarding the devices receiving the incoming DMX. Any grandMA2 device can only have one DMX port as input per universe. This means that for instance a 4 port can have the four DMX ports as input, but the ports need to send the DMX to different universes. It is the same if the DMX is connected to a console. The DMX ports can be set to receive DMX, but they need to merge it to different universes. A Master in a session can receive DMX data to universe 1 from Art-Net or sACN and use one of the DMX ports as input to universe 1.</p>
+<p>A bejöv&otilde; DMX-t fogadó eszközökre vonatkozóan is van korlátozás. Bármely grandMA2 eszköznek csak egy DMX portja lehet bemenetként univerzumonként. Ez azt jelenti, hogy például egy 4 portnál a négy DMX port lehet bemenetként, de a portoknak el kell küldenie a DMX-et különböz&otilde; univerzumoknak. Ugyanez van, ha a DMX konzolhoz van csatlakoztatva. A DMX portok beállíthatók a DMX vételére, de össze kell egyesíteniük különböz&otilde; univerzumokkal. A munkamenetben lév&otilde; mester DMX-adatokat fogadhat az 1. univerzumba az Art-Net-t&otilde;l vagy az sACN-tól, és az egyik univerzum bemeneteként használhatja a DMX-portok egyikét.</p>
 
-<h3>Universe</h3>
+<h3>Universe - Univerzum</h3>
 
-<p>The green input field can be used to set the universe number.</p>
+<p>A zöld bemeneti mez&otilde; használható az univerzum számának beállításához.</p>
 
-<h3><a id="fail_mode" name="fail_mode"></a>DMX Fail Mode - DMX nodes only</h3>
+<h3><a id="fail_mode" name="fail_mode"></a>DMX Fail Mode - csak DMX node-oknál</h3>
 
-<p>The nodes have an extra option called <strong>DMX Fail Mode</strong>.</p>
+<p>A node-oknak lehet egy extra opciójuk amit <strong>DMX Fail Mode</strong>-nak hívunk.</p>
 
-<p>This determine what should happen if the node loses connection to the session or the DMX stream is stopped. The DMX stream can stop if there is a show upload or the session has ended.</p>
+<p>Ez meghatározza, hogy mi történjen ha a node elveszti a kapcsolatot a munkamenettel, vagy a DMX folyam megszakad. A DMX folyam megszakadhat, ha egy show-t feltölt a rendszer, vagy ha egy munkamenet befejez&otilde;dik.</p>
 
-<p>The options are:</p>
+<p>Az opciók a következ&otilde;k:</p>
 
 <ul>
-	<li><strong>Timeout 10s</strong></li>
-	<li><strong>Timeout 20s</strong></li>
-	<li><strong>Timeout 30s</strong></li>
-	<li><strong>Timeout 1m</strong></li>
-	<li><strong>Timeout 10m</strong></li>
-	<li><strong>Timeout 30m</strong></li>
-	<li><strong>Timeout 1h</strong></li>
+	<li><strong>Id&otilde;túllépés 10s</strong></li>
+	<li><strong>Id&otilde;túllépés 20s</strong></li>
+	<li><strong>Id&otilde;túllépés 30s</strong></li>
+	<li><strong>Id&otilde;túllépés 1m</strong></li>
+	<li><strong>Id&otilde;túllépés 10m</strong></li>
+	<li><strong>Id&otilde;túllépés 30m</strong></li>
+	<li><strong>Id&otilde;túllépés 1h</strong></li>
 	<li><strong>Hold</strong></li>
 </ul>
 
-<p>The <strong>Timeout</strong> options are similar except the time. They will hold the DMX values for the chosen time and then stop the DMX stream (High-Z mode).</p>
+<p>Az<strong>Id&otilde;túllépés</strong> opciók hasonlóak, kivéve az id&otilde;t. Visszatartják a DMX értéket a választott ideig és utána megállítják a DMX folyamot (High-Z mód).</p>
 
-<p>The <strong>Hold</strong> option will make the node continue to send the DMX values as long as it got power.</p>
+<p>A <strong>Hold</strong> opciónál, folytatja a node a DMX adatok küldését addig, ameddig áram alatt van..</p>
 
-<p>Read more about configuring the MA Nodes in the <a href="key_control_ma_xport_node.html">Control the MA Node section</a>.</p>
+<p>Az MA node-ok beállításáról olvashatsz az <a href="key_control_ma_xport_node.html">MA node-k vezérlése fejezetben</a>.</p>
 
-<h3>Timeout outfade time</h3>
+<h3>Id&otilde;túllépés kiúszási ideje</h3>
 
-<p>Here it is possible to set a fade time that will be used when a <strong>Timeout</strong> is selected. The DMX values will then fade from their last values to a value of 0. When it has completed the fade, then it will stop transmitting DMX (High-Z mode).</p>
+<p>Meglehet adni egy úszási id&otilde;t, amikor az<strong>Id&otilde;túllépés</strong> van kiválasztva. A DMX értékek az utolsó értékükr&otilde;l kiúsznak 0-ra a megadott id&otilde; alatt. Amikor kiúsztak akkor megsz&ucirc;nik a DMX átvitel (High-Z mód).</p>
 
-<p>The maximum fade time is 10 seconds.</p>
+<p>A maximum kiúszási id&otilde; 10 másodperc.</p>
 
-<p>The <strong>Hold</strong> option also do not have a fade time option since it continues the DMX data stream.</p>
+<p>A <strong>Hold</strong> opciónak nincs kiúszási ideje, mivel ez tartja a DMX adatfolyamot addig lehetséges.</p>
 
-<h3><a id="merge_modes" name="merge_modes"></a>Merge Mode</h3>
+<h3><a id="merge_modes" name="merge_modes"></a>Merge Mód</h3>
 
-<p>The bottom drop down list is for setting how the device should merge incoming DMX data from outside sources, if the device is not under MA-Net control.</p>
+<p>Az alul lév&otilde; legördül&otilde; listában lehet beállítani, hogy az eszköz hogyan fésülje össze a bejöv&otilde; DMX adatokat küls&otilde; forrásból, ha az eszközt nem az MA-Net vezérli.</p>
 
-<p>This could be DMX nodes that are set to a session number that does not exist. Then they can be used to transport DMX through an Ethernet network - without any consoles or onPCs.</p>
+<p>Ez lehet akkor, amikor a DMX node-ok olyan munkamenet azonosítót használnak amik nem léteznek. Akkor ezek tudna DMX adatot küldeni az Ethernet hálózaton keresztül- pult és onPC nélkül is.</p>
 
-<p>The options in the drop down are:</p>
+<p>Az opciók a listában a következ&otilde;k:</p>
 
 <ul>
 	<li><strong>None: </strong><br />
-	There will be no merging.</li>
+	Nincs összefésülés.</li>
 	<li><strong>LTP:</strong><br />
-	The universes will merge following the LTP (Latest Takes Precedence) rules.</li>
+	Az univerzumok az LTP (Latest Takes Precedence) szablyai szerint lesznek összefésülve.</li>
 	<li><strong>HTP:</strong><br />
-	The universes will merge following the HTP (Highest Takes Precedence) rules.</li>
+	Az univerzumok a HTP (Highest Takes Precedence) szablyai szerint lesznek összefésülve.</li>
 	<li><strong>LoTP:</strong><br />
-	The universes will merge following the LoTP (Lowest Takes Precedence) rules.</li>
+	Az univerzumok az LoTP (Lowest Takes Precedence) szablyai szerint lesznek összefésülve.</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<p>When the settings are correct, tap the <span class="softkey">Please</span> button to confirm the settings or tap the <span class="softkey">X</span> in the upper right corner of the pop-up to cancel the change.</p>
+<p>Ha kész vagy a beállításokkal, bökj a <span class="softkey">Please</span> gombra a beállítások elfogadásához, vagy bökj az <span class="softkey">X</span> -re az ablakocska jobb fels&otilde; sarkában, a változások elvetéséhez.</p>
 
-<p>Please remember the limitations mentioned <a href="#input_limitation">above</a>.</p>
+<p>Emlékezz a bemutatott határok betartására, lásd <a href="#input_limitation">fenn</a>.</p>
 
-<h2>Where are the settings stored?</h2>
+<h2>Hol tárolódnak a beállítások?</h2>
 
-<p>Changes to the DMX ports on Consoles, onPCs and NPUs are stored as a part of the show file. The settings will be loaded into the devices when a show is loaded, but only if the "Network Config" settings are included when loading from the show file. For more info on loading show files, please have a look at the <a href="key_backup_menu.html">Using the Backup Menu</a> topics.</p>
+<p>A DMX portok változásai a Pultban, onPC-n és NPU-knál, a show fájl részeként tárolódnak. A beállítások betölt&otilde;dnek az eszközre, amikor egy show betölt&otilde;dik, de csak ha a "Network Config" beállításokat tartalmazza, amikor betölt&otilde;dik a show fájl. További információk a show fájlok betöltésér&otilde;l, lásd <a href="key_backup_menu.html">A Backup menü használata</a> fejezetet.</p>
 
 <p>&nbsp;</p>
 
-<p>The DMX nodes (MA nodes) and MA switches are different. Their settings are stored locally in the devices and a not loaded or changed with the show file.</p>
+<p>A DMX node-ok (MA node-ok) és MA switch-ek különböznek. A beállításaik helyben tárolódnak az eszközön és nem változnak meg a show fájl betöltésekor.</p>
 
-<p>The configuration of the DMX nodes and switches can be exported and imported. This can be done to/from the hard drive or a USB stick.</p>
+<p>A DMX node-ok és switch-ek beállításait lehet exportálni és importálni. Ezt a bels&otilde; meghajtóra, vagy pendrájvra lehet megtenni.</p>
 
-<p>Please read the <a href="key_export_and_import.html">Export and Import topics</a> for more information about this.</p>
+<p>Olvasd el az <a href="key_export_and_import.html">Export és Import fejezetet</a> további információkért.</p>
 
 <p>&nbsp;</p>
 

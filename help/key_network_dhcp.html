@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Using DHCP in MA devices</title>
+		<title>DHCP használata az MA eszközökben</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="DHCP, automatic IP address, APIPA" />
@@ -9,17 +9,17 @@
 	<body>
 		
 		
-		<h1>Using DHCP in MA devices</h1>
+		<h1>DHCP használata az MA eszközökben</h1>
 		
-		<p>The grandMA2 supports the use of DHCP (Dynamic Host Configuration Protocol). Use the normal procedure for setting static IP addresses in your devices, if you do not know what DHCP is.</p>
+		<p>A grandMA2 támogatja a DHCP-t (Dynamic Host Configuration Protocol). Használd a normális eljárást a statikus IP cím beállításához az eszközeidben, ha nem tudod mi a DHCP.</p>
 
 <p>&nbsp;</p>
 
-<p>DHCP is enabled as a default when you do a full install. It can also be enabled on Consoles, NPU, and DMX Nodes from the Setup-&gt;Network-&gt;MA Network Configuration. Read more about this in the <a href="key_network_session_add_device.html">Adding devices to your session topic</a>.</p>
+<p>A DHCP engedélyezve van alapesetben, ha teljes telepítést csináltál. Engedélyezheted a Pulton, NPU-n, és DMX Node-okon a Setup-&gt;Network-&gt;MA Network Configuration menüben. Olvass ról többet az <a href="key_network_session_add_device.html">Eszköz hozzáadása a munkamenethez fejezetben</a>.</p>
 
-<p>The device will look for a DHCP server in the network during the boot process. If a DHCP server is not found, then the device will assign an IP address in the APIPA (Automatic Private IP Addressing) range. This address will begin with 169.254.x.y.</p>
+<p>Az eszköz keresni kezd egy DHCP szervert a hálózaton bootoláskor. Ha nem talált DHCP szervert, akkor az eszköz az AIPA (Automatikus Privát Cím) tartományból rendel hozzá egy címet. Ezek a címek 169.254.x.y -el kezd&otilde;dnek.</p>
 
-<p>DHCP can also be used to define a gateway address. This can also be done with static address, but only when using the <a href="key_keyword_setip.html">SetIP kulcsszó</a> in the command line.</p>
+<p>A DHCP használható átjáró megadásához is. Ezt szintén megteheted statikus címeknél is, de csak a <a href="key_keyword_setip.html">SetIP kulcsszóval</a> a parancssorban.</p>
 
 		
 	</body>
