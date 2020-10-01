@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
 		<title>Store Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,34 +11,34 @@
 		
 		<h1>Store Kulcsszó</h1>
 		
-		<p>To go to the Store keyword, press <span class="hardkey">Store</span>.<br />
-You can also type <strong>Store </strong>in the command line or use the shortcut <strong>S</strong>.</p>
+		<p>A Store kulcsszóhoz, nyomd meg a <span class="hardkey">Store</span> gombot.<br />
+Beírhatod a <strong>Store </strong>-t a parancssorba vagy röviden <strong>S</strong>.</p>
 
 <h2>Leírás</h2>
 
-<p>The store keyword, stores functions in the show file.</p>
+<p>A store kulcsszó, tárolja a funkciókat a showfájlban.</p>
 
-<p>If no object-type or destination is given, the object-type <strong>Cue</strong> will be used for the sequence of the selected executor.</p>
+<p>Ha nincs objektumtípus vagy cél megadva, a <strong>kép</strong> objektumtípus lesz használva, ami a kiválasztott executor szekvenciája.</p>
 
-<p>Store egy függvény kulcsszó.</p>
+<p>A Store egy függvény kulcsszó.</p>
 
 <h2>Szintaxis</h2>
 
-<p><span class="syntax">Store [object-list] "Name" / [option] = [option value]</span></p>
+<p><span class="syntax">Store [objektumlista] "Név" / [opció] = [opció érték]</span></p>
 
 <h2>Opciók</h2>
 
-<p>To get a list of all available options to the store keyword, type in the command line</p>
+<p>Minden elérhet&otilde; opció megjelenítéséhez, írd be a parancssorba</p>
 
 <div class="cl_input">[Channel]&gt; Store /?</div>
 
-<p>The store keyword has the following options.</p>
+<p>A store kulcsszónak az alábbi opciói vannak.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
 			<th scope="col">Opció</th>
-			<th scope="col">Option Shortcut</th>
+			<th scope="col">Opció Röviden</th>
 			<th scope="col">Opció értéke</th>
 			<th scope="col">Leírás</th>
 		</tr>
@@ -48,164 +48,164 @@ You can also type <strong>Store </strong>in the command line or use the shortcut
 			<td>addnewcontent</td>
 			<td>an</td>
 			<td>False, True</td>
-			<td>False is the same as originalcontent.</td>
+			<td>False ugyanaz mint az eredeti tartalom.</td>
 		</tr>
 		<tr>
 			<td>auto</td>
 			<td>not available</td>
 			<td>nincs opció érték</td>
-			<td>Stores preset values with the default preset scope.</td>
+			<td>Eltárolja a presetet az alapértelmezett hatókörrel.</td>
 		</tr>
 		<tr>
 			<td>cueonly</td>
 			<td>co</td>
 			<td>False, True</td>
-			<td>Prevents changes to track forward.</td>
+			<td>Megóvja a változásokat a tracking követést&otilde;l el&otilde;re.</td>
 		</tr>
 		<tr>
 			<td>effects</td>
 			<td>ef</td>
 			<td>False, True</td>
-			<td>Filters or enables effect layer.</td>
+			<td>Kisz&ucirc;ri, vagy engedélyezi az effekt réteget.</td>
 		</tr>
 		<tr>
 			<td>embedded</td>
 			<td>e</td>
 			<td>False, True</td>
-			<td>Creates embedded preset.</td>
+			<td>Beágyazott presetet hoz létre.</td>
 		</tr>
 		<tr>
 			<td>global</td>
 			<td>g</td>
 			<td>nincs opció érték</td>
-			<td>Stores preset with global values.</td>
+			<td>Preset tárolása globális értékekkel.</td>
 		</tr>
 		<tr>
 			<td>keepactive</td>
 			<td>ka</td>
 			<td>False, True</td>
-			<td>Keeps values active.</td>
+			<td>Értékek aktívan tartása.</td>
 		</tr>
 		<tr>
 			<td>merge</td>
 			<td>m</td>
 			<td>nincs opció érték</td>
-			<td>Merges the new values into the existing values. New values have a higher priority and will overwrite existing values. If no new value is given, the values of the existing cue stays.</td>
+			<td>Összefésüli az új értékeket a régiekkel. Az új értékeknek magasabb a prioritása, mint a meglév&otilde;knek. Ha nincsn új érték megadva, a meglév&otilde; kép értékei maradnak érvényesek.</td>
 		</tr>
 		<tr>
 			<td>noconfirm</td>
 			<td>nc</td>
 			<td>nincs opció érték</td>
-			<td>Suppress stores confirmation pop-up.</td>
+			<td>Elnémítja a jóváhagyó ablakocska megjelenítését.</td>
 		</tr>
 		<tr>
 			<td>originalcontent</td>
 			<td>or</td>
 			<td>False, True</td>
-			<td>Stores the original content of the preset, effect, or cue. False is the same as addnewcontent.</td>
+			<td>A preset, effekt vagy kép eredeti tartalmát tárolja. A False ugyanaz mint az addnewcontent.</td>
 		</tr>
 		<tr>
 			<td>overwrite&nbsp;</td>
 			<td>o</td>
 			<td>nincs opció érték</td>
-			<td>Removes stored values in the&nbsp;cue and stores the new values.</td>
+			<td>Eltávolítja a tárolt adatokat a képben és az újakat tárolja.</td>
 		</tr>
 		<tr>
 			<td>presetfilter</td>
 			<td>p</td>
 			<td>False, True</td>
-			<td>Sets preset filter on or off.</td>
+			<td>A preset sz&ucirc;r&otilde;t kapcsolja ki/be.</td>
 		</tr>
 		<tr>
 			<td>remove</td>
 			<td>not available</td>
 			<td>nincs opció érték</td>
-			<td>Removes stored values for attributes with active programmer values.</td>
+			<td>Eltávolítja a tárolt értékeket, onnan ahol aktív programozó értékek vannak.</td>
 		</tr>
 		<tr>
 			<td>screen</td>
 			<td>not available</td>
 			<td>1..6</td>
-			<td>Stores view with selected screen.</td>
+			<td>Tárolja a nézetet a kiválasztott képreny&otilde;n.</td>
 		</tr>
 		<tr>
 			<td>selective</td>
 			<td>s</td>
 			<td>nincs opció érték</td>
-			<td>Stores preset with selective values.</td>
+			<td>Preset tárolása szelektív értékekkel.</td>
 		</tr>
 		<tr>
 			<td>source</td>
 			<td>so</td>
 			<td>Prog, Output, Dmx In</td>
-			<td>Defines data source.</td>
+			<td>Megadja az adat forrását.</td>
 		</tr>
 		<tr>
 			<td>tracking</td>
 			<td>t</td>
 			<td>False, True</td>
-			<td>Stores with tracking. False is the same as cueonly.</td>
+			<td>Tracking-el együtt tárol. A False ugyanaz mint a cueonly.</td>
 		</tr>
 		<tr>
 			<td>trackingshield</td>
 			<td>ts</td>
 			<td>nincs opció érték</td>
-			<td>Use tracking shield for store.</td>
+			<td>A tracking shield használata a tároláshoz.</td>
 		</tr>
 		<tr>
 			<td>universal</td>
 			<td>u</td>
 			<td>nincs opció érték</td>
-			<td>Stores preset with universal values.</td>
+			<td>A preseteket univerzális értékkel tárolja.</td>
 		</tr>
 		<tr>
 			<td>useselection</td>
 			<td>use</td>
 			<td>Active, Allforselected, Activeforselected, All, Look</td>
-			<td>Sets selection.</td>
+			<td>Beállítja a kiválasztást.</td>
 		</tr>
 		<tr>
 			<td>values</td>
 			<td>v</td>
 			<td>False, True</td>
-			<td>Filters or enables value layer.</td>
+			<td>Kisz&ucirc;ri vagy engedi az érték réteget.</td>
 		</tr>
 		<tr>
 			<td>valuetimes</td>
 			<td>vt</td>
 			<td>False, True</td>
-			<td>Filters or enables value times layer.</td>
+			<td>Kisz&ucirc;ri vagy engedi az id&otilde; réteget.</td>
 		</tr>
 		<tr>
 			<td>x</td>
 			<td>not available</td>
 			<td>x coordinate in the layout view, e.g. -9.17441</td>
-			<td>Sets the x coordinate in the layout view. For more information, see <a href="key_layouts.html">Layouts</a>.</td>
+			<td>Beállítja az x koordinátát az alaprajz nézetben. További információ: <a href="key_layouts.html">Layouts</a>.</td>
 		</tr>
 		<tr>
 			<td>y</td>
 			<td>not available</td>
 			<td>y coordinate in the layout view, e.g. 7.93822</td>
-			<td>Sets the y coordinate in the layout view. For more information, see <a href="key_layouts.html">Layouts</a>.</td>
+			<td>Beállítja az y koordinátát az alaprajz nézetben. További információ: <a href="key_layouts.html">Layouts</a>.</td>
 		</tr>
 	</tbody>
 </table>
 
 <h2>Példa</h2>
 
-<p>1. Store cue 7 in the sequence of the selected executor. For more information, see <a href="key_cs_store.html">Store Cues</a>.</p>
+<p>1. Eltároljuk a 7. képet a kiválasztott executor szekvenciájában. További információ:<a href="key_cs_store.html">Képek tárolása</a>.</p>
 
 <div class="cl_input">[Channel]&gt; Store 7</div>
 
 <p>&nbsp;</p>
 
-<p>2. Store dimmer preset 3 with all attributes and keep the values active in the programmer. For more information, see <a href="key_presets_create.html">Store Presets</a>.</p>
+<p>2. A 3. dimmer preset eltárolása minden attribútummal együtt és megtartja az aktív értéket a programozóban. További információ: <a href="key_presets_create.html">Presetek tárolása</a>.</p>
 
 <div class="cl_input">[Channel]&gt; Store Preset 1.3 /presetfilter=false /ka</div>
 
 <p>&nbsp;</p>
 
-<p>3. Store the programmer values as cue 1 through cue 10 and cue 20 through cue 30.</p>
+<p>3. A programozó értékek tárolása az 1. képt&otilde;l a 10. képig és a 20. képt&otilde;l a 30. képig.</p>
 
 <div class="cl_input">[Channel]&gt; Store Cue 1 Thru 10 + 20 Thru 30</div>
 

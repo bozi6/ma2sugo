@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>FTP connection to console and NPU</title>
+		<title>FTP kapcsolódás a pulthoz és NPU-hoz</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="FTP connection, console - FTP connection, MA NPU - FTP connection, template folder - access, crashlogs, screenshots" />
@@ -9,78 +9,78 @@
 	<body>
 		
 		
-		<h1>FTP connection to console and NPU</h1>
+		<h1>FTP kapcsolódás a pulthoz és NPU-hoz</h1>
 		
-		<p>The consoles and the grandMA2 NPU can be accessed using a FTP client program.</p>
+		<p>A pult és a grandMA2 NPU elérhet&otilde; FTP kliens program segítségével.</p>
 
-<p>One such program could be FileZilla Client from the <a href="https://filezilla-project.org/index.php">FileZilla Project</a> (external link to internet webpage).</p>
+<p>Egyik ilyen program lehet a FileZilla kliens a <a href="https://filezilla-project.org/index.php">FileZilla Project</a> (küls&otilde; link egy internetes oldalhoz).</p>
 
-<p>The FTP client needs to be installed on a computer in the same network as the console or NPU.</p>
+<p>Az FTP klienst fel kell telepíteni a számítógépre, ugyanazon hálózaton, mint ahol a pult vagy NPU is van.</p>
 
-<p>To access the console or NPU, the IP address of the device is needed. A user name and password is also required. Both username and password is: <strong>data</strong>.</p>
+<p>A pult vagy NPU eléréséhez, kell az IP címe az eszköznek. Felhasználónév és jelszó is szükséges. Mind a felhasználónév és jelszó is <strong>data</strong>.</p>
 
-<div class="warning"><strong>WARNING:</strong><br />
-Be very careful making any changes in the folders or files. This is direct access into the device. Deleting or moving files may cause serious harm to the device.</div>
+<div class="warning"><strong>FIGYELMEZTETÉS:</strong><br />
+Légy baromi óvatos a mappák és fájlok megváltoztatásával. Ez egy közvetlen hozzáférés az eszközhöz. A fájlok/mappák ész nélküli törlése, vagy mozgatása/átnevezése, komoly bajokat tud okozni az eszköz lelkivilágában.</div>
 
-<p>Once the connection is made, it is possible to browse through the folders inside the device. The first level of folders should look something like this:</p>
+<p>Ha a kapcsolat létrejött, akkor lehetséges böngészni a mappákat az eszközön belül. Az els&otilde; szintje a mappáknak ilyesmi lehet:</p>
 
 <figure class="caption"><img alt="" src="../../img/img_ftp_main-folder_v3-3.PNG" />
-<figcaption><em>FTP main folders</em></figcaption>
+<figcaption><em>FTP fels&otilde; szint&ucirc; mappák</em></figcaption>
 </figure>
 
-<p>If the device has been updated, then there might be several version folders.</p>
+<p>Ha az eszköz frissítve lett, akkor lehetnek különböz&otilde; verziójú mappák is.</p>
 
-<p>Most often the needed folder are found in the currently installed and active running software. These folders can be accessed using the "actual" link. This will give access to a new folder called <strong>gma2</strong>.</p>
+<p>Leggyakrabban a szükséges mappa az aktuálisan futó szoftververzióban található. Ezt a mappát elérheted az "actual" linkre kattintva. Ez megnyit egy újabb mappát <strong>gma2</strong> néven.</p>
 
-<p>Accessing this folder will give access to the folders and files that constitutes the grandMA2. The first few of these folders could look like this:</p>
+<p>Ezekbe a mappákba belépve látható az mi alkotja a grandMA2-t. Az els&otilde; néhány mappa ilyesmiképpen nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/img_ftp_gma-folder_v3-3.PNG" />
-<figcaption><em>gMA2 folders</em></figcaption>
+<figcaption><em>gMA2 mappák</em></figcaption>
 </figure>
 
-<p>Some off these folders are also present on a USB stick if it has been used to save a show.</p>
+<p>Néhány mappa megtalálható egy pendrájvon is ha mentettél már rá showfájlt.</p>
 
-<p>There are many folders here that gives access to many of the elements that the grandMA2 software uses.</p>
-
-<p>&nbsp;</p>
-
-<h2>Show folder</h2>
-
-<p>The folder called "shows" contain all the show files save in this version of the software. If show files from a previous software is needed, then you will need to navigate to the correct version folder and find the show folder in that version.</p>
+<p>Van több mappa is amiben hozzáférhetsz olyan elemekhez is amelyeket a grandMA2 szoftver használ.</p>
 
 <p>&nbsp;</p>
 
-<h2>Template show folder</h2>
+<h2>Show mappa</h2>
 
-<p>The Template show folder is found in the first layer of folders. Show files can be copied to this folder. Show files in this folder are read only, and cannot be overwritten. They can be loaded from the grandMA2 software and stored as a new show either internal or on a USB stick.</p>
+<p>A "shows" nev&ucirc; mappa , tartalmaz minden ebben a verzióban elmentett show-t. Ha egy régebbi változatú show fájl kell, akkor menj a megfelel&otilde; verziójú mappába, és ott keresd meg a show fájlt.</p>
 
-<p>Then only way to get show files into the template folder is using FTP access.</p>
+<p>&nbsp;</p>
 
-<p>The template folder is not overwritten when the device is updated. It is only overwritten when a Full Install is performed.</p>
+<h2>Sablon show mappa - templateshows folder</h2>
+
+<p>A sablon show fájlok mappát a f&otilde;könyvtárban találhatod. Ebbe a mappába másolt showfájlok, csak olvashatóak és nem felülírhatóak. Betölthet&otilde;ek a grandMA2 szofverben, és elmenthet&otilde;ek új néven, a bels&otilde; és a pendrájv meghajtókra.</p>
+
+<p>Az egyetlen módja, hogy show fájlok kerüljenek a sablon mappába, az FTP használatával lehetséges.</p>
+
+<p>A sablon mappa nem íródik felül, amikor a z eszközt frissíted. Csak akkor, ha teljes frissítést végzel rajta.</p>
 
 <p>&nbsp;</p>
 
 <h2>Import Export</h2>
 
-<p>If something is exported using the Export keyword, then it most often ends up in the "importexport" folder.</p>
+<p>Ha valamit kiexportáltál az export kulcsszóval, akkor leggyakrabban az "importexport" mappában lesz meg a cucc.</p>
 
-<p>Depending on what it is it might end up in the "macro" folder or the "fixture_layers" folder.</p>
+<p>Attól függ&otilde;en mi volt az, lehet még a "macro" mappában vagy a "fixture_layers" mappában.</p>
 
-<p>The internal fixture library are found in the "library" folder.</p>
-
-<p>&nbsp;</p>
-
-<h2>Crashlogs</h2>
-
-<p>It can happen that a device crashes. If this should happen then a crashlog is written and stored in the "temp" folder.</p>
-
-<p>On the consoles it is also possible to get these crash logs using the <a href="key_keyword_crashlogcopy.html">CrashLogCopy</a> keyword. This is not possible on the NPUs.</p>
+<p>A bels&otilde; lámpa könyvtár a "library" mappában van.</p>
 
 <p>&nbsp;</p>
 
-<h2>Screenshots</h2>
+<h2>Összeomlás jelentések</h2>
 
-<p>It is possible to make a screenshot of the last touched screen by pressing the <span class="hardkey">Prt Scr</span> key on the keyboard. The screenshots are stored in the "temp" folder. It is a gz compressed tga file. It needs to be uncompressed before it can be opened.</p>
+<p>El&otilde;fordul, hogy az eszköz összeomlik. Ha ilyesmi történik, akkor a "temp" mappában lesz crashlog, ami az összeomlás jelentést tartalmazza.</p>
+
+<p>A pultból is kinyerheted a crashlogot a <a href="key_keyword_crashlogcopy.html">CrashLogCopy</a> kulcsszóval. Ez nem lehetséges az NPU-k esetében.</p>
+
+<p>&nbsp;</p>
+
+<h2>Képerny&otilde;képek</h2>
+
+<p>Lehetséges képerny&otilde;képet lementeni az utoljára megérintett képerny&otilde;r&otilde;l, a <span class="hardkey">Prt Scr</span> gomb megnyomásával a billenty&ucirc;zeten. A képerny&otilde;kép a "temp" mappábna tárolódik. Ez egy gz tömörített tga fájl. Megtekintés el&otilde;tt ki kell tömöríteni.</p>
 
 		
 	</body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
 		<title>Messages Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,40 +11,40 @@
 		
 		<h1>Messages Kulcsszó</h1>
 		
-		<p>To get the Messages keyword in the command line, type <strong>Messages </strong>a parancssorba.</p>
+		<p>A Message kulcsszóhoz, írd be a <strong>Messages </strong>-t a parancssorba.</p>
 
 <h2>Leírás</h2>
 
-<p>With the Messages keyword you can</p>
+<p>A Messages kulcsszóval lehetséges</p>
 
 <ul>
-	<li>list messages in the command line feedback window.</li>
-	<li>export messages as a messages.xml file.</li>
-	<li>delete messages from the message center, for example, from previous show files.</li>
+	<li>üzeneteket listázni a parancssori visszajelz&otilde; ablakba.</li>
+	<li>üzeneteket exportálni a messages.xml fájlba.</li>
+	<li>üzeneteket törölni az üzenetközpontból, például az el&otilde;z&otilde; show fájlokból.</li>
 </ul>
 
-<p>For more information to export files, see <a href="key_ei_export_commandline.html">general export function</a>.</p>
+<p>Több információ a fájlok exportálásához <a href="key_ei_export_commandline.html">általános export funkciók</a>.</p>
 
-<p>The Messages keyword is an object keyword.</p>
+<p>A Messages kulcsszó egy objektum kulcsszó.</p>
 
 <h2>Szintaxis</h2>
 
-<p><span class="syntax">[Function] Messages / Condition = [Condition] [Operation Syntax] [Condition Value]</span></p>
+<p><span class="syntax">[Funkció] Üzenet / Feltétel = [Feltétel] [Operation Syntax] [Feltétel Érték]</span></p>
 
-<h2>Conditions</h2>
+<h2>Feltételek</h2>
 
-<p>The Messages keyword can only be used with the option <strong>condition</strong>. The short cut for condition is <strong>cnd</strong>.</p>
+<p>Az üzeneteket kulcsszó csak a <strong>feltételek</strong> opcióval használható. A rövidítése a kondíciónak <strong>cnd</strong>.</p>
 
-<p>The following table displays the supported condition values.</p>
+<p>A következ&otilde; táblázat mutatja a támogatott kondíciós értékeket.</p>
 
 <div class="important"><strong>Fontos:</strong><br />
-String comparison with wild cards are possible. Values are case-insensitive.</div>
+Szövegek összehasonlítása helyettesít&otilde;kkel lehetséges. Az értékek nagybet&ucirc; érzékenyek.</div>
 
 <table border="1" cellpadding="1" cellspacing="1" style="height:222px; width:410px">
 	<thead>
 		<tr>
-			<th scope="col">Condition</th>
-			<th scope="col">Condition Value</th>
+			<th scope="col">Feltétel</th>
+			<th scope="col">Feltétel Értéke</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -56,50 +56,50 @@ String comparison with wild cards are possible. Values are case-insensitive.</di
 			<td>"time" (= message receive time)</td>
 			<td>'YYYY-MM-DDThh:mm:ss', 'YYYY-MM-DD', 'hh:mm:ss'<br />
 			<br />
-			When the date is used standalone, the time will be set to 00:00:00, for example, 2016-03-20T00:00:00.<br />
+			Ha a date egyedül van használva, az id&otilde; 00:00:00-ra lesz állítva, például, 2020-03-30T00:00:00.<br />
 			<br />
-			When the time is used standalone, the date of today will be set, for example, 2016-03-20T12:05:00.</td>
+			Ha a time egyedül van használva, a mai dátum lesz beállítva, például, 2020-03-30T12:05:00.</td>
 		</tr>
 		<tr>
 			<td>"sender"</td>
-			<td>message sender user profile name</td>
+			<td>üzenet küld&otilde; felhasználói profil neve</td>
 		</tr>
 		<tr>
 			<td>"station"</td>
 			<td>
-			<p>message sender station IP + type</p>
+			<p>üzenet küld&otilde; állomás IP-je + típusa</p>
 			</td>
 		</tr>
 		<tr>
 			<td>"msg"</td>
-			<td>message</td>
+			<td>üzenet</td>
 		</tr>
 		<tr>
-			<td>"type" (= message type)</td>
+			<td>"type" (= üzenet típusa)</td>
 			<td>'Info', 'Warning', 'Alert', 'Error'</td>
 		</tr>
 		<tr>
-			<td>"cat" (= message category)</td>
+			<td>"cat" (= üzenet kategóriája)</td>
 			<td>'General', 'Power', 'Network', 'Show', 'Chat', 'CITP', 'RDM',</td>
 		</tr>
 		<tr>
-			<td>"subcat" (= message subcategory)</td>
+			<td>"subcat" (= üzenet alkategóriája)</td>
 			<td>'Backup Server', 'Blind', 'CITP Traffic', 'DMX Tester Output', 'Exec CLI', 'Filter', 'Highlight', 'IP Conflict', 'Macro', 'Masters', 'Missed Stations', 'Network', 'Parameters', 'Parked', 'Patch', 'Power', 'Preview','RDM Alert','Session', 'Solo', 'Stage', 'Timecode(MIDI)', 'Timecode(SMPTE)', 'Unassigned Ports', 'World', 'Global Autofix', 'Exec. Time', 'Prog. Time', 'Rate 1', 'Speed 1', 'Default Go', 'RDM Warning'</td>
 		</tr>
 	</tbody>
 </table>
 
-<p>The following table displays the supported operation syntax via command line.</p>
+<p>A következ&otilde; táblázat mutatja a támogatott m&ucirc;veleti szintaxisokat a parancssor által.</p>
 
 <div class="important"><strong>Fontos:</strong><br />
-If you use operation syntax, the operation has to be surrounded by spaces.<br />
-"condition1 = 'conditionvalue1'"</div>
+Ha m&ucirc;veleti kifejezéseket használsz, a m&ucirc;veletet szóközökkel kell körülvenni.<br />
+"feltetel1 = 'kondicioertek1'"</div>
 
 <table border="1" cellpadding="1" cellspacing="1" style="height:218px; width:410px">
 	<thead>
 		<tr>
-			<th scope="col">Operation</th>
-			<th scope="col">Syntax</th>
+			<th scope="col">M&ucirc;velet</th>
+			<th scope="col">Szintaxis</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -117,27 +117,27 @@ If you use operation syntax, the operation has to be surrounded by spaces.<br />
 		</tr>
 		<tr>
 			<td>greater<br />
-			(only for condition time and type)</td>
+			(csak az id&otilde; és dátum feltételnél)</td>
 			<td>"&gt;"</td>
 		</tr>
 		<tr>
 			<td>less<br />
-			(only for condition time and type)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"&lt;"</td>
 		</tr>
 		<tr>
 			<td>greater or equal<br />
-			(only for condition time and type)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"&gt;="</td>
 		</tr>
 		<tr>
 			<td>less or equal<br />
-			(only for condition time and type)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"&lt;="</td>
 		</tr>
 		<tr>
 			<td>equal<br />
-			(only for condition time and type)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"="</td>
 		</tr>
 	</tbody>
@@ -145,7 +145,7 @@ If you use operation syntax, the operation has to be surrounded by spaces.<br />
 
 <h2>Példák</h2>
 <ul>
-	<li>List all messages in the command line feedback window, with the condition type and condition value alert.</li>
+	<li>Minden üzenet listázása a parancssori visszajelz&otilde; ablakba, a kondíció típusával és az érték = riasztással.</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; List Messages /cnd = "type = 'alert'"</div>
@@ -153,7 +153,7 @@ If you use operation syntax, the operation has to be surrounded by spaces.<br />
 <p>&nbsp;</p>
 
 <ul>
-	<li>&nbsp;Export all warning, alert, and error messages before 12:45 as a messages.xml.</li>
+	<li>&nbsp;Minden figyelmeztetés, risztás, és hibaüzenet exportálása, 12:45 el&otilde;tt a messages.xml fájlba.</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; Export Messages /cnd="(type &gt;= 'warning' or time &lt;= '12:45:00') and !(new = 'true')"</div>
@@ -161,7 +161,7 @@ If you use operation syntax, the operation has to be surrounded by spaces.<br />
 <p>&nbsp;</p>
 
 <ul>
-	<li>Delete all alert messages from the message center.</li>
+	<li>Minden risztás üzenet törlése az üzenetközpontból.</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; Delete Messages /condition="type = 'alert'"</div>
