@@ -11,29 +11,29 @@
 		
 		<h1>Remote Kulcsszó</h1>
 		
-		<p>To go to the Remote keyword, type <strong>Remote</strong> in the command line or use the shortcut <strong>Rem</strong>.</p>
+		<p>A remote kulcsszóhoz, írd be <strong>Remote</strong> a parancssorba, vagy röviden <strong>Rem</strong>.</p>
 
 <h2>Leírás</h2>
 
-<p>The Remote keyword is an object keyword to access the remote input types.</p>
+<p>A remote kulcsszó egy objektum kulcsszó, amivel elérheted a távoli bemenet típusokat.</p>
 
-<p>You can store or delete remote input types and assign parameters.</p>
+<p>Tárolhatod vagy törölheted a távoli bemenet típusokat és paramétereket rendelhetsz hozzájuk.</p>
 
-<p>For more information, see <a href="key_remote_control_input.html">What are Remote Inputs?</a> and <a href="20f90287-abfe-47a7-b198-fe08e5e1f2b1.html">Set up Remote Inputs</a>.</p>
+<p>További információkért, lásd <a href="key_remote_control_input.html">Mik a távoli bemenetek?</a> és <a href="20f90287-abfe-47a7-b198-fe08e5e1f2b1.html">Távoli bemenet beállítása</a> fejezeteket.</p>
 
 <h2>Szintaxis</h2>
 
-<p><span class="syntax">[Function] Remote [Remote Input Type ID] . [ID] </span></p>
+<p><span class="syntax">[Funkció] Remote [Távoli bemenet ID] . [ID] </span></p>
 
-<p><span class="syntax">Assign Remote [Remote Input Type ID] . [ID] / [Parameter] = [Parameter Value]</span></p>
+<p><span class="syntax">Assign Remote [Távoli bemenet típus ID] . [ID] / [Paraméter] = [Paraméter Érték]</span></p>
 
-<p>The following table displays the available remote input types along with their remote input type ID.</p>
+<p>A következ&otilde; táblázat bemutatja az elérhet&otilde; távoli bemeneteket a távoli bemenet típus ID-vel együtt.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:250px">
 	<thead>
 		<tr>
-			<th scope="col">Remote Input Type</th>
-			<th scope="col">Remote Input Type ID</th>
+			<th scope="col">Távoli Bemenet</th>
+			<th scope="col">Távoli Bemenet Típus ID</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -52,17 +52,17 @@
 	</tbody>
 </table>
 
-<p>If you store a remote input type, the IDs needs to be in an order and beginning from 1.</p>
+<p>Amikor távoli bemenet típust tárolsz, akkor az ID-k nek sorrendben kell lennie és 1.-t&otilde;l kell kezd&otilde;dniük.</p>
 
-<h2>Parameter</h2>
+<h2>Paraméter</h2>
 
-<p>The following table displays the assignable parameter via the command line, using the <a href="key_keyword_assign.html">Assign kulcsszó</a>.</p>
+<p>A következ&otilde; táblázat megmutatja a hozzárendelhet&otilde; paramétereket a parancssoron keresztül, az <a href="key_keyword_assign.html">Assign kulcsszó</a> használatával.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
-			<th scope="col">Parameter</th>
-			<th scope="col">Parameter Value</th>
+			<th scope="col">Paraméter</th>
+			<th scope="col">Paraméter Érték</th>
 			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
@@ -70,68 +70,68 @@
 		<tr>
 			<td>name</td>
 			<td>"remote name"</td>
-			<td>Assign the remote name.</td>
+			<td>Távoli nevet rendel hozzá.</td>
 		</tr>
 		<tr>
-			<td><strong>Only for analog remote:</strong><br />
+			<td><strong>Csak analóg távoli bemenetnél:</strong><br />
 			input</td>
 			<td>1...64</td>
-			<td>Assign the input from the conntected DC remote control.</td>
+			<td>Hozzárendeli a bemenetet a csatlakozott DC távvezérlésb&otilde;l.</td>
 		</tr>
 		<tr>
-			<td><strong>Only for MIDI remote:</strong><br />
+			<td><strong>Csak MIDI távvezérlésnél:</strong><br />
 			note</td>
 			<td>0...1023</td>
-			<td>Assign the MIDI note.</td>
+			<td>MIDI hangjegy hozzárendelése.</td>
 		</tr>
 		<tr>
-			<td><strong>Only for MIDI remote:</strong><br />
+			<td><strong>Csak MIDI távvezérlésnél:</strong><br />
 			channel</td>
 			<td>1...16 or "All"</td>
-			<td>Assign the MIDI channel.</td>
+			<td>MIDI csatorna hozzárendelése.</td>
 		</tr>
 		<tr>
-			<td><strong>Only for DMX remote:</strong><br />
+			<td><strong>Csak DMX távvezérlésnél:</strong><br />
 			DMX</td>
-			<td>1.001 to 256.512 [universe]. [dmx address]</td>
-			<td>Assign DMX universe and address.</td>
+			<td>1.001 to 256.512 [univerzum]. [dmx cím]</td>
+			<td>DMX univerzum és cím hozzárendelése.</td>
 		</tr>
 		<tr>
 			<td>type</td>
 			<td>"None", "Exec", "CMD", "Hardkey"<br />
-			<strong>Only for DMX remote:</strong><br />
+			<strong>Csak DMX távvezérlésnél:</strong><br />
 			"Programmer"</td>
-			<td>Assign the type of action the console does when the contact is active.</td>
+			<td>Meghatározza milyen akció történjen a pulton amikor a kapcsolat aktív.</td>
 		</tr>
 		<tr>
 			<td>page</td>
-			<td>0...9999 or "current"</td>
-			<td>For type Exec. Assign the executor page number. Current is for the active page.</td>
+			<td>0...9999 vagy "current"</td>
+			<td>Exec. típusnál. Hozzárendeli az executor oldal számát. Az aktív oldal az aktuális..</td>
 		</tr>
 		<tr>
 			<td>executor</td>
 			<td>1...220</td>
-			<td>For type Exec. Assign the executor number.</td>
+			<td>Exec. típusnál. Az executor számát rendeli hozzá.</td>
 		</tr>
 		<tr>
 			<td>button</td>
 			<td>"Button 3", "Button 2", "Button 1", "Fader"</td>
-			<td>For type Exec. Assign the button or fader the console should activate.</td>
+			<td>Exec. típusnál. Hozzárendeli a gombokat, vagy a húzót amit a pultnak aktiválni kell.</td>
 		</tr>
 		<tr>
 			<td>keycode</td>
 			<td>"every hardkey", e.g. "X1", "Go", "List"</td>
-			<td>For type Hardkey. Assign the hardkey the console should activate.</td>
+			<td>Hardkey típusnál. Hozzárendeli a gombot amit a pultnak aktiválni kell.</td>
 		</tr>
 		<tr>
 			<td>cmd</td>
 			<td>"a command" e.g. "Group 1"</td>
-			<td>For type CMD. Assign the command the console should execute.</td>
+			<td>CMD típusnál. Hozzárendeli a parancsot amit a pultnak végre kell hajtania.</td>
 		</tr>
 		<tr>
 			<td>info</td>
 			<td>"additional information"</td>
-			<td>Assign additional information.</td>
+			<td>További információ megadása.</td>
 		</tr>
 	</tbody>
 </table>

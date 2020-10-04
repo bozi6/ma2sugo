@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
 		<title>StoreLook Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,39 +11,39 @@
 		
 		<h1>StoreLook Kulcsszó</h1>
 		
-		<p>To go to the StoreLook keyword, type <strong>StoreLook</strong> in the command line or use the shortcut <strong>StoreL</strong>.</p>
+		<p>A StoreLook kulcsszóhoz, írd be <strong>StoreLook</strong> a parancssorba, vagy röviden <strong>StoreL</strong>.</p>
 
 <h2>Leírás</h2>
 
-<p>StoreLook stores all dimmer values from all fixtures in the show.</p>
+<p>A StoreLook eltárolja minden dimmer értékét az összes lámpához a showban.</p>
 
-<p>If the dimmer value is bigger than 0, it stores additional all further attributes.<br />
-If the dimmer value is 0, it stores only the dimmer value because there is no further visible output.</p>
+<p>Ha a dimmer értéke nagyobb mint 0, akkor eltárol minden további attribútumot is.<br />
+Ha a dimmer értéke 0, akkor csak a dimmer értékét tárolja el, mert nincs más látható kimenet.</p>
 
 <div class="tip"><strong>Tipp:</strong><br />
-To exclude channels or fixtures from StoreLook, deactivate <strong>React to Master</strong> in the Patch &amp; Fixtures Schedule.</div>
+Ha kiakarsz hagyni lámákat vagy csatornákat a StoreLook-ból, deaktiváld a <strong>React to Master</strong>-t a Patch &amp; Fixtures Schedule-ban.</div>
 
-<p>For more information, see <a href="key_cs_store_options_default.html">What are the store options?</a>.</p>
+<p>További információkért, lásd <a href="key_cs_store_options_default.html">Mik a tárolási opciók?</a>.</p>
 
 <p>StoreLook egy függvény kulcsszó.</p>
 
 <h2>Szintaxis</h2>
 
-<p><span class="syntax">StoreLook [object] / [Opció] = [Opció Érték]</span></p>
+<p><span class="syntax">StoreLook [Objektum] / [Opció] = [Opció Érték]</span></p>
 
 <h2>Opciók</h2>
 
-<p>To get a list of all available options to the storelook keyword, type in the command line</p>
+<p>A kulcsszó összes opciójának lekérdezéséhez, írd be a parancssorba</p>
 
 <div class="cl_input">[Channel]&gt; StoreLook /?</div>
 
-<p>The storelook keyword has the following options.</p>
+<p>A storelook kulcsszónak a következ&otilde; opciói vannak.</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
 			<th scope="col">Opció</th>
-			<th scope="col">Option Shortcut</th>
+			<th scope="col">Opció rövidítés</th>
 			<th scope="col">Opció értéke</th>
 			<th scope="col">Leírás</th>
 		</tr>
@@ -53,92 +53,92 @@ To exclude channels or fixtures from StoreLook, deactivate <strong>React to Mast
 			<td>append</td>
 			<td>a</td>
 			<td>nincs opció érték</td>
-			<td>Adds new cue.</td>
+			<td>Új kép hozzáadása.</td>
 		</tr>
 		<tr>
 			<td>cueonly</td>
 			<td>co</td>
 			<td>False, True</td>
-			<td>Prevents changes to track forward.</td>
+			<td>A track forward változásait megel&otilde;zi.</td>
 		</tr>
 		<tr>
 			<td>effects</td>
 			<td>ef</td>
 			<td>False, True</td>
-			<td>Filters or enables effect layer.</td>
+			<td>Sz&ucirc;ri vagy engedi az effekt réteget.</td>
 		</tr>
 		<tr>
 			<td>merge</td>
 			<td>m</td>
 			<td>nincs opció érték</td>
-			<td>Adds to existing content.</td>
+			<td>Hozzáadja a meglév&otilde; tartalomhoz.</td>
 		</tr>
 		<tr>
 			<td>originalcontent</td>
 			<td>or</td>
 			<td>False, True</td>
-			<td>Stores the original content of the preset, effect, or cue. False is the same as addnewcontent.</td>
+			<td>A preset,effekt, vagy kép eredeti tartalmát tárolja. A False ugyanaz mint az addnewcontent.</td>
 		</tr>
 		<tr>
 			<td>overwrite</td>
 			<td>o</td>
 			<td>nincs opció érték</td>
-			<td>Replace existing content.</td>
+			<td>Felülírja a meglév&otilde; tartalmat.</td>
 		</tr>
 		<tr>
 			<td>release</td>
 			<td>rea</td>
 			<td>nincs opció érték</td>
-			<td>Releases content.</td>
+			<td>Elengedi a tartalmat.</td>
 		</tr>
 		<tr>
 			<td>remove</td>
 			<td>r</td>
 			<td>nincs opció érték</td>
-			<td>Removes content.</td>
+			<td>Eltávolítja a tartalmat.</td>
 		</tr>
 		<tr>
 			<td>source</td>
 			<td>so</td>
 			<td>Prog, Output, Dmx In</td>
-			<td>Defines data source.</td>
+			<td>Megadja az adatforrást.</td>
 		</tr>
 		<tr>
 			<td>statusmerge</td>
 			<td>sm</td>
 			<td>nincs opció érték</td>
-			<td>Adds tracking status to existing cue.</td>
+			<td>Trackállapotot ad a meglév&otilde; képhez.</td>
 		</tr>
 		<tr>
 			<td>tracking</td>
 			<td>t</td>
 			<td>False, True</td>
-			<td>Stores with tracking. False is the same as cueonly.</td>
+			<td>Trackingal tárol. A False ugyanaz mint a cueonly.</td>
 		</tr>
 		<tr>
 			<td>trackingshield</td>
 			<td>ts</td>
 			<td>nincs opció érték</td>
-			<td>Use tracking shield for storelook.</td>
+			<td>Tracking pajzs használata a storelook során.</td>
 		</tr>
 		<tr>
 			<td>values</td>
 			<td>v</td>
 			<td>False, True</td>
-			<td>Filters or enables value layer.</td>
+			<td>Sz&ucirc;ri vagy engedi az érték réteget.</td>
 		</tr>
 		<tr>
 			<td>valuetimes</td>
 			<td>vt</td>
 			<td>False, True</td>
-			<td>Filters or enables fade and delay layer.</td>
+			<td>Sz&ucirc;ri vagy engedi az átúszás és késleltetés réteget.</td>
 		</tr>
 	</tbody>
 </table>
 
 <h2>Példa</h2>
 
-<p>Store all dimmer values from all fixtures in the show as cue 1 on executor 1.</p>
+<p>Minden dimmer értékének tárolása az összes lámpából, a show-ból, mint 1.kép az 1. executoron.</p>
 
 <div class="cl_input">[Channel]&gt; StoreLook Executor 1</div>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
 		<title>LoadShow Kulcsszó</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,35 +11,35 @@
 		
 		<h1>LoadShow Kulcsszó</h1>
 		
-		<p>To go to the LoadShow keyword, type <strong>LoadShow </strong> vagy röviden<strong>Loa </strong>a parancssorba.</p>
+		<p>A LoadShow kulcsszóhoz, írd be a <strong>LoadShow </strong> vagy röviden<strong>Loa </strong>-t a parancssorba.</p>
 
 <h2>Leírás</h2>
 
-<p>The LoadShow keyword loads a show from the selected drive. For more information, see <a href="key_keyword_selectdrive.html">SelectDrive kulcsszó</a>.</p>
+<p>A LoadShow kulcsszó, betölti a show fájlt a kiválasztott meghajtóról. További információ, lásd <a href="key_keyword_selectdrive.html">SelectDrive kulcsszó</a>.</p>
 
-<p>If the show file does not exist on the selected drive, a new empty show file will be loaded.</p>
+<p>Ha a show fájl nem található a kiválasztott meghajtón, egy új üres show fájl jön létre, és lesz betöltve.</p>
 
-<p>If the console is in a session, the show file will be uploaded to all connected stations.</p>
+<p>Ha a pult egy munkamenetben van, a show fájl feltölt&otilde;dik minden csatlakozott állomásra.</p>
 
-<p>The LoadShow keyword egy függvény kulcsszó.</p>
+<p>A LoadShow kulcsszó egy függvény kulcsszó.</p>
 
 <h2>Szintaxis</h2>
 
-<p><span class="syntax"><strong>LoadShow "</strong>Showname" / [Opció]</span></p>
+<p><span class="syntax"><strong>LoadShow "</strong>Show neve" / [Opció]</span></p>
 
 <h2>Opciók</h2>
 
-<p>To get a list all available options to the LoadShow keyword, írd be a parancssorba:</p>
+<p>A Loadshow kulcsszó opcióinak lekérdezéséhez, írd be a parancssorba:</p>
 
 <div class="cl_input">[Channel]&gt; LoadShow /?</div>
 
-<p>The LoadShow has the following options:</p>
+<p>A LoadShownak ezek az opciói:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
 	<thead>
 		<tr>
 			<th scope="col">Opció</th>
-			<th scope="col">Option shortcut</th>
+			<th scope="col">Opció rövidítés</th>
 			<th scope="col">Leírás</th>
 		</tr>
 	</thead>
@@ -48,73 +48,74 @@
 			<td>full</td>
 			<td>f</td>
 			<td>
-			<p>Clears the following data if from a new show will be loaded. Loads the following data if from an existing show will be loaded.<br />
-			- Show data<br />
-			- Global Settings<br />
-			- Network Protocols<br />
-			- User Profiles<br />
-			- Time Config<br />
-			- Local Settings<br />
-			- Network Config</p>
+			<p>Törli a következ&otilde; adatokat, ha új show fájlt tölt be. Betölti a következ&otilde; adatokat ha meglév&otilde; show fájlt tölt be.<br />
+			- Show adatai<br />
+			- Globális Beállítások<br />
+			- Hálózati protokollok<br />
+			- Felhasználói beállítások<br />
+			- Id&otilde; beállítások<br />
+			- Helyi beállítások<br />
+			- Hálózati konfiguráció</p>
 			</td>
 		</tr>
 		<tr>
 			<td>globalsettings</td>
 			<td>g</td>
-			<td>Clears the global settings if from a new show will be loaded. Loads the global settings if from an existing show will be loaded.</td>
+			<td>Törli a globális beállításokat, egy új show fájl esetén. Betölti a globális beállításokat, ha meglév&otilde; show fájlt töltesz be.</td>
 		</tr>
 		<tr>
 			<td>localsettings</td>
 			<td>l</td>
-			<td>Clears the local settings if from a new show will be loaded. Loads the local settings if from an existing show will be loaded.</td>
+			<td>Törli a helyi beállításokat, egy új show fájl esetén. Betölti a lokális beállításokat, ha meglév&otilde; show fájlt töltesz be.</td>
 		</tr>
 		<tr>
 			<td>network</td>
 			<td>n</td>
-			<td>Clears the network configuration if from a new show will be loaded. Loads the network configuration if from an existing show will be loaded.</td>
+			<td>Törli a hálózati beállításokat, egy új show fájl esetén. Betölti a hálózati beállításokat, ha meglév&otilde; show fájlt töltesz be
+			</td>
 		</tr>
 		<tr>
 			<td>noconfirm</td>
 			<td>nc</td>
-			<td>Suppress the warning pop-up that asks if you want to save the show file first.</td>
+			<td>Elnémítja a meger&otilde;sít&otilde; ablakocskát, amikor el&otilde;ször mented a show fájlt.</td>
 		</tr>
 		<tr>
 			<td>nodata</td>
 			<td>nincs rövidítése</td>
-			<td>Keeps the current show data in the new show (column one in the setup).</td>
+			<td>Megtartja az aktuális dátumot az új show fájlban (els&otilde; oszlop a beállításoknál).</td>
 		</tr>
 		<tr>
 			<td>nosave</td>
 			<td>ns</td>
-			<td>Does not save the current show file.</td>
+			<td>Nem menti az aktuális showfájlt.</td>
 		</tr>
 		<tr>
 			<td>protocols</td>
 			<td>p</td>
-			<td>Clears the network protocols if from a new show will be loaded. Loads the network protocols if from an existing show will be loaded.</td>
+			<td>Törli a hálózati protokollbeállításokat, egy új show fájl esetén. Betölti a hálózati protokollbeállításokat, ha meglév&otilde; show fájlt töltesz be.</td>
 		</tr>
 		<tr>
 			<td>save</td>
 			<td>s</td>
-			<td>Saves the current show file.</td>
+			<td>Menti az aktuális show fájlt.</td>
 		</tr>
 		<tr>
 			<td>timeconfig</td>
 			<td>t</td>
-			<td>Clears the time config.</td>
+			<td>Törli az id&otilde;beállításokat.</td>
 		</tr>
 		<tr>
 			<td>user</td>
 			<td>u</td>
-			<td>Clears the user profiles.</td>
+			<td>Törli a felhasználói profilt.</td>
 		</tr>
 	</tbody>
 </table>
 
-<h2>&nbsp;Examples</h2>
+<h2>&nbsp;Példák</h2>
 
 <ul>
-	<li>To load the show file with the file name "Macbeth", írd be a parancssorba:</li>
+	<li>A "Macbeth" nev&ucirc; show fájl betöltéséhez, írd be a parancssorba:</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; LoadShow "Macbeth"</div>
@@ -122,14 +123,14 @@
 <p>&nbsp;</p>
 
 <ul>
-	<li>To load the show file with the file name "Macbeth" and clear the<br />
-	- Show data<br />
-	- Global Settings<br />
-	- Network Protocols<br />
-	- User Profiles<br />
-	- Time Config<br />
-	- Local Settings<br />
-	- Network Config ,<br />
+	<li>A "Macbeth" nev&ucirc; show fájl betöltése, és törli a következ&otilde; beállításokat<br />
+	- Show adatok<br />
+	- Globális Beállítások<br />
+	- Hálózati Protokollok<br />
+	- Felhasználói Profil<br />
+	- Id&otilde;beállítások<br />
+	- Helyi beállítások<br />
+	- Hálózati beállítások ,<br />
 	írd be a parancssorba:</li>
 </ul>
 
