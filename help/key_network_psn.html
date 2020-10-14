@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
 		<title>PosiStageNet (PSN)</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,73 +11,74 @@
 		
 		<h1>PosiStageNet (PSN)</h1>
 		
-		<p>PosiStageNet or PSN is a open protocol developed by MA Lighting and VYV Corporation - <a href="http://www.posistage.net/">http://www.posistage.net/</a>.</p>
+		<p>A PosiStageNet vagy PSN egy nyílt protokoll amit az MA Lighting és a VYV Corporation fejleszt - <a href="http://www.posistage.net/">http://www.posistage.net/</a>.</p>
 
 <div class="restriction"><strong>Korlátozás:</strong><br />
-grandMA2 supports PSN version 2.0</div>
+A grandMA2 A PSN 2.0-ás verzióját támogatja</div>
 
-<p>It uses a PSN server that transmit position information from different trackers connected to the server.</p>
+<p>Egy PSN szervert használ ami a pozíció információkat továbbítja a különböz&otilde; nyomkövet&otilde;kt&otilde;l a szerver felé.</p>
 
-<p>grandMA2 can connect to the server, as a client, and receive the position information from each tracker.</p>
+<p>A grandMA2 csatlakozhat a szerverhez, mint kliens és fogadhat információkat minden egyes nyomkövet&otilde;t&otilde;l.</p>
 
-<p>Usually you then connect the tracker information to a patched StageMarker. The StageMarker will then move around based on the incoming position data.</p>
+<p>Általában, a nyomkövet&otilde; információkat összekötöd egy patchelt StageMarker-hez. A StageMarker ezután a bejöv&otilde; nyomkövet&otilde; információ szerint fog mozogni.</p>
 
-<p>You can then tell the XYZ enabled fixtures to point their light at the moving StageMarker.</p>
+<p>Ezután megmondhatod az XYZ engedélyezett lámpknak, hogy kövessék a mozgó StageMarker-t.</p>
 
 <div class="tip"><strong>Tipp:</strong><br />
-It is possible to patch up to 1024 StageMarkers.</div>
+Lehetséges akár 1024 StageMarker-t bepatchelni.</div>
 
-<h2>Connect to a PSN server</h2>
+<h2>Csatlakozás PSN szerverre</h2>
 
-<p>To add a PSN server you need to open <span class="softkey">PSN Network Configuration</span> in <span class="hardkey">Setup</span>.</p>
+<p>PSN szerver hozzáadásához, meg kell nyitnod a <span class="softkey">PSN Network Configuration</span> a <span class="hardkey">Setup-ban</span>.</p>
 
-<p>Tap the <span class="softkey">Add</span> button at the bottom of the window. Then you get a row in the table in the window above.</p>
+<p>Bökj az <span class="softkey">Add</span> gombra az ablak aljában. Utána lesz egy sorod a fenti ablakban.</p>
 
-<p>The line needs to be enabled. Edit the <strong>Enabled</strong> cell in the configuration row until it says "Yes". Then you should get an IP address in the <strong>IP</strong> column - this is the IP address of the server. The <strong>Name</strong> will also change to name of the server. If the connection is good, then the name will also get a green background color.</p>
+<p>A sort engedélyezni kell. Szerkeszd az <strong>Enabled</strong> cellát a konfigurációban, addig ameddig azt írja "Yes". Ekkor kell kapnod egy IP címet az <strong>IP</strong> oszlopban - ez az IP címe a szervernek. A <strong>Name</strong> cella is megváltozik a szerver nevére. Ha a kapcsolat jó, akkor a név is zöld szín&ucirc; hátter&ucirc; lesz.</p>
 
-<p>The <strong>World</strong> column displays the PSN world the server is in. It is just for information. It is a setting in the server and is not used by the grandMA2.</p>
+<p>A <strong>World</strong> oszlop mutatja a PSN világot, amiben a szerver van. Ez csak információ. Ez egy beállítás a szerveren és nem használja a grandMA2.</p>
 
-<p>It is possible to change the<strong> Port</strong> and PSN <strong>Multicast</strong> address if the server does not follow the standard port and multicast address.</p>
+<p>Lehetséges megváltoztatni a <strong> Port</strong>-ot és a PSN-t <strong>Multicast</strong> címét ha a szerver nem támogatja az általános portot és multicast címet.</p>
 
-<p>If you want to use the PSN data, then you also need to turn on the general PSN function. This is the big <span class="softkey">Enabled</span> button in the upper right side of the view.</p>
+<p>Ha PSN adatokat akarod használni, akkor szükséged lesz az általános PSN funkciók bekapcsolására is. Ezt a nagy <span class="softkey">Enabled</span> gombbal tudod megtenni a jobb oldalán a nézetnek.</p>
 
-<p>When a valid PSN server is present, then the view could look like this:</p>
+<p>Ha létez&otilde; PSN szerver van jelen, akor a nézet így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_psn-network-configuration_v3-2.png" />
-<figcaption><em>PSN&nbsp;Network Configuration with valid server connection</em></figcaption>
+<figcaption><em>PSN&nbsp;Hálózati beállítások érvényes szerver kapcsolattal</em></figcaption>
 </figure>
 
 <p>&nbsp;</p>
 
-<h2>Connect tracker to a StageMarker</h2>
+<h2>Nyomkövet&otilde; összekapcsolása StageMarker-el</h2>
 
-<p>If you want to view the incoming tracking information, then tap the <span class="softkey">View Tracker</span> button in the bottom of the screen.</p>
+<p>Ha látni akarod a bejöv&otilde; nyomkövet&otilde; információkat, akkor bökj a <span class="softkey">View Tracker</span> gombra a képerny&otilde; alján.</p>
 
-<p>This opens the <strong>View Tracker window</strong>. If you do not have a connection to a PSN server then this window is empty.</p>
+<p>Ez megnyitja a <strong>View Tracker ablakot</strong>. 
+Ha nincs kapcsolatod a PSN szerverrel, akkor ez az ablak üres.</p>
 
-<p>If you have a server, then a table with the information from the server is visible.</p>
+<p>Ha van szervered, akkor a táblázat a szerver információiról látható.</p>
 
-<p>There are two things that can be edited in this view:</p>
+<p>Lét dolgot lehet szerkeszteni ebben az ablakban:</p>
 
-<p>A <strong>Fixture ID</strong> can be attached to the tracker. Type the Fixture ID of the StageMarker you want to be moved by the tracker.</p>
+<p>A <strong>Fixture ID</strong> amit hozzárendelhetsz a nyomkövet&otilde;höz. Írd be a lámpa ID-t a StageMarker-hez amelyiket mozgatni akarod a nyomkövet&otilde; által.</p>
 
-<p>The <strong>Predict</strong> value can be changed. This will make the console try to predict the position of the tracker. The number type here is the number of seconds in the future the console should try to predict, based on the current speed and direction.</p>
+<p>A <strong>Predict</strong> értéke is megváltoztatható. Ilyenkor a pult megpróbálja kitalálni a következ&otilde; pozícióját a nyomkövet&otilde;nek. Az ide beírt szám, a másodpercekben megadott érték, amikor a pult megpróbálja kitalálni a következ&otilde; helyet a sebesség és irány alapján..</p>
 
-<p>If this is left at "0.00" then it is up to the server to do the calculation and prediction.</p>
+<p>Ha ezt "0.00" hagyod, akkor a szerver dolga a számítás és jóslás.</p>
 
 <p>Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_psn-network-configuration_view-tracker_v3-2.png" />
-<figcaption><em>View Tracker -&nbsp;PSN&nbsp;information from server with attached Fixture ID</em></figcaption>
+<figcaption><em>Nyomkövet&otilde; megtekintése -&nbsp;PSN&nbsp;információk a szervert&otilde;l hozzárendelt lámpa ID-kkel</em></figcaption>
 </figure>
 
 <p>&nbsp;</p>
 
-<p>In this example, the tracker with PSN ID number 0 is attached to the Fixture ID 4001 (a StageMarker). The current position and rotation is 0 meters and 0 degrees in all three planes.</p>
+<p>Ebben a példában, a nyomkövet&otilde; a 0 PSN ID-t használva, hozzárendelve a 4001-es lámpa ID-hez (egy StageMarker). Az aktuális pozíció és forgás 0 méter és 0 fok mindhárom síkban.</p>
 
-<p>When the tracker starts to move then the information will update and the StageMarker will move accordingly.</p>
+<p>Amikor a nyomkövet&otilde; elkezd mozogni, az információk frissülnek és a StageMarker követi a mozgást.</p>
 
-<p>The <span class="softkey">3D Text</span> button in the picture above should just be ignored - it does not do anything and is not implemented.</p>
+<p>A <span class="softkey">3D Text</span> gomb a fels&otilde; képen átugorható - nem csinál semmit, és nincs implementálva.</p>
 
 <p>&nbsp;</p>
 
