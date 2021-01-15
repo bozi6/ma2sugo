@@ -1,6 +1,7 @@
 # ma2sugo
 Grand MA 2 help files translation to hungarian
 
+### Installation
 Create new directory in:
 C:\PrgramData\Ma Lighting Technologies\grandma\gma2_V_3.9\lang
 name it:
@@ -17,4 +18,4 @@ Added key_key_executorbutton.html, because the help function on executorbuttons,
 Added this file problem solved.
 
 Replaced: menu-tools-3-4.png with menu-tools-3-5.png solved the black text problem, on toolbar picture.
-Now you can see the text in the toolbar frame.
+Now you can see the text in the toolbar frame. 
