@@ -1,126 +1,126 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Live patching</title>
+		<title>Élő patchelés</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="live patch, patch - change, patch only, LiveSetup" />
 	</head>
 	<body>
-		
-		
-		<h1>Live patching</h1>
-		
-		<p>You can change the patch of fixtures without going into the full setup or "Edit Setup".</p>
 
-<p>If you have not added any fixtures to your show yet, then you need to read the <a href="key_patch_add_fixtures.html">Adding fixtures to your show</a> topic. This is also a good idea to read if you are in doubt about anything described in this topic.</p>
 
-<p>The problem with the full access to the entire fixture schedule is that you might make structural changes to your show file. So when leaving the fixture schedule the console will do a show upload to all connected devices - this causes a stop in the DMX transmission while the upload is running.</p>
+		<h1>Élő patchelés</h1>
 
-<p>So, the thing that does not concern the fixture structure, can be changed without giving a show upload, this is called "Live editing/patching".</p>
+		<p>Megváltotaztathatod a lámpák patchelését anélkül, hogy belépnél a teljes beállításokhoz vagy az "Edit Setup"-ba.</p>
+
+<p>Ha még nem adtál néhány lámpát a show-hoz, akkor el kéne olvasnod a <a href="key_patch_add_fixtures.html">Lámpák hozzáadása a showhoz</a> fejezetet. Ez szintén jó ötlet arra, hogyha valami nem világos itt, akkor ott megnézd.</p>
+
+<p>A probléma a teljes hozzáféréssel az, hogy szerkezeti változtatásokat eszközölhetsz a show fájlodban. Ez nem gond, csak amikor kilépsz ebből a menüből, akkor a pult ezeket a változásokat feltölti minden csatlakoztatott eszközre - ez megállítja a DMx átvitelt ameddig a show feltöltődik.</p>
+
+<p>Szóval, az ötlet az, hogy a nem szerkezeti változtatások, lehetővé válnak feltöltés nélkül, ezt hívják "Élő szerkesztésnek/patchelésnek".</p>
 
 <div class="important"><strong>Fontos:</strong><br />
-Be aware that live editing a lot of fixtures at the same time might be distributed with a delay throughout all stations and NPUs in the session. For instance changing the pan or tilt offset for several hundred fixtures with one command will cause a delay in the distribution of the values. The real time DMX output has a higher priority and this needs to be calculated at the same time. If possible then only edit a small amount of fixtures at the same time or use the <a href="key_patch_add_fixtures.html">EditSetup</a> instead.</div>
+Figyelj oda arra hogy sok lámpa egyidejű szerkesztésekor késleltetve megy ki az összes NPU-ra és állomásra a munkamenetben. Ha például megváltoztatod a forgatás vagy billentés eltolását néhány száz lámpánál egy parancssal, akkor az késést fog okozni, mire minden egység megkapja az értékét. A valós idejű DMX kimenetnek magasabb az elsőbbsége és még ezt is ki kell számolni ugyanakkor. Amikor lehetséges, akkor kisebb mennyiségű lámpát változtass egyidőben, vagy inkább használd az <a href="key_patch_add_fixtures.html">EditSetup</a> lehetőséget mégis.</div>
 
 <p>&nbsp;</p>
 
-<h2>Live patching using the Setup Menu</h2>
+<h2>Élő patchelés a Setup menü használatával</h2>
 
-<p>You can access this in the Setup menu. Press the <span class="hardkey">Setup</span> key and then tap the <span class="softkey">Patch Only (Live)</span> button.</p>
+<p>Ezt a Setup menüben érheted el. Megnyomva a <span class="hardkey">Setup</span> gombot és rábökve a <span class="softkey">Patch Only (Live)</span> gombra.</p>
 
-<p>Then you get the LiveSetup menu. Így nézhet ki:</p>
+<p>Ekkor belépsz a LiveSetup menübe. Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/menu_livesetup_v3-3.png" />
-<figcaption><em>LiveSetup menu</em></figcaption>
+<figcaption><em>LiveSetup menü</em></figcaption>
 </figure>
 
-<p>This is very similar to the EditSetup menu (Long description in the <a href="key_patch_add_fixtures.html">Adding fixtures to your show</a> topic).</p>
+<p>Ez nagyon hasonlít az EditSetup menüre (Hosszú leírása a <a href="key_patch_add_fixtures.html">Lámpák hozzáadása a showhoz</a> fejezetben).</p>
 
-<p>Everything that has a gray background can be edited. Everything with a black background is locked and cannot be edited.</p>
+<p>Minden aminek szürke a háttere az szerkeszthető. Minden aminek fekete a háttere, az zárt és nem szerkeszthető.</p>
 
-<p>Looking at the layers and their content, shows you what you can change "Live" - without causing a show upload.</p>
+<p>Nézd meg a rétegeket és a tartalmukat, itt látható, hogy mit változtathatsz meg "Live" módban - a show feltöltése nélkül.</p>
 
-<p>This includes the DMX address.</p>
+<p>Ebben benne vannak a DMX címeket.</p>
 
 <p>&nbsp;</p>
 
-<h2>Live patching using the Command Line</h2>
+<h2>Élő patchelés a parancssor használatával</h2>
 
-<p>If you are looking for multi patching then please read the <a href="key_patch_multipatch.html">Multipatching</a> topic.&nbsp;</p>
+<p>Ha a multipatchelés lehetőségét keresed akkor olvasd el a <a href="key_patch_multipatch.html">Multipatchelés</a> fejezetet.&nbsp;</p>
 
-<p>This is the process using the command line:</p>
+<p>Ez a folyamata a parancssor használatával:</p>
 
-<div class="cl_input">[Channel]&gt; Assign Fixture [Fixture-list] At DMX [DMX-address]</div>
+<div class="cl_input">[Channel]&gt; Assign Fixture [Lámpa-lista] At DMX [DMX-cím]</div>
 
-<p>Assigning a list of fixtures (or just a single fixture) will remove all patch data from the fixtures and assign them DMX addresses beginning from the typed DMX address - without an Offset.</p>
+<p>A lámpák hozzárendelése (vagy csak egy lámpa esetén) kitörlődik a patch adata a lámpákból, és hozzárendelődik a DMX cím kezdve a beírt DMX címtől - Offset nélkül.</p>
 
-<p>You might get a warning pop-up telling you about any collisions.</p>
+<p>Lehetséges egy figyelmeztető ablakocska megjelenése is, ami az ütközésekről tájékoztat.</p>
 
-<p>You can do the same with Channel IDs.</p>
+<p>Ugyanazt megteheted a Csatorna ID-kel is.</p>
 
-<p>You do not need to type the "At".</p>
+<p>Nem kell beírnod az "At" kulcsszót.</p>
 
-<h3>Examples:</h3>
+<h3>Példák:</h3>
 
-<p>Patching fixture 101 at DMX address 2.1:</p>
+<p>A 101-es lámpa patchelése a 2.1-es DMX címre:</p>
 
 <div class="cl_input">[Channel]&gt; Assign Fixture 101 At DMX 2.1</div>
 
-<p>Assigning fixture 101, 103, 105 DMX address beginning from address 5.61:</p>
+<p>101, 103, 105 számú lámpák hozzárendelése az 5.61 DMX címtől kezdődően:</p>
 
 <div class="cl_input">[Channel]&gt; Assign Fixture 101 + 103 + 105 DMX 5.61</div>
 
 <p>&nbsp;</p>
 
-<h2>Live patching by editing the fixture</h2>
+<h2>Élő patchelés lámpák szerkesztésével</h2>
 
-<p>If you edit the fixture then there is also have the possibility to change the DMX address.</p>
+<p>Amikor szerkeszted a lámpát, lehetséges a DMX cím megváltoztatása is.</p>
 
-<p>In the top part of the Edit pop-up you will find the fixture (and any multipatched fixtures) and there is a Patch column. Editing this values will change the address.</p>
+<p>A szerkesztés ablakocska felső részén megtalálod a lámpát (és az összes multipatchelt lámpát is) és itt van egy Patch oszlop. Ezt az értéket szerkesztve megváltozik a cím is.</p>
 
 <p>&nbsp;</p>
 
-<h2>Live patching using the DMX Sheet and the DMX Tester</h2>
+<h2>Élő patchelés a DMX táblázat és a DMX tesztelő segítségével</h2>
 
-<p>To read details about the <strong>DMX sheet</strong> <a href="key_patch_dmx_sheet.html">please follow this link</a>. To read about the <strong>DMX tester</strong> <a href="key_patch_dmx_testing.html">follow this link</a>.</p>
+<p>A <strong>DMX lap</strong> részleteiről <a href="key_patch_dmx_sheet.html">ezen as linken</a> olvashatsz. A <strong>DMX tesztelőről</strong> <a href="key_patch_dmx_testing.html">pedig itt olvashatsz</a>.</p>
 
-<p>You can also patch using the DMX Sheet and the DMX tester.</p>
+<p>Tudsz patchelni a DMX lapon és a DMX tesztelőben is.</p>
 
 <ol>
-	<li>Open the sheet</li>
-	<li>Activate "Link Encoders"</li>
-	<li>Locate the DMX address where you want to patch the fixtures and tap the location</li>
-	<li>Know you can tap the right encoder. It opens a screen like this:</li>
+	<li>Nyisd meg a lapot</li>
+	<li>Aktiváld a "Link Encoders"(tárcsák összekapcsolása)</li>
+	<li>Keresd meg a DMX címet ahová patchelni akarod a lámpákat és bökj ide</li>
+	<li>Most nyomd meg a jobb oldali tárcsát. Ez egy ilyesmi képernyőt nyit meg:</li>
 </ol>
 
 <figure class="caption"><img alt="" src="../../img/popup_patch-address-to-fixture-channel_v3-2.png" />
-<figcaption><em>Patch Address to Fixture/Channel pop-up</em></figcaption>
+<figcaption><em>Címek patchelése a Lámpa/Csatorna ablakocskában</em></figcaption>
 </figure>
 
-<p>This pop-up shows you all the fixtures in the show. It might look like you can edit the DMX address directly in this pop-up, but you cannot.</p>
+<p>Ez az ablakocska megmutatja az összes lámpát a showban. Itt úgy látszik, hogy szerkesztheted a DMX címet közvetlenül ebben az ablakocskában, de nem.</p>
 
-<p>You can filter the list by typing a Fixture ID or Channel ID in the respective green input fields at the top. There is also a dropdown list that allow you to filter the list to only show unpatched fixtures.</p>
+<p>Szűkítheted a listát ha beírod a lámpa vagy csatorna ID-jét a zöld mezőben felül. Itt van egy legördülő lista, amiben szűrhated, hogy csak a nem patchelt lámpákat mutassa.</p>
 
 <ol start="5">
-	<li>Select the fixture you want to patch to the address</li>
+	<li>Válaszd ki a lámpát amit a címre szertnél patchelni.</li>
 	<li>&nbsp;
 	<ol start="1" style="list-style-type:upper-alpha">
-		<li>If you want to patch the selected fixture to the selected address then tap the <span class="softkey">Patch</span> button&nbsp;</li>
-		<li>If you want to add a multipatched fixture to the selected fixture at the selected address, then tap the <span class="softkey">Add Multipatch</span> button (<a href="key_patch_multipatch.html">Follow this link to read more about </a><a href="key_patch_multipatch.html">Multipatchin</a>g)</li>
+		<li>Ha a kiválasztott lámpát a kiválasztot címre akarod patchelni akkor bökj a <span class="softkey">Patch</span> gombra&nbsp;</li>
+		<li>Ha multipatchelt lámpát akarsz hozzáadni a kiválasztott lámpához a kiválasztott címen, akkor bökj az <span class="softkey">Add Multipatch</span> gombra (<a href="key_patch_multipatch.html">Kövesd a következő linket a </a><a href="key_patch_multipatch.html">Mulitpatchingnál</a>)</li>
 	</ol>
 	</li>
 </ol>
 
 <p>&nbsp;</p>
 
-<p>A second option for the DMX sheet is to press the <span class="hardkey">Assign</span> key and the <span class="hardkey">Channel</span> or <span class="hardkey">Fixture</span> key followed by the ID and then directly in the DMX sheet, where you want the selected fixture.</p>
+<p>A másik lehetőség a DMX lapon, hogy megnyomod az <span class="hardkey">Assign</span> gombot és a <span class="hardkey">Channel</span> or <span class="hardkey">Fixture</span> gombot, amit az Id követ és utána direkt a DMX lapon a kiválasztott lámpa.</p>
 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
-<p>This was some different ways of editing the DMX address of a fixture without creating a show upload.</p>
+<p>Ez volt néhány különböző módja a DMX címek szerkesztése a lámpákban, a show feltöltése nélkül.</p>
 
-		
+
 	</body>
 </html>
