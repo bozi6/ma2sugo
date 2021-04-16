@@ -13,11 +13,11 @@
 		
 		<p>A CITP (Controller Interface Transport Protocol) egy protokollcsomag, amit a videók és képek továbbítására használnak a hálózaton keresztül. Ezt a Capture, Sweden fejleszti és tartja karban - <a href="http://www.citp-protocol.org/">http://www.citp-protocol.org/</a></p>
 
-<p>A protokollcsomag több különböz&#337; dolgot tesz. A grandMA2 pult és onPC csak két elemet támogat a protokollból.</p>
+<p>A protokollcsomag több különböz&otilde; dolgot tesz. A grandMA2 pult és onPC csak két elemet támogat a protokollból.</p>
 
-<p>El&#337;nézeti képek cseréjét 3. beszállítók média szervereire és a CITP videó folyamok megtekintését.</p>
+<p>El&otilde;nézeti képek cseréjét 3. beszállítók média szervereire és a CITP videó folyamok megtekintését.</p>
 
-<p>Olvass a két különböz&#337; típusról a következ&#337; oldalakon vagy ezeken a linkeken: <a href="key_network_citp_stream.html">CITP Folyamat</a> és <a href="key_network_citp_thumbnail.html">El&#337;nézeti képek cseréje</a>.</p>
+<p>Olvass a két különböz&otilde; típusról a következ&otilde; oldalakon vagy ezeken a linkeken: <a href="key_network_citp_stream.html">CITP Folyamat</a> és <a href="key_network_citp_thumbnail.html">El&otilde;nézeti képek cseréje</a>.</p>
 
 <p>Az MA 3D egy elemet támogat  (CITP videó folyamot).</p>
 
@@ -33,32 +33,32 @@
 
 <h2>Fontos Információk</h2>
 
-<p>Van néhány dolog amit&#337;l óvakodni kell a CITP használatakor.</p>
+<p>Van néhány dolog amit&otilde;l óvakodni kell a CITP használatakor.</p>
 
 <p>&nbsp;</p>
 
-<p>A CITP kapcsolat nem lehetséges az MA-ban ha a CITP küld&#337; és fogadó is ugyanaz a számítógép..</p>
+<p>A CITP kapcsolat nem lehetséges az MA-ban ha a CITP küld&otilde; és fogadó is ugyanaz a számítógép..</p>
 
-<p>A CITP Multicast címeket, a címsorra kattintva a CITP Network Configuration menüben(a Setupban) lehet beállítani. A CITP multicast címet a 224.0.0.180 nem sok switch továbbítja, addig ameddig az ISMP Snooping engedélyezett. A CITP multicast címe az MA termékeknek átállítható 239.224.0.180-ra, hogy használhatóak legyenek az IGMP Snooping-al. Vigyázz azonban, hogy az alternatív CITP cím 239.224.0.180 -et nem támogatja minden média szerver gyártó. Ellen&#337;rizd a médiaszerver gyártóját, hogy kompatibilis-e a készüléke ha megváltoztatod az els&#337;dleges CITP címet és engedélyezed az IGMP Snoopingot.</p>
+<p>A CITP Multicast címeket, a címsorra kattintva a CITP Network Configuration menüben(a Setupban) lehet beállítani. A CITP multicast címet a 224.0.0.180 nem sok switch továbbítja, addig ameddig az ISMP Snooping engedélyezett. A CITP multicast címe az MA termékeknek átállítható 239.224.0.180-ra, hogy használhatóak legyenek az IGMP Snooping-al. Vigyázz azonban, hogy az alternatív CITP cím 239.224.0.180 -et nem támogatja minden média szerver gyártó. Ellen&otilde;rizd a médiaszerver gyártóját, hogy kompatibilis-e a készüléke ha megváltoztatod az els&otilde;dleges CITP címet és engedélyezed az IGMP Snoopingot.</p>
 
 <p>A multicast cím megváltoztatása a CITP Hálózati beállításainál, megváltoztatja az összes MA állomáson a címet (pultok, MA VPU és MA 3D), a munkameneten keresztül.</p>
 
-<p>A videók küldése a hálózaton sávszélességet igényel. Egy CITP videófolyam 30fps-el, 15Mbit/s forgalmat generál. A Videófolyamok multicastban küld&#337;dnek el. Ugyanannak a videófolyamnak különböz&#337; helyekr&#337;l kérése (különböz&#337; pultok vagy MA 3D) nem generál további forgalmat.</p>
+<p>A videók küldése a hálózaton sávszélességet igényel. Egy CITP videófolyam 30fps-el, 15Mbit/s forgalmat generál. A Videófolyamok multicastban küld&otilde;dnek el. Ugyanannak a videófolyamnak különböz&otilde; helyekr&otilde;l kérése (különböz&otilde; pultok vagy MA 3D) nem generál további forgalmat.</p>
 
 <h3>Néhány tanács a hálózat stabilitásának fenntartásához CITP használatakor:</h3>
 
-<p>Az alábbi lista, rövid összefoglalót ad az adatforgalomról egy 30fps-es CITP videófolyamban. Amikor tömörített adatfolyam van, az adat mértéke változik a videótartalom összenyomhatóságától függ&#337;en.</p>
+<p>Az alábbi lista, rövid összefoglalót ad az adatforgalomról egy 30fps-es CITP videófolyamban. Amikor tömörített adatfolyam van, az adat mértéke változik a videótartalom összenyomhatóságától függ&otilde;en.</p>
 
 <ul>
 	<li>Tömörítetlen RGB8 folyam: 15Mbit/s</li>
-	<li>PNG tömörített folyam: 7Mbit/s-t&#337;l egészen 15Mbit/s videó tartalomtól függ&#337;en.</li>
-	<li>JPG tömörített folyam: 1Mbit/s-t&#337;l egészen 8Mbit/s videó tartalomtól függ&#337;en.</li>
+	<li>PNG tömörített folyam: 7Mbit/s-t&otilde;l egészen 15Mbit/s videó tartalomtól függ&otilde;en.</li>
+	<li>JPG tömörített folyam: 1Mbit/s-t&otilde;l egészen 8Mbit/s videó tartalomtól függ&otilde;en.</li>
 </ul>
 
 <p>A minimum hálózati sebesség 1000MBit/s. Ne engedélyezd a CITP-t egy 100Mbit/s -es hálózati környezetben!</p>
 
-<p>A CITP hálózat maximuma nem érheti el a 30Mbit/s-et a fizikai hálózaton. Ha eléred ezt a határt, csökkentsd a videófolyam min&#337;ségét, magasabb tömörítéssel (jpo) vagy kevesebb videófolyamot használj.
-Vagy a megjelenít&#337; programok, és a videófolyamban amik számítógépen futnak, Microsoft® Windows® operációs rendszerrel, nem tudják fogadni az összes folyamot, ezért videófolyam képeldobást generálnak és az fps leesik 1 alá.</p>
+<p>A CITP hálózat maximuma nem érheti el a 30Mbit/s-et a fizikai hálózaton. Ha eléred ezt a határt, csökkentsd a videófolyam min&otilde;ségét, magasabb tömörítéssel (jpo) vagy kevesebb videófolyamot használj.
+Vagy a megjelenít&otilde; programok, és a videófolyamban amik számítógépen futnak, Microsoft® Windows® operációs rendszerrel, nem tudják fogadni az összes folyamot, ezért videófolyam képeldobást generálnak és az fps leesik 1 alá.</p>
 
 <p>&nbsp;</p>
 

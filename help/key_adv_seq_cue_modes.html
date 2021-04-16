@@ -13,7 +13,7 @@
 		
 		<p>Minden képnek vannak módjai amiket megváltoztathatsz a <a href="key_cs_cue_sequence.html">Szekvencia Executor Lapon</a>.</p>
 
-<p>A cellák a Mode nev&ucirc; oszlopban szerkeszthet&#337;ek.</p>
+<p>A cellák a Mode nev&ucirc; oszlopban szerkeszthet&otilde;ek.</p>
 
 <p>Ha ezt teszed akkor megnyílik a Select Mode ablakocska. Így nézhet ki:</p>
 
@@ -21,15 +21,15 @@
 <figcaption><em>Kicsi Válassz módot ablakocska</em></figcaption>
 </figure>
 
-<p>Az ablakocska a következ&#337; választásokat teszi lehet&#337;vé:</p>
+<p>Az ablakocska a következ&otilde; választásokat teszi lehet&otilde;vé:</p>
 
 <ul>
 	<li><strong>Normal</strong>:<br />
 	Ez az alapértelmezett mód. Nem csinál semmi különlegeset.</li>
 	<li><strong>Assert</strong>:<br />
-	Ez kényszeríteni fogja az attribútumokat az aktuális nyomkövetési állapotra a kép alapid&#337;zítésének felhasználásával.</li>
+	Ez kényszeríteni fogja az attribútumokat az aktuális nyomkövetési állapotra a kép alapid&otilde;zítésének felhasználásával.</li>
 	<li><strong>X-Assert</strong>:<br />
-	Ez az attribútumokat az aktuális nyomkövetési állapotra kényszeríti az aktuális hívott kép alapvet&#337; id&#337;zítésével.</li>
+	Ez az attribútumokat az aktuális nyomkövetési állapotra kényszeríti az aktuális hívott kép alapvet&otilde; id&otilde;zítésével.</li>
 	<li><strong>Release</strong>:<br />
 	Kikapcsolja az executort amikor az átúszás kész van.</li>
 	<li><strong>Break</strong>:<br />
@@ -40,7 +40,7 @@
 
 <h2>Példák és magyarázatok</h2>
 
-<p>Egy követ&#337; szekvenciában, a kép tartalma mutatja, hogy mi változik a képben. Minden változatlan érték követ&#337;dik az el&#337;z&#337; képekb&#337;l, és az állapot - az aktuális kinézete - a képnek, a kombinációja annak, hogy mi történt korábban a képben. Ez a követési filozófia hasonlóan m&ucirc;ködik mint a díszít&#337;k a színpadon, és a kellékek kezelése el&#337;adáson.</p>
+<p>Egy követ&otilde; szekvenciában, a kép tartalma mutatja, hogy mi változik a képben. Minden változatlan érték követ&otilde;dik az el&otilde;z&otilde; képekb&otilde;l, és az állapot - az aktuális kinézete - a képnek, a kombinációja annak, hogy mi történt korábban a képben. Ez a követési filozófia hasonlóan m&ucirc;ködik mint a díszít&otilde;k a színpadon, és a kellékek kezelése el&otilde;adáson.</p>
 
 <p>Kép 1: A kanapé lerakása a színpad bal oldalán.</p>
 
@@ -52,18 +52,18 @@
 
 <p>Annak ellenére, hogy a 3. kép csak azt mondja, hogy a 2. színész a kanapén van, amikor a 3. képben vagyunk akkor is ott van a kanapé, és az 1. színész a színpadon. Ameddig ki nem viszik a kanapét, ott marad a színpadon.</p>
 
-<p>Néhány helyzetben, azt akarod, hogy ez a követés leálljon. Amikor a második felvonás kezd&#337;dik, nem akarod, hogy ugyanazok a dolgok ott maradjanak, amik az els&#337; részben voltak, csak azért mert nem mondtad a díszít&#337;knek, hogy vigyék ki a cuccokat, amikor létrehoztad a második felvonás els&#337; képét. Ilyenkor szeretnéd, hogy a követés <strong>Break-Megszakadjon</strong>.</p>
+<p>Néhány helyzetben, azt akarod, hogy ez a követés leálljon. Amikor a második felvonás kezd&otilde;dik, nem akarod, hogy ugyanazok a dolgok ott maradjanak, amik az els&otilde; részben voltak, csak azért mert nem mondtad a díszít&otilde;knek, hogy vigyék ki a cuccokat, amikor létrehoztad a második felvonás els&otilde; képét. Ilyenkor szeretnéd, hogy a követés <strong>Break-Megszakadjon</strong>.</p>
 
-<p>A Break módja a képnek, azt eredményezi, hogy a <strong>korábban</strong> létrejött változtatások, álljanak vissza az eredeti állapotba a break képben, hasonlóan ahhoz amikor Csak a képet tárolod a következ&#337; képben.</p>
+<p>A Break módja a képnek, azt eredményezi, hogy a <strong>korábban</strong> létrejött változtatások, álljanak vissza az eredeti állapotba a break képben, hasonlóan ahhoz amikor Csak a képet tárolod a következ&otilde; képben.</p>
 
 <div class="tip"><strong>Tipp:</strong><br />
-A <strong>Break</strong> megjelenik a <a href="key_cs_cue_sequence.html">Szekvencia Executor Lapon</a> és a <a href="key_cs_cue_content.html">Szekvencia Követ&#337; Lapon</a> is egy fehér vonallal a kép felett.</div>
+A <strong>Break</strong> megjelenik a <a href="key_cs_cue_sequence.html">Szekvencia Executor Lapon</a> és a <a href="key_cs_cue_content.html">Szekvencia Követ&otilde; Lapon</a> is egy fehér vonallal a kép felett.</div>
 
-<p>Amikor alapesetben egy képet a normál "Go"-val hívsz meg, csak a kép tartalma hívódik meg, nem a követési állapota. Ha csak egy húzót/lejátszót használsz, akkor ez a tulajdonság irreleváns, azonban, ha van más executorod, ami felülírhatta a lámpák állapotát, akkor bizonyos esetekben el&#337;fordulhat, hogy a meghívott képnek hívnia kell a követési állapotot is. Ez az <strong>Assert</strong> móddal érhet&#337; el. Az Assert meghívja a szekvencia állapotát, az alap kép id&#337;zítésének felhasználásával, ahonnan az érték tárolva van. Ez hatással lesz a folyamatban lév&#337; átúszásokra (ha például egy 30 perces naplemente még mindig kifelé tart).</p>
+<p>Amikor alapesetben egy képet a normál "Go"-val hívsz meg, csak a kép tartalma hívódik meg, nem a követési állapota. Ha csak egy húzót/lejátszót használsz, akkor ez a tulajdonság irreleváns, azonban, ha van más executorod, ami felülírhatta a lámpák állapotát, akkor bizonyos esetekben el&otilde;fordulhat, hogy a meghívott képnek hívnia kell a követési állapotot is. Ez az <strong>Assert</strong> móddal érhet&otilde; el. Az Assert meghívja a szekvencia állapotát, az alap kép id&otilde;zítésének felhasználásával, ahonnan az érték tárolva van. Ez hatással lesz a folyamatban lév&otilde; átúszásokra (ha például egy 30 perces naplemente még mindig kifelé tart).</p>
 
-<p>Más esetekben érdemes lehet visszaállítani az állapotot, és érvényesíteni a szekvenciát, de le kell állítani a folyamatban lév&#337; elhalványulást. Az <strong>X-Assert</strong> képmód az aktuális nyomkövetési állapotba fog átúszni - a jelenleg hívott kép id&#337;zítésével. Ez akkor használható, ha például meg akarsz gy&#337;z&#337;dni arról, hogy a nulla másodperces Blackout kép feketére vált, még akkor is, ha a képet a szokásosnál korábban kell futtatni, és a naplemente még nem ért véget. </p>
+<p>Más esetekben érdemes lehet visszaállítani az állapotot, és érvényesíteni a szekvenciát, de le kell állítani a folyamatban lév&otilde; elhalványulást. Az <strong>X-Assert</strong> képmód az aktuális nyomkövetési állapotba fog átúszni - a jelenleg hívott kép id&otilde;zítésével. Ez akkor használható, ha például meg akarsz gy&otilde;z&otilde;dni arról, hogy a nulla másodperces Blackout kép feketére vált, még akkor is, ha a képet a szokásosnál korábban kell futtatni, és a naplemente még nem ért véget. </p>
 
-<p>A <strong>Release</strong> mód hasznos lehet amikor a show-ban sok szekvenciát futtatsz egyszer és utána kikapcsolod - addig ameddig újra nem indítod. Ezek lehetnek villogó szekvenciák, amiket a f&#337; szekvencia indít el. Ahelyett, hogy kézzel programoznád le mindegyikben a kikapcsolást, ez megteszi automatikusan.</p>
+<p>A <strong>Release</strong> mód hasznos lehet amikor a show-ban sok szekvenciát futtatsz egyszer és utána kikapcsolod - addig ameddig újra nem indítod. Ezek lehetnek villogó szekvenciák, amiket a f&otilde; szekvencia indít el. Ahelyett, hogy kézzel programoznád le mindegyikben a kikapcsolást, ez megteszi automatikusan.</p>
 
 <p> </p>
 

@@ -15,13 +15,13 @@
 
 <p>Egyszer&ucirc;en nyomd meg a <span class="hardkey">Store</span> gombot és egyet egy executor oszlopban, ahová menteni szeretnéd.</p>
 
-<p>Persze van több részlet is err&#337;l, olvass tovább.</p>
+<p>Persze van több részlet is err&otilde;l, olvass tovább.</p>
 
 <p>&nbsp;</p>
 
 <h2>Új kép tárolása egy üres executorra</h2>
 
-<p>Ha egy képet egy üres executorra mentesz, akkor a grandMA2 szoftver automatikusan tárolja a képet a szekvenciák tárolóban, és hozzárendeli ezt a szekvenciát a kijelölt executorhoz az alapvet&#337; beállításokkal.</p>
+<p>Ha egy képet egy üres executorra mentesz, akkor a grandMA2 szoftver automatikusan tárolja a képet a szekvenciák tárolóban, és hozzárendeli ezt a szekvenciát a kijelölt executorhoz az alapvet&otilde; beállításokkal.</p>
 
 <p>Vissza a fenti példához: csak megnyomtad a <span class="hardkey">Store</span> gombot és utána egy üres executor gombot, akkor ez is elég. A szoftver feltételezi, hogy egy képet mentesz.</p>
 
@@ -29,15 +29,15 @@
 
 <p>&nbsp;</p>
 
-<p>A tárolt képek engedelmeskednek a Világoknak és a Sz&ucirc;r&#337;knek. Ezzel sz&ucirc;kíthet&#337; a tárolandók listája. Sz&ucirc;r&#337;ket és Világokat is hozzárendelhetünk a szekvenciákhoz. Ez mint egy input sz&ucirc;r&#337; m&ucirc;ködik csak az engedélyezett elemeket tárolva a szekvenciában.</p>
+<p>A tárolt képek engedelmeskednek a Világoknak és a Sz&ucirc;r&otilde;knek. Ezzel sz&ucirc;kíthet&otilde; a tárolandók listája. Sz&ucirc;r&otilde;ket és Világokat is hozzárendelhetünk a szekvenciákhoz. Ez mint egy input sz&ucirc;r&otilde; m&ucirc;ködik csak az engedélyezett elemeket tárolva a szekvenciában.</p>
 
-<p>Olvass többet a <a href="key_wfm_world_filter_mask.html">Világ, Sz&ucirc;r&#337;, és Maszk fejezetet</a>.</p>
+<p>Olvass többet a <a href="key_wfm_world_filter_mask.html">Világ, Sz&ucirc;r&otilde;, és Maszk fejezetet</a>.</p>
 
 <p>&nbsp;</p>
 
 <h2>Képek számozása</h2>
 
-<p>Amikor eltárolsz egy képet, lehetséges meghatározni a kép számát. Ezt a következ&#337;képpen teheted meg: <span class="syntax">Store Cue [kép száma]</span>. Lehetséges még megadni egy szekvencia/executor számot, a gombok használatával:<br />
+<p>Amikor eltárolsz egy képet, lehetséges meghatározni a kép számát. Ezt a következ&otilde;képpen teheted meg: <span class="syntax">Store Cue [kép száma]</span>. Lehetséges még megadni egy szekvencia/executor számot, a gombok használatával:<br />
 <span class="syntax">Store Cue [kép száma] Sequence [szekvencia száma]</span> vagy<br />
 <span class="syntax">Store Cue [kép száma] Executor [executor száma]</span>.</p>
 
@@ -48,20 +48,20 @@
 <p>A kép számai három tizedesjegy&ucirc;ek lehetnek. Ha mindegyik nulla akkor ezek nem látszanak. De a "42" kép száma ugyanaz mint a "42.000" - ez nem "42 ezer", ez "42 pont 0 0 0".&nbsp; Az aktuálisan tárolható legnagyobb kép száma "9 999.999". A legkisebb szám pedig a "0.001".</p>
 
 <div class="restriction"><strong>Korlátozások:</strong><br />
-Közel 10 000 000 kép tárolásakor er&#337;st megtelít&#337;dik a memória és a show file IGEN NAGY lesz.<br />
-A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, de bármilyen további m&ucirc;velet szinte biztos, hogy leállítja a rendszert!!</div>
+Közel 10 000 000 kép tárolásakor er&otilde;st megtelít&otilde;dik a memória és a show file IGEN NAGY lesz.<br />
+A szoftver megtagadja a további képek tárolását miel&otilde;tt összeomlana, de bármilyen további m&ucirc;velet szinte biztos, hogy leállítja a rendszert!!</div>
 
 <p>&nbsp;</p>
 
-<p>A szoftver elrejti a bevezet&#337; tizedes nullákat, de attól még ott vannak. Ez azt jelenti hogy az "5.2"-es kép az "5.11"-es kép után jön, mret aktuálisan ezek "5.200" és "5.110".</p>
+<p>A szoftver elrejti a bevezet&otilde; tizedes nullákat, de attól még ott vannak. Ez azt jelenti hogy az "5.2"-es kép az "5.11"-es kép után jön, mret aktuálisan ezek "5.200" és "5.110".</p>
 
 <p>&nbsp;</p>
 
-<p>Nincs korlátozva, hogy csak egy számot mentsünk egy id&#337;ben. Ez könny&ucirc;, mint tartományokat megadni - azt jelenti, hogy lehetséges a <span class="hardkey">Thru</span>, <span class="hardkey">+</span>, és <span class="hardkey">-</span> gombok használata hogy tartományokat tároljunk.</p>
+<p>Nincs korlátozva, hogy csak egy számot mentsünk egy id&otilde;ben. Ez könny&ucirc;, mint tartományokat megadni - azt jelenti, hogy lehetséges a <span class="hardkey">Thru</span>, <span class="hardkey">+</span>, és <span class="hardkey">-</span> gombok használata hogy tartományokat tároljunk.</p>
 
 <p>&nbsp;</p>
 
-<p>Ha sok képet akarsz ugyanahhoz a szekvenciához adni, akkor jó ötlet ha el&#337;tte kiválasztod az executort amiben a szekvencia van.</p>
+<p>Ha sok képet akarsz ugyanahhoz a szekvenciához adni, akkor jó ötlet ha el&otilde;tte kiválasztod az executort amiben a szekvencia van.</p>
 
 <p>Ezt megteheted a <span class="hardkey">Select</span> gomb, majd az executor gombjára kattintással.</p>
 
@@ -69,13 +69,13 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <h2>Második kép tárolása</h2>
 
-<p>Ha még egyszer ugyanarra az executorra használjuk a Store funkciót - a kép számainak megadása nélkül - akkor a grandMA2 nem tudja mit akarunk, ezért egy ablakocska jön el&#337; a választási lehet&#337;ségekkel.</p>
+<p>Ha még egyszer ugyanarra az executorra használjuk a Store funkciót - a kép számainak megadása nélkül - akkor a grandMA2 nem tudja mit akarunk, ezért egy ablakocska jön el&otilde; a választási lehet&otilde;ségekkel.</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_choose-store-method_second-cue_v3-3.png" />
-<figcaption><em>Válassz tárolási módot ablakocska a második kép lehet&#337;séggel</em></figcaption>
+<figcaption><em>Válassz tárolási módot ablakocska a második kép lehet&otilde;séggel</em></figcaption>
 </figure>
 
-<p>A jobb széls&#337; gombot <span class="softkey">Create Second Cue(második kép készítése)</span> nak hívják - erre bökve létrejön a következ&#337; kép, a következ&#337; egész számmal sorszámozva.</p>
+<p>A jobb széls&otilde; gombot <span class="softkey">Create Second Cue(második kép készítése)</span> nak hívják - erre bökve létrejön a következ&otilde; kép, a következ&otilde; egész számmal sorszámozva.</p>
 
 <p>A felülírás és a két összefésülés opciót lejjebb tárgyaljuk. A Remove és Release a <a href="key_cs_what_is_tracking.html">Mi a Tracking fejezetben van leírva</a>.</p>
 
@@ -83,13 +83,13 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <h2>Képek tárolása képekben amik nem üresek</h2>
 
-<p>Ha tárolást már meglév&#337; képre használjuk akkor ilyen ablakocska jön el&#337;:</p>
+<p>Ha tárolást már meglév&otilde; képre használjuk akkor ilyen ablakocska jön el&otilde;:</p>
 
 <figure class="caption"><img alt="" src="../../img/popup_choose-store-method_v3-3.png" />
 <figcaption><em>Válassz tárolási módot ablakocska</em></figcaption>
 </figure>
 
-<p>Ez csak akkor jön el&#337;, ha nem határoztad meg mi történjen. Nézz utána a <a href="key_cs_store_options_default.html">Tárolási Opciók és Alapértékek fejezetben</a> a tároláskori meghatározásához.</p>
+<p>Ez csak akkor jön el&otilde;, ha nem határoztad meg mi történjen. Nézz utána a <a href="key_cs_store_options_default.html">Tárolási Opciók és Alapértékek fejezetben</a> a tároláskori meghatározásához.</p>
 
 <p>A "Cue Only", "Tracking Shield", "Remove", és "Release" a <a href="key_cs_what_is_tracking.html">Mi a tracking fejezetben vannak leírva</a>.</p>
 
@@ -101,15 +101,15 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 	<li><strong>Merge:</strong>(összefésülés)<br />
 	Ez összefésüli az új értékeket a régebbiekkel. Az új értékeknek magasabb a prioritása és felülírja a régebbi értékeket.</li>
 	<li><strong>Status Merge:</strong>(állapot összefésülése)<br />
-	Ez is összefésüli az új értékeket, de meg&#337;rzi az aktuális kép értékeit is a kiválasztott executorrol.</li>
+	Ez is összefésüli az új értékeket, de meg&otilde;rzi az aktuális kép értékeit is a kiválasztott executorrol.</li>
 </ul>
 
 <h3>Példák</h3>
 
-<p>A következ&#337; példákban van egy kép listánk a következ&#337; két képpel (nézd meg a szekvencia követ&#337; oldalt - olvashatsz róla <a href="key_cs_cue_content.html#tracking_sheet">itt</a>):</p>
+<p>A következ&otilde; példákban van egy kép listánk a következ&otilde; két képpel (nézd meg a szekvencia követ&otilde; oldalt - olvashatsz róla <a href="key_cs_cue_content.html#tracking_sheet">itt</a>):</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_two-cues-before-merge_v3-3.png" />
-<figcaption><em>Képek a tárolási akció el&#337;tt</em></figcaption>
+<figcaption><em>Képek a tárolási akció el&otilde;tt</em></figcaption>
 </figure>
 
 <p>Most beadjuk a 3. lámpát 100%-ra és elmentjük mint 2. kép.</p>
@@ -128,7 +128,7 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 <figcaption><em>Képek az összefésülés után</em></figcaption>
 </figure>
 
-<p>Most a 3. lámpa értékei hozzáadódtak a meglév&#337; értékekhez.</p>
+<p>Most a 3. lámpa értékei hozzáadódtak a meglév&otilde; értékekhez.</p>
 
 <p>A "Status Merge"(állapot összefésülés) -nek hasonló eredménye lenne, ha a 1. vagy 2. kép aktív lenne és az executora ki van jelölve:</p>
 
@@ -140,13 +140,13 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <p>&nbsp;</p>
 
-<h2>Képek tárolása id&#337;zítéssel</h2>
+<h2>Képek tárolása id&otilde;zítéssel</h2>
 
-<p>Ha képeket tárolunk, akkor lehetséges különböz&#337; id&#337;ket a képekhez rendelni. Ez részletesen a <a href="key_cs_cue_timings.html">Képek id&#337;zítése fejezetben</a>van, de itt a rövid verzió.</p>
+<p>Ha képeket tárolunk, akkor lehetséges különböz&otilde; id&otilde;ket a képekhez rendelni. Ez részletesen a <a href="key_cs_cue_timings.html">Képek id&otilde;zítése fejezetben</a>van, de itt a rövid verzió.</p>
 
-<p>A <span class="hardkey">Fade</span> gomb különböz&#337; id&#337;zít&#337; kulcsszavakat ad a parancshoz amikor tároljuk a képet.</p>
+<p>A <span class="hardkey">Fade</span> gomb különböz&otilde; id&otilde;zít&otilde; kulcsszavakat ad a parancshoz amikor tároljuk a képet.</p>
 
-<p>Például a 4. képet szeretnénk 6 sec. beúszási és 1 sec. késleltetési id&#337;vel felvenni, akkor ennyit kell nyomni:</p>
+<p>Például a 4. képet szeretnénk 6 sec. beúszási és 1 sec. késleltetési id&otilde;vel felvenni, akkor ennyit kell nyomni:</p>
 
 <p><span class="hardkey">Store</span> <span class="hardkey">Cue</span> <span class="hardkey">4</span> <span class="hardkey">Time</span> <span class="hardkey">6</span> <span class="hardkey">Time</span> <span class="hardkey">Time</span> <span class="hardkey">1</span> <span class="hardkey">Please</span></p>
 
@@ -154,7 +154,7 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <div class="cl_response">[time] : Executing : Store Cue 4 Fade 6 Delay 1</div>
 
-<p>A <span class="hardkey">Fade</span>&nbsp;gomb ismételt nyomása változtatja a különböz&#337; id&#337;ket.</p>
+<p>A <span class="hardkey">Fade</span>&nbsp;gomb ismételt nyomása változtatja a különböz&otilde; id&otilde;ket.</p>
 
 <p>&nbsp;</p>
 
@@ -162,7 +162,7 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <p>Egy képnek lehet neve - címkéknek hívjuk - a tároláskor. Ez a szintaxisa: <span class="syntax">Store Cue [kép száma] "az én képem neve"</span>.</p>
 
-<p>A billenty&ucirc;zet kell ehhez.. Le kell írnod az idéz&#337;jeleket is, hogy a szoftver szövegként értelmezhesse - nem pedig parancsként értelmezze.</p>
+<p>A billenty&ucirc;zet kell ehhez.. Le kell írnod az idéz&otilde;jeleket is, hogy a szoftver szövegként értelmezhesse - nem pedig parancsként értelmezze.</p>
 
 <p>A cimkéket is lehet sorszámozni a tárolásakor. Nézd meg ezt a parancsot:</p>
 
@@ -172,14 +172,14 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <p>&nbsp;</p>
 
-<p>A kép címkézése tároláskor is megadható. Ez azt jelenti, hogy ha van több kép aminek a címkéje BO-val kezd&#337;dik, akkor lehetséges az összes képet tárolni úgy hogy a címke BO* lesz.. Nézd meg a következ&#337; példát.</p>
+<p>A kép címkézése tároláskor is megadható. Ez azt jelenti, hogy ha van több kép aminek a címkéje BO-val kezd&otilde;dik, akkor lehetséges az összes képet tárolni úgy hogy a címke BO* lesz.. Nézd meg a következ&otilde; példát.</p>
 
 <h3>Példa</h3>
 
-<p>Ez a képszekvenciánk s a tartalma tárolás el&#337;tt</p>
+<p>Ez a képszekvenciánk s a tartalma tárolás el&otilde;tt</p>
 
 <figure class="caption"><img alt="" src="../../img/window_sequence-tracking-sheet_five-cues-before-storing_v3-3.png" />
-<figcaption><em>Képek tárolás el&#337;tt</em></figcaption>
+<figcaption><em>Képek tárolás el&otilde;tt</em></figcaption>
 </figure>
 
 <p>A 1. lámpa 100%-on, ezt írjuk a parancssorba:</p>
@@ -192,9 +192,9 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 <figcaption><em>Kép a tárolás után nevekkel</em></figcaption>
 </figure>
 
-<p>A két kép cimkéje BO-val kezd&#337;dött ezek új értéket vettek fel - ezek a Cue Only-val lettek tárolva.</p>
+<p>A két kép cimkéje BO-val kezd&otilde;dött ezek új értéket vettek fel - ezek a Cue Only-val lettek tárolva.</p>
 
-<p>Több részlet err&#337;l a parancsról a fejezet végén található.</p>
+<p>Több részlet err&otilde;l a parancsról a fejezet végén található.</p>
 
 <p>&nbsp;</p>
 
@@ -202,7 +202,7 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <p>Azonban a közel 10 millió kép mellett, amelyeket az egyes szekvenciákban tárolhatunk, ha elég memória lenne, 199 kép rész is tárolható az egyes képekben.</p>
 
-<p>A kép részei a "f&#337;" kép egy részét képezik. A "f&#337;" kép valójában a 0. rész (nulla). Az els&#337; tárolható rész az 1. szám.</p>
+<p>A kép részei a "f&otilde;" kép egy részét képezik. A "f&otilde;" kép valójában a 0. rész (nulla). Az els&otilde; tárolható rész az 1. szám.</p>
 
 <p>Az értékek csak az egyik részben lehetnek. Nézd meg a példát a Sequence Tracking Táblázatban:</p>
 
@@ -210,33 +210,33 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 <figcaption><em>2. kép 2. része csak a 3. lámpát tartalmazza</em></figcaption>
 </figure>
 
-<p>A 3. lámpa értéke a 2. kép 1. részében van tárolva. Ennek nincs értéke a 2. kép 0. részében (a f&#337; kép). És az értékek az 1. és 2. lámpának a f&#337; képben vannak ezért nincs értékük a 2. kép 1. részében.</p>
+<p>A 3. lámpa értéke a 2. kép 1. részében van tárolva. Ennek nincs értéke a 2. kép 0. részében (a f&otilde; kép). És az értékek az 1. és 2. lámpának a f&otilde; képben vannak ezért nincs értékük a 2. kép 1. részében.</p>
 
-<p>Valamit egy részben tárolni, pont olyan egyszer&ucirc; mint egy képet eltárolni. A fenti példához a következ&#337; gombokat kell lenyomni:</p>
+<p>Valamit egy részben tárolni, pont olyan egyszer&ucirc; mint egy képet eltárolni. A fenti példához a következ&otilde; gombokat kell lenyomni:</p>
 
 <p><span class="hardkey">Store</span> <span class="hardkey">Cue</span> <span class="hardkey">2</span> <span class="hardkey">Cue</span> <span class="hardkey">1</span> <span class="hardkey">Please</span></p>
 
-<p>A Cue gomb második megnyomására az eredmény a <a href="key_keyword_part.html">Part kulcsszó lesz</a> és a parancssor visszajelz&#337; így néz ki:</p>
+<p>A Cue gomb második megnyomására az eredmény a <a href="key_keyword_part.html">Part kulcsszó lesz</a> és a parancssor visszajelz&otilde; így néz ki:</p>
 
 <div class="cl_response">[time] : Executing : Store Cue 2 Part 1</div>
 
 <p>&nbsp;</p>
 
-<h2>A parancssor használata további lehet&#337;ségekhez</h2>
+<h2>A parancssor használata további lehet&otilde;ségekhez</h2>
 
-<p>A példában, ahol címkéket használtunk a tároláshoz, volt egy parancs ami megmutatta a további lehet&#337;ségeket is a tároláshoz.</p>
+<p>A példában, ahol címkéket használtunk a tároláshoz, volt egy parancs ami megmutatta a további lehet&otilde;ségeket is a tároláshoz.</p>
 
 <p>A parancssor az összes lehetséges tárolási opcióhoz hozzáférést ad, amiket megtalálhatunk a tárolási opciók menüjében is - olvass róla a <a href="key_cs_store_options_default.html">Tárolási Opciók és Alapértékek fejezetben</a>.</p>
 
-<p>Mindegyik különböz&#337; elemr&#337;l olvashatsz a <a href="key_keyword_store.html">Store kulcsszó fejezetben</a>.</p>
+<p>Mindegyik különböz&otilde; elemr&otilde;l olvashatsz a <a href="key_keyword_store.html">Store kulcsszó fejezetben</a>.</p>
 
 <h3>Példák</h3>
 
-<p>A következ&#337; csak egy pár parancssori példa, a lehet&#337;ségeinkr&#337;l a tárolás során.</p>
+<p>A következ&otilde; csak egy pár parancssori példa, a lehet&otilde;ségeinkr&otilde;l a tárolás során.</p>
 
 <div class="cl_input">[Channel]&gt; Store Cue 1.2 Executor 1.4</div>
 
-<p>Az 1.2 számú képet elmentjük az els&#337; executor oldalon a 4. executorban lév&#337; szekvenciához adjuk.</p>
+<p>Az 1.2 számú képet elmentjük az els&otilde; executor oldalon a 4. executorban lév&otilde; szekvenciához adjuk.</p>
 
 <p>&nbsp;</p>
 
@@ -256,7 +256,7 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <div class="cl_input">[Channel]&gt; Store Cue 42 "Return of the Paranoid Android" /merge /use=Look</div>
 
-<p>Ez eltárolja a képet a megadott névvel és összefésüli, de használja a "Look"(kinézet) opciót is. A tárolási opció "Look"-ról a következ&#337; fejezetben olvashatsz.</p>
+<p>Ez eltárolja a képet a megadott névvel és összefésüli, de használja a "Look"(kinézet) opciót is. A tárolási opció "Look"-ról a következ&otilde; fejezetben olvashatsz.</p>
 
 <p>&nbsp;</p>
 
@@ -266,7 +266,7 @@ A szoftver megtagadja a további képek tárolását miel&#337;tt összeomlana, 
 
 <p>Ez eltávolítja azokat az attribútumokat amiknek van aktív értéke a programozóban.</p>
 
-<p>A programozóban lév&#337; érték irreleváns ebben az esetben. Ezek csak egyszer&ucirc;en megjelölik, hogy melyik értéket akarod eltávolítani a képb&#337;l.</p>
+<p>A programozóban lév&otilde; érték irreleváns ebben az esetben. Ezek csak egyszer&ucirc;en megjelölik, hogy melyik értéket akarod eltávolítani a képb&otilde;l.</p>
 
 <p>Néhány érték eltávolításához, hasznos a Sequence Tracking Táblázat vagy a Sequence Content táblázat. Olvashatsz róla a <a href="key_cs_cue_content.html">A kép tartalmának megtekintése fejezetben</a>.&nbsp;</p>
 

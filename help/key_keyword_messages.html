@@ -18,9 +18,9 @@
 <p>A Messages kulcsszóval lehetséges</p>
 
 <ul>
-	<li>üzeneteket listázni a parancssori visszajelz&#337; ablakba.</li>
+	<li>üzeneteket listázni a parancssori visszajelz&otilde; ablakba.</li>
 	<li>üzeneteket exportálni a messages.xml fájlba.</li>
-	<li>üzeneteket törölni az üzenetközpontból, például az el&#337;z&#337; show fájlokból.</li>
+	<li>üzeneteket törölni az üzenetközpontból, például az el&otilde;z&otilde; show fájlokból.</li>
 </ul>
 
 <p>Több információ a fájlok exportálásához <a href="key_ei_export_commandline.html">általános export funkciók</a>.</p>
@@ -35,10 +35,10 @@
 
 <p>Az üzeneteket kulcsszó csak a <strong>feltételek</strong> opcióval használható. A rövidítése a kondíciónak <strong>cnd</strong>.</p>
 
-<p>A következ&#337; táblázat mutatja a támogatott kondíciós értékeket.</p>
+<p>A következ&otilde; táblázat mutatja a támogatott kondíciós értékeket.</p>
 
 <div class="important"><strong>Fontos:</strong><br />
-Szövegek összehasonlítása helyettesít&#337;kkel lehetséges. Az értékek nagybet&ucirc; érzékenyek.</div>
+Szövegek összehasonlítása helyettesít&otilde;kkel lehetséges. Az értékek nagybet&ucirc; érzékenyek.</div>
 
 <table border="1" cellpadding="1" cellspacing="1" style="height:222px; width:410px">
 	<thead>
@@ -56,18 +56,18 @@ Szövegek összehasonlítása helyettesít&#337;kkel lehetséges. Az értékek n
 			<td>"time" (= message receive time)</td>
 			<td>'YYYY-MM-DDThh:mm:ss', 'YYYY-MM-DD', 'hh:mm:ss'<br />
 			<br />
-			Ha a date egyedül van használva, az id&#337; 00:00:00-ra lesz állítva, például, 2020-03-30T00:00:00.<br />
+			Ha a date egyedül van használva, az id&otilde; 00:00:00-ra lesz állítva, például, 2020-03-30T00:00:00.<br />
 			<br />
 			Ha a time egyedül van használva, a mai dátum lesz beállítva, például, 2020-03-30T12:05:00.</td>
 		</tr>
 		<tr>
 			<td>"sender"</td>
-			<td>üzenet küld&#337; felhasználói profil neve</td>
+			<td>üzenet küld&otilde; felhasználói profil neve</td>
 		</tr>
 		<tr>
 			<td>"station"</td>
 			<td>
-			<p>üzenet küld&#337; állomás IP-je + típusa</p>
+			<p>üzenet küld&otilde; állomás IP-je + típusa</p>
 			</td>
 		</tr>
 		<tr>
@@ -89,7 +89,7 @@ Szövegek összehasonlítása helyettesít&#337;kkel lehetséges. Az értékek n
 	</tbody>
 </table>
 
-<p>A következ&#337; táblázat mutatja a támogatott m&ucirc;veleti szintaxisokat a parancssor által.</p>
+<p>A következ&otilde; táblázat mutatja a támogatott m&ucirc;veleti szintaxisokat a parancssor által.</p>
 
 <div class="important"><strong>Fontos:</strong><br />
 Ha m&ucirc;veleti kifejezéseket használsz, a m&ucirc;veletet szóközökkel kell körülvenni.<br />
@@ -117,27 +117,27 @@ Ha m&ucirc;veleti kifejezéseket használsz, a m&ucirc;veletet szóközökkel ke
 		</tr>
 		<tr>
 			<td>greater<br />
-			(csak az id&#337; és dátum feltételnél)</td>
+			(csak az id&otilde; és dátum feltételnél)</td>
 			<td>"&gt;"</td>
 		</tr>
 		<tr>
 			<td>less<br />
-			(csak az id&#337; és típus feltételnél)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"&lt;"</td>
 		</tr>
 		<tr>
 			<td>greater or equal<br />
-			(csak az id&#337; és típus feltételnél)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"&gt;="</td>
 		</tr>
 		<tr>
 			<td>less or equal<br />
-			(csak az id&#337; és típus feltételnél)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"&lt;="</td>
 		</tr>
 		<tr>
 			<td>equal<br />
-			(csak az id&#337; és típus feltételnél)</td>
+			(csak az id&otilde; és típus feltételnél)</td>
 			<td>"="</td>
 		</tr>
 	</tbody>
@@ -145,7 +145,7 @@ Ha m&ucirc;veleti kifejezéseket használsz, a m&ucirc;veletet szóközökkel ke
 
 <h2>Példák</h2>
 <ul>
-	<li>Minden üzenet listázása a parancssori visszajelz&#337; ablakba, a kondíció típusával és az érték = riasztással.</li>
+	<li>Minden üzenet listázása a parancssori visszajelz&otilde; ablakba, a kondíció típusával és az érték = riasztással.</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; List Messages /cnd = "type = 'alert'"</div>
@@ -153,7 +153,7 @@ Ha m&ucirc;veleti kifejezéseket használsz, a m&ucirc;veletet szóközökkel ke
 <p>&nbsp;</p>
 
 <ul>
-	<li>&nbsp;Minden figyelmeztetés, risztás, és hibaüzenet exportálása, 12:45 el&#337;tt a messages.xml fájlba.</li>
+	<li>&nbsp;Minden figyelmeztetés, risztás, és hibaüzenet exportálása, 12:45 el&otilde;tt a messages.xml fájlba.</li>
 </ul>
 
 <div class="cl_input">[Channel]&gt; Export Messages /cnd="(type &gt;= 'warning' or time &lt;= '12:45:00') and !(new = 'true')"</div>
