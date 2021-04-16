@@ -14,7 +14,7 @@
 		<p>Az executor húzóit át lehet állítani csatorna húzókra, executor húzók helyett.</p>
 
 <div class="important"><strong>Fontos:</strong><br />
-A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az executorok.</div>
+A csatorna oldalra váltáskor nem törl&#337;dnek, vagy kapcsolódnak ki az executorok.</div>
 
 <p>Két típusú csatorna oldal létezik: <strong>Static-Statikus</strong> oldalak, ahol csak a dimmer attribútumát lehet változtatni az aktuális lámpáknak. <strong>Dynamic-Dinamikus</strong> oldalak, pedig az adott lámpa kiválasztott attribútumait engedik szabályozni.</p>
 
@@ -48,9 +48,9 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <p>A statikus csatorna oldalt fel kell építeni - ez azt jelenti, hogy hozzá kell rendelni csatornákat a csatorna húzókhoz.</p>
 
-<p>Ezt a következ&otilde; gombokkal lehet megtenni: <span class="hardkey">Assign</span> <span class="hardkey">Chanel</span> (vagy <span class="hardkey">Fixture</span>) [szám vagy tartomány] <span class="hardkey">Page</span> <span class="hardkey">Page</span> (ez a ChannelPage parancsot adja) [oldalszám].[húzószám] <span class="hardkey">Please</span>.</p>
+<p>Ezt a következ&#337; gombokkal lehet megtenni: <span class="hardkey">Assign</span> <span class="hardkey">Chanel</span> (vagy <span class="hardkey">Fixture</span>) [szám vagy tartomány] <span class="hardkey">Page</span> <span class="hardkey">Page</span> (ez a ChannelPage parancsot adja) [oldalszám].[húzószám] <span class="hardkey">Please</span>.</p>
 
-<p>Ha nincs megadva attribútum, akkor a dimmer rendel&otilde;dik hozzá. Más attribútumokat is hozzá lehet rendelni, de ehhez kicsit nyomozni kell, hogy kitaláld az attribútumok számát vagy nevét. Ez az általános szintaxis.:</p>
+<p>Ha nincs megadva attribútum, akkor a dimmer rendel&#337;dik hozzá. Más attribútumokat is hozzá lehet rendelni, de ehhez kicsit nyomozni kell, hogy kitaláld az attribútumok számát vagy nevét. Ez az általános szintaxis.:</p>
 
 <p><span class="syntax">Assign Fixture [id szám].[al lámpa szám].[attribútum] (At) ChannelPage [oldalszám].[húzószám]</span></p>
 
@@ -60,11 +60,11 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <p>Ebben a showban, van egy olyan lámpa van patchelve, aminek van tilt és pan attribútuma, a lámpa ID-je 1. És azt szeretném, ha a dimmer az 1. húzó a pan a 2. húzó, a tilt pedig a 3. húzón lenne a csatorna lapon.</p>
 
-<p>Miel&otilde;tt bármit hozzárendelnénk, létre kell hozni az oldalt. Egyszer&ucirc;en csak nyomd meg a <span class="hardkey">Ch Pg +</span> az els&otilde; csatorna oldal megnyitásához - ezáltal létre is jön az oldal.</p>
+<p>Miel&#337;tt bármit hozzárendelnénk, létre kell hozni az oldalt. Egyszer&ucirc;en csak nyomd meg a <span class="hardkey">Ch Pg +</span> az els&#337; csatorna oldal megnyitásához - ezáltal létre is jön az oldal.</p>
 
-<p>A dimmer hozzárendelése az els&otilde; húzóhoz egyszer&ucirc;: <span class="hardkey">Assign</span> <span class="hardkey">Fixture</span> <span class="hardkey">1</span> és utána nyomd meg az egyik gombot az 1. húzó oszlopban.</p>
+<p>A dimmer hozzárendelése az els&#337; húzóhoz egyszer&ucirc;: <span class="hardkey">Assign</span> <span class="hardkey">Fixture</span> <span class="hardkey">1</span> és utána nyomd meg az egyik gombot az 1. húzó oszlopban.</p>
 
-<p>Most meg kellene keresni az attribútum számát az 1. lámpához. Nyisd meg a <strong>Parancs Visszajelz&otilde;</strong> ablakot.</p>
+<p>Most meg kellene keresni az attribútum számát az 1. lámpához. Nyisd meg a <strong>Parancs Visszajelz&#337;</strong> ablakot.</p>
 
 <p>Fel kell fedeznünk az 1. lámpát, tehát írd be ezt a parancssorba és zárd le egy please-el:</p>
 
@@ -72,21 +72,21 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <p><strong>CD</strong> a rövidítése a ChangeDirectory-könyvtárváltás parancsnak.</p>
 
-<p>A parancssor mutatja, hogy most beléptünk a lámpába. Kell egy lista az al-lámpákról az 1. lámpán belül. Írd be a következ&otilde;t (nem kell semmit írni a <strong>&gt;</strong> elé.)</p>
+<p>A parancssor mutatja, hogy most beléptünk a lámpába. Kell egy lista az al-lámpákról az 1. lámpán belül. Írd be a következ&#337;t (nem kell semmit írni a <strong>&gt;</strong> elé.)</p>
 
 <div class="cl_input">[LiveSetup/Layers 4/Spots 3/Spot 1 1]&gt;List</div>
 
-<p>&nbsp;A showtól függ&otilde;en, lehet pontosan ugyanez az eredmény. A fontos rész itt a List parancs.</p>
+<p>&nbsp;A showtól függ&#337;en, lehet pontosan ugyanez az eredmény. A fontos rész itt a List parancs.</p>
 
-<p>Most a parancs visszajelz&otilde; ablak, mutatja, hogy van legalább egy al-lámpa. A példában ez egy Vari-Lite aminek csak egy al-lámpája van..</p>
+<p>Most a parancs visszajelz&#337; ablak, mutatja, hogy van legalább egy al-lámpa. A példában ez egy Vari-Lite aminek csak egy al-lámpája van..</p>
 
 <p>Lépj be az al-lámpába a CD parancs ismételt használatával.:</p>
 
 <div class="cl_input">[LiveSetup/Layers 4/Spots 3/Spot 1 1]&gt;CD 1</div>
 
-<p>Ha tudom, hogy a lámpámnak csak egy al-lámpája van (vagy az 1. al-lámpára van szükségem), akkor lehetséges idenavigálni a következ&otilde; paranccsal is <span class="syntax">CD Fixture 1.1</span> - Ne futtasd most ezt a parancsot.</p>
+<p>Ha tudom, hogy a lámpámnak csak egy al-lámpája van (vagy az 1. al-lámpára van szükségem), akkor lehetséges idenavigálni a következ&#337; paranccsal is <span class="syntax">CD Fixture 1.1</span> - Ne futtasd most ezt a parancsot.</p>
 
-<p>Most kell még egy <strong>List</strong> parancsot futtatni, hogy láthassuk az attribútumok listáját ehhez a lámpához. A listában amit a parancs visszajelz&otilde; ablak mutat, a PAN a 3. elem és a TILT a 4. Ezzel az új tudásmorzsával felvértezve, visszamehetünk a parancssor kezdetére és hozzárendelhetjük az attribútumokat. Írd be a következ&otilde;ket:</p>
+<p>Most kell még egy <strong>List</strong> parancsot futtatni, hogy láthassuk az attribútumok listáját ehhez a lámpához. A listában amit a parancs visszajelz&#337; ablak mutat, a PAN a 3. elem és a TILT a 4. Ezzel az új tudásmorzsával felvértezve, visszamehetünk a parancssor kezdetére és hozzárendelhetjük az attribútumokat. Írd be a következ&#337;ket:</p>
 
 <div class="cl_input">[LiveSetup/Layers 4/Spots 3/Spot 1 1/Spot 1 1]&gt;CD/</div>
 
@@ -104,7 +104,7 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <div class="cl_input">[Channel]&gt; Assign Fixture 1.1.TILT ChannelPage 1.3</div>
 
-<p>Hasznos ha tudjuk mindkét módját a lámpa attribútumának megkereséséhez. Ezzel elérhet&otilde; bármely attribútum megkeresése és hozzárendelése a húzókhoz..</p>
+<p>Hasznos ha tudjuk mindkét módját a lámpa attribútumának megkereséséhez. Ezzel elérhet&#337; bármely attribútum megkeresése és hozzárendelése a húzókhoz..</p>
 
 <p>&nbsp;</p>
 
@@ -118,21 +118,21 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 <figcaption><em>Automatikus létrehozás menü - Channel Page fül</em></figcaption>
 </figure>
 
-<p>Ez a menü két részb&otilde;l áll. A bal oldalon kétféle dolog lehet: Lámpa típus-FixtureTypes vagy Rétegek-Layers. A kett&otilde; között a <span class="softkey">Choose</span> (balra alul) gombra böködéssel lehet váltani.</p>
+<p>Ez a menü két részb&#337;l áll. A bal oldalon kétféle dolog lehet: Lámpa típus-FixtureTypes vagy Rétegek-Layers. A kett&#337; között a <span class="softkey">Choose</span> (balra alul) gombra böködéssel lehet váltani.</p>
 
 <p>A jobb oldalon azt látod ami ki lett választva a bal oldalon.</p>
 
 <p>A folyamat az, hogy kiválasztasz egy vagy több elemet a lista bal oldalán és utána kiválasztasz vagy nem a jobb oldalon lámpákat. Minden kiválasztott lámpának a dimmer attribútumával jön létre húzó.</p>
 
-<p>A jobb szélen van három zöld beviteli mez&otilde;. A legfels&otilde; beállítja a ChannelPage számát az auto létrehozott húzóknak. A középs&otilde; beállítja az adott húzó számát az adott oldalon. Az alsó beállítja az oldal szélességét. Egy jó ötlet, hogy beállítsd a szélességét, hogy stimmeljen az eszközödhöz.</p>
+<p>A jobb szélen van három zöld beviteli mez&#337;. A legfels&#337; beállítja a ChannelPage számát az auto létrehozott húzóknak. A középs&#337; beállítja az adott húzó számát az adott oldalon. Az alsó beállítja az oldal szélességét. Egy jó ötlet, hogy beállítsd a szélességét, hogy stimmeljen az eszközödhöz.</p>
 
 <p>Bökj a <span class="softkey">Always ask for Name</span> gombot, ha el akarod nevezni a létrehozott Csatorna oldalt.</p>
 
 <p>Az <span class="softkey">Overwrite</span> gomb nem tesz semmi különbséget. Attribútumok hozzárendelése a csatorna húzókhoz, mindig felülírja az aktuálisan hozzárendelt húzókat..</p>
 
-<p>Bökj a <span class="softkey">Create</span> gombra a csatorna húzók létrehozásához. Vedd figyelembe, hogy ez a m&ucirc;velet megváltoztatja a kezd&otilde;lapot és a kezd&otilde; fader beviteli mez&otilde;ket a következ&otilde; elérhet&otilde; ChannelPage és ChannelFader csatornákra.</p>
+<p>Bökj a <span class="softkey">Create</span> gombra a csatorna húzók létrehozásához. Vedd figyelembe, hogy ez a m&ucirc;velet megváltoztatja a kezd&#337;lapot és a kezd&#337; fader beviteli mez&#337;ket a következ&#337; elérhet&#337; ChannelPage és ChannelFader csatornákra.</p>
 
-<p>A <span class="softkey">Create Next Page</span> ismét lefuttatja a létrehozást, de a következ&otilde; oldalon kezdi.</p>
+<p>A <span class="softkey">Create Next Page</span> ismét lefuttatja a létrehozást, de a következ&#337; oldalon kezdi.</p>
 
 <p>&nbsp;</p>
 
@@ -141,7 +141,7 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <p>A dinamikus csatorna oldalak szintén csatorna oldalak, amik a kiválasztott lámpák és az aktív képesség kiválasztásától függnek.</p>
 
-<p>A dinamikus csatorna oldal, elérhet&otilde; a <a href="key_of_channel_sheet.html">Csatorna lap</a> és a <a href="key_of_fixture_sheet.html">Lámpa lapokon</a>. Aktiváláshoz bökj a <strong>Link Faders</strong> opcióra. Olvass többet róla a <a href="key_of_sheet_options_title_buttons.html">Fejléc gombok fejezetben</a>.</p>
+<p>A dinamikus csatorna oldal, elérhet&#337; a <a href="key_of_channel_sheet.html">Csatorna lap</a> és a <a href="key_of_fixture_sheet.html">Lámpa lapokon</a>. Aktiváláshoz bökj a <strong>Link Faders</strong> opcióra. Olvass többet róla a <a href="key_of_sheet_options_title_buttons.html">Fejléc gombok fejezetben</a>.</p>
 
 <p>&nbsp;</p>
 
@@ -151,7 +151,7 @@ A csatorna oldalra váltáskor nem törl&otilde;dnek, vagy kapcsolódnak ki az e
 
 <p>Ezt használhatod arra, hogy létrehozz speciális kombinációit az attribútumoknak.&nbsp;</p>
 
-<p>Olvashatsz róla b&otilde;vebben a ChannelLink linknél felül.</p>
+<p>Olvashatsz róla b&#337;vebben a ChannelLink linknél felül.</p>
 
 		
 	</body>
