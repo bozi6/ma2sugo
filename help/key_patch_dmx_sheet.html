@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>DMX Sheet</title>
+		<title>DMX Lap</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="DMX sheet" />
 	</head>
 	<body>
-		
-		
-		<h1>DMX Sheet</h1>
-		
-		<p>The DMX sheet is used to see the actual DMX output from the system. It shows the result from the executors, programmer, incoming merged DMX and any Masters that might limit the output.</p>
 
-<p>The sheet can be created as a view on any empty space on you screens. Minimum size is 3 squares wide and 2 high.</p>
+
+		<h1>DMX Lap</h1>
+
+		<p>A DMX lap megmutatja az aktuális DMX kimenetet a rendszerb&otilde;l. Mutatja az executorok, programozó, bejöv&otilde; összefésült DMX és valamennyi Master értéket ami befolyásolhatja a kimenetet.</p>
+
+<p>A lapot létrehozhatod mint nézet egy üres képerny&otilde;felületen. A minimum mérete 3 négyzet széles és 2 négyzet magas lehet.</p>
 
 <p>Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_dmx_v3-3.png" />
-<figcaption><em>DMX Sheet window</em></figcaption>
+<figcaption><em>DMX Lap ablak</em></figcaption>
 </figure>
 
-<p>The main part of this window displays a big grid with every DMX address, represented by its own cell. This makes it a very long list (all 256 universes are there).</p>
+<p>A f&otilde; részén egy nagy rácsos ablak látszik minden DMX címmel, amit saját cellájuk mutat. Ez egy elég hosszú lista ( mind a 256 univerzum látható itt).</p>
 
-<p>The DMX channel value is displayed in this cell.</p>
+<p>A DMX csatorna értéke látszik a cellákban.</p>
 
-<p>The gray vertical bar on the left side displays the DMX address of the first column - there are two ways to see the DMX address: Absolute DMX address and the normal Universe divided. This can be changed in the Options (read below). The absolute address mode will display the DMX addresses as a continuous number. This means that the first address in the second universe will not be written as "2:1" but as "513" (512 addresses from the first universe + 1 from the second).</p>
+<p>A szürke függ&otilde;leges sáv a bal oldalon mutatja a DMX címét az els&otilde; oszlopnak - két módon lehet a DMX címeket megjeleníteni: Abszolút DMX címként és normál univerzum szerinti nézetben. Ez átállítható az opcióknál (részletek lejjebb). Az abszolút cím mód folyamatos számokként mutatja a DMX címeket. Ez azt jelenti, hogy a második univerzum els&otilde; címe nem mint "2:1" jelenik meg, hanem "513" ként (512 cím az els&otilde; univerzumból +1 a másodikból).</p>
 
-<p>The top black bar displays the column number. The grid is a matrix, so the column number should be added to the address displayed in the gray vertical bar (except the first column).</p>
+<p>A fels&otilde; fekete sáv mutatja az oszlop számát. A rács egy mátrixot jelent, tehát az oszlop számát hozzáadhatjuk a mutatott címhez a szürke függ&otilde;leges sávban (kivétel az els&otilde; oszlop).</p>
 
-<p>Fixtures can be selected using a DMX address by pressing the <span class="hardkey">Select</span> key twice and then the DMX address in the sheet - Have a look at the <a href="key_keyword_dmx.html">DMX kulcsszó</a>.</p>
+<p>Eszközöket választhatunk DMX cím alapján, ha megnyomjuk a <span class="hardkey">Select</span> gombot kétszer és utána a DMX címet a lapon - Nézz rá a  <a href="key_keyword_dmx.html">DMX kulcsszónál</a>.</p>
 
-<p>The <span class="hardkey">Assign</span> key can be used in combination with the sheet to patch fixtures - please have a look at the <a href="key_patch_livepatch.html">Live patching</a> topic.</p>
+<p>Az <span class="hardkey">Assign</span> gomb használható a lappal, eszközök patcheléséhez - b&otilde;vebben az <a href="key_patch_livepatch.html">Él&otilde; patchelé</a> fejezet.</p>
 
 <p>&nbsp;</p>
 
-<p>Each fixture have a frame around the DMX channels it uses. If the fixture is selected, then the frame is yellow. Non selected fixtures will have a gray frame.</p>
+<p>Minden eszköznek van egy kerete az általa használt DMX csatornák körül. Amikor az eszközt kiválasztod, akkor a keret sárga. A nem kiválasztott eszközök körül szürke keret látszik.</p>
 
 <figure class="caption"><img alt="" src="../../img/window_dmx_detail_v3-2.png" />
-<figcaption><em>DMX Sheet detail</em></figcaption>
+<figcaption><em>DMX Lap részletek</em></figcaption>
 </figure>
 
-<p>If a DMX channel is parked then there is a blue square in the cell.</p>
+<p>Amikor egy DMX csatornát parkoltatsz akkor kék keret van a cella körül.</p>
 
-<p>If there is a white or yellow square then the DMX address is under influence of the <a href="key_patch_dmx_testing.html">DMX Tester</a>.</p>
-
-<p>&nbsp;</p>
-
-<p>If the cursor is moved to a cell then the information about the cell is displayed in a green line text at the bottom of the window.</p>
-
-<p>The look of the sheet can be modified including what information it displays. This is controlled by the Sheet Options.</p>
-
-<p>Some options can be in the Title Bar as title buttons. This gives fast access to these options.</p>
+<p>Ha fehér vagy sárga keretet látsz akkor a DMx címet a <a href="key_patch_dmx_testing.html">DMX Tesztel&otilde;</a> befolyásolja.</p>
 
 <p>&nbsp;</p>
 
-<h2>DMX Sheet Options</h2>
+<p>Amikor a kurzort egy cellára mozgatod, akkor információk jelennek meg a celláról zöld szöveggel az ablak aljában.</p>
 
-<p>The options can be opened by tapping the yellow ball in the upper left corner.</p>
+<p>A lapon megjelenítend&otilde; információk testreszabhatók. Ezt a lap beállításainál tudod megváltoztatni.</p>
 
-<p>The options are all described in the <a href="key_of_sheet_options.html">Sheet Options topics</a>.</p>
+<p>Néhány opciót megjelenik a fejlécben is. Itt gyorsabban hozzáférhetsz ezekhez a lehet&otilde;ségekhez.</p>
 
-		
+<p>&nbsp;</p>
+
+<h2>DMX Lap Opciók</h2>
+
+<p>Az opciók megnyithatók, úgy ha ráböksz a sárga labdára a bal fels&otilde; sarokban.</p>
+
+<p>Az összes lehet&otilde;ség le van írva a <a href="key_of_sheet_options.html">Lapok beállítása fejezetben</a>.</p>
+
+
 	</body>
 </html>

@@ -1,112 +1,112 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>DMX testing in the DMX Sheet</title>
+		<title>DMX tesztelése a DMX lapon</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="DMX - test, DMX - encoder toolbar" />
 	</head>
 	<body>
-		
-		
-		<h1>DMX testing in the DMX Sheet</h1>
-		
-		<p>You can send DMX values to any DMX address. This can be a great tool for you to locate the address of a fixture or even to just turn on a DMX address for work light.</p>
 
-<p>The DMX tester have a higher priority than your programmer, executors, and parked values. A DMX address under the influence of the DMX tester has a white background color behind the value and a white marker. The currently selected DMX address also has a yellow marker. Így nézhet ki:</p>
+
+		<h1>DMX tesztelése a DMX lapon</h1>
+
+		<p>Küldhetsz DMX értéket bármelyik DMX címre. Ez egy nagyszerű eszköz, hogy megkeresd egy eszköz címét vagy csak bekapcsolj egy DMX címet pl. munkavilágításhoz.</p>
+
+<p>A DMX tesztel&otilde;nek magasabb prioritása van mint a programozó, executorok, és parkolt értékek. A DMX címek amiket a DMX tesztel&otilde; irányít fehér háttere lesz az érték mögött és egy fehét jelet is kap. Az aktuálisan kiválasztott DMX cím körül még efgy sárga jelöl&otilde; is lesz. Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/img_dmx-tester_result_v3_2.png" />
-<figcaption><em>DMX addresses turned on by the DMX tester</em></figcaption>
+<figcaption><em>DMX címek bekapcsolva a DMX tesztel&otilde;ben</em></figcaption>
 </figure>
 
 <p>&nbsp;</p>
 
-<p>As usual there are several ways to use the DMX tester.</p>
+<p>Mint általában itt is több módja van a DMx tesztel&otilde; használatának.</p>
 
-<h2>Using the DMX tester with the GUI</h2>
+<h2>DMX tesztel&otilde; használata grafikusan</h2>
 
-<p>You can use the encoders and the encoder toolbar to test DMX channels.</p>
+<p>Használhatod a tárcsákat és ezek eszköztáráat a DMX csatornák teszteléséhez.</p>
 
-<p>You'll need to open a <a href="key_patch_dmx_sheet.html">DMX sheet</a> and make sure the "Link Encoders" option is activated.</p>
+<p>Meg kell nyitnod egy <a href="key_patch_dmx_sheet.html">DMX lapot</a> és meggy&otilde;z&otilde;dni, hogy a "Link Encoders" opció aktív.</p>
 
-<p>Now touch anywhere inside the sheet.</p>
+<p>Most bökj bármire a lapon belül..</p>
 
-<p>This gives you a new encoder toolbar. Így nézhet ki:</p>
+<p>Ekkor megjelenik egy új tárcsa-eszköztár. Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/img_encoder-toolbar_dmx-tester_v3-3.png" />
-<figcaption><em>Encoder Toolbar - DMX tester</em></figcaption>
+<figcaption><em>Tárcsa eszköztár - DMX tesztel&otilde;</em></figcaption>
 </figure>
 
-<p>The left encoder is used to select the Universe. There is a small button next to the encoder readout where you can change between <strong>Universe </strong>or <strong>Absolute</strong>. If you choose Absolute then you do not need to use this encoder. You can just use the center left encoder.</p>
+<p>A bal oldali tárcsával lehet kiválasztani az univerzumot. Van egy kis gomb a tárcsa mellett ahol változtathatod a megjelenítést az <strong>Univerzum </strong> vagy <strong>Absolute</strong> között. Ha az Absolute aktív akkor nem kell használni ezt a tárcsát. Ilyenkor használhatod csak a bal középs&otilde; tárcsát a választáshoz.</p>
 
-<p>The center left encoder is used to select the DMX address. The button next to the encoder readout has two options <strong>Release</strong> or <strong>Retain</strong>. Release means that when you scroll through the DMX address then it is only the selected channel that is affected by the DMX tester. Retain means that the addresses that you pass will keep the Test Output value when you select the next address.</p>
+<p>A bal középs&otilde; tárcsát használhatod a DMx cím kiválasztásához. A gombnak a tárcsa mellett, két opciója van <strong>Release</strong>(elengedés) vagy <strong>Retain</strong>(megtartás). A Release azt jelenti, hogy amikor végigpörgeted a DMX címeket, akkor a tesztel&otilde; csak a kiválasztott csatornát érinti. A Retain azt jelenti, hogy a megkapott címek megtartják a tesztkimenet értékét, akkor is amikor a következ&otilde; címre ugrasz.</p>
 
-<p>The center right encoder is used to set the Test Output. This is the value that will be sent to the selected DMX address. The button next to it is used to change between a percent (0 to 100) and decimal (0 to 255) value range. If you have not touched the encoder then it has a special "none" value. This means that you are not affecting the DMX address. You can actually also use the DMX tester to set a value of zero. This can be useful if for instance you want to force a rouge shutter channel to stay open. The easiest way to get to the "none" value is to shortly press or tap the encoder and use the Calculator pop-up.</p>
+<p>A jobbközéps&otilde; tárcsáa a teszt kimenet beállítására szolgál. Ezzel lehet beállítani a kiválasztott DMX címre küldend&otilde; értéket. A gombocskával mellette, beállítható százalékos (0 to 100) és decimális (0 to 255) értékhatárra. Ha nem nyomod meg a tárcsát, akkor egy speciális "none" értéke van. Ez azt jelenti, hogy nem befolyásolod a DMX címet. Használhatod a DMX tesztel&otilde;t arra hogy egy értéket nullára állíts. Ez hasznos például, hogy egy red&otilde;ny&otilde;s zár csatornáját nyitva tartsd. A legegyszerűbben az értéket "none"-ra állítani úgy lehet, hogy röviden megnyomod a tárcsát és a Számológép ablakocskában kiválasztod a "none" értéket.</p>
 
-<p>The right most encoder is used to patch a fixture to the selected DMX address. To learn more about this and live patching please <a href="key_patch_livepatch.html">follow this link</a>.</p>
+<p>A jobbszéls&otilde; tárcsával lehet egy lámpát a kiválasztott DMX címre patchelni. Az "él&otilde;" patchelésr&otilde;l <a href="key_patch_livepatch.html">ezen a linken</a>olvashatsz többet.</p>
 
 <p>&nbsp;</p>
 
-<p>Above the encoder readout there are several buttons. The following is a short description of each button.</p>
+<p>A tárcsák fölött van néhány gomb. A következ&otilde; egy rövid leírás mindegyik gombról.</p>
 
-<p><strong>All / Patched / Unpatched:</strong></p>
+<p><strong>Összes / Patchelt / Nempatchelt:</strong></p>
 
-<p>This button toggles between three different options: All, Patched, and Unpatched.</p>
+<p>Ezek a gombok három opció közül választanak: All, Patched, and Unpatched.</p>
 
-<p>The selects what DMX address you are allowed to select and affect by the DMX tester.</p>
+<p>A választás szerint lehet engedélyezni, hogy melyik DMX címet választhatod ki a DMX tesztel&otilde;ben.</p>
 
 <p><strong>Select All:</strong></p>
 
-<p>Tapping this button will select all the DMX addresses that you are affecting by the DMX tester.</p>
+<p>Erre bökve minden címet kiválaszthatsz a DMX tesztelésére.</p>
 
 <p><strong>Release Current:</strong></p>
 
-<p>This will release the currently selected DMX address from being affected by the DMX tester.</p>
+<p>Ez kiveszi a kiválasztott DMX címeket a DMX tesztel&otilde;b&otilde;l.</p>
 
 <p><strong>Release Others:</strong></p>
 
-<p>This will release all other DMX address but the currently selected DMX address from being affected by the DMX tester.</p>
+<p>Ez minden más DMX címet kivesz, kivéve a kiválasztottat a DMX teasztel&otilde;b&otilde;l.</p>
 
 <p><strong>Release All:</strong></p>
 
-<p>This will release all DMX address from being affected by the DMX tester.</p>
+<p>Ez minden DMX csatornát elenged a DMX tesztel&otilde;b&otilde;l.</p>
 
 <p><strong>Park Current:</strong></p>
 
-<p>This can be used to park the currently selected DMX address at the current DMX value. Read more about the park function in the <a href="key_keyword_park.html">Park kulcsszó</a>.</p>
+<p>Ez használható a kiválasztott DMX címek parkolására az aktuális DMX értékkel. A parkolási funkciókról részletesebben a <a href="key_keyword_park.html">Park kulcsszó</a>-nál olvashatsz.</p>
 
 <p><strong>Unpark Current:</strong></p>
 
-<p>This can be used to unpark the currently selected DMX address. Read more about the unpark function in the <a href="key_keyword_unpark.html">Unpark kulcsszó</a>.</p>
+<p>Ez visszaállítja a parkolást az aktuálisan kiválasztottt DMX címeken. B&otilde;vebben az <a href="key_keyword_unpark.html">Unpark kulcsszó</a>-nál olvashatsz róla.</p>
 
 <p>&nbsp;</p>
 
-<h2>Using the DMX tester with the command line</h2>
+<h2>DMX tesztel&otilde; használata a parancssorban</h2>
 
-<p>You can also do some DMX testing from the command line.</p>
+<p>Lehetséges néhány DMX tesztet elvégezni a parancssorból is.</p>
 
-<p>To do this you need to use the <a href="key_keyword_dmx.html">DMX kulcsszó</a>.</p>
+<p>Ennek megvalósításához használd a <a href="key_keyword_dmx.html">DMX kulcsszót</a>.</p>
 
-<p>Please follow the link above to read details about the keyword.</p>
+<p>Ezen a linken lehet részletesebben olvasni a parancsról.</p>
 
 <p>&nbsp;</p>
 
-<p>The general idea is that you type</p>
+<p>Az általános elképzelés ha így írod</p>
 
-<p><span class="syntax">DMX [address (range)] At [Value (range)] </span></p>
+<p><span class="syntax">DMX [cím (tartomány)] At [érték (tartomány)] </span></p>
 
-<p>This will set the DMX address at the value.</p>
+<p>Ez beállítja a DMX címet az adott értékre.</p>
 
-<p>To release a channel you type:</p>
+<p>Egy csatorna elengedéséhez:</p>
 
-<p><span class="syntax">Off DMX [address (range)]</span></p>
+<p><span class="syntax">Off DMX [cím (tartomány)]</span></p>
 
-<p>to release a single address (range) from the DMX tester.</p>
+<p>ez elenged egy címet (tartományt) a DMX tesztel&otilde;b&otilde;l.</p>
 
 <p><span class="syntax">Off DMX Thru</span></p>
 
-<p>Will release all DMX addresses.</p>
+<p>Elengedi az összes DMX címet.</p>
 
-		
+
 	</body>
 </html>
