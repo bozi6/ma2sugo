@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>What Are Channels &amp; Fixtures</title>
+		<title>Mik azok a Csatornák &amp; Lámpák</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="channels, fixtures, channel ID, fixture ID" />
@@ -9,33 +9,33 @@
 	<body>
 
 
-		<h1>What Are Channels &amp; Fixtures</h1>
+		<h1>Mik azok a Csatornák &amp; Lámpák</h1>
 
-		<p>The two words Channel and Fixtures can be several things and it can be a little bit confusing. Even in this manual we might use both words.</p>
+		<p>a két szó (csatorna,lámpa) sokmindent jelenthet és egy kicsit zavaró is lehet. F&otilde;leg, hogy ez a leírás is használja mindkét szót.</p>
 
-<p>When talking (or writing) about the actual device that emits light, we are referring to that as a fixture. This might be all sorts of devices from different manufacturers. They may have one function or many different functions. All these functions are called <a href="key_patch_attributes.html">Attributes</a>.</p>
+<p>Amikor beszélünk (vagy írunk) az aktuális eszközr&otilde;l ami fényt bocsát ki, arra mint lámpa (fixture) hivatkozunk. Ez jelenit a különböz&otilde; gyártók által készített eszközöket. Ezeknek lehet egy, vagy több funkciójuk. Minden egyes funkciót <a href="key_patch_attributes.html">Attribútumoknak</a> nevezünk.</p>
 
-<p>When you program a show, you will need to be able to select these devices, so they have an ID number - something we can type on a numeric keypad.</p>
+<p>Amikor egy show-t programozol, akkor szükséges ezeket az eszközöket valahogy kiválasztani, ezért van nekik ID számuk - valami amit beírhatunk a unmerikus billenty&Ucirc;zeten..</p>
 
-<p>The grandMA2 have the option to give each device two ID numbers. They can be the same number or they can be different numbers for the same physical device. The ID numbers are called <strong>Channel ID</strong> and <strong>Fixture ID</strong>. A device needs at least one ID number to be select-able and programmable. Two different devices cannot have the same Channel ID or the same Fixture ID. But one device can have Channel ID number 1 and another device can have Fixture ID number 1.</p>
+<p>A grandMA2 ben megvan a lehet&otilde;ség, hogy minden eszköznek kett&otilde; Id száma legyen. Ugyanannak a fizikai eszköznek ez lehet megegyez&otilde;, de lehet eltér&otilde; is. Az Id számokat <strong>Csatorna ID</strong> és <strong>Lámpa ID</strong>-nek nevezzük. Egy eszköznek szükséges legalább egy ID, ahhoz, hogy kiválasztható és programozható legyen. Két külön eszköznek nem lehet ugyanaz a csatorna vagy lámpa Id-je. De egy eszköznek lehet a Csatorna Id-je 1 és egy másiknak a Lámpa Id-je is 1.</p>
 
-<p>A device with a <strong>Channel ID</strong> will be visible in the <strong>Channel Sheet</strong> and a device with a <strong>Fixture ID</strong> will be visible in a <strong>Fixture Sheet</strong>. If the device have two different ID numbers, then you can choose to hide one of the numbers in the sheets.</p>
+<p>Egy eszköz <strong>Csatorna ID</strong>-vel látható a <strong>Csatorna lapon</strong> és egy eszköz <strong>Lámpa ID</strong>-vel, pedig a <strong>Lámpa lapon</strong>. Ha az eszköznek két különböz&otilde; ID-je is van, beállíthatod, hogy melyik számot nem akarod látni ezeken a lapokon.</p>
 
-<p>If you have already programmed something with a device and you later change the ID numbers, then you will not loose any programmed information. If you remove the ID number so the device does not have any, then the values are still there and it will still output DMX even though you cannot select the device. When you cannot select it, then you cannot edit it or the stored values. It is not visible in sheets. You cannot delete the values either.</p>
+<p>Ha már programoztál egy eszközt, majd kés&otilde;bb megváltoztatod az ID-jét, akkor nem veszik el a programozott információ. Ha eltávolítasz egy ID-t, tehát az eszköznek nincs Id-je, attól az értékek még megmaradnak és ki is megy a DMX jel, még akkor is ha nem tudod kiválasztani a lámpát. Ha nem tudod kiválasztani, akkor szerkeszteni sem tudod a tárolt értékeket. Nem elsz látható a lapokon sem. Még az értékeket sem tudod törölni.</p>
 
-<p>You should pay attention to what your default beginning keyword is. You can see it in the Command Line input. The default on a new empty show is "Channel". Your Command Line input will look like this:</p>
+<p>Figyelj oda mi az alapértelmezett kezd&otilde; kulcsszavad. Ezt a parancssorban láthatod. Az alapértelmezés egy új show-nál a "Channel"(csatorna). Ilyenkor így néz ki a parancssor:</p>
 
 <div class="cl_input">[Channel]&gt;</div>
 
-<p>If you are trying to select a device that only have a Fixture ID, then you need to specify that it is a Fixture ID by pressing the <span class="hardkey">Fixture</span> key before entering the ID number.</p>
+<p>Ha megpróbálsz egy eszközt kiválasztani aminek csak Lámpa Id-je van, akkot el&otilde;tte meg kell adni, hogy ez egy Lámpa ID lesz, úgy, hogy megnyomod a the <span class="hardkey">Fixture</span> gombot, miel&otilde;tt megadod az ID-t.</p>
 
-<p>You can change the default keyword by pressing the key corresponding to the one you want and the press <span class="hardkey">Please</span>.</p>
-
-<p>&nbsp;</p>
+<p>Megváltoztathatod az alapértelmezett kulcsszót, ha megnyomod az egyik gombot, amit akarsz és utána nyomsz egy <span class="hardkey">Please</span>-t.</p>
 
 <p>&nbsp;</p>
 
-<p>So to sum up. We call each device a fixture and each fixture can have a Channel ID and/or a Fixture ID and to be able to control it it will need at least one ID number.</p>
+<p>&nbsp;</p>
+
+<p>Összefoglalva. Minden eszközt Lámpának hívunk és lehet nekik Csatorna/Lámpa Id-jük és ahhoz, hogy vezérelhessük ezeket, szükséges legalább egy ID beállítva.</p>
 
 <p>&nbsp;</p>
 

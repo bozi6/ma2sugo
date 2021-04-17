@@ -1,79 +1,79 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Multipatching</title>
+		<title>Multipatcholás</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="multipatch" />
 	</head>
 	<body>
-		
-		
-		<h1>Multipatching</h1>
-		
-		<p>Multipatching is a function to add extra fixtures to a Fixture ID or Channel ID.</p>
 
-<p>Any extra fixture needs its own DMX patch.</p>
 
-<p>Adding multipatch fixtures to the fixture schedule will also add an extra virtual fixture in the stage view and MA 3D.</p>
+		<h1>Multipatcholás</h1>
 
-<p>It does not cost you any parameters to add multipatch fixtures.</p>
+		<p>A multipatcholás egy olyan funkció, amivel extra lámpákat adhatsz egy lámpa vagy csatorna ID-hez.</p>
 
-<p>You cannot program the multipatched fixtures individually. It is connected to the same ID as the primary fixture. All fixtures, the primary and the multipatched do the same.</p>
+<p>Minden extra lámpának szükséges saját DMX patch.</p>
 
-<p>Any programming that existed on the primary fixture are also outputted on the multipatched fixtures.</p>
+<p>Multipatchos lámpa hozzáadásakor a lámpa táblázatban, egy extra virtuális lámpa adódik az MA 3D virtuális színpadához.</p>
+
+<p>Nem kerül semennyi paraméterbe multipatchos lámpák hozzáadása.</p>
+
+<p>Nem lehet a multipatchelt lámpákat külön programozni, mert az els&otilde;dleges lámpával közös Id-t használ. Minden multipatchelt lámpa ugyanazt teszi, mint az el&otilde;ször beállított lámpa.</p>
+
+<p>Minden programozás ami a meglév&otilde; lámpát érinti, továbbitva lesz az összes multipatchelt lámpára is.</p>
 
 <p>&nbsp;</p>
 
-<p>This is the first process using the GUI:</p>
+<p>Ez az els&otilde; módja a GUI használatával:</p>
 
 <ol>
-	<li>Press the <span class="hardkey">Setup</span> key and then the <span class="softkey">Patch &amp; Fixture Schedule</span> button.</li>
-	<li>Select the layer and fixture you want to multipatch.</li>
-	<li>In the lower right corner you will find a button called <span class="softkey">Create Multipatch</span> - tap it (if the fixture schedule is on screen 1 - and you are on a grandMA2 full-size or grandMA2 light console, then you can also press the <span class="hardkey">X20</span> key.</li>
-	<li>This opens a calculator pop-up. Enter the amount of multipatched fixtures you want to add the the selected fixture. Confirm by tapping <span class="softkey">Please</span>.</li>
-	<li>The extra fixtures now have their own line in the list. All the elements with a black background is non-editable.</li>
-	<li>You can change the name and the 3D position and rotation of the extra fixtures.</li>
-	<li>You can add the extra patch address to the extra fixtures.</li>
-	<li>Exit the Fixture schedule and the setup, and change save your changes.</li>
+	<li>Nyomd meg a <span class="hardkey">Setup</span> gombot és utána bökj a <span class="softkey">Patch &amp; Fixture Schedule</span> gombra.</li>
+	<li>Válaszd ki a réteget és a lámpát amit szeretnél multipatchelni.</li>
+	<li>A jobb alsó sarokban találsz egy gombot <span class="softkey">Create Multipatch</span>felirattal - bökj rá (ha a lámpák táblázat az els&otilde; képerny&otilde;n van - és grandMA2 full-size vagy grandMA2 light pultod van, akkor megnyomhatod az <span class="hardkey">X20</span> gombot is.</li>
+	<li>Ez megnyit egy számológép ablakocskát. Írd be a többszörözni kívánt lámpák számát,  amennyit hozzá akarsz adni a kiválasztott lámpához. Fogadd el a <span class="softkey">Please</span>-re bökéssel.</li>
+	<li>Az extra lámpák most megjelennek a saját sorukban a listában. Az összes elem fekete háttérrel, nem szerkeszthet&otilde;.</li>
+	<li>Megváltoztathatod a nevét és a 3D-s pozícióját/forgatását az extra lámpáknak.</li>
+	<li>Hozzáadhatsz extra patch címeket az extra lámpákhoz.</li>
+	<li>Lépj ki a beállításokból, és mentsd el a változtatásokat..</li>
 </ol>
 
 <p>&nbsp;</p>
 
-<p>The second GUI process involves live patching and the DMX sheet. <a href="key_patch_livepatch.html">Read about it here</a>.</p>
+<p>A második GUI-s eljárást a live patching és a DMX lap segítségével végezhetjük el. <a href="key_patch_livepatch.html">Itt találsz róla b&otilde;vebb infót</a>.</p>
 
 <p>&nbsp;</p>
 
-<p>This is the process using the command line:</p>
+<p>Ez a módja a parancssoron keresztül:</p>
 
-<div class="cl_input">[Channel]&gt; Assign [DMX-list] At Fixture [Fixture ID]</div>
+<div class="cl_input">[Channel]&gt; Assign [DMX-lista] At Fixture [Lámpa ID]</div>
 
-<p>Assigning a list of DMX addresses to an existing fixture will create as many multipatch fixtures to your fixture as the list.</p>
+<p>A DMx-címek listájának megadásával, annyi multipatchelt lámpa jön létre, mint amennyit a DMx-listába megadtál.</p>
 
-<p>You can do the same with Channel ID.</p>
+<p>Ugyanezt megteheted a csatorna ID-el is.</p>
 
-<p>You do not need to type the "At".</p>
+<p>Nem szükséges beírni az "At" parancsot.</p>
 
-<h3>Examples:</h3>
+<h3>Példák:</h3>
 
-<p>Adding an extra multipatched fixture (address 2.1) to Fixture ID 101:</p>
+<p>Egy extra multipatchelt lámpa hozzáadása (címe 2.1) a 101-es ID-j&Ucirc; lámpához:</p>
 
 <div class="cl_input">[Channel]&gt; Assign DMX 2.1 At Fixture 101</div>
 
-<p>Adding five multipatched fixtures (addresses 3.1 thru 3.5) to Fixture ID 201:</p>
+<p>Öt multipatchelt lámpa hozzáadása (címek 3.1 t&otilde;l 3.5-ig) a 201-es ID-j&Ucirc; lámpához:</p>
 
 <div class="cl_input">[Channel]&gt; Assign DMX 3.1 Thru 3.5 Fixture 201</div>
 
-<p>Short version:</p>
+<p>Rövid változat:</p>
 
 <div class="cl_input">[Channel]&gt; as dmx 3.1 t 3.5 f 201</div>
 
 <p>&nbsp;</p>
 
-<p>Now you have multipatched fixtures.</p>
+<p>Most már vannak multipatchelt lámpáid is.</p>
 
-<p>For more about positioning the fixture in MA 3D or the Stage view, please have look at the <a href="key_patch_position_fixtures.html">Position fixtures in the 3D stage</a> topic.</p>
+<p>B&otilde;vebben a lámpák elhelyezésér&otilde;l az MA 3D virtuális terében, a következ&otilde; fejezetben találsz információt <a href="key_patch_position_fixtures.html">Lámpák elhelyezése a 3D-s színpadon</a>.</p>
 
-		
+
 	</body>
 </html>

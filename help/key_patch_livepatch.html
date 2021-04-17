@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="hu">
 	<head>
-		<title>Élő patchelés</title>
+		<title>Él&otilde; patchelés</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="live patch, patch - change, patch only, LiveSetup" />
@@ -9,22 +9,22 @@
 	<body>
 
 
-		<h1>Élő patchelés</h1>
+		<h1>Él&otilde; patchelés</h1>
 
 		<p>Megváltotaztathatod a lámpák patchelését anélkül, hogy belépnél a teljes beállításokhoz vagy az "Edit Setup"-ba.</p>
 
 <p>Ha még nem adtál néhány lámpát a show-hoz, akkor el kéne olvasnod a <a href="key_patch_add_fixtures.html">Lámpák hozzáadása a showhoz</a> fejezetet. Ez szintén jó ötlet arra, hogyha valami nem világos itt, akkor ott megnézd.</p>
 
-<p>A probléma a teljes hozzáféréssel az, hogy szerkezeti változtatásokat eszközölhetsz a show fájlodban. Ez nem gond, csak amikor kilépsz ebből a menüből, akkor a pult ezeket a változásokat feltölti minden csatlakoztatott eszközre - ez megállítja a DMx átvitelt ameddig a show feltöltődik.</p>
+<p>A probléma a teljes hozzáféréssel az, hogy szerkezeti változtatásokat eszközölhetsz a show fájlodban. Ez nem gond, csak amikor kilépsz ebb&otilde;l a menüb&otilde;l, akkor a pult ezeket a változásokat feltölti minden csatlakoztatott eszközre - ez megállítja a DMx átvitelt ameddig a show feltölt&otilde;dik.</p>
 
-<p>Szóval, az ötlet az, hogy a nem szerkezeti változtatások, lehetővé válnak feltöltés nélkül, ezt hívják "Élő szerkesztésnek/patchelésnek".</p>
+<p>Szóval, az ötlet az, hogy a nem szerkezeti változtatások, lehet&otilde;vé válnak feltöltés nélkül, ezt hívják "Él&otilde; szerkesztésnek/patchelésnek".</p>
 
 <div class="important"><strong>Fontos:</strong><br />
-Figyelj oda arra hogy sok lámpa egyidejű szerkesztésekor késleltetve megy ki az összes NPU-ra és állomásra a munkamenetben. Ha például megváltoztatod a forgatás vagy billentés eltolását néhány száz lámpánál egy parancssal, akkor az késést fog okozni, mire minden egység megkapja az értékét. A valós idejű DMX kimenetnek magasabb az elsőbbsége és még ezt is ki kell számolni ugyanakkor. Amikor lehetséges, akkor kisebb mennyiségű lámpát változtass egyidőben, vagy inkább használd az <a href="key_patch_add_fixtures.html">EditSetup</a> lehetőséget mégis.</div>
+Figyelj oda arra hogy sok lámpa egyidej&Ucirc; szerkesztésekor késleltetve megy ki az összes NPU-ra és állomásra a munkamenetben. Ha például megváltoztatod a forgatás vagy billentés eltolását néhány száz lámpánál egy parancssal, akkor az késést fog okozni, mire minden egység megkapja az értékét. A valós idej&Ucirc; DMX kimenetnek magasabb az els&otilde;bbsége és még ezt is ki kell számolni ugyanakkor. Amikor lehetséges, akkor kisebb mennyiség&Ucirc; lámpát változtass egyid&otilde;ben, vagy inkább használd az <a href="key_patch_add_fixtures.html">EditSetup</a> lehet&otilde;séget mégis.</div>
 
 <p>&nbsp;</p>
 
-<h2>Élő patchelés a Setup menü használatával</h2>
+<h2>Él&otilde; patchelés a Setup menü használatával</h2>
 
 <p>Ezt a Setup menüben érheted el. Megnyomva a <span class="hardkey">Setup</span> gombot és rábökve a <span class="softkey">Patch Only (Live)</span> gombra.</p>
 
@@ -36,7 +36,7 @@ Figyelj oda arra hogy sok lámpa egyidejű szerkesztésekor késleltetve megy ki
 
 <p>Ez nagyon hasonlít az EditSetup menüre (Hosszú leírása a <a href="key_patch_add_fixtures.html">Lámpák hozzáadása a showhoz</a> fejezetben).</p>
 
-<p>Minden aminek szürke a háttere az szerkeszthető. Minden aminek fekete a háttere, az zárt és nem szerkeszthető.</p>
+<p>Minden aminek szürke a háttere az szerkeszthet&otilde;. Minden aminek fekete a háttere, az zárt és nem szerkeszthet&otilde;.</p>
 
 <p>Nézd meg a rétegeket és a tartalmukat, itt látható, hogy mit változtathatsz meg "Live" módban - a show feltöltése nélkül.</p>
 
@@ -44,17 +44,17 @@ Figyelj oda arra hogy sok lámpa egyidejű szerkesztésekor késleltetve megy ki
 
 <p>&nbsp;</p>
 
-<h2>Élő patchelés a parancssor használatával</h2>
+<h2>Él&otilde; patchelés a parancssor használatával</h2>
 
-<p>Ha a multipatchelés lehetőségét keresed akkor olvasd el a <a href="key_patch_multipatch.html">Multipatchelés</a> fejezetet.&nbsp;</p>
+<p>Ha a multipatchelés lehet&otilde;ségét keresed akkor olvasd el a <a href="key_patch_multipatch.html">Multipatchelés</a> fejezetet.&nbsp;</p>
 
 <p>Ez a folyamata a parancssor használatával:</p>
 
 <div class="cl_input">[Channel]&gt; Assign Fixture [Lámpa-lista] At DMX [DMX-cím]</div>
 
-<p>A lámpák hozzárendelése (vagy csak egy lámpa esetén) kitörlődik a patch adata a lámpákból, és hozzárendelődik a DMX cím kezdve a beírt DMX címtől - Offset nélkül.</p>
+<p>A lámpák hozzárendelése (vagy csak egy lámpa esetén) kitörl&otilde;dik a patch adata a lámpákból, és hozzárendel&otilde;dik a DMX cím kezdve a beírt DMX címt&otilde;l - Offset nélkül.</p>
 
-<p>Lehetséges egy figyelmeztető ablakocska megjelenése is, ami az ütközésekről tájékoztat.</p>
+<p>Lehetséges egy figyelmeztet&otilde; ablakocska megjelenése is, ami az ütközésekr&otilde;l tájékoztat.</p>
 
 <p>Ugyanazt megteheted a Csatorna ID-kel is.</p>
 
@@ -66,31 +66,31 @@ Figyelj oda arra hogy sok lámpa egyidejű szerkesztésekor késleltetve megy ki
 
 <div class="cl_input">[Channel]&gt; Assign Fixture 101 At DMX 2.1</div>
 
-<p>101, 103, 105 számú lámpák hozzárendelése az 5.61 DMX címtől kezdődően:</p>
+<p>101, 103, 105 számú lámpák hozzárendelése az 5.61 DMX címt&otilde;l kezd&otilde;d&otilde;en:</p>
 
 <div class="cl_input">[Channel]&gt; Assign Fixture 101 + 103 + 105 DMX 5.61</div>
 
 <p>&nbsp;</p>
 
-<h2>Élő patchelés lámpák szerkesztésével</h2>
+<h2>Él&otilde; patchelés lámpák szerkesztésével</h2>
 
 <p>Amikor szerkeszted a lámpát, lehetséges a DMX cím megváltoztatása is.</p>
 
-<p>A szerkesztés ablakocska felső részén megtalálod a lámpát (és az összes multipatchelt lámpát is) és itt van egy Patch oszlop. Ezt az értéket szerkesztve megváltozik a cím is.</p>
+<p>A szerkesztés ablakocska fels&otilde; részén megtalálod a lámpát (és az összes multipatchelt lámpát is) és itt van egy Patch oszlop. Ezt az értéket szerkesztve megváltozik a cím is.</p>
 
 <p>&nbsp;</p>
 
-<h2>Élő patchelés a DMX táblázat és a DMX tesztelő segítségével</h2>
+<h2>Él&otilde; patchelés a DMX táblázat és a DMX tesztel&otilde; segítségével</h2>
 
-<p>A <strong>DMX lap</strong> részleteiről <a href="key_patch_dmx_sheet.html">ezen as linken</a> olvashatsz. A <strong>DMX tesztelőről</strong> <a href="key_patch_dmx_testing.html">pedig itt olvashatsz</a>.</p>
+<p>A <strong>DMX lap</strong> részleteir&otilde;l <a href="key_patch_dmx_sheet.html">ezen as linken</a> olvashatsz. A <strong>DMX tesztel&otilde;r&otilde;l</strong> <a href="key_patch_dmx_testing.html">pedig itt olvashatsz</a>.</p>
 
-<p>Tudsz patchelni a DMX lapon és a DMX tesztelőben is.</p>
+<p>Tudsz patchelni a DMX lapon és a DMX tesztel&otilde;ben is.</p>
 
 <ol>
 	<li>Nyisd meg a lapot</li>
 	<li>Aktiváld a "Link Encoders"(tárcsák összekapcsolása)</li>
 	<li>Keresd meg a DMX címet ahová patchelni akarod a lámpákat és bökj ide</li>
-	<li>Most nyomd meg a jobb oldali tárcsát. Ez egy ilyesmi képernyőt nyit meg:</li>
+	<li>Most nyomd meg a jobb oldali tárcsát. Ez egy ilyesmi képerny&otilde;t nyit meg:</li>
 </ol>
 
 <figure class="caption"><img alt="" src="../../img/popup_patch-address-to-fixture-channel_v3-2.png" />
@@ -99,27 +99,27 @@ Figyelj oda arra hogy sok lámpa egyidejű szerkesztésekor késleltetve megy ki
 
 <p>Ez az ablakocska megmutatja az összes lámpát a showban. Itt úgy látszik, hogy szerkesztheted a DMX címet közvetlenül ebben az ablakocskában, de nem.</p>
 
-<p>Szűkítheted a listát ha beírod a lámpa vagy csatorna ID-jét a zöld mezőben felül. Itt van egy legördülő lista, amiben szűrhated, hogy csak a nem patchelt lámpákat mutassa.</p>
+<p>Sz&Ucirc;kítheted a listát ha beírod a lámpa vagy csatorna ID-jét a zöld mez&otilde;ben felül. Itt van egy legördül&otilde; lista, amiben sz&Ucirc;rhated, hogy csak a nem patchelt lámpákat mutassa.</p>
 
 <ol start="5">
 	<li>Válaszd ki a lámpát amit a címre szertnél patchelni.</li>
 	<li>&nbsp;
 	<ol start="1" style="list-style-type:upper-alpha">
 		<li>Ha a kiválasztott lámpát a kiválasztot címre akarod patchelni akkor bökj a <span class="softkey">Patch</span> gombra&nbsp;</li>
-		<li>Ha multipatchelt lámpát akarsz hozzáadni a kiválasztott lámpához a kiválasztott címen, akkor bökj az <span class="softkey">Add Multipatch</span> gombra (<a href="key_patch_multipatch.html">Kövesd a következő linket a </a><a href="key_patch_multipatch.html">Mulitpatchingnál</a>)</li>
+		<li>Ha multipatchelt lámpát akarsz hozzáadni a kiválasztott lámpához a kiválasztott címen, akkor bökj az <span class="softkey">Add Multipatch</span> gombra (<a href="key_patch_multipatch.html">Kövesd a következ&otilde; linket a </a><a href="key_patch_multipatch.html">Mulitpatchingnál</a>)</li>
 	</ol>
 	</li>
 </ol>
 
 <p>&nbsp;</p>
 
-<p>A másik lehetőség a DMX lapon, hogy megnyomod az <span class="hardkey">Assign</span> gombot és a <span class="hardkey">Channel</span> or <span class="hardkey">Fixture</span> gombot, amit az Id követ és utána direkt a DMX lapon a kiválasztott lámpa.</p>
+<p>A másik lehet&otilde;ség a DMX lapon, hogy megnyomod az <span class="hardkey">Assign</span> gombot és a <span class="hardkey">Channel</span> or <span class="hardkey">Fixture</span> gombot, amit az Id követ és utána direkt a DMX lapon a kiválasztott lámpa.</p>
 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
-<p>Ez volt néhány különböző módja a DMX címek szerkesztése a lámpákban, a show feltöltése nélkül.</p>
+<p>Ez volt néhány különböz&otilde; módja a DMX címek szerkesztése a lámpákban, a show feltöltése nélkül.</p>
 
 
 	</body>
