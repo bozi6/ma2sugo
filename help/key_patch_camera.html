@@ -1,83 +1,83 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="hu">
 	<head>
-		<title>Virtual 3D Cameras</title>
+		<title>Virtiális 3D kamerák</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="camera pool, virtual camera" />
 	</head>
 	<body>
-		
-		
-		<h1>Virtual 3D Cameras</h1>
-		
-		<p>In the Stage View topic we looked at the virtual 3D stage. It was mentioned that we are actually looking at the stage through virtual cameras.</p>
 
-<p>If there was no cameras then you cannot see the stage.</p>
 
-<p>The cameras are located in the Camera Pool. You can create a camera pool on your screens using the <strong>Create Basic Window</strong> pop-up. It is described in the <a href="key_windows.html">Manages windows topic</a>.</p>
+		<h1>Virtuális 3D kamerák</h1>
 
-<p>It is a pool. To learn general thing about the pools please read the <a href="key_pools.html">Pools in General section</a>.</p>
+		<p>A színpad nézetben megnéztük a virtuális 3D színpadot. Ott már említettük, hogy a színpadot virtuális kamerákon keresztül nézzük.</p>
 
-<p>The Camera pool could look like this:</p>
+<p>Ha nincs kamera beállítva, akkor nem láthatjuk a színpadot.</p>
+
+<p>A kamerák a kamera tárolóban vannak. Létrehozhatsz egy kamera tárolót a képerny&oacute;n az <strong>Alapvet&oacute; ablakok létrehozása</strong> ablakocskán keresztül. Ez leírva a <a href="key_windows.html">Ablakok kezelése fejezetben</a>van.</p>
+
+<p>Ez egy tároló. A tárolókkal való általános tudnivalókért, nézd meg a <a href="key_pools.html">Tárolókról általában részt</a>.</p>
+
+<p>A kameratároló így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_camera-pool_v3-2.png" />
-<figcaption><em>Camera Pool - pool style</em></figcaption>
+<figcaption><em>Kamera tároló - tároló nézet</em></figcaption>
 </figure>
 
-<p>If you change the pool to be in sheet style (in the pool options) Így nézhet ki:</p>
+<p>Ha megváltoztatod a tároló beállításoknál táblázatos nézetre akkor, így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_camera-pool_sheet_v3-2.png" />
-<figcaption><em>Camera Pool - Sheet Style</em></figcaption>
+<figcaption><em>Kamera tároló - Táblázatos nézet</em></figcaption>
 </figure>
 
-<p>Each of the cameras in your show file is represented by a pool object.</p>
+<p>Minden kamera a show fájlban egy tárolóobjektumként jelenik meg.</p>
 
-<p>There is always a <strong>selected</strong> camera. It is the one that have the green background color behind the name when in pool view and green background on the number when in sheet mode. Stage view and MA 3D can reference the selected camera. This means that you can change what camera you are looking through for many screens simply by tapping or clicking a different camera in this pool.</p>
+<p>Mindig van egy <strong>kiválasztott</strong> kamera. Ez az amelyiknek mögött zöld háttér van a neve mögött a tároló nézetben, és zöld háttér a száma mögött a táblázat nézetben. A színpad nézet és a MA 3D nézet ugyanarra a kamerára hivatkozik. Ez azt jelenti, hogy válthatsz a kameranézetek közül, egyszer&ucirc;en a kamera képre bökéssel.</p>
 
-<h2>Cameras controlled by a fixture</h2>
+<h2>Kamera vezérlése lámpa által</h2>
 
-<p>A camera can be linked to a special MA camera controller fixture.</p>
+<p>A kamerát hozzákapcsolhatod egy speciális MA kameravezérl&oacute; "lámpához".</p>
 
-<p>You will need to add this camera controller fixture to your fixture setup - read about it in the <a href="key_patch_add_fixtures.html">Adding fixtures to your show topic</a>. When you have the fixture then you can link the camera with the controller fixture.</p>
+<p>Ezt hozzá kell adnond ugyanúgy mint egy lámpát - olvass róla a <a href="key_patch_add_fixtures.html">Lámpák hozzáadása a showhoz fejezetben</a>. Amikor hozáadtad akkor összekapcsolhatod a kamerát a vezérl&oacute; lámpával.</p>
 
-<p>When a camera is linked, then you can see the link icon in the upper right corner of the camera pool button and in the top half you will see the Fixture ID of the controller. When a camera is linked, then you cannot control it manually.</p>
+<p>Ha gey kamera össze van kapcsolva, akkor a kameratárolóban a jobb fels&oacute; sarokban egy link ikont láthatsz, a fels&oacute; részen pedig a vezérl&oacute; lámpa ID-jét. Amikor egy kamera kapcsolt, akkor nem lehet kézzel vezérelni.</p>
 
-<p>You can use the same camera controller to control more than one camera. Then you can use the camera position values (read more below) to create an offset between the different cameras.</p>
+<p>Használhatod ugyanazt a vezérl&oacute;t, hogy több mint egy kamerát kezelj. Utána használhatod a kamera pozíció értékét (lásd lejjebb) hogy eltolást csinálj a különböz&oacute; kamerák között.</p>
 
-<p>Read below to learn how to link the two objects.</p>
+<p>Olvass tovább, hogy megtanuld a két objektum összekapcsolását.</p>
 
-<h2>Editing a camera</h2>
+<h2>Kamera szerkesztése</h2>
 
-<p>If you edit (right-click with mouse or press <span class="hardkey">Edit</span> followed by the object) a camera pool object, then you get the a window with all the options for a camera. Így nézhet ki:</p>
+<p>Amikor szerkeszted (jobb-klikk az egérrel vagy megnyomod az <span class="hardkey">Edit</span> után az objektumra böksz) a kamera objektumot, akkor egy ablakot fogsz látni az össszes lehet&oacute;séggel a kamerára vonatkozóan. Így nézhet ki:</p>
 
 <figure class="caption"><img alt="" src="../../img/window_camera-pool_edit-camera_v3-2.png" />
-<figcaption><em>Camera pool - Edit a camera.</em></figcaption>
+<figcaption><em>Camera tároló - Kamera szerkesztése.</em></figcaption>
 </figure>
 
-<p>Here you can see the different settings for the camera.</p>
+<p>Itt beállíthatsz különböz&oacute; dolgokat a kamerához.</p>
 
-<p>In the title bar you will find two buttons that allows you fast access to the previous and next camera. There is also the button to move the editor to a different screen and the close editor X.</p>
+<p>A fejlécben két további gombot találsz, ami gyors hozzáférést tesz lehet&oacute;vé az el&oacute;z&oacute; és következ&oacute; kamerához. Van mégegy gomb amivel áthelyezheted az ablakot másik képerny&oacute;re és egy a szerkeszt&oacute; bezárásához X.</p>
 
-<p>Each cameras settings are displayed as a sheet with columns. The following is a description of each column:</p>
+<p>Minden kamera beállítása egy táblázatként jelenik meg. Itt vkövetkezik az oszlopok leírása:</p>
 
 <ul>
 	<li><strong>No.:</strong><br />
-	This is the camera number. You cannot edit this value, but you can of course move the camera in the pool.</li>
+	Ez a kamera száma. Nem szerkesztheted az értékét, de természetesen mozgathatod a kamerát a tárolón belül.</li>
 	<li><strong>Name:</strong><br />
-	This is the name of the camera.</li>
+	Ez a kamera elnevezése.</li>
 	<li><strong>X, Y, Z:</strong><br />
-	These three columns is the position of the camera in the 3D space.</li>
+	Ez a három oszlop mutatja a kamera pozícióját a 3D-s térben.</li>
 	<li><strong>Rot. X, Rot. Y, Rot. Z:</strong><br />
-	These three columns are the rotation of the camera.</li>
+	Ezek az oszlopok mutatják a kamera elforgatását a tengelyek szerint.</li>
 	<li><strong>FOV:</strong><br />
-	This is the cameras field of view.</li>
+	Ez a kamera látószöge.</li>
 	<li><strong>Step Through:</strong><br />
-	Turning off Step Through will exclude this camera from the cameras you can step through in the stage view and MA 3D by pressing the space bar.</li>
+	Ez kikapcsolja a kamerára lépést amikor a színpad nézetben vagy az MA 3D-ben lépkedsz a kamerák között a szóközzel.</li>
 	<li><strong>Fixture:</strong><br />
-	This is where you can assign a camera controller fixture to the camera. Editing this cell will open the small Select Camera Fixture Controller pop-up. It lists the available controller fixtures. Így nézhet ki:
+	Itt lehet kameravezérl&oacute; "lámpát" hozzárendelni a kamerához. A cella szerkesztésekor választhatsz a beállított vezérl&oacute;k közül. Itt listázódnak ki az elérhet&oacute; vezérl&oacute;k. Így nézhet ki:
 	<figure class="caption"><img alt="" src="../../img/popup_select-camera-fixture-controller_v3-2.png" />
-	<figcaption><em>Select Camera Fixture Controller pop-up</em></figcaption>
+	<figcaption><em>Válassz kameravezérl&oacute;t ablakocska</em></figcaption>
 	</figure>
 	</li>
 </ul>
@@ -86,11 +86,11 @@
 
 <ul>
 	<li><strong>Info</strong>:<br />
-	Here you can write any information you like.</li>
+	Ide írhatsz neked tetsz&oacute; információkat.</li>
 </ul>
 
 <p>&nbsp;</p>
 
-		
+
 	</body>
 </html>
