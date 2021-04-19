@@ -1,120 +1,128 @@
 <!DOCTYPE html>
 <html lang="hu">
-	<head>
-		<title>Csoportok automatikus léterhozáas</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta charset="utf-8" />
-		<meta name="keywords" content="auto create - groups, auto create conflict - groups, groups - auto create" />
-	</head>
-	<body>
-		
-		
-		<h1>Csoportok automatikus léterhozása</h1>
-		
-		<p>Létrehozhatsz csoportak automatikusan.</p>
 
-<p>Ezt az Auto Create menüben lehet kivitelezni. Ezt a Setup -&gt; Show -&gt; Auto Create.&nbsp;helyen taálhatod meg.</p>
+<head>
+	<title>Csoportok automatikus léterhozáas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta name="keywords" content="auto create - groups, auto create conflict - groups, groups - auto create" />
+</head>
 
-<p>Ez a menü különböző fülekre van felosztva. Az egyiket "Group"-nak hívják és így nézhet ki:</p>
+<body>
 
-<figure class="caption"><img alt="" src="../../img/popup_auto-create_group_v3-2.png" />
-<figcaption><em>Automatikus létrehozó menü - Csoport fül</em></figcaption>
-</figure>
 
-<p>&nbsp;</p>
+	<h1>Csoportok automatikus léterhozása</h1>
 
-<p>Két különböző része van ennek az ablaknak.</p>
+	<p>Létrehozhatsz csoportak automatikusan.</p>
 
-<p>A bal oldalon a lámpák típusai vagy a rétegek látszanak (beállításoktól függően - lásd lejjebb).</p>
+	<p>Ezt az Auto Create menüben lehet kivitelezni. Ezt a Setup -&gt; Show -&gt; Auto Create.&nbsp;helyen taálhatod meg.</p>
 
-<p>A jobb oldalon a bal oldalon kiválasztott  szerint, látszódnak a lámpák. A jobb szélen van egy kis zöld dobozka, ahová beírhatod a kívánt csoportok kezdősorszámát.</p>
+	<p>Ez a menü különböz&otilde; fülekre van felosztva. Az egyiket "Group"-nak hívják és így nézhet ki:</p>
 
-<p>A kiválasztott dolgoknak kék háttere van. Többszörös kiválasztás is lehetséges a <span class="hardkey">Ctrl</span> gombbal a billentyűzeten.</p>
+	<figure class="caption"><img alt="" src="../../img/popup_auto-create_group_v3-2.png" />
+		<figcaption><em>Automatikus létrehozó menü - Csoport fül</em></figcaption>
+	</figure>
 
-<p>&nbsp;</p>
+	<p>&nbsp;</p>
 
-<p>A menü alsó részén különböző gombokat találsz.:</p>
+	<p>Két különböz&otilde; része van ennek az ablaknak.</p>
 
-<p><strong>Choose:</strong></p>
+	<p>A bal oldalon a lámpák típusai vagy a rétegek látszanak (beállításoktól függ&otilde;en - lásd lejjebb).</p>
 
-<p>Ennek a gombnak két módja van: <strong>Layer</strong> és <strong>Fixture Type</strong>. Ezzel választható a bal oldali csoportosítás típusa.</p>
+	<p>A jobb oldalon a bal oldalon kiválasztott szerint, látszódnak a lámpák. A jobb szélen van egy kis zöld dobozka, ahová beírhatod a kívánt csoportok kezd&otilde;sorszámát.</p>
 
-<p><strong>Always ask for Name:</strong></p>
+	<p>A kiválasztott dolgoknak kék háttere van. Többszörös kiválasztás is lehetséges a <span class="hardkey">Ctrl</span> gombbal a billenty&ucirc;zeten.</p>
 
-<p>Amikor ez aktív (sárga szöveg és háttér), akkor kapni fogsz egy felugró ablakocskát minden alkalommal, a csoportok elnevezésére, amikor az "All"-összes csoportot létrehozod.</p>
+	<p>&nbsp;</p>
 
-<p><strong>Create All:</strong></p>
+	<p>A menü alsó részén különböz&otilde; gombokat találsz.:</p>
 
-<p>Ez léterhozza az "All"-összes csoportot minden egyes kijelölt lámpának/rétegnek.</p>
+	<p><strong>Choose:</strong></p>
 
-<p><strong>Create Single:</strong></p>
+	<p>Ennek a gombnak két módja van: <strong>Layer</strong> és <strong>Fixture Type</strong>. Ezzel választható a bal oldali csoportosítás típusa.</p>
 
-<p>This will create single groups for every one of the selected fixtures.</p>
+	<p><strong>Always ask for Name:</strong></p>
 
-<p><strong>Overwrite:</strong></p>
+	<p>Amikor ez aktív (sárga szöveg és háttér), akkor kapni fogsz egy felugró ablakocskát minden alkalommal, a csoportok elnevezésére, amikor az "All"-összes csoportot létrehozod.</p>
 
-<p>This will allow for auto create groups to overwrite existing groups. If this is off, and there is a conflict, the console will present you with a Auto Create Conflict pop-up (read more about this below).</p>
+	<p><strong>Create All:</strong></p>
 
-<p><strong>Use:</strong></p>
+	<p>Ez létrehozza az "All"-összes csoportot minden egyes kijelölt lámpának/rétegnek.</p>
 
-<p>This button has two modes. When it is <strong>Earliest</strong> the console will use the first free pool button. When it is <strong>Latest</strong> the console will use the first pool button after the last one used.</p>
+	<p><strong>Create Single:</strong></p>
 
-<p>&nbsp;</p>
+	<p>Ez egyes csoportokat hoz létre a kiválasztott lámpákhoz.</p>
 
-<h2>Work flow when auto creating groups</h2>
+	<p><strong>Overwrite:</strong></p>
 
-<p>So the work flow is that you select the separation order in the left section using the <span class="softkey">Choose</span> button.</p>
+	<p>Ez engedélyezi, hogy az újonnan létrejöv&otilde; csoportok, felülírhatják a meglév&otilde; csoportokat. Ha ez ki van kapcsolva, és ütközés jön létre, akkor a pult egy Auto Create Conflict nev&ucirc; ablakocskával jutalmaz. (b&otilde;vebben itt lejjebb olvashatsz róla
+		b&otilde;vebben).</p>
 
-<h3>All groups</h3>
+	<p><strong>Use:</strong></p>
 
-<p>If you want to create "All" groups then you need to select the Fixture Types or Layers.&nbsp;</p>
+	<p>Ennek a gombnak két módja van. Amikor <strong>Earliest</strong>-legkorábbi, akkor a pult a legels&otilde; szabad helyre teszi a csoportokat. Amikor <strong>Latest</strong>-utolsó, akkor a pult az utolsó használt csoport után teszi az új csoportokat.
+	</p>
 
-<p>Then select the first group number. Either by typing the number in the green input box or by the <span class="softkey">Use</span> button.</p>
+	<p>&nbsp;</p>
 
-<p>Now you need to select if you want to name each group manually (activating the <span class="softkey">Always ask for Name</span> button) and if you want to overwrite existing groups (using the <span class="softkey">Overwrite</span> button).</p>
+	<h2>Automatikus csoportok létrehozásának folyamata.</h2>
 
-<p>Last thing is to tap the <span class="softkey">Create All</span> button.</p>
+	<p>A folyamat abból áll, hogy a bal oldalon kijelölöd az elkülönítés sorrendjét a <span class="softkey">Choose</span> gombbal.</p>
 
-<h3>Single groups</h3>
+	<h3>Minden csoport</h3>
 
-<p>If you want to create "Single" groups then you need to select the Fixture Types or Layers and then the one of the sections in the left side. You can then select the fixture you want in the right side. You can use a lasso function to select several fixtures or you can hold the <span class="hardkey">Ctrl</span> key and select or de-select fixtures in the list.</p>
+	<p>Ha az "All"-összes csoportot akarod létrehozni, akkor válaszd ki a lámpa típusát, vagy rétegét.&nbsp;</p>
 
-<p>Then select the first group number. Either by typing the number in the green input box or by the <span class="softkey">Use</span> button.</p>
+	<p>Utána válaszd ki az els&otilde; csoport számát. Vagy beírod a zöld dobozkába, vagy az <span class="softkey">Use</span> gombbal.</p>
 
-<p>Now you need to select if you want to name each group manually (activating the <span class="softkey">Always ask for Name</span> button) and if you want to overwrite existing groups (using the <span class="softkey">Overwrite</span> button).</p>
+	<p>Most ki kell választanod, hogy kézzel akarod elnevezni a cspoportokat (aktiválva a <span class="softkey">Always ask for Name</span> gombot) és ha felül akarod írni a meglév&otilde; csoportokat (az <span class="softkey">Overwrite</span> gombbal).</p>
 
-<p>Last thing is to tap the <span class="softkey">Create Single</span> button.</p>
+	<p>Az utolsó dolog, hogy ráböksz a <span class="softkey">Create All</span> gombbal.</p>
 
-<h2><a id="auto_create_conflict" name="auto_create_conflict"></a>Auto Create Conflict pop-up</h2>
+	<h3>Egyes csoportok</h3>
 
-<p>If "Overwrite" is not active and there is a conflict, then you will get a pop-up like this:</p>
+	<p>Ha "Single" egyedülálló csoportot akarsz létrehozni, akkor válaszd ki a lámpatípusokat/rétegeket a bal oldai részen. Kiválaszthatod a lámpákatt a jobb oldalon. Használhatsz lasszó kijelölést, vagy nyomvatarthatod a <span
+			class="hardkey">Ctrl</span> gombot a listában való válogatáshoz.</p>
 
-<figure class="caption"><img alt="" src="../../img/popup_auto-create-conflict_v3-2.png" />
-<figcaption><em>Auto Create Conflict pop-up</em></figcaption>
-</figure>
+	<p>Utána válaszd ki a csoport kezd&otilde;számát. Vagy beírod a zöld kockába, vagy a <span class="softkey">Use</span> gomb használatával.</p>
 
-<p>&nbsp;</p>
+	<p>Most eldöntheted, hogy az új csoportokat külön külön akarod elnevezni (aktiválva az <span class="softkey">Always ask for Name</span> gombot) és akarod-e felülírni a meglév&otilde; csoportokat (az <span class="softkey">Overwrite</span> gomb
+		használatával).</p>
 
-<p>This pop-up has four options:</p>
+	<p>Végül bökj a <span class="softkey">Create Single</span> gombra.</p>
 
-<p><strong>Overwrite:</strong></p>
+	<p>Ha az "Overwrite" nem aktív és ütközés jön létre, akkor egy ilyesmi ablakocska ugrik el&otilde;:</p>
 
-<p>This will delete the current content in the group (world, preset, or channel page) and store the new selection instead.</p>
+	<h2><a id="auto_create_conflict" name="auto_create_conflict"></a>Automaitkus létrehozás ütközés ablakocska</h2>
 
-<p><strong>Merge:</strong></p>
 
-<p>This will add the new content to the current content (group, world, preset, or channel page).</p>
+	<figure class="caption"><img alt="" src="../../img/popup_auto-create-conflict_v3-2.png" />
+		<figcaption><em>Automatikus létrehozás ütközés ablakocska</em></figcaption>
+	</figure>
 
-<p>The new content will be added after the existing content. For example if you have a group with fixture 1, 3 and 5 and you merge in fixtures 2, 4 and 6. Then your group will have fixtures 1 to 6, but the selection order will be 1,3,5,2,4,6.</p>
+	<p>&nbsp;</p>
 
-<p><strong>Skip to next Empty:</strong></p>
+	<p>Ennek az ablakocskának négy opciója van:</p>
 
-<p>This will store the new content (group, world, preset, or channel page) at the first empty position.</p>
+	<p><strong>Overwrite:</strong></p>
 
-<p><strong>Skip to latest Empty:</strong></p>
+	<p>Ez töli az aktuálsi tartalmát a csoportnak (világnak, presetnek, vagy csatorna oldalnak) és az új választást tárolja.</p>
 
-<p>This will store the content at the pool object after the currently last used pool object. For example if the highest group number you have is 11 then it will create group 12.</p>
+	<p><strong>Merge:</strong></p>
 
-		
-	</body>
+	<p>Ez hozzáadja a meglév&otilde; tartalmat az aktuális tartalomhoz (csoport, világ, preset vagy csatorna oldal).</p>
+
+	<p>Az új tartalom a meglév&otilde; után lesz elhelyezve. Például, már van egy csoportod az 1,3 és 5 lámpákból és összefésülöd a 2, 4, és 6 lámpákkal(merge). Akkor a csoportban lesznek 1-6-ig a lámpák, de a kijelölés sorrendje 1,3,5,2,4,6 lesz.</p>
+
+	<p><strong>Skip to next Empty:</strong></p>
+
+	<p>Ez az új tartalmat (csoport, világ, preset vagy csatornaoldal) az els&otilde; üres helyre menti el.</p>
+
+	<p><strong>Skip to latest Empty:</strong></p>
+
+	<p>Ez az új tartalmat a legutolsó tárolóobjektum után menti el, tehát ha a legnagyobb csoportszámod 11 akkor a 12. helyre teszi az újat.</p>
+
+
+</body>
+
 </html>
